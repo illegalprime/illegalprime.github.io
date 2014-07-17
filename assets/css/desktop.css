@@ -1,0 +1,116 @@
+@import url(default.css);
+
+#post-info {
+	position: absolute; 
+	width: 32%; 
+	bottom: 0;
+	margin-bottom: 12px;
+	left: 5%;"
+}
+
+#post-info h1 {
+	font-weight: bold;
+	font-size: 44px;
+	margin: 0;
+}
+
+#home-title {
+	position: absolute; 
+	width: 32%; 
+	top: 10%;
+	left: 1%;
+	text-align: right;
+}
+
+#home-title h1 {
+	font-size: 60px;
+	margin: 5px 0;
+}
+
+#home-title h2 {
+	font-size: 35px;
+	margin: 5px 0;
+}
+
+#home-title h3 {
+	font-size: 30px;
+	margin: 15px 0;
+	color: gray;
+}
+
+#top_menu {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin: 1%;
+}
+
+#following_menu {
+	position: fixed;
+	right: 0;
+	top: 0;
+	margin: 1%;
+	border-radius: 7px;
+	background-position: 95% 70%;
+	opacity: 0.5;
+	z-index: 2;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+}
+
+#following_menu:hover {
+	opacity: 1.0;
+}
+
+#following_menu_container {
+	padding-left: 17px;
+	padding-right: 0px;
+	padding-bottom: 7px;
+	padding-top: 7px;
+}
+
+.menu_bar a {
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+	display: inline;
+	margin-right: 20px;
+	font-size: 15pt;
+}
+
+#article {
+	width: 700px;
+	padding: 50px 0px;
+	left: 50%;
+	margin-left: -350px;
+}
+
+#bg-video {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: 0;
+	overflow: hidden;
+}
+
+.menu {
+	position: fixed;
+}
+
+.menu-content {
+	position: fixed;
+}
+
+.pagination, #post-list {
+	width: 700px;
+	left: 50%;
+	margin-left: -350px;
+}
+
+.copyright {
+	right: 20px;
+}

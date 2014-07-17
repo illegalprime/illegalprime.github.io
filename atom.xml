@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Michael Eden</title>
+ <link href="https://illegalprime.github.io//atom.xml" rel="self"/>
+ <link href="https://illegalprime.github.io//"/>
+ <updated>2014-07-16T23:01:44-05:00</updated>
+ <id>https://illegalprime.github.io/</id>
+ <author>
+   <name>Michael Eden</name>
+   <email></email>
+ </author>
+
+ 
+ <entry>
+   <title>Launch</title>
+   <link href="https://illegalprime.github.io//blog/launch"/>
+   <updated>2014-07-16T00:00:00-05:00</updated>
+   <id>https://illegalprime.github.io//blog/launch</id>
+   <content type="html">&lt;h1&gt;Website Launch&lt;/h1&gt;
+
+&lt;p&gt;This is my website. Right.&lt;/p&gt;
+
+&lt;h2&gt;1&lt;/h2&gt;
+
+&lt;p&gt;Hopefully all the projects that I&amp;#39;ve worked on and will work on will eventually find their way here, so both everyone else and I can benefit from them. &lt;/p&gt;
+
+&lt;p&gt;Of these posts will include stories, humour, circuits, programs, hacking tutorials and most important of all Go-Karts (if someone is willing to fund that).&lt;/p&gt;
+
+&lt;p&gt;Never in my life have I attempted to remember and chronicle the things I&amp;#39;ve done, and I&amp;#39;m pretty sure my life&amp;#39;s been interesting so far, so I encourage you to read on, and check back frequently.&lt;/p&gt;
+
+&lt;p&gt;Hopefully I will establish an RSS feed or something similar in the near future, although I can&amp;#39;t find anyone who uses them anymore, and &lt;a href=&quot;http://www.google.com/reader/about/&quot;&gt;Google Reader has been discontinued&lt;/a&gt;. Shame.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;One&lt;/strong&gt; thing I will promise about this website that I will post original things, no posting a popular xkcd comic a few times a month and hoping it&amp;#39;ll reel in some hits. I also will not post to bother you kind readers about politics or my agenda, &lt;em&gt;THAT&lt;/em&gt; is what Reddit and &lt;a href=&quot;https://www.youtube.com/watch?v=xjOxNiHUsZw&quot;&gt;College Humour&lt;/a&gt; are doing these days. &lt;/p&gt;
+
+&lt;p&gt;Oh damn I just did it.&lt;/p&gt;
+
+&lt;p&gt;DON&amp;#39;T CLICK ON THAT LINK!&lt;/p&gt;
+
+&lt;h2&gt;2&lt;/h2&gt;
+
+&lt;p&gt;I am also trying to make money to be able to see my girlfriend at MIT, so I am saving some funds for plane tickets.&lt;/p&gt;
+
+&lt;p&gt;I will send unsuspecting people here, and hopefully they can find me some odd jobs to do, &lt;em&gt;this&lt;/em&gt;, this is it. These are my only skills.&lt;/p&gt;
+
+&lt;p&gt;So please, come for the original (guaranteed) and interesting (eh) posts, and if you ever need a personal tech guy, I&amp;#39;m your man.&lt;/p&gt;
+
+&lt;p&gt;Thank you.
+- Michael Eden&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>This GitHub IO Page uses Thinny 2 & Jekyll</title>
+   <link href="https://illegalprime.github.io//blog/thinny-2"/>
+   <updated>2014-01-22T00:00:00-06:00</updated>
+   <id>https://illegalprime.github.io//blog/thinny-2</id>
+   <content type="html">&lt;h1&gt;A Word from the Creator of Thinny 2&lt;/h1&gt;
+
+&lt;p&gt;Three months ago, I released an (unfinished) theme for Ghost 0.3: &lt;a href=&quot;http://github.com/camporez/Thinny&quot;&gt;Thinny 0.3&lt;/a&gt;, codename &amp;quot;&lt;a href=&quot;http://nikita2010.wikia.com/wiki/Alexandra_Udinov&quot;&gt;Alexandra&lt;/a&gt;&amp;quot;.
+But now I&amp;#39;m migrating my blog to Jekyll, and also migrating the theme. With a brand new look, Thinny 2 also brings a lot of new features and polishment. Actually, it was completely remaked.&lt;/p&gt;
+
+&lt;h1&gt;Thinny 2.0, codename &amp;quot;&lt;a href=&quot;http://memoriaglobo.globo.com/programas/entretenimento/novelas/caras-bocas/caras-bocas-bianca-isabelle-drummond.htm&quot;&gt;Bianca&lt;/a&gt;&amp;quot;&lt;/h1&gt;
+
+&lt;p&gt;This new version of Thinny goes deeper with the &lt;a href=&quot;http://ghost-camporez.rhcloud.com/making-applications-icon-smaller-on-gnome-shells-top-panel/&quot;&gt;initial idea&lt;/a&gt; of a big image before the post. As the saying goes, &lt;cite&gt;a picture is worth a thousand words&lt;/cite&gt;, so we expanded the concept. I mean, literally. The post image (or video!) is now full width and full height, and can be easily add with the use of a variable.&lt;/p&gt;
+
+&lt;h2&gt;Features&lt;/h2&gt;
+
+&lt;h3&gt;Lists and text formatting&lt;/h3&gt;
+
+&lt;p&gt;You can use various HTML tags:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;To bold text&lt;/strong&gt;, use &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;To italicize text&lt;/em&gt;, use &lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Abbreviations, like &lt;abbr title=&quot;HyperText Markup Langage&quot;&gt;HTML&lt;/abbr&gt; should use &lt;code&gt;&amp;lt;abbr&amp;gt;&lt;/code&gt;, with an optional &lt;code&gt;title&lt;/code&gt; attribute for the full phrase.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Citations, like &lt;cite&gt;&amp;mdash; Michael Eden&lt;/cite&gt;, should use &lt;code&gt;&amp;lt;cite&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Deleted&lt;/del&gt; text should use &lt;code&gt;&amp;lt;del&amp;gt;&lt;/code&gt; and &lt;ins&gt;inserted&lt;/ins&gt; text should use &lt;code&gt;&amp;lt;ins&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Superscript &lt;sup&gt;text&lt;/sup&gt; uses &lt;code&gt;&amp;lt;sup&amp;gt;&lt;/code&gt; and subscript &lt;sub&gt;text&lt;/sub&gt; uses &lt;code&gt;&amp;lt;sub&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3&gt;Messages, code and images&lt;/h3&gt;
+
+&lt;div class=&quot;message&quot;&gt;This is a &lt;strong&gt;warning&lt;/strong&gt; message. Now, you can keep falling in love with this theme...&lt;/div&gt;
+
+&lt;p&gt;You can add &lt;code&gt;code elements&lt;/code&gt; with highlight support:
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;/media/2014-01-22-thinny-2/bianca.jpg&amp;quot;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;100&amp;#37;&amp;quot;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Image captions are supported out of the box. Brilliant!&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;Will output this:&lt;/p&gt;
+
+&lt;div&gt;&lt;img src=&quot;/media/2014-01-22-thinny-2/bianca.jpg&quot; alt=&quot;Image captions are supported out of the box. Brilliant!&quot; width=&quot;100%&quot; /&gt;
+&lt;blockquote style=&quot;border-left: 10px solid #D5D5D5;&quot;&gt;Image captions are supported out of the box. Brilliant!&lt;/blockquote&gt;&lt;/div&gt;
+
+&lt;h3&gt;Table&lt;/h3&gt;
+
+&lt;p&gt;Thinny also support html tag &lt;code&gt;&amp;lt;table&amp;gt;&lt;/code&gt;:
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Version&lt;/th&gt;
+      &lt;th&gt;Codename&lt;/th&gt;
+      &lt;th&gt;Platform&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;a href=&quot;https://github.com/camporez/Thinny/releases/tag/v0.3-alexandra&quot;&gt;0.3&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://nikita2010.wikia.com/wiki/Alexandra_Udinov&quot;&gt;Alexandra&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;Ghost 0.3.x&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;a href=&quot;https://github.com/camporez/Thinny/releases/tag/v2.0-bianca&quot;&gt;2.0&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://memoriaglobo.globo.com/programas/entretenimento/novelas/caras-bocas/caras-bocas-bianca-isabelle-drummond.htm&quot;&gt;Bianca&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;Jekyll&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2.1&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://lesmiserables.wikia.com/wiki/Cosette&quot;&gt;Cosette&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;Jekyll&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;&lt;/p&gt;
+
+&lt;h3&gt;Mobile version&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Coming soon...&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3&gt;Quote&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Did you liked it? You can &lt;a href=&quot;https://github.com/camporez/Thinny/releases&quot;&gt;download Thinny on GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Want to see something else added? &lt;a href=&quot;https://github.com/camporez/camporez.github.io/issues/new&quot;&gt;Open an issue&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+
+</feed>
