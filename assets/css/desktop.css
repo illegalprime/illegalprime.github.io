@@ -51,7 +51,10 @@
 	top: 0;
 	margin: 1%;
 	border-radius: 7px;
-	background-position: 95% 70%;
+	background-position: 70% 60%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 7px;
 	opacity: 0.5;
 	z-index: 2;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -63,20 +66,47 @@
 }
 
 #following_menu_container {
-	padding-left: 17px;
+	
 	padding-right: 0px;
 	padding-bottom: 7px;
 	padding-top: 7px;
 }
 
+a.menu_highlighted {
+	color: #000;
+	background-color: #fff;
+	border-radius: 3px;
+}
+
+a.menu_normal {
+	color: #eee;
+}
+
 .menu_bar a {
-	color: white;
 	text-transform: uppercase;
 	font-weight: bold;
 	display: inline;
 	margin-right: 20px;
 	font-size: 15pt;
+	padding: 5px;
+
+	/*-webkit-animation: menu_anim 5s; /* Chrome, Safari, Opera */
+    /*animation: menu_anim 5s;*/
 }
+
+/*@-webkit-keyframes menu_anim {
+	from {}
+	to {
+		background-color: white;
+	}
+}
+
+@keyframes menu_anim {
+	from {}
+	to {
+		background-color: white;
+	}
+}*/
 
 #article {
 	width: 700px;
