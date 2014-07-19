@@ -4,13 +4,37 @@
  <title>Michael Eden</title>
  <link href="https://illegalprime.github.io//atom.xml" rel="self"/>
  <link href="https://illegalprime.github.io//"/>
- <updated>2014-07-19T11:30:06-05:00</updated>
+ <updated>2014-07-19T12:40:54-05:00</updated>
  <id>https://illegalprime.github.io/</id>
  <author>
    <name>Michael Eden</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Natural Timing: A Portal 2 Custom Map</title>
+   <link href="https://illegalprime.github.io//blog/natural-timing-portal2"/>
+   <updated>2014-07-19T00:00:00-05:00</updated>
+   <id>https://illegalprime.github.io//blog/natural-timing-portal2</id>
+   <content type="html">&lt;h1&gt;Available for download &lt;a href=&quot;http://steamcommunity.com/sharedfiles/filedetails/?id=278962722&quot;&gt;here&lt;/a&gt;.&lt;/h1&gt;
+
+&lt;p&gt;&amp;#39;Natural Timing&amp;#39; is my first custom map for Portal 2, it&amp;#39;s not very polished as it wasn&amp;#39;t done with the Hammer Editor, but it is, I think, a very solid puzzle. &lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://store.steampowered.com/app/620/&quot;&gt;Portal 2&lt;/a&gt; is my favorite puzzle game of all time, for those of you who don&amp;#39;t know, it&amp;#39;s incredibly funny and just hard enough to make me feel smart. I highly recommend it.&lt;/p&gt;
+
+&lt;p&gt;The map is basically a few experiments with ways to force a player to act quickly without the use of timers. Along with this it also features a few tricks that weren&amp;#39;t in the original Portal games (one cool one especially).&lt;/p&gt;
+
+&lt;p&gt;I&amp;#39;ve solved it before, and so has one other friend, so please do not get discouraged or worse yet feel that it&amp;#39;s impossible. It might also be a piece of cake, and we could be the dumb ones.&lt;/p&gt;
+
+&lt;p&gt;&amp;mdash; Michael&lt;/p&gt;
+
+&lt;div class=&quot;center&quot;&gt;
+ &lt;div&gt;&lt;img src=&quot;/media/2014-07-19-natural-timing-portal2/Cake-2.png&quot; alt=&quot;&quot; width=&quot;auto&quot; /&gt;
+&lt;blockquote style=&quot;border-left: 10px solid #D5D5D5;&quot;&gt;&lt;/blockquote&gt;&lt;/div&gt;
+&lt;/div&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Launch</title>
@@ -46,7 +70,7 @@
 &lt;p&gt;So please, come for the original (guaranteed) and interesting (eh) posts, and if you ever need a personal tech guy, I&amp;#39;m your man.&lt;/p&gt;
 
 &lt;p&gt;Thank you.
-- Michael Eden&lt;/p&gt;
+&amp;mdash; Michael Eden&lt;/p&gt;
 </content>
  </entry>
  
