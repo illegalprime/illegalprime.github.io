@@ -71,6 +71,32 @@
 	padding-right: 1%;
 }
 
+#following_social_container {
+	width: auto;
+	left: 20px;
+	top: 50%;
+	margin-top: -12px;	
+	position: absolute;
+	z-index: 2;
+}
+
+#following_social_container a {
+	display: inline-block;
+	margin: 0 5px 0 5px;
+	color: #fff;
+	padding: 0;
+}
+
+#following_social_container a span {
+	font-size: 24px;
+	height: 24px;
+	width: 24px;
+}
+
+a#in_follow_menu {
+	margin-top: -14px;
+}
+
 a.menu_highlighted {
 	color: #000;
 	background-color: rgba(255, 255, 255, 0.75);
