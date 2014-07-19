@@ -47,18 +47,16 @@
 
 #following_menu {
 	position: fixed;
-	right: 0;
 	top: 0;
-	margin: 1%;
-	border-radius: 7px;
-	background-position: 70% 60%;
+	width: 100%;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	padding-left: 7px;
+	background-size: 100% auto;
 	opacity: 0.5;
 	z-index: 2;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-decoration: none;
+	text-align: right;
 }
 
 #following_menu:hover {
@@ -66,15 +64,16 @@
 }
 
 #following_menu_container {
-	
-	padding-right: 0px;
-	padding-bottom: 7px;
-	padding-top: 7px;
+	position: relative;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 3px;
+	padding-right: 1%;
 }
 
 a.menu_highlighted {
 	color: #000;
-	background-color: #fff;
+	background-color: rgba(255, 255, 255, 0.75);
 	border-radius: 3px;
 }
 
@@ -88,7 +87,7 @@ a.menu_normal {
 	display: inline;
 	margin-right: 20px;
 	font-size: 15pt;
-	padding: 5px;
+	padding: 2px 5px;
 
 	/*-webkit-animation: menu_anim 5s; /* Chrome, Safari, Opera */
     /*animation: menu_anim 5s;*/
