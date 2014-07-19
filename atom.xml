@@ -4,7 +4,7 @@
  <title>Michael Eden</title>
  <link href="https://illegalprime.github.io//atom.xml" rel="self"/>
  <link href="https://illegalprime.github.io//"/>
- <updated>2014-07-19T01:31:11-05:00</updated>
+ <updated>2014-07-19T11:30:06-05:00</updated>
  <id>https://illegalprime.github.io/</id>
  <author>
    <name>Michael Eden</name>
@@ -51,7 +51,7 @@
  </entry>
  
  <entry>
-   <title>This GitHub IO Page uses Thinny 2 & Jekyll</title>
+   <title>This GitHub IO Page uses Thinny 2 &amp; Jekyll</title>
    <link href="https://illegalprime.github.io//blog/thinny-2"/>
    <updated>2014-01-22T00:00:00-06:00</updated>
    <id>https://illegalprime.github.io//blog/thinny-2</id>
