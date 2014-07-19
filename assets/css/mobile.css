@@ -10,6 +10,10 @@ h2 {
 	font-size: 28px;
 }
 
+#following_menu {
+	display: none;
+}
+
 #post-info {
 	width: 90%;
 	left: 5%;
@@ -23,9 +27,44 @@ h2 {
 	line-height: 30px;
 }
 
+#home-title h1 {
+	font-size: 60px;
+	margin: 5px 0;
+}
+
+#home-title h2 {
+	font-size: 35px;
+	margin: 5px 0;
+}
+
+#home-title h3 {
+	font-size: 30px;
+	margin: 15px 0;
+	color: gray;
+}
+
 #home-title {
 	width: 100%;
-	margin-left: -50%;
+	position: absolute; 
+	top: 1%;
+	left: 1%;
+	text-align: left;
+}
+
+#top_menu {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin: 1%;
+}
+
+.menu_bar a {
+	text-transform: uppercase;
+	font-weight: bold;
+	display: inline;
+	margin-right: 10px;
+	font-size: 13pt;
+	padding: 2px 5px;
 }
 
 #article {
