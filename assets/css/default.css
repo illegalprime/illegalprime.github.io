@@ -547,3 +547,13 @@ pre code {
 .categoryBox .one_line {
 	margin-top: 20px;
 }
+
+#contacts {
+	font-size: 30px;
+	margin-left: 100px;
+}
+
+#contacts span {
+	font-size: 49px;
+	width: 60px;
+}
