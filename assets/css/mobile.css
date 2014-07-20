@@ -11,14 +11,45 @@ h2 {
 }
 
 #following_menu {
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	right: 0;
+	width: 100%;
+	padding: 1%;
+	text-align: center;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#following_social_container {
 	display: none;
 }
+
+#top_menu {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	margin: 1%;
+	text-align: center;
+}
+
+.menu_bar a {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #ffffff;
+	display: inline;
+	margin-right: 10px;
+	font-size: 15pt;
+	padding: 2px 5px;
+}
+
 
 #post-info {
 	width: 90%;
 	left: 5%;
 	margin-left: 0px;
-	bottom: 100px;
+	top: 5%;
 }
 
 #post-info h1 {
@@ -38,33 +69,17 @@ h2 {
 }
 
 #home-title h3 {
-	font-size: 30px;
-	margin: 15px 0;
+	font-size: 25px;
+	margin: 100px 0;
 	color: gray;
 }
 
 #home-title {
 	width: 100%;
 	position: absolute; 
-	top: 1%;
-	left: 1%;
-	text-align: left;
-}
-
-#top_menu {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	margin: 1%;
-}
-
-.menu_bar a {
-	text-transform: uppercase;
-	font-weight: bold;
-	display: inline;
-	margin-right: 10px;
-	font-size: 13pt;
-	padding: 2px 5px;
+	top: 0;
+	left: 0;
+	text-align: center;
 }
 
 #article {
