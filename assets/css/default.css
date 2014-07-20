@@ -497,3 +497,53 @@ pre code {
 	font-size: 12pt;
 	color: #999;
 }
+
+
+.categoryBox {
+	position: relative;
+	width: 220px; 
+	height: 300px; 
+	background-color: #fff;
+	border-radius: 4px;
+	box-shadow: 1px 1px 2px 2px #888888;
+	margin: 10px 5px;
+	display: inline-block;
+}
+
+.categoryBox img {
+	width: 100%;
+	margin-bottom: -5px;
+	border-radius: 3px;
+}
+
+.categoryBox p {
+	margin: 5px;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	/*color: #2a7ead;*/
+}
+
+.categoryBox .overlay {
+	background-color: black;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 4px;
+	opacity: 0;
+	transition-property: opacity;
+	transition-duration: 0.5s;
+	/* Safari */
+	-webkit-transition-property: opacity;
+	-webkit-transition-duration: 0.5s;
+}
+
+.categoryBox .overlay:hover {
+	opacity: 0.25;
+}
+
+.categoryBox .one_line {
+	margin-top: 20px;
+}
