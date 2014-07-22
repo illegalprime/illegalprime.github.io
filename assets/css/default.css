@@ -116,6 +116,84 @@ img {
 	z-index: 1;
 }
 
+#top_menu {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin: 1%;
+}
+
+#following_menu {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-size: 100% auto;
+	opacity: 0.5;
+	z-index: 2;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	text-align: right;
+}
+
+#following_menu:hover {
+	opacity: 1.0;
+}
+
+#following_menu_container {
+	position: relative;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 3px;
+	padding-right: 1%;
+}
+
+#following_social_container {
+	width: auto;
+	left: 20px;
+	top: 50%;
+	margin-top: -12px;	
+	position: absolute;
+	z-index: 2;
+}
+
+#following_social_container a {
+	display: inline-block;
+	margin: 0 5px 0 5px;
+	color: #fff;
+	padding: 0;
+}
+
+#following_social_container a span {
+	font-size: 24px;
+	height: 24px;
+	width: 24px;
+}
+
+a#in_follow_menu {
+	margin-top: -14px;
+}
+
+a.menu_highlighted {
+	color: #000 !important;
+	background-color: rgba(255, 255, 255, 0.75);
+	border-radius: 3px;
+}
+
+a.menu_normal {
+	color: #eee;
+}
+
+.menu_bar a {
+	text-transform: uppercase;
+	font-weight: bold;
+	display: inline-block;
+	margin-right: 20px;
+	font-size: 15pt;
+	padding: 2px 5px;
+}
+
 img.site-icon {
 	margin-top: -75px;
 	width: 150px;
@@ -329,77 +407,8 @@ pre code {
 	width: 24px;
 }
 
-.social-links a:hover, .menu a:hover {
+.social-links a:hover {
 	opacity: 1;
-}
-
-.menu {
-	display: block;
-	cursor: pointer;
-	background-color: rgba(119, 119, 119, 0.5);
-	width: 24px;
-	height: 24px;
-	top: 14px;
-	left: 14px;
-	padding-top: 8px;
-	padding-left: 8px;
-	border-radius: 3px;
-	z-index: 2;
-	transition-duration: .5s;
-}
-
-.menu:hover, .menu:active  {
-	background-color: #777;
-}
-
-.menu-content {
-	background-color: rgba(119, 119, 119, 0.5);
-	width: auto;
-	bottom: 14px;
-	right: 14px;
-	padding-top: 5px;
-	padding-bottom: 2px;
-	padding-left: 12px;
-	padding-right: 12px;
-	border-radius: 5px;
-	text-align: center;
-	z-index: 2;
-}
-
-.menu-content a {
-	text-transform: uppercase;
-	font-size: 12pt;
-	letter-spacing: 0.7pt;
-	font-weight: bold;
-	line-height: 26px;
-}
-
-.menu-content a:hover {
-	color: #cdcdcd;
-}
-
-.menu-content:hover {
-	color: #777;
-}
-
-.menu span {
-	color: #eee;
-	font-size: 16px;
-	height: 20px;
-	width: 20px;
-	opacity: 1;
-}
-
-.menu + input {
-	display: none;
-}
-
-.menu + input + * {
-	display: none;
-}
-
-.menu + input:checked + * {
-	display: block;
 }
 
 .pagination {
@@ -499,7 +508,6 @@ pre code {
 	font-size: 12pt;
 	color: #999;
 }
-
 
 .categoryBox {
 	position: relative;
