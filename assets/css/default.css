@@ -581,3 +581,7 @@ pre code {
 	font-size: 49px;
 	width: 60px;
 }
+
+body.plugin {
+	width: 100%;
+}

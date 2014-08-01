@@ -17,6 +17,7 @@
 	<meta name="HandheldFriendly" content="True" />
 	<meta name="MobileOptimized" content="320" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta property="fb:admins" content="michaeldangereden"/>
 	<link rel="stylesheet" type="text/css" media="only screen and (min-width: 1001px)" href="/assets/css/desktop.css" />
 	<link rel="stylesheet" type="text/css" media="only screen and (max-width: 1000px)" href="/assets/css/mobile.css" />
 	<link href="/assets/css/genericons.css" type="text/css" rel="stylesheet" />
@@ -28,7 +29,15 @@
 	<script type="text/javascript" src="/assets/js/additions.js"></script>
 </head>
 <body>
-	<div id='following_menu' style="background-image: url(/media/2014-07-16-launch/launch.jpg); background-position: 0%  45% ;">
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div id='following_menu' style="background-image: url(/media/2014-07-16-launch/launch.jpg); background-position: 0%  45% ;">
 	<div id="following_overlay">
 		<div id="following_social_container">
 			
@@ -165,6 +174,9 @@
 <p>Thank you.
 &mdash; Michael Eden</p>
 
+
+	<br/><br/>
+	<div class="fb-comments" data-href="https://illegalprime.github.io//blog/launch" data-numposts="10" width="100%" data-colorscheme="light"></div>
 </div>
 
 <footer class="clean" style="background-image: url(/media/hdmd-acdc-converter/cover.jpg);height: 75%; min-height: 500px;">
