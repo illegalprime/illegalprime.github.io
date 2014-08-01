@@ -51,6 +51,15 @@ h1 {
 	font-size: 36px;
 }
 
+#post-info, #article>h1 {
+	color: white;
+	background-color: rgba(0, 0, 0, 0.63);
+	padding-left: 8px;
+	padding-bottom: 7px;
+	border-radius: 5px;
+	padding-right: 8px;
+}
+
 h2 {
 	margin-top: 25px;
 	font-size: 30px;
@@ -108,11 +117,6 @@ img {
 }
 
 #home-title {
-	height: 150px;
-	text-align: center;
-	left: 50%;
-	top: 50%;
-	position: absolute;
 	z-index: 1;
 }
 
@@ -121,20 +125,30 @@ img {
 	bottom: 0;
 	right: 0;
 	margin: 1%;
+	z-index: 4;
 }
 
 #following_menu {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	padding-top: 5px;
-	padding-bottom: 5px;
 	background-size: 100% auto;
 	opacity: 0.5;
 	z-index: 2;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-decoration: none;
 	text-align: right;
+	transition-duration: .25s;
+}
+
+#following_overlay {
+	width: 100%;
+	height: 100%;
+	padding-left: 1%;
+	padding-right: 1%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin: 0;
 }
 
 #following_menu:hover {

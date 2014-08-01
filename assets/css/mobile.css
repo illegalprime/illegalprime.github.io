@@ -10,16 +10,26 @@ h2 {
 	font-size: 28px;
 }
 
+#post-info {
+	padding-top: 0px;
+	padding-bottom: 10px;
+	width: 90%;
+}
+
 #following_menu {
 	position: fixed;
 	z-index: 2;
 	top: 0;
 	right: 0;
 	width: 100%;
-	padding: 1%;
 	opacity: 1;
 	text-align: center;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#following_overlay {
+	background-color: rgba(0, 0, 0, 0.4);
+
 }
 
 #following_social_container {
