@@ -4,7 +4,7 @@
  <title>Michael Eden</title>
  <link href="https://illegalprime.github.io//atom.xml" rel="self"/>
  <link href="https://illegalprime.github.io//"/>
- <updated>2014-08-01T15:41:30-05:00</updated>
+ <updated>2014-08-02T00:08:01-05:00</updated>
  <id>https://illegalprime.github.io/</id>
  <author>
    <name>Michael Eden</name>
@@ -57,13 +57,13 @@
 &lt;div&gt;&lt;img src=&quot;/media/hdmd-acdc-converter/circuit.png&quot; alt=&quot;Here is the AC/DC Converter Circuit Schematic&quot; width=&quot;100%&quot; /&gt;
 &lt;blockquote style=&quot;border-left: 10px solid #D5D5D5;&quot;&gt;Here is the AC/DC Converter Circuit Schematic&lt;/blockquote&gt;&lt;/div&gt;
 
-Now the first 1&amp;mu;F capacitor is there to limit the current of our circuit to be close to 35mA, it provides an impedence that results in a current I:
+Now the first 1&amp;mu;F capacitor is there to limit the current of our circuit to be close to 35mA, it provides an impedance that results in a current I:
 
 &lt;br/&gt;&lt;br/&gt;
 &lt;div&gt;&lt;img src=&quot;/media/hdmd-acdc-converter/mathsForCapacitor.png&quot; alt=&quot;&quot; /&gt;
 &lt;/div&gt;
 
-&lt;p&gt;The small resistor is there to garauntee that when the capacitor is charging and discharging quickly a huge current won&amp;#39;t accompany it. &lt;/p&gt;
+&lt;p&gt;The small resistor is there to guarantee that when the capacitor is charging and discharging quickly a huge current won&amp;#39;t accompany it. &lt;/p&gt;
 
 &lt;div&gt;&lt;img src=&quot;/media/hdmd-acdc-converter/cover.jpg&quot; alt=&quot;And the end product!&quot; width=&quot;100%&quot; /&gt;
 &lt;blockquote style=&quot;border-left: 10px solid #D5D5D5;&quot;&gt;And the end product!&lt;/blockquote&gt;&lt;/div&gt;
