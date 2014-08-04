@@ -1,0 +1,9 @@
+@font-face {
+	font-family: Edwardian;
+	src: url(/assets/fonts/ITCEDSCR.TTF);
+}
+
+#article.story > h1 ~ p::first-letter {
+	font-size: 250%;
+	font-family: Edwardian;
+}

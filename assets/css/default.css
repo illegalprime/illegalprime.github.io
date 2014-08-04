@@ -51,13 +51,21 @@ h1 {
 	font-size: 36px;
 }
 
-#post-info, #article>h1 {
+#post-info {
 	color: white;
 	background-color: rgba(0, 0, 0, 0.63);
 	padding-left: 8px;
 	padding-bottom: 7px;
 	border-radius: 5px;
 	padding-right: 8px;
+}
+
+#article>h1 {
+	background-color: rgba(0, 0, 0, 0.63);
+	color: white;
+	border-radius: 5px;
+	padding-right: 5px;
+	padding-left:  8px;
 }
 
 h2 {
