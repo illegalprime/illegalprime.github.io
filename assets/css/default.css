@@ -41,6 +41,10 @@ p {
 	color: #515151;
 }
 
+#article > p {
+	text-align: justify;
+}
+
 a {
 	color: #2a7ead;
 	text-decoration: none;
@@ -81,6 +85,12 @@ h3 {
 img {
 	border-radius: 6px;
 	max-width: 100%;
+}
+
+#article img {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .center {
