@@ -4,13 +4,234 @@
  <title>Michael Eden</title>
  <link href="https://illegalprime.github.io//atom.xml" rel="self"/>
  <link href="https://illegalprime.github.io//"/>
- <updated>2014-08-04T00:43:36-05:00</updated>
+ <updated>2014-08-04T14:53:41-05:00</updated>
  <id>https://illegalprime.github.io/</id>
  <author>
    <name>Michael Eden</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Bitshifts &amp; Safetybelts</title>
+   <link href="https://illegalprime.github.io//blog/bitshifts-n-safetybelts"/>
+   <updated>2014-08-04T00:00:00-05:00</updated>
+   <id>https://illegalprime.github.io//blog/bitshifts-n-safetybelts</id>
+   <content type="html">&lt;h1&gt;The Steganographic Way&lt;/h1&gt;
+
+&lt;p&gt;Look at this picture of Andy, do you see a hidden message?&lt;/p&gt;
+
+&lt;div&gt;&lt;img src=&quot;/media/2014-08-04-stickshifts-n-safetybelts/andy-encoded.png&quot; alt=&quot;The text &#39;Hello World!&#39; is encoded into this image.&quot; /&gt;
+&lt;blockquote style=&quot;border-left: 10px solid #D5D5D5;&quot;&gt;The text &#39;Hello World!&#39; is encoded into this image.&lt;/blockquote&gt;&lt;/div&gt;
+
+&lt;p&gt;&amp;#39;Hello World!&amp;#39; is able to live inside that image using one common method of Steganography: &amp;quot;the art or practice of concealing a message, image, or file within another message, image, or file&amp;quot;&lt;a href=&quot;http://en.wikipedia.org/wiki/Steganography&quot;&gt;&lt;sup&gt;[1]&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;To visualize this hiding we first transform the message into binary (using &lt;a href=&quot;http://en.wikipedia.org/wiki/Unicode&quot;&gt;Unicode&lt;/a&gt;):&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-C++&quot; data-lang=&quot;C++&quot;&gt;        &lt;span class=&quot;n&quot;&gt;H&lt;/span&gt;                       &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;
+&lt;span class=&quot;mo&quot;&gt;0000&lt;/span&gt; &lt;span class=&quot;mo&quot;&gt;0000&lt;/span&gt; &lt;span class=&quot;mo&quot;&gt;0100&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1000&lt;/span&gt;     &lt;span class=&quot;mo&quot;&gt;0000&lt;/span&gt; &lt;span class=&quot;mo&quot;&gt;0000&lt;/span&gt; &lt;span class=&quot;mo&quot;&gt;0110&lt;/span&gt; &lt;span class=&quot;mo&quot;&gt;0101&lt;/span&gt; 
+        &lt;span class=&quot;n&quot;&gt;l&lt;/span&gt;                       &lt;span class=&quot;n&quot;&gt;l&lt;/span&gt;
+&lt;span class=&quot;mo&quot;&gt;0000&lt;/span&gt; &lt;span class=&quot;mo&quot;&gt;0000&lt;/span&gt; &lt;span class=&quot;mo&quot;&gt;0110&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1100&lt;/span&gt;     &lt;span class=&quot;mo&quot;&gt;0000&lt;/span&gt; &lt;span class=&quot;mo&quot;&gt;0000&lt;/span&gt; &lt;span class=&quot;mo&quot;&gt;0110&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1100&lt;/span&gt; 
+        &lt;span class=&quot;n&quot;&gt;o&lt;/span&gt;                       &lt;span class=&quot;n&quot;&gt;space&lt;/span&gt; 
+&lt;span class=&quot;mo&quot;&gt;0000&lt;/span&gt; &lt;span class=&quot;mo&quot;&gt;0000&lt;/span&gt; &lt;span class=&quot;mo&quot;&gt;0110&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1111&lt;/span&gt;     &lt;span class=&quot;mo&quot;&gt;0000&lt;/span&gt; &lt;span class=&quot;mo&quot;&gt;0000&lt;/span&gt; &lt;span class=&quot;mo&quot;&gt;0010&lt;/span&gt; &lt;span class=&quot;mo&quot;&gt;0000&lt;/span&gt; 
+        &lt;span class=&quot;n&quot;&gt;W&lt;/span&gt;                       &lt;span class=&quot;n&quot;&gt;o&lt;/span&gt;                       
+&lt;span class=&quot;mo&quot;&gt;0000&lt;/span&gt; &lt;span class=&quot;mo&quot;&gt;0000&lt;/span&gt; &lt;span class=&quot;mo&quot;&gt;0101&lt;/span&gt; &lt;span class=&quot;mo&quot;&gt;0111&lt;/span&gt;     &lt;span class=&quot;mo&quot;&gt;0000&lt;/span&gt; &lt;span class=&quot;mo&quot;&gt;0000&lt;/span&gt; &lt;span class=&quot;mo&quot;&gt;0110&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1111&lt;/span&gt; 
+        &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;                       &lt;span class=&quot;n&quot;&gt;l&lt;/span&gt;
+&lt;span class=&quot;mo&quot;&gt;0000&lt;/span&gt; &lt;span class=&quot;mo&quot;&gt;0000&lt;/span&gt; &lt;span class=&quot;mo&quot;&gt;0111&lt;/span&gt; &lt;span class=&quot;mo&quot;&gt;0010&lt;/span&gt;     &lt;span class=&quot;mo&quot;&gt;0000&lt;/span&gt; &lt;span class=&quot;mo&quot;&gt;0000&lt;/span&gt; &lt;span class=&quot;mo&quot;&gt;0110&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1100&lt;/span&gt; 
+        &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt;                       &lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;
+&lt;span class=&quot;mo&quot;&gt;0000&lt;/span&gt; &lt;span class=&quot;mo&quot;&gt;0000&lt;/span&gt; &lt;span class=&quot;mo&quot;&gt;0110&lt;/span&gt; &lt;span class=&quot;mo&quot;&gt;0100&lt;/span&gt;     &lt;span class=&quot;mo&quot;&gt;0000&lt;/span&gt; &lt;span class=&quot;mo&quot;&gt;0000&lt;/span&gt; &lt;span class=&quot;mo&quot;&gt;0010&lt;/span&gt; &lt;span class=&quot;mo&quot;&gt;0001&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The idea here is to take all the bits and place each of them on one pixel of the image. Since there are 192 bits (count them!) we will need a image file that is &lt;em&gt;at least&lt;/em&gt; 192 pixels. Good thing our picture of Andy is 496 x 274 = 135904 pixels! This gives you an idea of exactly how much you can fit into Andy.&lt;/p&gt;
+
+&lt;p&gt;So where in the pixel do we put this bit?? Well each pixel in an image must be a fixed number of bits long (so computers can read the image correctly), so we cannot just squeeze this bit in between the bits of the pixel. No, the only other option is to &lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Pick a bit in the pixel&lt;/li&gt;
+&lt;li&gt;Remove this bit&lt;/li&gt;
+&lt;li&gt;Replace it with a bit from the message&lt;/li&gt;
+&lt;li&gt;Repeat until all message bits are in pixels&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;To change the color of the pixel the least (to make our efforts the more inconspicuous) we are going to peel of the LSB (least significant bit) from the image. Here&amp;#39;s a visual:&lt;/p&gt;
+
+&lt;table&gt;
+&lt;th&gt;
+    &lt;td&gt;
+        Before
+    &lt;/td&gt;
+    &lt;td&gt;
+        After
+    &lt;/td&gt;
+&lt;/th&gt;
+&lt;tr&gt;
+    &lt;td&gt;
+        Replacing the most significant bit (left most)
+    &lt;/td&gt;
+    &lt;td style=&quot;background-color:#0000FF;&quot;&gt;&lt;/td&gt;
+    &lt;td style=&quot;background-color:#8000FF;&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;Binary:&lt;/td&gt;
+    &lt;td&gt;
+        000000000000000011111111
+    &lt;/td&gt;
+    &lt;td&gt;
+        100000000000000011111111
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;
+        Replacing the least significant bit (right most)
+    &lt;/td&gt;
+    &lt;td style=&quot;background-color:#0000FF;&quot;&gt;&lt;/td&gt;
+    &lt;td style=&quot;background-color:#0000FE;&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;Binary:&lt;/td&gt;
+    &lt;td&gt;
+        000000000000000011111111
+    &lt;/td&gt;
+    &lt;td&gt;
+        000000000000000011111110
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Of course there is a 50% chance that the bit we remove and the bit we replace will coincidentally be the same. In this case literally nothing is changed for that pixel.&lt;/p&gt;
+
+&lt;h1&gt;The Code&lt;/h1&gt;
+
+&lt;p&gt;I&amp;#39;ve, after learning about this method, written a program to automate the process. In it though I have reserved the first 32 pixels to tell the program how long the message is so it will know how much of the image to decode.&lt;/p&gt;
+
+&lt;p&gt;Written in C++ &amp;amp; Qt, the code starts by creating a copy of the image so the copy can be changed and encoded. It then initializes x and y, which represent the coordinates of the image: (0, 0) means top left. Finally it gets the message length to encode into the first 32 pixels of the image.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-C++&quot; data-lang=&quot;C++&quot;&gt;&lt;span class=&quot;n&quot;&gt;QImage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Cipher&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;encodeImage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;QImage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;encodedImage&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;QImage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;copy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()));&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;header&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;message&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;NULL&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bitsPerPixel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;encodedImage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;then we have this ugly thing:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-C++&quot; data-lang=&quot;C++&quot;&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mask&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x0001&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mask&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x0000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mask&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This loop initializes &lt;code&gt;mask&lt;/code&gt; to equal 1. Then each pass of the loop shifts all the bits in mask to the left then saves that value back to mask. A quick reminder on what left bit shift is:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-C++&quot; data-lang=&quot;C++&quot;&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mask&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;mask&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;   &lt;span class=&quot;c1&quot;&gt;//      mask = 0 ...23 0&amp;#39;s... 0000 0001&lt;/span&gt;
+
+            &lt;span class=&quot;c1&quot;&gt;// Shift all bits one to the left, then save it in &amp;#39;mask&amp;#39;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;mask&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//      mask = 0 ...23 0&amp;#39;s... 0000 0010&lt;/span&gt;
+
+            &lt;span class=&quot;c1&quot;&gt;// Shift again&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;mask&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//      mask = 0 ...23 0&amp;#39;s... 0000 0100&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// and so on. until that lone &amp;#39;1&amp;#39; is shifted all&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// the way to the end (left), after that it is simply&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// shifted out of existence. Then only 0&amp;#39;s are left.&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// When this happens &lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;mask&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;// is true and the loop exits&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This loop generates a variable (&lt;code&gt;mask&lt;/code&gt;) that will only contain &amp;#39;0&amp;#39;s except for one &amp;#39;1&amp;#39;, this &amp;#39;1&amp;#39; will also be in every location on the variable only once. This is great news.&lt;/p&gt;
+
+&lt;p&gt;Basically the location of the &amp;#39;1&amp;#39; in &lt;code&gt;mask&lt;/code&gt; decides which bit of &lt;code&gt;header&lt;/code&gt; to use. &lt;/p&gt;
+
+&lt;div class=&quot;message&quot;&gt;This first loop encodes the &lt;code&gt;header&lt;/code&gt; variable into the image which is a lot like encoding the actual message, this is done in the second loop. &lt;code&gt;header&lt;/code&gt; just contains the length of the message, which the program needs to know for later decoding. &lt;/div&gt;
+
+&lt;p&gt;This can be done by using a bitwise AND. Bitwise AND (&lt;code&gt;&amp;amp;&lt;/code&gt;) takes two bits and outputs one. If both these bits are &amp;#39;1&amp;#39; it will output &amp;#39;1&amp;#39;, otherwise the output will be &amp;#39;0&amp;#39;. Because &lt;code&gt;mask&lt;/code&gt; moves its &amp;#39;1&amp;#39; along to the left, we can get each bit of &lt;code&gt;header&lt;/code&gt; from doing &lt;code&gt;header &amp;amp; mask&lt;/code&gt; in this loop:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-C++&quot; data-lang=&quot;C++&quot;&gt;&lt;span class=&quot;n&quot;&gt;mask&lt;/span&gt;           &lt;span class=&quot;mo&quot;&gt;000000000001&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;header&lt;/span&gt;       &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;mo&quot;&gt;010100110101&lt;/span&gt;
+             &lt;span class=&quot;o&quot;&gt;---------------&lt;/span&gt;
+               &lt;span class=&quot;mo&quot;&gt;000000000001&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;mask&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;       &lt;span class=&quot;mo&quot;&gt;000000000010&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;header&lt;/span&gt;       &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;mo&quot;&gt;010100110101&lt;/span&gt;
+              &lt;span class=&quot;o&quot;&gt;---------------&lt;/span&gt;
+               &lt;span class=&quot;mo&quot;&gt;000000000000&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Afterwords we want to remove the least significant bit from the pixel:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-C++&quot; data-lang=&quot;C++&quot;&gt;&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mask&lt;/span&gt;          &lt;span class=&quot;mi&quot;&gt;111111111110&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;pixels&lt;/span&gt;       &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;101010111001&lt;/span&gt;
+             &lt;span class=&quot;o&quot;&gt;---------------&lt;/span&gt;
+               &lt;span class=&quot;mi&quot;&gt;101010111000&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then we fuse the two together with bitwise OR (&lt;code&gt;|&lt;/code&gt;):&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-C++&quot; data-lang=&quot;C++&quot;&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mask&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;header&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;         &lt;span class=&quot;mo&quot;&gt;000000000001&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mask&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pixel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;       &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;101010111000&lt;/span&gt;
+                      &lt;span class=&quot;o&quot;&gt;---------------&lt;/span&gt;
+                        &lt;span class=&quot;mi&quot;&gt;101010111001&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;message&quot;&gt;Keep in mind that the binary in the examples above is actually much longer.&lt;/div&gt;
+
+&lt;p&gt;The same thing in C++ &amp;amp; Qt:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-C++&quot; data-lang=&quot;C++&quot;&gt;        &lt;span class=&quot;n&quot;&gt;QRgb&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bit&lt;/span&gt;   &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;bool&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;header&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mask&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;QRgb&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pixel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;encodedImage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pixel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;mh&quot;&gt;0x0001&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+        &lt;span class=&quot;n&quot;&gt;encodedImage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setPixel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pixel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Finally to keep iterating through the image left to right and top to bottom, we write this at the end of the loop:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-C++&quot; data-lang=&quot;C++&quot;&gt;        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The encoding process is mostly the same for the actual message, except now there is an outer loop that iterates through each character of the message, then an inner loop which encodes the character into 16 pixels of the image. Because the header was an &lt;code&gt;int&lt;/code&gt; it took up 32 bits and used 32 pixels. To make sure each character only uses 16 pixels, &lt;code&gt;mask&lt;/code&gt; is changed from &lt;code&gt;int&lt;/code&gt; to &lt;code&gt;ushort&lt;/code&gt;, a variable that only takes up 16 bits of space. Because a &lt;code&gt;ushort&lt;/code&gt; is only 16 bits long, and &lt;code&gt;mask&lt;/code&gt; is shifted one bit every iteration, the inner loop will run out after 16 iterations, encoding 16 pixels.&lt;/p&gt;
+
+&lt;h2&gt;The final code:&lt;/h2&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-C++&quot; data-lang=&quot;C++&quot;&gt;&lt;span class=&quot;n&quot;&gt;QImage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Cipher&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;encodeImage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;QImage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;encodedImage&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;QImage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;copy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()));&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;header&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;message&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;NULL&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bitsPerPixel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;encodedImage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mask&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x0001&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mask&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x0000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mask&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;QRgb&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bit&lt;/span&gt;   &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;bool&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;header&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mask&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;QRgb&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pixel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;encodedImage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pixel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;mh&quot;&gt;0x0001&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+        &lt;span class=&quot;n&quot;&gt;encodedImage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setPixel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pixel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;QChar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;character&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;begin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;character&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;character&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ushort&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mask&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x0001&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mask&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x0000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mask&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;QRgb&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bit&lt;/span&gt;   &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;bool&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;character&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;unicode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;mask&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;QRgb&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pixel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;encodedImage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pixel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;mh&quot;&gt;0x0001&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+            &lt;span class=&quot;n&quot;&gt;encodedImage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setPixel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pixel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;encodedImage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+                &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;encodedImage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h1&gt;This is so Meta&lt;/h1&gt;
+
+&lt;p&gt;To come full circle, here is Andy again, except this time this &lt;strong&gt;entire&lt;/strong&gt; post is encoded into him:&lt;/p&gt;
+
+&lt;div&gt;&lt;img src=&quot;/media/2014-08-04-stickshifts-n-safetybelts/andy-encoded-alot.png&quot; alt=&quot;This image contains the &lt;b&gt;entire&lt;/b&gt; post.&quot; /&gt;
+&lt;blockquote style=&quot;border-left: 10px solid #D5D5D5;&quot;&gt;This image contains the &lt;b&gt;entire&lt;/b&gt; post.&lt;/blockquote&gt;&lt;/div&gt;
+
+&lt;p&gt;&amp;mdash; Michael&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Heavy Duty Motion Detector: Part I</title>

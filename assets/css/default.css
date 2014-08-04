@@ -146,6 +146,10 @@ img {
 	z-index: 4;
 }
 
+#citations {
+	font-size: 75%;
+}
+
 #following_menu {
 	position: fixed;
 	top: 0;
@@ -298,6 +302,10 @@ img.site-icon-page {
 
 a.site-title:hover, .copyright a:hover {
 	text-decoration: underline;
+}
+
+a.scroll:focus {
+	outline: 0;
 }
 
 table {
@@ -560,6 +568,7 @@ pre code {
 
 .categoryBox p {
 	margin: 5px;
+	margin-top: 15px;
 	text-align: center;
 	font-weight: bold;
 	text-transform: uppercase;
