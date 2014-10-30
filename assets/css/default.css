@@ -120,13 +120,13 @@ img {
 	margin: 15px 0px;
 }
 
-#post-info h2:before {
+/*#post-info h2:before {
 	content: "“";
 }
 
 #post-info h2:after {
 	content: "”";
-}
+}*/
 
 #post-info h3 {
 	text-transform: uppercase;
@@ -189,7 +189,7 @@ img {
 	width: auto;
 	left: 20px;
 	top: 50%;
-	margin-top: -12px;	
+	margin-top: -12px;
 	position: absolute;
 	z-index: 2;
 }
@@ -315,6 +315,10 @@ table {
 	overflow: auto;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+table#contents {
+	width: 60%;
 }
 
 td, th {
@@ -551,8 +555,8 @@ pre code {
 
 .categoryBox {
 	position: relative;
-	width: 220px; 
-	height: 300px; 
+	width: 220px;
+	height: 300px;
 	background-color: #fff;
 	border-radius: 4px;
 	box-shadow: 1px 1px 2px 2px #888888;

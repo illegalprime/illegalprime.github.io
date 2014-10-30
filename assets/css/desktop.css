@@ -1,11 +1,12 @@
 @import url(default.css);
 
 #post-info {
-	position: absolute; 
-	width: 32%; 
+	position: absolute;
+	width: 32%;
 	bottom: 0;
 	margin-bottom: 12px;
-	left: 5%;"
+	left: 5%;
+	padding: 20px;
 }
 
 #post-info h1 {
@@ -15,9 +16,9 @@
 }
 
 #home-title {
-	position: absolute; 
+	position: absolute;
 	height: 100%;
-	width: 32%; 
+	width: 32%;
 	top: 25px;
 	left: 15px;
 	text-align: right;

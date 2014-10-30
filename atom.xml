@@ -4,7 +4,7 @@
  <title>Michael Eden</title>
  <link href="https://illegalprime.github.io//atom.xml" rel="self"/>
  <link href="https://illegalprime.github.io//"/>
- <updated>2014-08-06T00:48:26-05:00</updated>
+ <updated>2014-10-30T03:20:02-04:00</updated>
  <id>https://illegalprime.github.io/</id>
  <author>
    <name>Michael Eden</name>
@@ -13,9 +13,183 @@
 
  
  <entry>
+   <title>WiFi Sharing in Linux with two wireless cards</title>
+   <link href="https://illegalprime.github.io//blog/wireless-sharing"/>
+   <updated>2014-08-07T00:00:00-04:00</updated>
+   <id>https://illegalprime.github.io//blog/wireless-sharing</id>
+   <content type="html">&lt;h1&gt;Intro&lt;/h1&gt;
+
+&lt;p&gt;I have spent a long long while looking for solutions to this problem over the great Linux forums, and in truth its not easy to do. Most of the scripts I&amp;#39;ve come across did not work, but from all this experience I&amp;#39;ve pieced together a collection of DHCPD rules and &lt;code&gt;iptable&lt;/code&gt; commands that should allow you to use &lt;code&gt;airbase-ng&lt;/code&gt; to create a WiFi hotspot with optional WEP Encryption.&lt;/p&gt;
+
+&lt;p&gt;So here it is.&lt;/p&gt;
+
+&lt;h1&gt;Prerequisites&lt;/h1&gt;
+
+&lt;p&gt;In order to have this script run successfully you will need:&lt;/p&gt;
+
+&lt;h2&gt;The Hardware&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A wireless card or Ethernet card that is connected to the Internet.&lt;/li&gt;
+&lt;li&gt;Another wireless card that can be put into monitor mode&lt;/li&gt;
+&lt;li&gt;Kali Linux (Recommended)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;The Software&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The &lt;code&gt;aircrack-ng&lt;/code&gt; suite, notably &lt;code&gt;airbase-ng&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mitmproxy&lt;/code&gt; available by issuing  &lt;code&gt;sudo pip2 install mitmproxy&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;dhcpd&lt;/code&gt; which is &lt;strong&gt;not&lt;/strong&gt; available in Kali by default and one can install it through &lt;code&gt;apt-get install isc-dhcp-server&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1&gt;The Script&lt;/h1&gt;
+
+&lt;h2&gt;Variable Names&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;LAN_IF&lt;/code&gt; is the interface connected to the Internet.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;LAN_GATEWAY&lt;/code&gt; is the IP of the main router to which &lt;code&gt;LAN_IF&lt;/code&gt; connects to.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AP_IF&lt;/code&gt; is the monitor mode capable interface.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AP_CHANNEL&lt;/code&gt; specifies the wireless channel of the AP.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AP_ESSID&lt;/code&gt; is the AP name.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AP_GATEWAY&lt;/code&gt; is the router IP clients connected to the AP will see.&lt;/li&gt;
+&lt;li&gt;For a range of IPs of &lt;code&gt;AP_RANGE&lt;/code&gt; given to the clients, &lt;code&gt;AP_SUBNET&lt;/code&gt; and &lt;code&gt;AP_NETMASK&lt;/code&gt; should stay the same.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AP_MTU&lt;/code&gt; is the &lt;a href=&quot;https://en.wikipedia.org/wiki/Maximum_transmission_unit&quot;&gt;MTU&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Finally &lt;code&gt;MITMPROXY_FLAGS&lt;/code&gt; are the arguments that get appended on to mitmproxy at runtime.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Change these arguments to fit your needs. Also if you want WPA/WPA2 encryption, use &lt;a href=&quot;http://nims11.wordpress.com/2012/04/27/hostapd-the-linux-way-to-create-virtual-wifi-access-point/&quot;&gt;hostapd&lt;/a&gt; with a suitable Atheros wireless card.&lt;/p&gt;
+
+&lt;h2&gt;The Entire Script&lt;/h2&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-BASH&quot; data-lang=&quot;BASH&quot;&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/bash&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;LAN_IF&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;wlan1
+&lt;span class=&quot;nv&quot;&gt;LAN_GATEWAY&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;ip -4 route list &lt;span class=&quot;nb&quot;&gt;type &lt;/span&gt;unicast dev &lt;span class=&quot;nv&quot;&gt;$LAN_IF&lt;/span&gt; exact 0/0 &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; cut -d &lt;span class=&quot;s1&quot;&gt;&amp;#39; &amp;#39;&lt;/span&gt; -f 3&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;nv&quot;&gt;AP_IF&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;wlan0
+&lt;span class=&quot;nv&quot;&gt;AP_CHANNEL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;6
+&lt;span class=&quot;nv&quot;&gt;AP_ESSID&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Do not connect to&amp;#39;&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;AP_GATEWAY&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;192.168.2.1&amp;#39;&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;AP_SUBNET&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;192.168.2.0&amp;#39;&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;AP_NETMASK&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;255.255.255.0&amp;#39;&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;AP_RANGE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;192.168.2.2 192.168.2.255&amp;#39;&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;AP_MTU&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1400
+
+&lt;span class=&quot;nv&quot;&gt;MITMPROXY_FLAGS&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#MITMPROXY_FLAGS=&amp;quot;-s /root/Desktop/image_local.py&amp;quot;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;$(id -u)&amp;quot;&lt;/span&gt; !&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;0&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;then&lt;/span&gt; 
+    &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Run it as root.&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;exit &lt;/span&gt;1
+&lt;span class=&quot;k&quot;&gt;fi&lt;/span&gt;
+
+ifconfig &lt;span class=&quot;nv&quot;&gt;$AP_IF&lt;/span&gt; down
+iwconfig &lt;span class=&quot;nv&quot;&gt;$AP_IF&lt;/span&gt; mode monitor channel &lt;span class=&quot;nv&quot;&gt;$AP_CHANNEL&lt;/span&gt;
+ifconfig &lt;span class=&quot;nv&quot;&gt;$AP_IF&lt;/span&gt; up
+
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;$(iwconfig $AP_IF | grep -o Mode:Monitor)&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;then&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;[FAIL] Could not put interface $AP_IF in monitor mode.&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;       Exiting...&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;exit&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;[ OK ] monitor mode on interface $AP_IF.&amp;quot;&lt;/span&gt;
+    sleep 1
+&lt;span class=&quot;k&quot;&gt;fi&lt;/span&gt;
+
+xterm -geometry 75x15+1+0 -T &lt;span class=&quot;s2&quot;&gt;&amp;quot;Airbase - $AP_ESSID - $AP_IF&amp;quot;&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+       -e &lt;span class=&quot;s2&quot;&gt;&amp;quot;airbase-ng -c $AP_CHANNEL -e &amp;#39;$AP_ESSID&amp;#39; $AP_IF&amp;quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;amp;&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;AIRBASE_PID&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$!&lt;/span&gt;
+sleep 3
+
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;$(ps -A | grep -o $AIRBASE_PID)&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;then&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;[FAIL] Cannot find airbase-ng, quitting.&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;exit&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;[ OK ] Started airbase-ng&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;fi&lt;/span&gt;
+
+ifconfig lo up
+ifconfig at0 up
+sleep 1
+ifconfig at0 &lt;span class=&quot;nv&quot;&gt;$AP_GATEWAY&lt;/span&gt; netmask &lt;span class=&quot;nv&quot;&gt;$AP_NETMASK&lt;/span&gt;
+ifconfig at0 mtu &lt;span class=&quot;nv&quot;&gt;$AP_MTU&lt;/span&gt;
+route add -net &lt;span class=&quot;nv&quot;&gt;$AP_SUBNET&lt;/span&gt; netmask &lt;span class=&quot;nv&quot;&gt;$AP_NETMASK&lt;/span&gt; gw &lt;span class=&quot;nv&quot;&gt;$AP_GATEWAY&lt;/span&gt;
+
+iptables --flush
+iptables --table nat --flush
+iptables --delete-chain
+iptables --table nat --delete-chain
+
+&lt;span class=&quot;nb&quot;&gt;echo &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt; &amp;gt; /proc/sys/net/ipv4/ip_forward
+
+iptables -t nat -A PREROUTING -p udp -j DNAT --to &lt;span class=&quot;nv&quot;&gt;$LAN_GATEWAY&lt;/span&gt;
+iptables -P FORWARD ACCEPT
+iptables --append FORWARD --in-interface at0 -j ACCEPT
+iptables --table nat --append POSTROUTING --out-interface &lt;span class=&quot;nv&quot;&gt;$LAN_IF&lt;/span&gt; -j MASQUERADE
+iptables -t nat -A PREROUTING -p tcp --destination-port &lt;span class=&quot;m&quot;&gt;80&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+         -j REDIRECT --to-port 8080
+
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;[ OK ] IP table rules set.&amp;quot;&lt;/span&gt;
+
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;authoritative;&lt;/span&gt;
+
+&lt;span class=&quot;s2&quot;&gt;default-lease-time 600;&lt;/span&gt;
+&lt;span class=&quot;s2&quot;&gt;max-lease-time 7200;&lt;/span&gt;
+
+&lt;span class=&quot;s2&quot;&gt;subnet $AP_SUBNET netmask $AP_NETMASK {&lt;/span&gt;
+&lt;span class=&quot;s2&quot;&gt;    option routers $AP_GATEWAY;&lt;/span&gt;
+&lt;span class=&quot;s2&quot;&gt;    option subnet-mask $AP_NETMASK;&lt;/span&gt;
+&lt;span class=&quot;s2&quot;&gt;    option domain-name \&amp;quot;$AP_ESSID\&amp;quot;;&lt;/span&gt;
+&lt;span class=&quot;s2&quot;&gt;    option domain-name-servers $LAN_GATEWAY;&lt;/span&gt;
+&lt;span class=&quot;s2&quot;&gt;    range $AP_RANGE;&lt;/span&gt;
+&lt;span class=&quot;s2&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt; &amp;gt; /etc/dhcpd-rogue.conf
+
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;[ OK ] Adding DHCPD configuration.&amp;quot;&lt;/span&gt;
+
+touch /var/run/dhcpd.pid
+xterm -geometry 75x20+1+100 -T DHCP &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+      -e dhcpd -d -f -cf &lt;span class=&quot;s2&quot;&gt;&amp;quot;/etc/dhcpd-rogue.conf&amp;quot;&lt;/span&gt; -pf &lt;span class=&quot;s2&quot;&gt;&amp;quot;/var/run/dhcpd.pid&amp;quot;&lt;/span&gt; at0 &lt;span class=&quot;p&quot;&gt;&amp;amp;&lt;/span&gt; 
+&lt;span class=&quot;nv&quot;&gt;DHCPD_PID&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$!&lt;/span&gt;
+sleep 3
+
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$?&lt;/span&gt; -ne &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;then&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;[FAIL] DHCPD Failed to start.&amp;quot;&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;exit&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;[ OK ] Started DHCPD Server&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;fi&lt;/span&gt;
+
+mitmproxy -T --host --anticache -p &lt;span class=&quot;m&quot;&gt;8080&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$MITMPROXY_FLAGS&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#echo &amp;quot;Hit Enter to tear down the network.&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#read&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Cleaning up...&amp;quot;&lt;/span&gt;
+
+&lt;span class=&quot;nb&quot;&gt;kill&lt;/span&gt; -SIGINT &lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;cat /var/run/dhcpd.pid&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;kill&lt;/span&gt; -SIGINT &lt;span class=&quot;nv&quot;&gt;$AIRBASE_PID&lt;/span&gt;
+
+ifconfig &lt;span class=&quot;nv&quot;&gt;$AP_IF&lt;/span&gt; down
+iwconfig &lt;span class=&quot;nv&quot;&gt;$AP_IF&lt;/span&gt; mode managed
+ifconfig &lt;span class=&quot;nv&quot;&gt;$AP_IF&lt;/span&gt; up
+
+&lt;span class=&quot;nb&quot;&gt;echo &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &amp;gt; /proc/sys/net/ipv4/ip_forward
+iptables --flush
+iptables --table nat --flush
+iptables --delete-chain
+iptables --table nat --delete-chain
+
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Done.&amp;quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This had worked for me in Kali Linux when this post was published, so please comment if anything stops working.&lt;/p&gt;
+
+&lt;p&gt;&amp;mdash; Michael&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>Bitshifts &amp; Safetybelts</title>
    <link href="https://illegalprime.github.io//blog/bitshifts-n-safetybelts"/>
-   <updated>2014-08-04T00:00:00-05:00</updated>
+   <updated>2014-08-04T00:00:00-04:00</updated>
    <id>https://illegalprime.github.io//blog/bitshifts-n-safetybelts</id>
    <content type="html">&lt;h1&gt;The Steganographic Way&lt;/h1&gt;
 
@@ -236,7 +410,7 @@
  <entry>
    <title>Heavy Duty Motion Detector: Part I</title>
    <link href="https://illegalprime.github.io//blog/hdmd-rectifier"/>
-   <updated>2014-08-01T00:00:00-05:00</updated>
+   <updated>2014-08-01T00:00:00-04:00</updated>
    <id>https://illegalprime.github.io//blog/hdmd-rectifier</id>
    <content type="html">&lt;h1&gt;The Idea&lt;/h1&gt;
 
@@ -248,7 +422,7 @@
 
 &lt;h2&gt;Why?&lt;/h2&gt;
 
-&lt;p&gt;Long ago the lightswitch in my closet broke, forcing me to use the pull chain switch to bring light to my otherwise dim clothes. As I stood there in my shame pulling a string of yarn I had tied to lengthen the chain, I realized there was a better way.&lt;/p&gt;
+&lt;p&gt;Long ago the light switch in my closet broke, forcing me to use the pull chain switch to bring light to my otherwise dim clothes. As I stood there in my shame pulling a string of yarn I had tied to lengthen the chain, I realized there was a better way.&lt;/p&gt;
 
 &lt;h3&gt;A Better Way&lt;/h3&gt;
 
@@ -284,16 +458,23 @@ Now the first 1&amp;mu;F capacitor is there to limit the current of our circuit 
 &lt;div&gt;&lt;img src=&quot;/media/hdmd-acdc-converter/mathsForCapacitor.png&quot; alt=&quot;&quot; /&gt;
 &lt;/div&gt;
 
-&lt;p&gt;The small resistor is there to guarantee that when the capacitor is charging and discharging quickly a huge current won&amp;#39;t accompany it. &lt;/p&gt;
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
 
-&lt;div&gt;&lt;img src=&quot;/media/hdmd-acdc-converter/cover.jpg&quot; alt=&quot;And the end product!&quot; width=&quot;100%&quot; /&gt;
-&lt;blockquote style=&quot;border-left: 10px solid #D5D5D5;&quot;&gt;And the end product!&lt;/blockquote&gt;&lt;/div&gt;
+&lt;p&gt;A capacitor is used instead of a 6 Watt resistor because it heats up significantly less. Another small 100&amp;Omega; resistor is placed in series to act as a fuse, burning up if it ever goes beyond its power rating, which is 0.25 Watts. This gives a maximum current of:&lt;/p&gt;
+
+&lt;div&gt;&lt;img src=&quot;/media/hdmd-acdc-converter/mathsForFuse.png&quot; alt=&quot;&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;A little solder and a lot of connections later:&lt;/p&gt;
+
+&lt;div&gt;&lt;img src=&quot;/media/hdmd-acdc-converter/cover.jpg&quot; alt=&quot;The end product!&quot; width=&quot;100%&quot; /&gt;
+&lt;blockquote style=&quot;border-left: 10px solid #D5D5D5;&quot;&gt;The end product!&lt;/blockquote&gt;&lt;/div&gt;
 
 &lt;p&gt;Hey! Michael! That end product has more components than the schematic. What you tryin to pull?&lt;/p&gt;
 
 &lt;p&gt;Well I didn&amp;#39;t have Zener diodes with enough voltage so I used one that is about 10V and another that is 3.3V. To bump the 3.3V to a safer 4.5V, I padded it with two normal diodes adding 0.6V each to the sum:&lt;/p&gt;
 
-&lt;div&gt;&lt;img src=&quot;/media/hdmd-acdc-converter/diode-hack.png&quot; alt=&quot;Diode Hack&quot; /&gt;
+&lt;div&gt;&lt;img src=&quot;/media/hdmd-acdc-converter/diode-hack.png&quot; alt=&quot;Diode Hack&quot; width=&quot;50%&quot; /&gt;
 &lt;blockquote style=&quot;border-left: 10px solid #D5D5D5;&quot;&gt;Diode Hack&lt;/blockquote&gt;&lt;/div&gt;
 
 &lt;p&gt;Finally, here is the PCB layout I made for the circuit, you can download the netlist data for the entire project &lt;a href=&quot;/media/hdmd-acdc-converter/ThreeBoards.cir&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
@@ -308,7 +489,7 @@ Now the first 1&amp;mu;F capacitor is there to limit the current of our circuit 
  <entry>
    <title>My name is Mike India Kilo Echo</title>
    <link href="https://illegalprime.github.io//blog/phonetic-alphabet"/>
-   <updated>2014-07-20T00:00:00-05:00</updated>
+   <updated>2014-07-20T00:00:00-04:00</updated>
    <id>https://illegalprime.github.io//blog/phonetic-alphabet</id>
    <content type="html">&lt;h3&gt;My personal phonetic alphabet that I use to clarify all misunderstandings when I try to spell tricky things like &amp;quot;Michael&amp;quot; over the phone:&lt;/h3&gt;
 
@@ -336,7 +517,7 @@ Now the first 1&amp;mu;F capacitor is there to limit the current of our circuit 
  <entry>
    <title>Natural Timing: A Portal 2 Custom Map</title>
    <link href="https://illegalprime.github.io//blog/natural-timing-portal2"/>
-   <updated>2014-07-19T00:00:00-05:00</updated>
+   <updated>2014-07-19T00:00:00-04:00</updated>
    <id>https://illegalprime.github.io//blog/natural-timing-portal2</id>
    <content type="html">&lt;h2&gt;Available for download &lt;a href=&quot;http://steamcommunity.com/sharedfiles/filedetails/?id=278962722&quot;&gt;here&lt;/a&gt;.&lt;/h2&gt;
 
@@ -361,7 +542,7 @@ Now the first 1&amp;mu;F capacitor is there to limit the current of our circuit 
  <entry>
    <title>Launch</title>
    <link href="https://illegalprime.github.io//blog/launch"/>
-   <updated>2014-07-16T00:00:00-05:00</updated>
+   <updated>2014-07-16T00:00:00-04:00</updated>
    <id>https://illegalprime.github.io//blog/launch</id>
    <content type="html">&lt;h1&gt;Website Launch&lt;/h1&gt;
 
@@ -399,7 +580,7 @@ Now the first 1&amp;mu;F capacitor is there to limit the current of our circuit 
  <entry>
    <title>This GitHub IO Page uses Thinny 2 &amp; Jekyll</title>
    <link href="https://illegalprime.github.io//blog/thinny-2"/>
-   <updated>2014-01-22T00:00:00-06:00</updated>
+   <updated>2014-01-22T00:00:00-05:00</updated>
    <id>https://illegalprime.github.io//blog/thinny-2</id>
    <content type="html">&lt;h1&gt;A Word from the Creator of Thinny 2&lt;/h1&gt;
 

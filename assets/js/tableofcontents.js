@@ -3,6 +3,7 @@ var chapters = article.getElementsByTagName("h1");
 
 var contents = document.createElement("table");
 contents.innerHTML = "<th>Table of Contents</th>";
+contents.id = "contents"
 
 for (var i = 0, len = chapters.length; i < len; i++) {
 	var ID = "Chapter_" + i;
