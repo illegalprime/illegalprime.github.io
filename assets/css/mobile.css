@@ -25,6 +25,32 @@ h2 {
 	opacity: 1;
 	text-align: center;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-image: none !important;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+#following_menu.collapsed {
+	width: 60px;
+	height: 60px;
+}
+
+#menu_btn {
+	color: #fff;
+	position: absolute;
+	top: 0px;
+	right: 3px;
+	padding: 20px;
+	display: block;
+}
+
+#following_menu_container {
+	display: none;
+}
+
+#following_menu_container a {
+	display: block;
+	margin-top: 10px;
+	padding: 10px;
 }
 
 #following_overlay {
@@ -33,16 +59,23 @@ h2 {
 }
 
 #following_social_container {
+	display: block;
+	position: static;
+	margin-top: 10px;
+	text-align: left;
+	margin-right: 10px;
+	/* UNCOMMENT THIS: */
 	display: none;
 }
 
 #top_menu {
-	position: absolute;
+	display: none;
+	/*position: absolute;
 	bottom: 0;
 	right: 0;
 	width: 100%;
 	margin: 1%;
-	text-align: center;
+	text-align: center;*/
 }
 
 .menu_bar a {
@@ -70,8 +103,11 @@ h2 {
 }
 
 #home-title h1 {
+	margin-top: 25px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	margin-right: 0px;
 	font-size: 50px;
-	margin: 5px 0;
 }
 
 #home-title h2 {
@@ -80,23 +116,25 @@ h2 {
 }
 
 #home-title h3 {
-	font-size: 25px;
-	margin: 90px 0 0 0;
-	color: gray;
+	display: none;
+	/*font-size: 25px;
+	margin: 180px 0 0 0;
+	color: gray;*/
 }
 
 #home-title {
 	width: 100%;
-	position: absolute; 
+	position: absolute;
 	top: 30px;
 	left: 0;
 	text-align: center;
 }
 
 .social-links {
-	display: inline-block;
+	display: none;
+	/*display: inline-block;
 	top: 10px;
-	right: 5px;
+	right: 5px;*/
 }
 
 #nav-icon {

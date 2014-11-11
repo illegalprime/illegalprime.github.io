@@ -26,8 +26,10 @@
 	<link rel="apple-touch-icon" href="https://illegalprime.github.io//assets/images/icon.png">
 	<link rel="shortcut icon" href="https://illegalprime.github.io//assets/images/favicon.ico">
 	<link rel="alternate" type="application/rss+xml" title="RSS" href="https://illegalprime.github.io//atom.xml">
+	<script type="text/javascript" src="/assets/js/jquery.min.js"></script>
 	<script type="text/javascript" src="/assets/js/additions.js"></script>
 </head>
+
 
 
 <body>
@@ -39,8 +41,11 @@
   js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1482009368710102&version=v2.0";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<div id='following_menu' style="background-image: url(/media/hdmd-acdc-converter/cover.jpg); background-position: 0%  70% ;">
+<div id='following_menu' class="collapsed" style="background-image: url(/media/hdmd-acdc-converter/cover.jpg); background-position: 0%  70% ;">
 	<div id="following_overlay">
+		<div id="menu_btn">
+			<a id="menu_link"><span class="genericon genericon-menu"></span></a>
+		</div>
 		<div id="following_social_container">
 			
 <a href="mailto:themichaeleden@gmail.com" target="" title="Email me"><span class="genericon genericon-mail"></span></a>
@@ -70,6 +75,7 @@
 		</div>
 	</div>
 </div>
+
 <header class="clean" style="background-image: url(/media/hdmd-acdc-converter/cover.jpg);height: 100%;">
 	
 	<!--
@@ -133,6 +139,7 @@
 </div>
 
 </div>
+
 	<div id="post-info">
 		<h1>Heavy Duty Motion Detector: Part I</h1>
 		

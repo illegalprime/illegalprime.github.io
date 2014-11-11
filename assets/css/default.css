@@ -25,6 +25,12 @@ header, footer {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+header.homeHeader {
+	height: 450px;
+	background-attachment:fixed;
+	background-position: 50% 80%;
+}
+
 header a, footer a {
 	transition-duration: .25s;
 	text-decoration: none;
@@ -136,6 +142,10 @@ img {
 
 #home-title {
 	z-index: 1;
+}
+
+#menu_btn {
+	display: none;
 }
 
 #top_menu {
