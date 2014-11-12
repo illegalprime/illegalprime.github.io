@@ -10,28 +10,18 @@ h2 {
 	font-size: 28px;
 }
 
-#post-info {
-	padding-top: 0px;
-	padding-bottom: 10px;
-	width: 90%;
-}
-
 #following_menu {
 	position: fixed;
 	z-index: 2;
 	top: 0;
 	right: 0;
-	width: 100%;
+	width: 60px;
+	height: 60px;
 	opacity: 1;
 	text-align: center;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	background-image: none !important;
 	background-color: rgba(0, 0, 0, 0.7);
-}
-
-#following_menu.collapsed {
-	width: 60px;
-	height: 60px;
 }
 
 #menu_btn {
@@ -91,9 +81,9 @@ h2 {
 
 #post-info {
 	width: 90%;
-	left: 5%;
-	margin-left: 0px;
+	right: 5%;
 	top: 10%;
+	padding-top: 0px;
 }
 
 #post-info h1 {

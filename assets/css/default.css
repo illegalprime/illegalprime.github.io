@@ -28,7 +28,7 @@ header, footer {
 header.homeHeader {
 	height: 450px;
 	background-attachment:fixed;
-	background-position: 50% 80%;
+	background-position: center bottom;
 }
 
 header a, footer a {
@@ -64,10 +64,11 @@ h1 {
 #post-info {
 	color: white;
 	background-color: rgba(0, 0, 0, 0.63);
-	padding-left: 8px;
-	padding-bottom: 7px;
 	border-radius: 5px;
-	padding-right: 8px;
+}
+
+#post-info > * {
+	padding: 8px 16px;
 }
 
 #article>h1 {
@@ -163,8 +164,7 @@ img {
 #following_menu {
 	position: fixed;
 	top: 0;
-	width: 100%;
-	background-size: 100% auto;
+	background-size: auto;
 	opacity: 0.5;
 	z-index: 2;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -624,4 +624,13 @@ pre code {
 
 body.plugin {
 	width: 100%;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
