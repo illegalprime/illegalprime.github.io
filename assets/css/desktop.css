@@ -82,6 +82,7 @@
 #following_menu {
 	width: 100% !important;
 	height: 45px !important;
+	top: 0;
 }
 
 #following_menu_container {
@@ -90,4 +91,8 @@
 
 #following_social_container {
 	display: block !important;
+}
+
+.overflowingDesktop {
+	overflow: hidden;
 }

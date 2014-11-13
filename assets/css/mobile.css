@@ -12,8 +12,8 @@ h2 {
 
 #following_menu {
 	position: fixed;
-	z-index: 2;
-	top: 0;
+	z-index: 5;
+	bottom: 0;
 	right: 0;
 	width: 60px;
 	height: 60px;

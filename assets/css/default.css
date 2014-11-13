@@ -163,7 +163,6 @@ img {
 
 #following_menu {
 	position: fixed;
-	top: 0;
 	background-size: auto;
 	opacity: 0.5;
 	z-index: 2;
