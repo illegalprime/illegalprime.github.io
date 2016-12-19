@@ -2,16 +2,20 @@
 layout: default
 ---
 
+<!-- Header -->
 <div class="top-level-header">
     <div class="header-image">
         &nbsp;
     </div>
 </div>
 
-{% include menu.html %}
+<div class="toplevel-content">
+    {% include menu.html %}
 
-<div class="middle toplevel-content">
-    {{ content }}
+    <div class="middle">
+        {{ content }}
+    </div>
 </div>
+
 <footer>
 </footer>
