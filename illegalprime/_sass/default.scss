@@ -1,5 +1,7 @@
 $text-color: #515151;
 $site-background: #ffffff;
+$main-color: #52be80;
+$main-color-darker: #377e55;
 
 html, body, div, span, applet, object, iframe, caption, p {
     margin: 0 0 0 0;
@@ -53,6 +55,10 @@ a.disabled {
     opacity: 0.5;
 }
 
+a:focus {
+    outline: none;
+}
+
 h1 {
     margin-top: 30px;
     font-size: 36px;
@@ -74,7 +80,7 @@ ul.pagination {
 }
 
 ul.pagination li.active {
-    background-color: #52be80 ;
+    background-color: $main-color;
 }
 
 .toplevel-content {
@@ -195,6 +201,45 @@ div.middle.top-menu {
 .story h1 {
     text-align: center;
     margin-top: 5rem;
+}
+
+// Tags
+
+span.badge.new.tag::after {
+    content: "";
+}
+
+span.badge.new.tag {
+    font-size: 1rem;
+    background-color: $main-color;
+    transition-duration: .25s;
+    padding: 3px 9px 3px 9px;
+    line-height: 15px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    font-size: 0.7rem;
+    margin-right: 1rem;
+}
+
+@-moz-document url-prefix() {
+    span.badge.new.tag {
+        padding-bottom: 1px;
+        padding-top: 4px;
+    }
+}
+
+span.badge.new.tag:hover {
+    background-color: $main-color-darker;
+}
+
+div.post-list-tags {
+    display: flex;
+}
+
+.relpos {
+    position: relative;
 }
 
 table.center td {

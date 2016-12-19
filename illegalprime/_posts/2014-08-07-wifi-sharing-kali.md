@@ -3,7 +3,7 @@ layout: post
 title:  "Wifi Sharing in Kali Linux"
 date:   2014-08-07
 tags:
-  - Linux
+  - linux
 ---
 
 # Intro

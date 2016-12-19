@@ -2,8 +2,8 @@
 layout: post
 title:  "Bitshifts & Safetybelts"
 date:   2014-08-04
-categories:
-    - programming
+tags:
+    - code
 ---
 # The Steganographic Way
 

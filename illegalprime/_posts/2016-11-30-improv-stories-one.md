@@ -2,6 +2,9 @@
 title: "Improv Stories I"
 layout: post
 mode: story
+tags:
+  - funny
+  - prose
 ---
 
 Janie and I often write the invitations for my friends' house parties.
