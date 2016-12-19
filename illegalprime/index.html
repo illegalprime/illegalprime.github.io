@@ -4,8 +4,7 @@ title: Home
 section: home
 ---
 
-<div class="middle">
-<div class="post-list container">
+<div class="post-list">
     {% for post in paginator.posts %}
         <div class="fadeInUp animated">
             <span class="post-date">{{ post.date | date_to_long_string }}</span>
@@ -47,7 +46,6 @@ section: home
         </a>
     </li>
 </ul>
-</div>
 &nbsp;
 <br/>
 &nbsp;
