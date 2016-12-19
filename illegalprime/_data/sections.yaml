@@ -1,0 +1,11 @@
+ - name: home
+   url: /
+
+ - name: tags
+   url: /tags
+
+ - name: history
+   url: /history
+
+ - name: about
+   url: /about

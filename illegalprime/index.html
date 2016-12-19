@@ -1,12 +1,13 @@
 ---
 layout: toplevel
 title: Home
+section: home
 ---
 
 <div class="middle">
 <div class="post-list container">
     {% for post in paginator.posts %}
-        <div>
+        <div class="fadeInUp animated">
             <span class="post-date">{{ post.date | date_to_long_string }}</span>
             <h1><a class="post-title" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
             <p class="post-description">

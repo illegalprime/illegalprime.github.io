@@ -1,0 +1,10 @@
+<div class="middle top-menu">
+    {% for section in site.data.sections %}
+    <a
+        {% if section.name == page.section %}
+            data-current-section="true"
+        {% endif %}
+        class="menu-item fadeInDown animated"
+        href="{{ section.url }}">{{ section.name }}</a>
+    {% endfor %}
+</div>
