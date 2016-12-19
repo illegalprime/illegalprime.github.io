@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!-- CDN Libraries -->
+    <!-- JQuery -->
+    <script
+        src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous">
+    </script>
+    <!-- Materialize 0.97.8 -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Fenix:400,400italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+    <!-- Facebook Comment Plugin -->
+    <meta property="fb:app_id" content="1482009368710102"/>
+
+    <title>
+    
+        Wifi Sharing in Kali Linux &middot; Michael's Weird Blog
+    
+    </title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Theme Color for Chrome on Android Lollipop -->
+    <meta name="theme-color" content="#">
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/animate.css">
+</head>
+
+    <body>
+        <!-- Header -->
+<div class="top-level-header">
+    <div class="header-image">
+        &nbsp;
+    </div>
+</div>
+
+<div class="toplevel-content">
+    <div class="container">
+        <div class="middle top-menu">
+    
+    <a
+        
+        class="menu-item fadeInDown animated"
+        href="/">home</a>
+    
+    <a
+        
+        class="menu-item fadeInDown animated"
+        href="/tags">tags</a>
+    
+    <a
+        
+        class="menu-item fadeInDown animated"
+        href="/history">history</a>
+    
+    <a
+        
+        class="menu-item fadeInDown animated"
+        href="/about">about</a>
+    
+</div>
+
+
+        <div class="middle">
+            <div class="article animated fadeIn ">
+    <!-- Facebook Comments Plugin -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=1482009368710102";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <h1 id="intro">Intro</h1>
+
+<p>I have spent a long long while looking for solutions to this problem over the great Linux forums, and in truth its not easy to do. Most of the scripts I’ve come across did not work, but from all this experience I’ve pieced together a collection of DHCPD rules and iptable commands that should allow you to use airbase-ng to create a WiFi hotspot with optional WEP Encryption.</p>
+
+<p>So here it is.</p>
+
+<h1 id="prerequisites">Prerequisites</h1>
+
+<p>In order to have this script run successfully you will need:</p>
+
+<h2 id="the-hardware">The Hardware</h2>
+
+<ul>
+  <li>A wireless card or Ethernet card that is connected to the Internet.</li>
+  <li>Another wireless card that can be put into monitor mode</li>
+  <li>Some computer with Linux (Why not Kali Linux?)</li>
+</ul>
+
+<h2 id="the-software">The Software</h2>
+
+<ul>
+  <li>The <code class="highlighter-rouge">aircrack-ng</code> suite, notably <code class="highlighter-rouge">airbase-ng</code>.</li>
+  <li><code class="highlighter-rouge">mitmproxy</code> available by issuing <code class="highlighter-rouge">sudo pip2 install mitmproxy</code></li>
+  <li><code class="highlighter-rouge">dhcpd</code> which is not available in Kali by default and
+one can install it through <code class="highlighter-rouge">apt-get install isc-dhcp-server</code></li>
+</ul>
+
+<h1 id="the-script">The Script</h1>
+
+<h2 id="variable-names">Variable Names</h2>
+
+<ul>
+  <li><code class="highlighter-rouge">LAN_IF</code> is the interface connected to the Internet.</li>
+  <li><code class="highlighter-rouge">LAN_GATEWAY</code> is the IP of the main router to which <code class="highlighter-rouge">LAN_IF</code> connects to.</li>
+  <li><code class="highlighter-rouge">AP_IF</code> is the monitor mode capable interface.</li>
+  <li><code class="highlighter-rouge">AP_CHANNEL</code> specifies the wireless channel of the AP.</li>
+  <li><code class="highlighter-rouge">AP_ESSID</code> is the AP name.</li>
+  <li><code class="highlighter-rouge">AP_GATEWAY</code> is the router IP clients connected to the AP will see.</li>
+  <li>For a range of IPs of <code class="highlighter-rouge">AP_RANGE</code> given to the clients, <code class="highlighter-rouge">AP_SUBNET</code> and <code class="highlighter-rouge">AP_NETMASK</code> should stay the same.</li>
+  <li><code class="highlighter-rouge">AP_MTU</code> is the <a href="https://en.wikipedia.org/wiki/Maximum_transmission_unit">MTU</a>.</li>
+  <li>Finally <code class="highlighter-rouge">MITMPROXY_FLAGS</code> are the arguments that get appended on to mitmproxy at runtime.</li>
+</ul>
+
+<p>Change these arguments to fit your needs. Also if you want WPA/WPA2 encryption, use hostapd with a suitable Atheros wireless card.</p>
+
+<h2 id="the-entire-script">The Entire Script</h2>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+<span class="nv">LAN_IF</span><span class="o">=</span>wlan1
+<span class="nv">LAN_GATEWAY</span><span class="o">=</span><span class="k">$(</span>ip -4 route list <span class="nb">type </span>unicast dev <span class="nv">$LAN_IF</span> exact 0/0 | cut -d <span class="s1">' '</span> -f 3<span class="k">)</span>
+
+<span class="nv">AP_IF</span><span class="o">=</span>wlan0
+<span class="nv">AP_CHANNEL</span><span class="o">=</span>6
+<span class="nv">AP_ESSID</span><span class="o">=</span><span class="s1">'Do not connect to'</span>
+<span class="nv">AP_GATEWAY</span><span class="o">=</span><span class="s1">'192.168.2.1'</span>
+<span class="nv">AP_SUBNET</span><span class="o">=</span><span class="s1">'192.168.2.0'</span>
+<span class="nv">AP_NETMASK</span><span class="o">=</span><span class="s1">'255.255.255.0'</span>
+<span class="nv">AP_RANGE</span><span class="o">=</span><span class="s1">'192.168.2.2 192.168.2.255'</span>
+<span class="nv">AP_MTU</span><span class="o">=</span>1400
+
+<span class="nv">MITMPROXY_FLAGS</span><span class="o">=</span><span class="s2">""</span>
+<span class="c">#MITMPROXY_FLAGS="-s /root/Desktop/image_local.py"</span>
+
+<span class="k">if</span> <span class="o">[</span> <span class="s2">"</span><span class="k">$(</span>id -u<span class="k">)</span><span class="s2">"</span> !<span class="o">=</span> <span class="s2">"0"</span> <span class="o">]</span>; <span class="k">then
+    </span><span class="nb">echo</span> <span class="s2">"Run it as root."</span>
+    <span class="nb">exit </span>1
+<span class="k">fi
+
+</span>ifconfig <span class="nv">$AP_IF</span> down
+iwconfig <span class="nv">$AP_IF</span> mode monitor channel <span class="nv">$AP_CHANNEL</span>
+ifconfig <span class="nv">$AP_IF</span> up
+
+<span class="k">if</span> <span class="o">[</span> <span class="s2">"</span><span class="k">$(</span>iwconfig <span class="nv">$AP_IF</span> | grep -o Mode:Monitor<span class="k">)</span><span class="s2">"</span> <span class="o">=</span> <span class="s2">""</span> <span class="o">]</span>; <span class="k">then
+    </span><span class="nb">echo</span> <span class="s2">"[FAIL] Could not put interface </span><span class="nv">$AP_IF</span><span class="s2"> in monitor mode."</span>
+    <span class="nb">echo</span> <span class="s2">"       Exiting..."</span>
+    <span class="nb">exit
+</span><span class="k">else
+    </span><span class="nb">echo</span> <span class="s2">"[ OK ] monitor mode on interface </span><span class="nv">$AP_IF</span><span class="s2">."</span>
+    sleep 1
+<span class="k">fi
+
+</span>xterm -geometry 75x15+1+0 -T <span class="s2">"Airbase - </span><span class="nv">$AP_ESSID</span><span class="s2"> - </span><span class="nv">$AP_IF</span><span class="s2">"</span> <span class="se">\</span>
+       -e <span class="s2">"airbase-ng -c </span><span class="nv">$AP_CHANNEL</span><span class="s2"> -e '</span><span class="nv">$AP_ESSID</span><span class="s2">' </span><span class="nv">$AP_IF</span><span class="s2">"</span> &amp;
+<span class="nv">AIRBASE_PID</span><span class="o">=</span><span class="nv">$!</span>
+sleep 3
+
+<span class="k">if</span> <span class="o">[</span> <span class="s2">"</span><span class="k">$(</span>ps -A | grep -o <span class="nv">$AIRBASE_PID</span><span class="k">)</span><span class="s2">"</span> <span class="o">=</span> <span class="s2">""</span> <span class="o">]</span>; <span class="k">then
+    </span><span class="nb">echo</span> <span class="s2">"[FAIL] Cannot find airbase-ng, quitting."</span>
+    <span class="nb">exit
+</span><span class="k">else
+    </span><span class="nb">echo</span> <span class="s2">"[ OK ] Started airbase-ng"</span>
+<span class="k">fi
+
+</span>ifconfig lo up
+ifconfig at0 up
+sleep 1
+ifconfig at0 <span class="nv">$AP_GATEWAY</span> netmask <span class="nv">$AP_NETMASK</span>
+ifconfig at0 mtu <span class="nv">$AP_MTU</span>
+route add -net <span class="nv">$AP_SUBNET</span> netmask <span class="nv">$AP_NETMASK</span> gw <span class="nv">$AP_GATEWAY</span>
+
+iptables --flush
+iptables --table nat --flush
+iptables --delete-chain
+iptables --table nat --delete-chain
+
+<span class="nb">echo </span>1 &gt; /proc/sys/net/ipv4/ip_forward
+
+iptables -t nat -A PREROUTING -p udp -j DNAT --to <span class="nv">$LAN_GATEWAY</span>
+iptables -P FORWARD ACCEPT
+iptables --append FORWARD --in-interface at0 -j ACCEPT
+iptables --table nat --append POSTROUTING --out-interface <span class="nv">$LAN_IF</span> -j MASQUERADE
+iptables -t nat -A PREROUTING -p tcp --destination-port 80 <span class="se">\</span>
+         -j REDIRECT --to-port 8080
+
+<span class="nb">echo</span> <span class="s2">"[ OK ] IP table rules set."</span>
+
+<span class="nb">echo</span> <span class="s2">"authoritative;
+
+default-lease-time 600;
+max-lease-time 7200;
+
+subnet </span><span class="nv">$AP_SUBNET</span><span class="s2"> netmask </span><span class="nv">$AP_NETMASK</span><span class="s2"> {
+    option routers </span><span class="nv">$AP_GATEWAY</span><span class="s2">;
+    option subnet-mask </span><span class="nv">$AP_NETMASK</span><span class="s2">;
+    option domain-name </span><span class="se">\"</span><span class="nv">$AP_ESSID</span><span class="se">\"</span><span class="s2">;
+    option domain-name-servers </span><span class="nv">$LAN_GATEWAY</span><span class="s2">;
+    range </span><span class="nv">$AP_RANGE</span><span class="s2">;
+}
+"</span> &gt; /etc/dhcpd-rogue.conf
+
+<span class="nb">echo</span> <span class="s2">"[ OK ] Adding DHCPD configuration."</span>
+
+touch /var/run/dhcpd.pid
+xterm -geometry 75x20+1+100 -T DHCP <span class="se">\</span>
+      -e dhcpd -d -f -cf <span class="s2">"/etc/dhcpd-rogue.conf"</span> -pf <span class="s2">"/var/run/dhcpd.pid"</span> at0 &amp;
+<span class="nv">DHCPD_PID</span><span class="o">=</span><span class="nv">$!</span>
+sleep 3
+
+<span class="k">if</span> <span class="o">[</span> <span class="nv">$?</span> -ne 0 <span class="o">]</span>; <span class="k">then
+    </span><span class="nb">echo</span> <span class="s2">"[FAIL] DHCPD Failed to start."</span>
+    <span class="nb">exit
+</span><span class="k">else
+    </span><span class="nb">echo</span> <span class="s2">"[ OK ] Started DHCPD Server"</span>
+<span class="k">fi
+
+</span>mitmproxy -T --host --anticache -p 8080 <span class="nv">$MITMPROXY_FLAGS</span>
+<span class="c">#echo "Hit Enter to tear down the network."</span>
+<span class="c">#read</span>
+<span class="nb">echo</span> <span class="s2">"Cleaning up..."</span>
+
+<span class="nb">kill</span> -SIGINT <span class="k">$(</span>cat /var/run/dhcpd.pid<span class="k">)</span>
+<span class="nb">kill</span> -SIGINT <span class="nv">$AIRBASE_PID</span>
+
+ifconfig <span class="nv">$AP_IF</span> down
+iwconfig <span class="nv">$AP_IF</span> mode managed
+ifconfig <span class="nv">$AP_IF</span> up
+
+<span class="nb">echo </span>0 &gt; /proc/sys/net/ipv4/ip_forward
+iptables --flush
+iptables --table nat --flush
+iptables --delete-chain
+iptables --table nat --delete-chain
+
+<span class="nb">echo</span> <span class="s2">"Done."</span>
+</code></pre>
+</div>
+
+<p>This had worked for me in Kali Linux when this post was published, so please comment if anything stops working.</p>
+
+    <p>— Michael</p>
+
+    <!-- Facebook Comments Box -->
+    <br/>
+    <h2><b>Say It Loud! Leave a comment below:</b></h2>
+    <div class="fb-comments" data-href="http://icanteden.com/2014/08/07/wifi-sharing-kali/" data-width="100%" data-numposts="10" data-colorscheme="light"></div>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<footer>
+</footer>
+
+    </body>
+</html>
