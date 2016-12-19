@@ -159,6 +159,8 @@ ul.pagination li.active {
     width: 100%;
 }
 
+// Menu Stuff
+
 .top-menu {
     background-color: $site-background;
 
@@ -178,6 +180,21 @@ ul.pagination li.active {
 
 div.middle.top-menu {
     flex-direction: row;
+}
+
+// Story Mode
+
+.story h1 + p::first-letter {
+    font-size: 75px;
+    float: left;
+    line-height: 60px;
+    padding-right: 8px;
+    padding-left: 3px;
+}
+
+.story h1 {
+    text-align: center;
+    margin-top: 5rem;
 }
 
 table.center td {
