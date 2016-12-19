@@ -1422,7 +1422,7 @@ ul, ol, dl, figure,
   height: 33vh; }
 
 .header-image {
-  background-image: url("/redeux/assets/images/cover.jpg");
+  background-image: url("/assets/images/cover.jpg");
   background-size: cover;
   background-position: center;
   position: fixed;
