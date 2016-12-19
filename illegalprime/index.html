@@ -1,0 +1,48 @@
+---
+layout: toplevel
+---
+
+<div class="middle">
+<div class="post-list container">
+	{% for post in paginator.posts %}
+		<div>
+			<span class="post-date">{{ post.date | date_to_long_string }}</span>
+			<h1><a class="post-title" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+			<p class="post-description">
+			{% if post.quote %}
+				{{ post.quote }}
+			{% else %}
+				{{ post.content | strip_html | truncatewords: 50 }}
+			{% endif %}
+			</p>
+		</div>
+		<br>
+	{% endfor %}
+</div>
+
+<ul class="pagination">
+	<li class="waves-effect">
+		<a
+			class="{% unless paginator.previous_page %} disabled {% endunless %}"
+			href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+			<i class="material-icons">chevron_left</i>
+		</a>
+	</li>
+	{% for page in (1..paginator.total_pages) %}
+		<li class="{% if page == paginator.page %} active {% else %} waves-effect {% endif %}">
+			{% if page == 1 %}
+			<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+			{% else %}
+			<a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+			{% endif %}
+		</li>
+	{% endfor %}
+	<li class="waves-effect">
+		<a
+			class="{% unless paginator.next_page %} disabled {% endunless %}"
+			href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+			<i class="material-icons">chevron_right</i>
+		</a>
+	</li>
+</ul>
+</div>
