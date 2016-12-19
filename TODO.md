@@ -1,7 +1,6 @@
-Some Bugs:
-
- - UI Erorrs iPhone 5
- - UI Erorrs iPhone 6
- - UI Erorrs Galaxy S5
-
-
+Features:
+    - Create History Page
+    - Create Tags Page
+    - Show Tag Badges in Posts
+    - Finish About Page
+    - Following Menu?
