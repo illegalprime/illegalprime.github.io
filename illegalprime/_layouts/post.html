@@ -13,6 +13,20 @@ layout: toplevel
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
 
+    <div class="post-title-container">
+        <h1 class="post-title"><b>{{ page.title }}</b></h1>
+        <p></p>
+        <div class="post-list-tags">
+        {% for tag in page.tags %}
+            <a href="#!">
+                <span class="tag new badge">{{ tag }}</span>
+            </a>
+        {% endfor %}
+        </div>
+    </div>
+
+    <hr>
+
     {{ content }}
     <p>{{ site.signature }}</p>
 

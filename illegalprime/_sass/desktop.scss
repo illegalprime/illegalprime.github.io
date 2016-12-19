@@ -4,11 +4,15 @@ header, footer {
     background-attachment: fixed;
 }
 
-div.post-list-tags {
+div.post-list-tags.floating {
     position: absolute;
     transform: translateX(-100%);
     top: 0.5ex;
     flex-direction: column;
+
+    span.tag.new.badge {
+        margin-bottom: 10px;
+    }
 }
 
 .post-info {
