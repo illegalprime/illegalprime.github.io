@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://icanteden.com/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="http://icanteden.com/feed.xml" rel="self" type="application/atom+xml" /><link href="http://icanteden.com/" rel="alternate" type="text/html" /><updated>2016-12-19T16:37:13-05:00</updated><id>http://icanteden.com//</id><title type="html">Michael’s Weird Blog</title><subtitle>Author Michael Eden (engineer) experiments with the idea of having a creative outlet. Watch him fall back on his crutch by writing about cool tech and read his strange writing, the only guarantee is that the content is wholly his own.
-</subtitle><entry><title type="html">Improv Stories I</title><link href="http://icanteden.com/2016/11/30/improv-stories-one/" rel="alternate" type="text/html" title="Improv Stories I" /><published>2016-11-30T00:00:00-05:00</published><updated>2016-11-30T00:00:00-05:00</updated><id>http://icanteden.com/2016/11/30/improv-stories-one</id><content type="html" xml:base="http://icanteden.com/2016/11/30/improv-stories-one/">&lt;p&gt;Janie and I often write the invitations for my friends’ house parties.
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://icanteden.com/redeux//feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="http://icanteden.com/redeux//feed.xml" rel="self" type="application/atom+xml" /><link href="http://icanteden.com/redeux//" rel="alternate" type="text/html" /><updated>2016-12-19T16:39:49-05:00</updated><id>http://icanteden.com/redeux///</id><title type="html">Michael’s Weird Blog</title><subtitle>Author Michael Eden (engineer) experiments with the idea of having a creative outlet. Watch him fall back on his crutch by writing about cool tech and read his strange writing, the only guarantee is that the content is wholly his own.
+</subtitle><entry><title type="html">Improv Stories I</title><link href="http://icanteden.com/redeux//2016/11/30/improv-stories-one/" rel="alternate" type="text/html" title="Improv Stories I" /><published>2016-11-30T00:00:00-05:00</published><updated>2016-11-30T00:00:00-05:00</updated><id>http://icanteden.com/redeux//2016/11/30/improv-stories-one</id><content type="html" xml:base="http://icanteden.com/redeux//2016/11/30/improv-stories-one/">&lt;p&gt;Janie and I often write the invitations for my friends’ house parties.
 In order to get in the creative mood, we write some improvised stories
 as an excercise. This is a collection of some of the better stories from
 that excercise.&lt;/p&gt;
@@ -114,7 +114,7 @@ He wipes the spit off with a shirt sleeve:&lt;/p&gt;
 &lt;p&gt;“U’ve been playing checkers while i’ve been playing chess for years”&lt;/p&gt;</content><category term="funny" /><category term="prose" /><summary type="html">Janie and I often write the invitations for my friends’ house parties.
 In order to get in the creative mood, we write some improvised stories
 as an excercise. This is a collection of some of the better stories from
-that excercise.</summary></entry><entry><title type="html">Wifi Sharing in Kali Linux</title><link href="http://icanteden.com/2014/08/07/wifi-sharing-kali/" rel="alternate" type="text/html" title="Wifi Sharing in Kali Linux" /><published>2014-08-07T00:00:00-04:00</published><updated>2014-08-07T00:00:00-04:00</updated><id>http://icanteden.com/2014/08/07/wifi-sharing-kali</id><content type="html" xml:base="http://icanteden.com/2014/08/07/wifi-sharing-kali/">&lt;h1 id=&quot;intro&quot;&gt;Intro&lt;/h1&gt;
+that excercise.</summary></entry><entry><title type="html">Wifi Sharing in Kali Linux</title><link href="http://icanteden.com/redeux//2014/08/07/wifi-sharing-kali/" rel="alternate" type="text/html" title="Wifi Sharing in Kali Linux" /><published>2014-08-07T00:00:00-04:00</published><updated>2014-08-07T00:00:00-04:00</updated><id>http://icanteden.com/redeux//2014/08/07/wifi-sharing-kali</id><content type="html" xml:base="http://icanteden.com/redeux//2014/08/07/wifi-sharing-kali/">&lt;h1 id=&quot;intro&quot;&gt;Intro&lt;/h1&gt;
 
 &lt;p&gt;I have spent a long long while looking for solutions to this problem over the great Linux forums, and in truth its not easy to do. Most of the scripts I’ve come across did not work, but from all this experience I’ve pieced together a collection of DHCPD rules and iptable commands that should allow you to use airbase-ng to create a WiFi hotspot with optional WEP Encryption.&lt;/p&gt;
 
@@ -281,14 +281,14 @@ iptables --table nat --delete-chain
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;This had worked for me in Kali Linux when this post was published, so please comment if anything stops working.&lt;/p&gt;</content><category term="linux" /><summary type="html">Intro</summary></entry><entry><title type="html">Bitshifts &amp;amp; Safetybelts</title><link href="http://icanteden.com/2014/08/04/steganography/" rel="alternate" type="text/html" title="Bitshifts &amp; Safetybelts" /><published>2014-08-04T00:00:00-04:00</published><updated>2014-08-04T00:00:00-04:00</updated><id>http://icanteden.com/2014/08/04/steganography</id><content type="html" xml:base="http://icanteden.com/2014/08/04/steganography/">&lt;h1 id=&quot;the-steganographic-way&quot;&gt;The Steganographic Way&lt;/h1&gt;
+&lt;p&gt;This had worked for me in Kali Linux when this post was published, so please comment if anything stops working.&lt;/p&gt;</content><category term="linux" /><summary type="html">Intro</summary></entry><entry><title type="html">Bitshifts &amp;amp; Safetybelts</title><link href="http://icanteden.com/redeux//2014/08/04/steganography/" rel="alternate" type="text/html" title="Bitshifts &amp; Safetybelts" /><published>2014-08-04T00:00:00-04:00</published><updated>2014-08-04T00:00:00-04:00</updated><id>http://icanteden.com/redeux//2014/08/04/steganography</id><content type="html" xml:base="http://icanteden.com/redeux//2014/08/04/steganography/">&lt;h1 id=&quot;the-steganographic-way&quot;&gt;The Steganographic Way&lt;/h1&gt;
 
 &lt;p&gt;Look at this picture of Andy, do you see a hidden message?&lt;/p&gt;
 
 &lt;div class=&quot;article-img&quot;&gt;
     &lt;div class=&quot;center&quot;&gt;
-    &lt;a href=&quot;/media/2014-08-04-stickshifts-n-safetybelts/andy-encoded.png&quot; target=&quot;_blank&quot;&gt;
-        &lt;img src=&quot;/media/2014-08-04-stickshifts-n-safetybelts/andy-encoded.png&quot; alt=&quot;The text 'Hello World!' is encoded into this image.&quot; /&gt;
+    &lt;a href=&quot;/redeux//media/2014-08-04-stickshifts-n-safetybelts/andy-encoded.png&quot; target=&quot;_blank&quot;&gt;
+        &lt;img src=&quot;/redeux//media/2014-08-04-stickshifts-n-safetybelts/andy-encoded.png&quot; alt=&quot;The text 'Hello World!' is encoded into this image.&quot; /&gt;
     &lt;/a&gt;
     &lt;/div&gt;
     
@@ -503,14 +503,14 @@ which the program needs to know for later decoding.&lt;/div&gt;
 
 &lt;div class=&quot;article-img&quot;&gt;
     &lt;div class=&quot;center&quot;&gt;
-    &lt;a href=&quot;/media/2014-08-04-stickshifts-n-safetybelts/andy-encoded-alot.png&quot; target=&quot;_blank&quot;&gt;
-        &lt;img src=&quot;/media/2014-08-04-stickshifts-n-safetybelts/andy-encoded-alot.png&quot; alt=&quot;This image contains the &amp;lt;b&amp;gt;entire&amp;lt;/b&amp;gt; post.&quot; /&gt;
+    &lt;a href=&quot;/redeux//media/2014-08-04-stickshifts-n-safetybelts/andy-encoded-alot.png&quot; target=&quot;_blank&quot;&gt;
+        &lt;img src=&quot;/redeux//media/2014-08-04-stickshifts-n-safetybelts/andy-encoded-alot.png&quot; alt=&quot;This image contains the &amp;lt;b&amp;gt;entire&amp;lt;/b&amp;gt; post.&quot; /&gt;
     &lt;/a&gt;
     &lt;/div&gt;
     
     &lt;blockquote style=&quot;border-left: 10px solid #D5D5D5;&quot;&gt;This image contains the &lt;b&gt;entire&lt;/b&gt; post.&lt;/blockquote&gt;
     
-&lt;/div&gt;</content><category term="code" /><summary type="html">The Steganographic Way</summary></entry><entry><title type="html">Heavy Duty Motion Detector: Part I</title><link href="http://icanteden.com/2014/08/01/motion-detector-one/" rel="alternate" type="text/html" title="Heavy Duty Motion Detector: Part I" /><published>2014-08-01T00:00:00-04:00</published><updated>2014-08-01T00:00:00-04:00</updated><id>http://icanteden.com/2014/08/01/motion-detector-one</id><content type="html" xml:base="http://icanteden.com/2014/08/01/motion-detector-one/">&lt;h1 id=&quot;the-idea&quot;&gt;The Idea&lt;/h1&gt;
+&lt;/div&gt;</content><category term="code" /><summary type="html">The Steganographic Way</summary></entry><entry><title type="html">Heavy Duty Motion Detector: Part I</title><link href="http://icanteden.com/redeux//2014/08/01/motion-detector-one/" rel="alternate" type="text/html" title="Heavy Duty Motion Detector: Part I" /><published>2014-08-01T00:00:00-04:00</published><updated>2014-08-01T00:00:00-04:00</updated><id>http://icanteden.com/redeux//2014/08/01/motion-detector-one</id><content type="html" xml:base="http://icanteden.com/redeux//2014/08/01/motion-detector-one/">&lt;h1 id=&quot;the-idea&quot;&gt;The Idea&lt;/h1&gt;
 
 &lt;p&gt;THE HEAVY DUTY MOTION DETECTOR can detect any human or wild animal that is not asleep, and also not strictly not asleep. The documentation isn’t written well. On motion detection it will switch on an outlet, which could power any appliance (most likely a lamp or a toaster)!&lt;/p&gt;
 
@@ -549,8 +549,8 @@ which the program needs to know for later decoding.&lt;/div&gt;
 
 &lt;div class=&quot;article-img&quot;&gt;
     &lt;div class=&quot;center&quot;&gt;
-    &lt;a href=&quot;/media/hdmd-acdc-converter/circuit.png&quot; target=&quot;_blank&quot;&gt;
-        &lt;img src=&quot;/media/hdmd-acdc-converter/circuit.png&quot; alt=&quot;Here is the AC/DC Converter Circuit Schematic&quot; /&gt;
+    &lt;a href=&quot;/redeux//media/hdmd-acdc-converter/circuit.png&quot; target=&quot;_blank&quot;&gt;
+        &lt;img src=&quot;/redeux//media/hdmd-acdc-converter/circuit.png&quot; alt=&quot;Here is the AC/DC Converter Circuit Schematic&quot; /&gt;
     &lt;/a&gt;
     &lt;/div&gt;
     
@@ -562,8 +562,8 @@ which the program needs to know for later decoding.&lt;/div&gt;
 
 &lt;div class=&quot;article-img&quot;&gt;
     &lt;div class=&quot;center&quot;&gt;
-    &lt;a href=&quot;/media/hdmd-acdc-converter/mathsForCapacitor.png&quot; target=&quot;_blank&quot;&gt;
-        &lt;img src=&quot;/media/hdmd-acdc-converter/mathsForCapacitor.png&quot; alt=&quot;&quot; /&gt;
+    &lt;a href=&quot;/redeux//media/hdmd-acdc-converter/mathsForCapacitor.png&quot; target=&quot;_blank&quot;&gt;
+        &lt;img src=&quot;/redeux//media/hdmd-acdc-converter/mathsForCapacitor.png&quot; alt=&quot;&quot; /&gt;
     &lt;/a&gt;
     &lt;/div&gt;
     
@@ -573,8 +573,8 @@ which the program needs to know for later decoding.&lt;/div&gt;
 
 &lt;div class=&quot;article-img&quot;&gt;
     &lt;div class=&quot;center&quot;&gt;
-    &lt;a href=&quot;/media/hdmd-acdc-converter/mathsForFuse.png&quot; target=&quot;_blank&quot;&gt;
-        &lt;img src=&quot;/media/hdmd-acdc-converter/mathsForFuse.png&quot; alt=&quot;&quot; /&gt;
+    &lt;a href=&quot;/redeux//media/hdmd-acdc-converter/mathsForFuse.png&quot; target=&quot;_blank&quot;&gt;
+        &lt;img src=&quot;/redeux//media/hdmd-acdc-converter/mathsForFuse.png&quot; alt=&quot;&quot; /&gt;
     &lt;/a&gt;
     &lt;/div&gt;
     
@@ -584,8 +584,8 @@ which the program needs to know for later decoding.&lt;/div&gt;
 
 &lt;div class=&quot;article-img&quot;&gt;
     &lt;div class=&quot;center&quot;&gt;
-    &lt;a href=&quot;/media/hdmd-acdc-converter/cover.jpg&quot; target=&quot;_blank&quot;&gt;
-        &lt;img src=&quot;/media/hdmd-acdc-converter/cover.jpg&quot; alt=&quot;The end product!&quot; /&gt;
+    &lt;a href=&quot;/redeux//media/hdmd-acdc-converter/cover.jpg&quot; target=&quot;_blank&quot;&gt;
+        &lt;img src=&quot;/redeux//media/hdmd-acdc-converter/cover.jpg&quot; alt=&quot;The end product!&quot; /&gt;
     &lt;/a&gt;
     &lt;/div&gt;
     
@@ -599,8 +599,8 @@ which the program needs to know for later decoding.&lt;/div&gt;
 
 &lt;div class=&quot;article-img&quot;&gt;
     &lt;div class=&quot;center&quot;&gt;
-    &lt;a href=&quot;/media/hdmd-acdc-converter/diode-hack.png&quot; target=&quot;_blank&quot;&gt;
-        &lt;img src=&quot;/media/hdmd-acdc-converter/diode-hack.png&quot; alt=&quot;Diode Hack&quot; /&gt;
+    &lt;a href=&quot;/redeux//media/hdmd-acdc-converter/diode-hack.png&quot; target=&quot;_blank&quot;&gt;
+        &lt;img src=&quot;/redeux//media/hdmd-acdc-converter/diode-hack.png&quot; alt=&quot;Diode Hack&quot; /&gt;
     &lt;/a&gt;
     &lt;/div&gt;
     
@@ -612,14 +612,14 @@ which the program needs to know for later decoding.&lt;/div&gt;
 
 &lt;div class=&quot;article-img&quot;&gt;
     &lt;div class=&quot;center&quot;&gt;
-    &lt;a href=&quot;/media/hdmd-acdc-converter/acdc-board.png&quot; target=&quot;_blank&quot;&gt;
-        &lt;img src=&quot;/media/hdmd-acdc-converter/acdc-board.png&quot; alt=&quot;Board is about 55x23 mm&quot; /&gt;
+    &lt;a href=&quot;/redeux//media/hdmd-acdc-converter/acdc-board.png&quot; target=&quot;_blank&quot;&gt;
+        &lt;img src=&quot;/redeux//media/hdmd-acdc-converter/acdc-board.png&quot; alt=&quot;Board is about 55x23 mm&quot; /&gt;
     &lt;/a&gt;
     &lt;/div&gt;
     
     &lt;blockquote style=&quot;border-left: 10px solid #D5D5D5;&quot;&gt;Board is about 55x23 mm&lt;/blockquote&gt;
     
-&lt;/div&gt;</content><category term="circuits" /><summary type="html">The Idea</summary></entry><entry><title type="html">Mike India Kilo Echo</title><link href="http://icanteden.com/2014/07/20/phonetic-alphabet/" rel="alternate" type="text/html" title="Mike India Kilo Echo" /><published>2014-07-20T00:00:00-04:00</published><updated>2014-07-20T00:00:00-04:00</updated><id>http://icanteden.com/2014/07/20/phonetic-alphabet</id><content type="html" xml:base="http://icanteden.com/2014/07/20/phonetic-alphabet/">&lt;p&gt;My personal phonetic alphabet that I use to clarify all misunderstandings
+&lt;/div&gt;</content><category term="circuits" /><summary type="html">The Idea</summary></entry><entry><title type="html">Mike India Kilo Echo</title><link href="http://icanteden.com/redeux//2014/07/20/phonetic-alphabet/" rel="alternate" type="text/html" title="Mike India Kilo Echo" /><published>2014-07-20T00:00:00-04:00</published><updated>2014-07-20T00:00:00-04:00</updated><id>http://icanteden.com/redeux//2014/07/20/phonetic-alphabet</id><content type="html" xml:base="http://icanteden.com/redeux//2014/07/20/phonetic-alphabet/">&lt;p&gt;My personal phonetic alphabet that I use to clarify all misunderstandings
 when I try to spell tricky things like “Michael” over the phone:&lt;/p&gt;
 
 &lt;table class=&quot;center&quot;&gt;
@@ -637,7 +637,7 @@ when I try to spell tricky things like “Michael” over the phone:&lt;/p&gt;
 &lt;tr&gt;&lt;td&gt;W&lt;/td&gt;&lt;td&gt;Write&lt;/td&gt;&lt;td&gt;X&lt;/td&gt;&lt;td&gt;Xylophone&lt;/td&gt;&lt;/tr&gt;
 &lt;tr&gt;&lt;td&gt;Y&lt;/td&gt;&lt;td&gt;You&lt;/td&gt;&lt;td&gt;Z&lt;/td&gt;&lt;td&gt;Zhou&lt;/td&gt;&lt;/tr&gt;
 &lt;/table&gt;</content><category term="funny" /><summary type="html">My personal phonetic alphabet that I use to clarify all misunderstandings
-when I try to spell tricky things like “Michael” over the phone:</summary></entry><entry><title type="html">Natural Timing: A Portal 2 Map</title><link href="http://icanteden.com/2014/07/19/natural-timing/" rel="alternate" type="text/html" title="Natural Timing: A Portal 2 Map" /><published>2014-07-19T00:00:00-04:00</published><updated>2014-07-19T00:00:00-04:00</updated><id>http://icanteden.com/2014/07/19/natural-timing</id><content type="html" xml:base="http://icanteden.com/2014/07/19/natural-timing/">&lt;h2 id=&quot;available-for-download-here&quot;&gt;&lt;a href=&quot;http://steamcommunity.com/sharedfiles/filedetails/?id=278962722&quot;&gt;Available for download here.&lt;/a&gt;&lt;/h2&gt;
+when I try to spell tricky things like “Michael” over the phone:</summary></entry><entry><title type="html">Natural Timing: A Portal 2 Map</title><link href="http://icanteden.com/redeux//2014/07/19/natural-timing/" rel="alternate" type="text/html" title="Natural Timing: A Portal 2 Map" /><published>2014-07-19T00:00:00-04:00</published><updated>2014-07-19T00:00:00-04:00</updated><id>http://icanteden.com/redeux//2014/07/19/natural-timing</id><content type="html" xml:base="http://icanteden.com/redeux//2014/07/19/natural-timing/">&lt;h2 id=&quot;available-for-download-here&quot;&gt;&lt;a href=&quot;http://steamcommunity.com/sharedfiles/filedetails/?id=278962722&quot;&gt;Available for download here.&lt;/a&gt;&lt;/h2&gt;
 
 &lt;p&gt;‘Natural Timing’ is my first custom map for Portal 2,
 it’s not very polished as it wasn’t done with the Hammer Editor,
@@ -656,8 +656,8 @@ piece of cake, and we could be the dumb ones.&lt;/p&gt;
 
 &lt;div class=&quot;article-img&quot;&gt;
     &lt;div class=&quot;center&quot;&gt;
-    &lt;a href=&quot;/media/2014-07-19-natural-timing-portal2/Cake-2.png&quot; target=&quot;_blank&quot;&gt;
-        &lt;img src=&quot;/media/2014-07-19-natural-timing-portal2/Cake-2.png&quot; alt=&quot;&quot; /&gt;
+    &lt;a href=&quot;/redeux//media/2014-07-19-natural-timing-portal2/Cake-2.png&quot; target=&quot;_blank&quot;&gt;
+        &lt;img src=&quot;/redeux//media/2014-07-19-natural-timing-portal2/Cake-2.png&quot; alt=&quot;&quot; /&gt;
     &lt;/a&gt;
     &lt;/div&gt;
     
