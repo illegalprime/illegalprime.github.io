@@ -1,6 +1,7 @@
 ---
 title: Home Alone
 layout: post
+mode: story
 tags:
   - prose
   - funny
