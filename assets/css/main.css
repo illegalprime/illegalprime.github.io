@@ -454,6 +454,11 @@ template {
     margin-top: 30px;
     font-size: 36px; }
 
+  .article h1.post-title {
+    text-align: left;
+    font-family: inherit;
+    margin-top: 0px; }
+
   h2 {
     margin-top: 25px;
     font-size: 30px; }
@@ -504,6 +509,12 @@ template {
     font-size: 18px;
     margin-bottom: -10px; }
 
+  .capitalize {
+    text-transform: capitalize; }
+
+  .post-history tbody > tr > td:first-child {
+    text-align: right; }
+
   .home-title {
     left: 50%;
     top: 50%;
@@ -537,6 +548,9 @@ template {
     flex-direction: column;
     position: relative;
     width: 100%; }
+
+  .flex {
+    display: flex; }
 
   .top-menu {
     background-color: #ffffff; }
@@ -574,21 +588,32 @@ template {
     padding: 3px 9px 3px 9px;
     line-height: 15px;
     margin-left: 0px;
-    margin-bottom: 10px;
     text-transform: uppercase;
     white-space: nowrap;
     font-size: 0.7rem;
-    margin-right: 1rem; }
+    margin-right: 1rem;
+    font-family: 'Roboto'; }
 
   @-moz-document url-prefix() {
     span.badge.new.tag {
       padding-bottom: 1px;
-      padding-top: 4px; } }
+      padding-top: 2px; } }
   span.badge.new.tag:hover {
     background-color: #377e55; }
 
   div.post-list-tags {
     display: flex; }
+
+  .post-title-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between; }
+    .post-title-container span.badge.new.tag {
+      margin-left: 1rem;
+      margin-right: 0px; }
+    .post-title-container .post-list-tags {
+      margin-right: 0px;
+      margin-left: -1rem; }
 
   .relpos {
     position: relative; }
@@ -609,11 +634,6 @@ template {
 
   .comments {
     text-align: center; }
-
-  .article a {
-    border-bottom: 2px solid #ffffff;
-    -webkit-transition: 0.5s ease;
-    transition: 0.5s ease; }
 
   .article img, .article video {
     border-radius: 3px;
@@ -892,6 +912,11 @@ template {
     margin-top: 30px;
     font-size: 36px; }
 
+  .article h1.post-title {
+    text-align: left;
+    font-family: inherit;
+    margin-top: 0px; }
+
   h2 {
     margin-top: 25px;
     font-size: 30px; }
@@ -942,6 +967,12 @@ template {
     font-size: 18px;
     margin-bottom: -10px; }
 
+  .capitalize {
+    text-transform: capitalize; }
+
+  .post-history tbody > tr > td:first-child {
+    text-align: right; }
+
   .home-title {
     left: 50%;
     top: 50%;
@@ -975,6 +1006,9 @@ template {
     flex-direction: column;
     position: relative;
     width: 100%; }
+
+  .flex {
+    display: flex; }
 
   .top-menu {
     background-color: #ffffff; }
@@ -1012,21 +1046,32 @@ template {
     padding: 3px 9px 3px 9px;
     line-height: 15px;
     margin-left: 0px;
-    margin-bottom: 10px;
     text-transform: uppercase;
     white-space: nowrap;
     font-size: 0.7rem;
-    margin-right: 1rem; }
+    margin-right: 1rem;
+    font-family: 'Roboto'; }
 
   @-moz-document url-prefix() {
     span.badge.new.tag {
       padding-bottom: 1px;
-      padding-top: 4px; } }
+      padding-top: 2px; } }
   span.badge.new.tag:hover {
     background-color: #377e55; }
 
   div.post-list-tags {
     display: flex; }
+
+  .post-title-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between; }
+    .post-title-container span.badge.new.tag {
+      margin-left: 1rem;
+      margin-right: 0px; }
+    .post-title-container .post-list-tags {
+      margin-right: 0px;
+      margin-left: -1rem; }
 
   .relpos {
     position: relative; }
@@ -1047,11 +1092,6 @@ template {
 
   .comments {
     text-align: center; }
-
-  .article a {
-    border-bottom: 2px solid #ffffff;
-    -webkit-transition: 0.5s ease;
-    transition: 0.5s ease; }
 
   .article img, .article video {
     border-radius: 3px;
@@ -1237,11 +1277,13 @@ template {
   header, footer {
     background-attachment: fixed; }
 
-  div.post-list-tags {
+  div.post-list-tags.floating {
     position: absolute;
     transform: translateX(-100%);
     top: 0.5ex;
     flex-direction: column; }
+    div.post-list-tags.floating span.tag.new.badge {
+      margin-bottom: 10px; }
 
   .post-info {
     width: 700px;
@@ -1422,7 +1464,7 @@ ul, ol, dl, figure,
   height: 33vh; }
 
 .header-image {
-  background-image: url("/redeux/assets/images/cover.jpg");
+  background-image: url("/assets/images/cover.jpg");
   background-size: cover;
   background-position: center;
   position: fixed;
