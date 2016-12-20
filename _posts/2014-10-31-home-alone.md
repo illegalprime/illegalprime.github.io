@@ -10,7 +10,7 @@ tags:
 # Chapter 1: The House
 
 It was a dark and sunny night, families have since gone to bed, one couple was
-still at it pretty hard and you could here it from the roof of one lonely house,
+still at it pretty hard and you could hear it from the roof of one lonely house,
 that house wasn't getting any tonight.
 It wasn't getting anything but a _VISITOR_... of the Jewish kind.
 On the roof of that lonely house was a lonely man, a man who since his sweetheart's
