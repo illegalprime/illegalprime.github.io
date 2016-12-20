@@ -1,5 +1,20 @@
 <head>
-    <!-- CDN Libraries -->
+    <!-- Materialize -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <!-- Animations -->
+    <link rel="stylesheet" href="/assets/css/animate.css">
+    <!-- Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Fenix Font -->
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Fenix:400,400italic">
+    <!-- Roboto Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!-- Javascript Libraries -->
     <!-- JQuery -->
     <script
         src="https://code.jquery.com/jquery-2.2.4.min.js"
@@ -7,15 +22,7 @@
         crossorigin="anonymous">
     </script>
     <!-- Materialize 0.97.8 -->
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-
-    <!-- Google Fonts -->
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Fenix:400,400italic">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 
     <!-- Facebook Comment Plugin -->
     <meta property="fb:app_id" content="1482009368710102"/>
@@ -35,7 +42,4 @@
 
     <!-- Theme Color for Chrome on Android Lollipop -->
     <meta name="theme-color" content="#{% if page.theme_color %}{{ page.theme_color }}{% else %}{{ site.theme_color }}{% endif %}">
-
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="stylesheet" href="/assets/css/animate.css">
 </head>

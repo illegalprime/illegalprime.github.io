@@ -39,5 +39,4 @@ tag_page_layout: tag_page
 tag_page_dir: tag
 permalink: pretty
 tag_permalink_style: pretty
-
-
+theme_color: 52be80

@@ -5,6 +5,8 @@
 
 $break-small: 899px;
 $break-large: 900px;
+$main-color: #{{  site.theme_color }};
+$main-color-darker: #377e55;
 
 @media screen and (max-width: $break-small) {
     @import "mobile";
