@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://icanteden.com/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="http://icanteden.com/feed.xml" rel="self" type="application/atom+xml" /><link href="http://icanteden.com/" rel="alternate" type="text/html" /><updated>2016-12-20T14:40:15-05:00</updated><id>http://icanteden.com//</id><title type="html">Michael’s Weird Blog</title><subtitle>Author Michael Eden (engineer) experiments with the idea of having a creative outlet. Watch him fall back on his crutch by writing about cool tech and read his strange writing, the only guarantee is that the content is wholly his own.
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://icanteden.com/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="http://icanteden.com/feed.xml" rel="self" type="application/atom+xml" /><link href="http://icanteden.com/" rel="alternate" type="text/html" /><updated>2016-12-20T16:42:55-05:00</updated><id>http://icanteden.com//</id><title type="html">Michael’s Weird Blog</title><subtitle>Author Michael Eden (engineer) experiments with the idea of having a creative outlet. Watch him fall back on his crutch by writing about cool tech and read his strange writing, the only guarantee is that the content is wholly his own.
 </subtitle><entry><title type="html">Improv Stories I</title><link href="http://icanteden.com/2016/11/30/improv-stories-one/" rel="alternate" type="text/html" title="Improv Stories I" /><published>2016-11-30T00:00:00-05:00</published><updated>2016-11-30T00:00:00-05:00</updated><id>http://icanteden.com/2016/11/30/improv-stories-one</id><content type="html" xml:base="http://icanteden.com/2016/11/30/improv-stories-one/">&lt;p&gt;Janie and I often write the invitations for my friends’ house parties.
 In order to get in the creative mood, we write some improvised stories
 as an excercise. This is a collection of some of the better stories from
@@ -114,7 +114,58 @@ He wipes the spit off with a shirt sleeve:&lt;/p&gt;
 &lt;p&gt;“U’ve been playing checkers while i’ve been playing chess for years”&lt;/p&gt;</content><category term="funny" /><category term="prose" /><summary type="html">Janie and I often write the invitations for my friends’ house parties.
 In order to get in the creative mood, we write some improvised stories
 as an excercise. This is a collection of some of the better stories from
-that excercise.</summary></entry><entry><title type="html">Home Alone</title><link href="http://icanteden.com/2014/10/31/home-alone/" rel="alternate" type="text/html" title="Home Alone" /><published>2014-10-31T00:00:00-04:00</published><updated>2014-10-31T00:00:00-04:00</updated><id>http://icanteden.com/2014/10/31/home-alone</id><content type="html" xml:base="http://icanteden.com/2014/10/31/home-alone/">&lt;h1 id=&quot;chapter-1-the-house&quot;&gt;Chapter 1: The House&lt;/h1&gt;
+that excercise.</summary></entry><entry><title type="html">L33t H4ck3r Login</title><link href="http://icanteden.com/2016/01/31/hackerz/" rel="alternate" type="text/html" title="L33t H4ck3r Login" /><published>2016-01-31T00:00:00-05:00</published><updated>2016-01-31T00:00:00-05:00</updated><id>http://icanteden.com/2016/01/31/hackerz</id><content type="html" xml:base="http://icanteden.com/2016/01/31/hackerz/">&lt;p&gt;Everyone wants to be a hacker these days,
+but to be truly l33t, you gotta have a cool retro setup from
+boot time to shut down.
+So during finals I decided to make a login theme that accurately
+captures what it would be like if &lt;a href=&quot;https://en.wikipedia.org/wiki/Johnny_Mnemonic_(film)&quot;&gt;Johnny Mnemonic&lt;/a&gt; owned my laptop.&lt;/p&gt;
+
+&lt;p&gt;I use &lt;code class=&quot;highlighter-rouge&quot;&gt;lightdm&lt;/code&gt;, and since &lt;a href=&quot;https://www.youtube.com/watch?v=FQM5fU7V-MM&quot;&gt;old habits die hard&lt;/a&gt; I decided to poke
+around and see how to make a login theme for it.
+Since it was &lt;em&gt;finals week&lt;/em&gt; I didn’t want to waste time learning GTK or SDL,
+and luckily I found &lt;code class=&quot;highlighter-rouge&quot;&gt;lightdm-webkit2-greeter&lt;/code&gt; on the &lt;a href=&quot;https://aur.archlinux.org/packages/lightdm-webkit2-greeter/&quot;&gt;AUR&lt;/a&gt;.
+After a little bit of being locked out of my desktop, I finally got it:&lt;/p&gt;
+
+&lt;div class=&quot;article-img&quot;&gt;
+    &lt;div class=&quot;center&quot;&gt;
+    &lt;a href=&quot;/media/2016-01-31-hackerz/hackerz-demo.gif&quot; target=&quot;_blank&quot;&gt;
+        &lt;img src=&quot;/media/2016-01-31-hackerz/hackerz-demo.gif&quot; alt=&quot;My new computer login screen!&quot; /&gt;
+    &lt;/a&gt;
+    &lt;/div&gt;
+    
+    &lt;blockquote style=&quot;border-left: 10px solid #D5D5D5;&quot;&gt;My new computer login screen!&lt;/blockquote&gt;
+    
+&lt;/div&gt;
+
+&lt;p&gt;All the code is available on its &lt;a href=&quot;https://github.com/illegalprime/hackerz&quot;&gt;github repo&lt;/a&gt;. To set this up
+all you need to do is install this greeter, edit &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/lightdm/lightdm.conf&lt;/code&gt;
+to contain:&lt;/p&gt;
+
+&lt;div class=&quot;language-ini highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;[Seat:*]&lt;/span&gt;
+&lt;span class=&quot;py&quot;&gt;greeter-session&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;lightdm-webkit2-greeter&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Place the theme in the themes folder for this greeter,&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone &lt;span class=&quot;s1&quot;&gt;'https://github.com/illegalprime/hackerz.git'&lt;/span&gt; /usr/share/lightdm-webkit/themes/hackerz
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;and finally edit &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/lightdm/lightdm-webkit2-greeter.conf&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-ini highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;[greeter]&lt;/span&gt;
+&lt;span class=&quot;py&quot;&gt;webkit-theme&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;hackerz&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;If you want to make your own cool theme, there’s not much docs out there,
+but you can take a look at &lt;a href=&quot;https://github.com/illegalprime/hackerz&quot;&gt;my code&lt;/a&gt; for some guidance, if the
+API is still the same when you’re reading this.&lt;/p&gt;</content><category term="code" /><category term="funny" /><summary type="html">Everyone wants to be a hacker these days,
+but to be truly l33t, you gotta have a cool retro setup from
+boot time to shut down.
+So during finals I decided to make a login theme that accurately
+captures what it would be like if Johnny Mnemonic owned my laptop.</summary></entry><entry><title type="html">Home Alone</title><link href="http://icanteden.com/2014/10/31/home-alone/" rel="alternate" type="text/html" title="Home Alone" /><published>2014-10-31T00:00:00-04:00</published><updated>2014-10-31T00:00:00-04:00</updated><id>http://icanteden.com/2014/10/31/home-alone</id><content type="html" xml:base="http://icanteden.com/2014/10/31/home-alone/">&lt;h1 id=&quot;chapter-1-the-house&quot;&gt;Chapter 1: The House&lt;/h1&gt;
 
 &lt;p&gt;It was a dark and sunny night, families have since gone to bed, one couple was
 still at it pretty hard and you could hear it from the roof of one lonely house,
