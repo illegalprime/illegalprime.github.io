@@ -17,11 +17,7 @@ layout: toplevel
         <h1 class="post-title"><b>{{ page.title }}</b></h1>
         <p></p>
         <div class="post-list-tags">
-        {% for tag in page.tags %}
-            <a href="#!">
-                <span class="tag new badge">{{ tag }}</span>
-            </a>
-        {% endfor %}
+            {% include tags.html tags=page.tags %}
         </div>
     </div>
 

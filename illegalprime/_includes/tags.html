@@ -1,0 +1,5 @@
+{% for tag in include.tags %}
+<a href="/tag/{{ tag }}">
+    <span class="tag new badge">{{ tag }}</span>
+</a>
+{% endfor %}

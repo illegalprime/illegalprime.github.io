@@ -18,11 +18,7 @@ section: home
             {% endif %}
             </p>
             <div class="post-list-tags floating">
-            {% for tag in post.tags %}
-                <a href="#!">
-                    <span class="tag new badge">{{ tag }}</span>
-                </a>
-            {% endfor %}
+                {% include tags.html tags=post.tags %}
             </div>
         </div>
     </div>

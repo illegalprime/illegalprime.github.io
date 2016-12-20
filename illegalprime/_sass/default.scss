@@ -132,6 +132,10 @@ ul.pagination li.active {
     margin-bottom: -10px;
 }
 
+.capitalize {
+    text-transform: capitalize;
+}
+
 .post-history {
     tbody > tr > td:first-child {
         text-align: right;
@@ -292,12 +296,6 @@ table.center td {
 
 .comments {
     text-align: center;
-}
-
-.article a {
-    border-bottom: 2px solid $site-background;
-    -webkit-transition: 0.5s ease;
-    transition: 0.5s ease;
 }
 
 .article img, .article video {

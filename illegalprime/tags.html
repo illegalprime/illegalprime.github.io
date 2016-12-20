@@ -1,0 +1,44 @@
+---
+layout: toplevel
+title: Tags
+section: tags
+---
+
+<div class="article animated fadeIn">
+
+<div class="row">
+    <div class="col s6 m4">
+        <a href="/history">
+        <div class="card waves-effect waves-block waves-light">
+            <div class="card-image">
+                <img src="/assets/images/tag-covers/all.jpg">
+            </div>
+            <div class="card-content">
+            <span class="capitalize card-title activator grey-text text-darken-4">
+                Everything
+            </span>
+            </div>
+        </div>
+        </a>
+    </div>
+
+{% for tag in site.tags %}
+    {% assign tag_name = tag[0] %}
+    <div class="col s6 m4">
+        <a href="/tag/{{ tag_name }}">
+        <div class="card waves-effect waves-block waves-light">
+            <div class="card-image">
+                <img src="{{ site.data.tag_meta[tag_name].image }}">
+            </div>
+            <div class="card-content">
+                <span class="capitalize card-title activator grey-text text-darken-4">
+                    {{ tag_name }}
+                </span>
+            </div>
+        </div>
+        </a>
+    </div>
+{% endfor %}
+</div>
+
+</div>

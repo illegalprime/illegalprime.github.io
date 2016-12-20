@@ -1,0 +1,17 @@
+games:
+   image: "/assets/images/tag-covers/games.jpg"
+
+funny:
+   image: "/assets/images/tag-covers/funny.jpg"
+
+circuits:
+   image: "/assets/images/tag-covers/circuits.jpg"
+
+code:
+   image: "/assets/images/tag-covers/code.jpg"
+
+linux:
+   image: "/assets/images/tag-covers/linux.jpg"
+
+prose:
+   image: "/assets/images/tag-covers/prose.jpg"
