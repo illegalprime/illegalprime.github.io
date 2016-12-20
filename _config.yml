@@ -29,6 +29,7 @@ gems:
   - jekyll-feed
   - jekyll-paginate
 exclude:
+  - tools
   - Gemfile
   - Gemfile.lock
 
@@ -38,4 +39,5 @@ tag_page_layout: tag_page
 tag_page_dir: tag
 permalink: pretty
 tag_permalink_style: pretty
+
 
