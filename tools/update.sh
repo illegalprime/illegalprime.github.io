@@ -5,7 +5,7 @@ set -euo pipefail
 OLD_BRANCH=$(git branch | grep '^*' | cut -d' ' -f2)
 COMMIT_MSG="$1"
 
-jekyll build -d /tmp/_site
+JEKYLL_ENV=production jekyll build -d /tmp/_site
 
 git co master
 
