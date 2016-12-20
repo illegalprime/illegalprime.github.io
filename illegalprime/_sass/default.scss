@@ -132,6 +132,12 @@ ul.pagination li.active {
     margin-bottom: -10px;
 }
 
+.post-history {
+    tbody > tr > td:first-child {
+        text-align: right;
+    }
+}
+
 .home-title {
     left: 50%;
     top: 50%;

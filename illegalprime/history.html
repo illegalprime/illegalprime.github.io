@@ -1,0 +1,20 @@
+---
+layout: toplevel
+title: History
+section: history
+---
+
+<div class="article animated fadeIn">
+    <h1><b>{{ page.title }}</b></h1>
+    <hr>
+    <table class="post-history">
+    {% for post in site.posts %}
+    <tr>
+        <td>{{ post.date | date_to_string }}</td>
+        <td><a href="{{ site.baseurl }}{{ post.url }}">
+            {{ post.title }}
+        </a></td>
+    </tr>
+    {% endfor %}
+    </table>
+</div>
