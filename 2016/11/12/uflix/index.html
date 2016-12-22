@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <title>
+    
+        µflix: Easy Plex Server &middot; Michael's Weird Blog
+    
+    </title>
+
+    <!-- Metadata -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Facebook Comment Plugin -->
+    <meta property="fb:app_id" content="1482009368710102"/>
+    <!-- Theme Color for Chrome on Android Lollipop -->
+    <meta name="theme-color" content="#52be80">
+</head>
+
+    <body>
+        <!-- Header -->
+<div class="top-level-header">
+    <div class="header-image">
+        &nbsp;
+    </div>
+</div>
+
+<div class="toplevel-content">
+    <div class="container">
+        <div class="middle top-menu">
+    
+    <a
+        
+        class="menu-item fadeInDown animated"
+        href="/">home</a>
+    
+    <a
+        
+        class="menu-item fadeInDown animated"
+        href="/tags">tags</a>
+    
+    <a
+        
+        class="menu-item fadeInDown animated"
+        href="/history">history</a>
+    
+    <a
+        
+        class="menu-item fadeInDown animated"
+        href="/about">about</a>
+    
+</div>
+
+
+        <div class="middle">
+            <div class="article animated fadeIn ">
+    <!-- Facebook Comments Plugin -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=1482009368710102";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="post-title-container">
+        <h1 class="post-title"><b>µflix: Easy Plex Server</b></h1>
+        <p></p>
+        <div class="post-list-tags">
+            
+<a href="/tag/code">
+    <span class="tag new badge">code</span>
+</a>
+
+<a href="/tag/linux">
+    <span class="tag new badge">linux</span>
+</a>
+
+
+        </div>
+    </div>
+
+    <hr>
+
+    <p>Movies are really <strong>really</strong> great.</p>
+
+<p>Ever since I started to prepare for the great apocalypse
+that will wipe the world of sin I thought to myself:
+“Wouldn’t it be <strong>really</strong> great if I could keep all the movies I love?
+So my children, and my children’s children will think I’m cool?”
+Keeping with the sin theme I decided to use <a href="https://plex.tv">Plex</a>, a non-FOSS Media
+Server, to ensure that my taste outlives me.</p>
+
+<p>So if you love hoarding movies (but don’t watch hoarders) and
+preparing for the end (but haven’t seen that reality show about that)
+you’ll love my new Plex container which is <em>dead simple</em> to use.</p>
+
+<p>The project is <a href="https://github.com/illegalprime/uflix">hosted on GitHub</a> and is built on Docker.
+If you’re unfamiliar with Docker, its a container framework,
+and containers are kernel namespaces. The important metaphor
+here is that containers are like shipping containers:
+standardized, plug-n-play, and (sometimes) have lots of wasted space.
+Basically you get an app running with all the dependencies, configuration,
+etc. done for you! And its really easy to get rid of afterward
+(unlike KDE, but I’m excited to try out NixOS, which is another solution to the KDE problem)!</p>
+
+<p>After <a href="https://docs.docker.com/engine/installation/linux/ubuntulinux/">installing docker</a> all you need to set up your server is:</p>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>git clone https://github.com/illegalprime/uflix.git
+<span class="nb">cd </span>uflix
+sudo ./build
+</code></pre>
+</div>
+
+<h2 id="its-got-features">Its got features!</h2>
+
+<ul>
+  <li>No Configuration!</li>
+  <li>Easy to deploy, remove, and copy.</li>
+  <li>Just re-run <code class="highlighter-rouge">sudo ./build</code> to update!</li>
+  <li>Supports local discovery with <code class="highlighter-rouge">avahi</code>!</li>
+  <li>Mount as many drives or directories as you want with command line args</li>
+  <li>SSH Access to poke around</li>
+</ul>
+
+<p>To run simply call:</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo ./start --metadata &lt;plex metadata dir / disk&gt;
+</code></pre>
+</div>
+
+<p>The only required command line arg is where to store the Plex metadata.
+This makes it easy to clone servers since you only need to copy your data drives.</p>
+
+<p>Even with all this cool tech a more serious question remains, if we could
+<em>only</em> save one terabyte of movies for the future which ones would they be?</p>
+
+<p>I have my list. Do you?</p>
+
+
+    <p>— Michael</p>
+
+    <!-- Facebook Comments Box -->
+    <br/>
+    <h2><b>Say It Loud! Leave a comment below:</b></h2>
+    <div class="fb-comments" data-href="http://icanteden.com/2016/11/12/uflix/" data-width="100%" data-numposts="10" data-colorscheme="light"></div>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<footer>
+</footer>
+
+    </body>
+</html>

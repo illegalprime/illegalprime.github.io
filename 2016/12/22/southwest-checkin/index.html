@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <title>
+    
+        Automatic Southwest Check In &middot; Michael's Weird Blog
+    
+    </title>
+
+    <!-- Metadata -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Facebook Comment Plugin -->
+    <meta property="fb:app_id" content="1482009368710102"/>
+    <!-- Theme Color for Chrome on Android Lollipop -->
+    <meta name="theme-color" content="#52be80">
+</head>
+
+    <body>
+        <!-- Header -->
+<div class="top-level-header">
+    <div class="header-image">
+        &nbsp;
+    </div>
+</div>
+
+<div class="toplevel-content">
+    <div class="container">
+        <div class="middle top-menu">
+    
+    <a
+        
+        class="menu-item fadeInDown animated"
+        href="/">home</a>
+    
+    <a
+        
+        class="menu-item fadeInDown animated"
+        href="/tags">tags</a>
+    
+    <a
+        
+        class="menu-item fadeInDown animated"
+        href="/history">history</a>
+    
+    <a
+        
+        class="menu-item fadeInDown animated"
+        href="/about">about</a>
+    
+</div>
+
+
+        <div class="middle">
+            <div class="article animated fadeIn ">
+    <!-- Facebook Comments Plugin -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=1482009368710102";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="post-title-container">
+        <h1 class="post-title"><b>Automatic Southwest Check In</b></h1>
+        <p></p>
+        <div class="post-list-tags">
+            
+<a href="/tag/code">
+    <span class="tag new badge">code</span>
+</a>
+
+
+        </div>
+    </div>
+
+    <hr>
+
+    <p>Like all men I exist for and because of woman.
+You see where this is going? Southwest allows me cheap air fare but at
+the cost of remembering and sometimes waking up explicitly to check in online
+to get an early seat. Why is this important?</p>
+
+<div class="message"><i>The early bird gets the girl (earlier).</i></div>
+
+<p>Every time I fly to see Janie I’m just as excited as the last time,
+so I’m always interested in shaving off valuable <em>minutes</em> of time apart.
+With all of this in mind it should be no surprise that I’ve written
+an automatic check in script in <code class="highlighter-rouge">phantom.js</code>.</p>
+
+<p>If you’re unfamiliar with <code class="highlighter-rouge">phantom.js</code> its a scriptable headless web browser.
+You write some javascript (gross) to control a browser and automate some
+tasks for you. It should be in your distros’ repos:</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>pacman -S phantomjs
+apt-get install <span class="s1">'something'</span>
+emerge <span class="s1">'some-such'</span>
+</code></pre>
+</div>
+
+<p>In short there are a three steps to check in, and you have to eval the webpage
+to get all the cookies to let you do this right. So <code class="highlighter-rouge">phantom.js</code> was a quick and
+easy solution:</p>
+
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="cm">/*!
+ * Southwest Check In v0.1
+ * GPLv3 License
+ */</span>
+<span class="kd">var</span> <span class="nx">page</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'webpage'</span><span class="p">).</span><span class="nx">create</span><span class="p">();</span>
+
+<span class="nx">page</span><span class="p">.</span><span class="nx">onLoadFinished</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">status</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// we didn't succeed loading the damn thing!</span>
+    <span class="c1">// exit with an error code, hopefully a parent process</span>
+    <span class="c1">// can try again after a delay</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">status</span> <span class="o">!==</span> <span class="s1">'success'</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s2">"Could not load URL: "</span> <span class="o">+</span> <span class="nx">page</span><span class="p">.</span><span class="nx">url</span><span class="p">);</span>
+        <span class="nx">phantom</span><span class="p">.</span><span class="nx">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="c1">// enter the first and last name, and the confirmation number</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">page</span><span class="p">.</span><span class="nx">url</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="sr">/retrieveCheckinDoc</span><span class="se">\.</span><span class="sr">html/</span><span class="p">))</span> <span class="p">{</span>
+        <span class="nx">page</span><span class="p">.</span><span class="nx">evaluate</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">confirmation</span><span class="p">,</span> <span class="nx">first_name</span><span class="p">,</span> <span class="nx">last_name</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'confirmationNumber'</span><span class="p">).</span><span class="nx">value</span> <span class="o">=</span> <span class="nx">confirmation</span><span class="p">;</span>
+            <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'firstName'</span><span class="p">).</span><span class="nx">value</span> <span class="o">=</span> <span class="nx">first_name</span><span class="p">;</span>
+            <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'lastName'</span><span class="p">).</span><span class="nx">value</span> <span class="o">=</span> <span class="nx">last_name</span><span class="p">;</span>
+            <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'itineraryLookup'</span><span class="p">).</span><span class="nx">submit</span><span class="p">();</span>
+        <span class="p">},</span> <span class="nx">confirmation</span><span class="p">,</span> <span class="nx">first_name</span><span class="p">,</span> <span class="nx">last_name</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="c1">// just click through past the confirmation page</span>
+    <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">page</span><span class="p">.</span><span class="nx">url</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="sr">/selectPrintDocument</span><span class="se">\.</span><span class="sr">html/</span><span class="p">))</span> <span class="p">{</span>
+        <span class="nx">page</span><span class="p">.</span><span class="nx">evaluate</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+            <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'printDocumentsButton'</span><span class="p">).</span><span class="nx">click</span><span class="p">();</span>
+        <span class="p">});</span>
+    <span class="p">}</span>
+    <span class="c1">// at this point you're technically checked in, but we'll try</span>
+    <span class="c1">// to tell you which boarding position you got.</span>
+    <span class="c1">// this is also helpful so you can test if the script worked</span>
+    <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">page</span><span class="p">.</span><span class="nx">url</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="sr">/selectCheckinDocDelivery</span><span class="se">\.</span><span class="sr">html/</span><span class="p">))</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">flight_info</span> <span class="o">=</span> <span class="nx">page</span><span class="p">.</span><span class="nx">evaluate</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+            <span class="kd">var</span> <span class="nx">output</span> <span class="o">=</span> <span class="p">[];</span>
+            <span class="kd">var</span> <span class="nx">details</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByClassName</span><span class="p">(</span><span class="s1">'itinerary_content'</span><span class="p">);</span>
+            <span class="kd">var</span> <span class="nx">rows</span> <span class="o">=</span> <span class="nx">details</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s1">'tr'</span><span class="p">);</span>
+            <span class="c1">// the first row is the header</span>
+            <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">rows</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+                <span class="kd">var</span> <span class="nx">info</span> <span class="o">=</span> <span class="nx">rows</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">getElementsByClassName</span><span class="p">(</span><span class="s1">'boardingInfo'</span><span class="p">);</span>
+                <span class="kd">var</span> <span class="nx">seat</span> <span class="o">=</span> <span class="s2">""</span><span class="p">;</span>
+                <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">j</span> <span class="o">&lt;</span> <span class="nx">info</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">j</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="nx">seat</span> <span class="o">+=</span> <span class="nx">info</span><span class="p">[</span><span class="nx">j</span><span class="p">].</span><span class="nx">innerHTML</span><span class="p">;</span>
+                <span class="p">}</span>
+                <span class="nx">output</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">seat</span><span class="p">);</span>
+            <span class="p">}</span>
+            <span class="c1">// for each passenger gives ["B1", "B2", etc..]</span>
+            <span class="k">return</span> <span class="nx">output</span><span class="p">;</span>
+        <span class="p">});</span>
+
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Seats:"</span><span class="p">);</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">flight_info</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"\t"</span> <span class="o">+</span> <span class="nx">flight_info</span><span class="p">[</span><span class="nx">i</span><span class="p">]);</span>
+        <span class="p">}</span>
+        <span class="nx">phantom</span><span class="p">.</span><span class="nx">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// open the online checkin page and start the process</span>
+<span class="nx">page</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="s1">'https://www.southwest.com/flight/retrieveCheckinDoc.html'</span><span class="p">);</span>
+</code></pre>
+</div>
+
+<p>Keep in mind that this is just the phantom.js snippet and it needs three
+variables to be in scope to work:</p>
+
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">confirmation</span> <span class="o">=</span> <span class="s1">'A0AAAA'</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">first_name</span> <span class="o">=</span> <span class="s1">'Michael'</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">last_name</span> <span class="o">=</span> <span class="s1">'Eden'</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<p>But of course yours will be different than mine.
+The real win is if in the future I make this into a daemon
+that listens to my Google Calendar events and even emails me
+the boarding pass after check in.</p>
+
+<p>Run with <code class="highlighter-rouge">phantomjs script.js</code> and keep this in mind on your next red-eye.</p>
+
+    <p>— Michael</p>
+
+    <!-- Facebook Comments Box -->
+    <br/>
+    <h2><b>Say It Loud! Leave a comment below:</b></h2>
+    <div class="fb-comments" data-href="http://icanteden.com/2016/12/22/southwest-checkin/" data-width="100%" data-numposts="10" data-colorscheme="light"></div>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<footer>
+</footer>
+
+    </body>
+</html>
