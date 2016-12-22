@@ -48,3 +48,6 @@ uncss:
     - assets/css/main.css
   # compress resulting css with sass; default: false
   compress: true
+  # only minify & uncss in production
+  envs:
+    - production
