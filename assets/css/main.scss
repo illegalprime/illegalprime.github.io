@@ -1,13 +1,26 @@
 ---
 ---
-
-@import "normalize";
-
 $break-small: 899px;
 $break-large: 900px;
 $main-color: #{{  site.theme_color }};
 $main-color-darker: #377e55;
 
+/**
+ * Fonts
+ */
+@import "font-Fenix";
+@import "font-MatIcons";
+@import "font-Roboto";
+
+/**
+ * Vendor CSS
+ */
+@import "materialize.min";
+@import "animate";
+
+/**
+ * Device Specific
+ */
 @media screen and (max-width: $break-small) {
     @import "mobile";
 }
