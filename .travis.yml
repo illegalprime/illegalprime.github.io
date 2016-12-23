@@ -1,0 +1,10 @@
+language: ruby
+rvm:
+- 2.2.5
+branches:
+  only:
+  - redeux
+script: "./tools/update.sh"
+env:
+  global:
+    secure: oxdM6XAuwkhBNDu5AEcBUlbwEzMGPD5n7dAsU0W5/OQZrG364cda918j8sOg0DfG+caJ/pC7nIeG2FdiTDso+Edzi0ys0cNBXXjClLidQgcxIZ6Q9WWEgf7phRvp55247Do3Uq4BQlwG2Y+30Vt5mit0vJGh0wYsPYk0PNtEyQlBsPY8E9KNkN9wkd1zcRaLhB0u+zA0o0GlcUWWU14JHMUkYncFRUUySDb27zjlmkOGYswedFvbe1csHEm0f7fttlVlqnu4nntia2f9FFUqfLHVcTDb0VLjNKx21uzqe1/+3BOu8qFziKSTuh1nYNzHzxEgGee3MM2nF0V8/Tjh1HDz761LVH15k/5kTLPnH0Jk4uGbOn+BPkRc+bmiZ1j6gAQHfSo/4MijNIMLyjk4FJxF5Xeknzg+B0xt2/zca+9F4LZaWrghVqYMsXTKlqbXJybIV561K1re2deiJi2K2sn4h2g40DO7N0ZuqZFhUn1vD6u/opN5mtlxk8vKLxKmjX/Aao2LTNa51/OE5GhLI0oaeFw/vi5yTRia+ZbgiWUc54/RAxp87xRDIeZFY8CRtKGOwNuBAMI74M7+JeBOtQu+JGI5ol/KyLvcALSgWiIxa1JiXf6gE28l2s4nxbMMOUtYLszy/cPseduh2wkF/b5fhAUEYDXGJtcqPzaQsTI=

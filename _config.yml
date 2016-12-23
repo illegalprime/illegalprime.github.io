@@ -30,6 +30,10 @@ gems:
   - jekyll-paginate
 exclude:
   - tools
+  - node_modules
+  - package.json
+  - vendor
+  - .bundle
   - Gemfile
   - Gemfile.lock
 
