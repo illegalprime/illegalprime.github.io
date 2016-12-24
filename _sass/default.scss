@@ -134,6 +134,34 @@ ul.pagination li.active {
     margin-bottom: -10px;
 }
 
+.post-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+        margin: 0px;
+    }
+
+    .social {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .social a {
+        color: black;
+        margin-left: 1rem;
+        font-size: 1.3em;
+        opacity: 0.5;
+        transition-duration: .25s;
+    }
+
+    .social a:hover {
+        opacity: 1;
+    }
+}
+
 .capitalize {
     text-transform: capitalize;
 }
