@@ -3,16 +3,6 @@ layout: toplevel
 ---
 
 <div class="article animated fadeIn {{ page.mode }}">
-    <!-- Facebook Comments Plugin -->
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=1482009368710102";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-
     <div class="post-title-container">
         <h1 class="post-title"><b>{{ page.title }}</b></h1>
         <p></p>
@@ -43,8 +33,21 @@ layout: toplevel
 
     <hr>
 
-    <!-- Facebook Comments Box -->
     <br/>
+    <!-- Disqus Comments Box -->
     <h2><b>Say It Loud! Leave a comment below:</b></h2>
-    <div class="fb-comments" data-href="{{ site.url }}{{ page.url | replace:'index.html',''}}" data-width="100%" data-numposts="10" data-colorscheme="light"></div>
+    <div id="disqus_thread"></div>
+    <script>
+        var disqus_config = function () {
+            this.page.url = "{{ site.url }}{{ page.url | replace:'index.html','' }}";
+            this.page.identifier = "{{ page.url | replace: '/','_' }}";
+        };
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = '//icanteden.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Enable JavaScript to view comments.</noscript>
 </div>
