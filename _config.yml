@@ -44,14 +44,3 @@ tag_page_dir: tag
 permalink: pretty
 tag_permalink_style: pretty
 theme_color: 52be80
-
-# CSS Compressor Settings
-uncss:
-  # a list of stylesheets to be processed; mandatory
-  stylesheets:
-    - assets/css/main.css
-  # compress resulting css with sass; default: false
-  compress: true
-  # only minify & uncss in production
-  envs:
-    - production
