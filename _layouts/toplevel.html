@@ -3,10 +3,13 @@ layout: default
 ---
 
 <!-- Header -->
-<div class="top-level-header">
-    <div class="header-image">
-        &nbsp;
-    </div>
+<div class="animated fadeIn top-level-header {% if page.image_fade %} gradient-out {% endif %}">
+    {% if page.title_in_header %}
+        <h1>{{ page.title }}</h1>
+    {% endif %}
+</div>
+<div class="header-image" style="background-image: url('{% if page.image %} {{ page.image }} {% else %} {{ site.default_banner }} {% endif %}');{{ page.image_style }}">
+    &nbsp;
 </div>
 
 <div class="toplevel-content">

@@ -1,0 +1,21 @@
+---
+layout: toplevel
+title: Vignettes
+image: '/assets/images/janie-michael-sketch.jpg'
+image_style: 'background-size: contain;'
+image_fade: true
+title_in_header: true
+---
+
+<div class="article animated fadeIn">
+    <table class="post-history">
+    {% for post in (1..20) %}
+    <tr>
+        <td>PAGE</td>
+        <td><a href="{{ site.baseurl }}{{ post.url }}">
+            IN PROGRESS
+        </a></td>
+    </tr>
+    {% endfor %}
+    </table>
+</div>
