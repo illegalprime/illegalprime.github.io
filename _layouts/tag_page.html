@@ -7,12 +7,15 @@ layout: toplevel
     <hr>
     <table class="post-history">
     {% for post in page.posts %}
+    {% if post.hidden %}
+    {% else %}
     <tr>
         <td>{{ post.date | date_to_string }}</td>
         <td><a href="{{ site.baseurl }}{{ post.url }}">
             {{ post.title }}
         </a></td>
     </tr>
+    {% endif %}
     {% endfor %}
     </table>
 </div>

@@ -312,7 +312,7 @@ table.center td {
     text-align: center;
 }
 
-.article, .comments {
+.article, .comments, .article p {
     font-family: Fenix, Georgia, "Times New Roman", serif;
     font-weight: 400;
     letter-spacing: 0px;
@@ -544,6 +544,5 @@ pre code {
 .article {
     ul li {
         list-style-type: decimal;
-        color: $text-color;
     }
 }

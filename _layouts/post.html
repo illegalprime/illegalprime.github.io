@@ -17,7 +17,13 @@ layout: toplevel
 
     <br/>
     <div class="post-footer">
-        <p>{{ site.signature }}</p>
+        <p>
+          {% if page.author %}
+            &mdash; {{ page.author }}
+          {% else %}
+            {{ site.signature }}
+          {% endif %}
+        </p>
 
         <div class="social">
             <p>Subscribe:</p>
