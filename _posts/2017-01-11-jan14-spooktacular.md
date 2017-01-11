@@ -32,7 +32,7 @@ Feat. ur favorite faces n friends and:
 <div class="message">
  <b>where</b> North Avenue North Room 528
  <br/>
- <b>when</b> Saturday 14<sup>th</sup>, January 2017
+ <b>when</b> Saturday 14<sup>th</sup> @ 10 pm, January 2017
  <br/>
  <b>who</b> you + an arbitrary depth of friends of friends
 </div>
