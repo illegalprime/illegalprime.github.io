@@ -8,15 +8,25 @@ title_in_header: true
 permalink: /vignettes/
 ---
 
-<div class="article animated fadeIn">
-    <table class="post-history">
-    {% for post in (1..20) %}
-    <tr>
-        <td>PAGE</td>
-        <td><a href="{{ site.baseurl }}{{ post.url }}">
-            IN PROGRESS
-        </a></td>
-    </tr>
-    {% endfor %}
-    </table>
+<div class="vignettes article fadeInUp animated">
+<div class="row">
+{% for post in site.posts %}
+{% if post.tags contains 'vignette' %}
+<div class="col s6 m4">
+    <a href="{{ site.baseurl }}{{ post.url }}">
+        <div class="card waves-effect waves-block waves-light">
+            <div class="card-content">
+                <span class="capitalize card-title activator grey-text text-darken-4">
+                    {{ post.title }}
+                </span>
+            </div>
+            <div class="card-action grey-text text-darken-1">
+                Slice of {{ post.occurred }}
+            </div>
+        </div>
+    </a>
+</div>
+{% endif %}
+{% endfor %}
+</div>
 </div>

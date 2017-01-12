@@ -546,3 +546,14 @@ pre code {
         list-style-type: decimal;
     }
 }
+
+/* vignette styles */
+.vignettes .card .card-content {
+    text-align: center;
+}
+
+.vignettes .card .card-action {
+    font-size: 0.8em;
+    padding: 2px 20px 2px 20px;
+    text-align: left;
+}
