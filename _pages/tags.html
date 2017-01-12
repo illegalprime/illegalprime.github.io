@@ -25,7 +25,11 @@ permalink: /tags/
 
 {% for tag_name in site.tags_by_freq %}
     <div class="col s6 m4">
-        <a href="/tag/{{ tag_name }}">
+        {% if site.data.tag_meta[tag_name].override %}
+          <a href="{{ site.data.tag_meta[tag_name].override }}">
+        {% else %}
+          <a href="/tag/{{ tag_name }}">
+        {% endif %}
         <div class="card waves-effect waves-block waves-light">
             <div class="card-image">
                 <img src="{{ site.data.tag_meta[tag_name].image }}">

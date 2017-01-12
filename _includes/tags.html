@@ -1,5 +1,9 @@
 {% for tag in include.tags %}
-<a href="/tag/{{ tag }}">
-    <span class="tag new badge">{{ tag }}</span>
-</a>
+{% if site.data.tag_meta[tag].override %}
+    <a href="{{ site.data.tag_meta[tag].override }}">
+{% else %}
+    <a href="/tag/{{ tag_name }}">
+{% endif %}
+        <span class="tag new badge">{{ tag }}</span>
+    </a>
 {% endfor %}

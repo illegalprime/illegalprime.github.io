@@ -15,3 +15,7 @@ linux:
 
 prose:
    image: "/assets/images/tag-covers/prose.jpg"
+
+vignette:
+   image: "/assets/images/janie-michael-sketch.jpg"
+   override: "/vignettes/"
