@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://icanteden.com/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="http://icanteden.com/feed.xml" rel="self" type="application/atom+xml" /><link href="http://icanteden.com/" rel="alternate" type="text/html" /><updated>2017-01-14T18:02:12+00:00</updated><id>http://icanteden.com//</id><title type="html">Michael’s Weird Blog</title><subtitle>Author Michael Eden (engineer) experiments with the idea of having a creative outlet. Watch him fall back on his crutch by writing about cool tech and read his strange writing, the only guarantee is that the content is wholly his own.
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://icanteden.com/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="http://icanteden.com/feed.xml" rel="self" type="application/atom+xml" /><link href="http://icanteden.com/" rel="alternate" type="text/html" /><updated>2017-02-06T19:51:58+00:00</updated><id>http://icanteden.com//</id><title type="html">Michael’s Weird Blog</title><subtitle>Author Michael Eden (engineer) experiments with the idea of having a creative outlet. Watch him fall back on his crutch by writing about cool tech and read his strange writing, the only guarantee is that the content is wholly his own.
 </subtitle><entry><title type="html">Saturday the 14th Spooktacular</title><link href="http://icanteden.com/saturday-14-spooktacular/" rel="alternate" type="text/html" title="Saturday the 14th Spooktacular" /><published>2017-01-11T00:00:00+00:00</published><updated>2017-01-11T00:00:00+00:00</updated><id>http://icanteden.com/jan14-spooktacular</id><content type="html" xml:base="http://icanteden.com/saturday-14-spooktacular/">&lt;p&gt;Wait-listed for a class… that isn’t offered?&lt;/p&gt;
 
 &lt;p&gt;Friends mysteriously missing from your friends list??&lt;/p&gt;
@@ -300,7 +300,49 @@ This makes it easy to clone servers since you only need to copy your data drives
 &lt;p&gt;Even with all this cool tech a more serious question remains, if we could
 &lt;em&gt;only&lt;/em&gt; save one terabyte of movies for the future which ones would they be?&lt;/p&gt;
 
-&lt;p&gt;I have my list. Do you?&lt;/p&gt;</content><category term="code" /><category term="linux" /><summary type="html">Movies are really really great.</summary></entry><entry><title type="html">L33t H4ck3r Login</title><link href="http://icanteden.com/2016/01/31/hackerz/" rel="alternate" type="text/html" title="L33t H4ck3r Login" /><published>2016-01-31T00:00:00+00:00</published><updated>2016-01-31T00:00:00+00:00</updated><id>http://icanteden.com/2016/01/31/hackerz</id><content type="html" xml:base="http://icanteden.com/2016/01/31/hackerz/">&lt;p&gt;Everyone wants to be a hacker these days,
+&lt;p&gt;I have my list. Do you?&lt;/p&gt;</content><category term="code" /><category term="linux" /><summary type="html">Movies are really really great.</summary></entry><entry><title type="html">Wakemeupwhenseptemberends Party</title><link href="http://icanteden.com/wakemeupwhenseptemberends-party/" rel="alternate" type="text/html" title="Wakemeupwhenseptemberends Party" /><published>2016-09-30T00:00:00+00:00</published><updated>2016-09-30T00:00:00+00:00</updated><id>http://icanteden.com/september-ends-party</id><content type="html" xml:base="http://icanteden.com/wakemeupwhenseptemberends-party/">&lt;p&gt;Why do we cook bacon but bake cookies?&lt;/p&gt;
+
+&lt;p&gt;Think about it.&lt;/p&gt;
+
+&lt;p&gt;That’s right, every interaction we have is being recorded.&lt;/p&gt;
+
+&lt;p&gt;In this case its in invitation form.&lt;/p&gt;
+
+&lt;p&gt;So why isn’t this message encrypted?&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dGVkIGNydXogaXMgem9kaWFjCg==
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Cat got on the keyboard again..&lt;/p&gt;
+
+&lt;p&gt;Did you know cats are subsidized by our government to sedate America?&lt;/p&gt;
+
+&lt;p&gt;Of course not.&lt;/p&gt;
+
+&lt;p&gt;Every time you kiss your cat, pheromones are released in your bloodstream.&lt;/p&gt;
+
+&lt;p&gt;Wait, you won’t understand complex biology.&lt;/p&gt;
+
+&lt;p&gt;Nobody understands.&lt;/p&gt;
+
+&lt;p&gt;What is this about?&lt;/p&gt;
+
+&lt;p&gt;It’s about getting woke!&lt;/p&gt;
+
+&lt;p&gt;It’s about waking up, when September ends.&lt;/p&gt;
+
+&lt;div class=&quot;message&quot;&gt;
+ &lt;b&gt;what&lt;/b&gt; wakemeupwhenseptemberends party
+ &lt;br /&gt;
+ &lt;b&gt;where&lt;/b&gt; NaN 0528, 9 PM
+ &lt;br /&gt;
+ &lt;b&gt;when&lt;/b&gt; September 30, 2016
+ &lt;br /&gt;
+ &lt;b&gt;who&lt;/b&gt; This is a +n invite.
+&lt;/div&gt;
+
+&lt;p&gt;RSVP now. Before. September. Ends.&lt;/p&gt;</content><author><name>North Ave. North 528</name></author><summary type="html">Why do we cook bacon but bake cookies?</summary></entry><entry><title type="html">L33t H4ck3r Login</title><link href="http://icanteden.com/2016/01/31/hackerz/" rel="alternate" type="text/html" title="L33t H4ck3r Login" /><published>2016-01-31T00:00:00+00:00</published><updated>2016-01-31T00:00:00+00:00</updated><id>http://icanteden.com/2016/01/31/hackerz</id><content type="html" xml:base="http://icanteden.com/2016/01/31/hackerz/">&lt;p&gt;Everyone wants to be a hacker these days,
 but to be truly l33t, you gotta have a cool retro setup from
 boot time to shut down.
 So during finals I decided to make a login theme that accurately
@@ -966,22 +1008,4 @@ which the program needs to know for later decoding.&lt;/div&gt;
     
     &lt;blockquote style=&quot;border-left: 10px solid #D5D5D5;&quot;&gt;Board is about 55x23 mm&lt;/blockquote&gt;
     
-&lt;/div&gt;</content><category term="circuits" /><summary type="html">The Idea</summary></entry><entry><title type="html">Mike India Kilo Echo</title><link href="http://icanteden.com/2014/07/20/phonetic-alphabet/" rel="alternate" type="text/html" title="Mike India Kilo Echo" /><published>2014-07-20T00:00:00+00:00</published><updated>2014-07-20T00:00:00+00:00</updated><id>http://icanteden.com/2014/07/20/phonetic-alphabet</id><content type="html" xml:base="http://icanteden.com/2014/07/20/phonetic-alphabet/">&lt;p&gt;My personal phonetic alphabet that I use to clarify all misunderstandings
-when I try to spell tricky things like “Michael” over the phone:&lt;/p&gt;
-
-&lt;table class=&quot;center&quot;&gt;
-&lt;tr&gt;&lt;td&gt;A&lt;/td&gt;&lt;td&gt;Are&lt;/td&gt;&lt;td&gt;B&lt;/td&gt;&lt;td&gt;Bdellium&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;C&lt;/td&gt;&lt;td&gt;Czar&lt;/td&gt;&lt;td&gt;D&lt;/td&gt;&lt;td&gt;Djibouti or Richard&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;E&lt;/td&gt;&lt;td&gt;Euphoria&lt;/td&gt;&lt;td&gt;F&lt;/td&gt;&lt;td&gt;Fraise&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;G&lt;/td&gt;&lt;td&gt;Gnome&lt;/td&gt;&lt;td&gt;H&lt;/td&gt;&lt;td&gt;Heir&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;I&lt;/td&gt;&lt;td&gt;Illicit&lt;/td&gt;&lt;td&gt;J&lt;/td&gt;&lt;td&gt;Jalapeno&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;K&lt;/td&gt;&lt;td&gt;Knight&lt;/td&gt;&lt;td&gt;L&lt;/td&gt;&lt;td&gt;the silent L in Llama&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;M&lt;/td&gt;&lt;td&gt;Mnemonic&lt;/td&gt;&lt;td&gt;N&lt;/td&gt;&lt;td&gt;Nee&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;O&lt;/td&gt;&lt;td&gt;Ouija Board&lt;/td&gt;&lt;td&gt;P&lt;/td&gt;&lt;td&gt;Pterodactyl&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Q&lt;/td&gt;&lt;td&gt;Qat&lt;/td&gt;&lt;td&gt;R&lt;/td&gt;&lt;td&gt;R you sure?&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;S&lt;/td&gt;&lt;td&gt;Sea&lt;/td&gt;&lt;td&gt;T&lt;/td&gt;&lt;td&gt;Tsunami&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;U&lt;/td&gt;&lt;td&gt;Urushiol&lt;/td&gt;&lt;td&gt;V&lt;/td&gt;&lt;td&gt;'v' will!&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;W&lt;/td&gt;&lt;td&gt;Write&lt;/td&gt;&lt;td&gt;X&lt;/td&gt;&lt;td&gt;Xylophone&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Y&lt;/td&gt;&lt;td&gt;You&lt;/td&gt;&lt;td&gt;Z&lt;/td&gt;&lt;td&gt;Zhou&lt;/td&gt;&lt;/tr&gt;
-&lt;/table&gt;</content><category term="funny" /><summary type="html">My personal phonetic alphabet that I use to clarify all misunderstandings
-when I try to spell tricky things like “Michael” over the phone:</summary></entry></feed>
+&lt;/div&gt;</content><category term="circuits" /><summary type="html">The Idea</summary></entry></feed>
