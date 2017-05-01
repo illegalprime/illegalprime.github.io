@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://icanteden.com/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="http://icanteden.com/feed.xml" rel="self" type="application/atom+xml" /><link href="http://icanteden.com/" rel="alternate" type="text/html" /><updated>2017-05-01T16:20:49+00:00</updated><id>http://icanteden.com//</id><title type="html">Michael’s Weird Blog</title><subtitle>Author Michael Eden (engineer) experiments with the idea of having a creative outlet. Watch him fall back on his crutch by writing about cool tech and read his strange writing, the only guarantee is that the content is wholly his own.
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://icanteden.com/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="http://icanteden.com/feed.xml" rel="self" type="application/atom+xml" /><link href="http://icanteden.com/" rel="alternate" type="text/html" /><updated>2017-05-01T16:43:44+00:00</updated><id>http://icanteden.com//</id><title type="html">Michael’s Weird Blog</title><subtitle>Author Michael Eden (engineer) experiments with the idea of having a creative outlet. Watch him fall back on his crutch by writing about cool tech and read his strange writing, the only guarantee is that the content is wholly his own.
 </subtitle><entry><title type="html">Cinco de Michael</title><link href="http://icanteden.com/cinco-de-lit-o/" rel="alternate" type="text/html" title="Cinco de Michael" /><published>2017-04-30T00:00:00+00:00</published><updated>2017-04-30T00:00:00+00:00</updated><id>http://icanteden.com/cinco-de-michael</id><content type="html" xml:base="http://icanteden.com/cinco-de-lit-o/">&lt;h2 id=&quot;michaels-rising-manhood&quot;&gt;Michael’s Rising Manhood&lt;/h2&gt;
 &lt;p&gt;Michael’s manhood has &lt;a href=&quot;http://itsalmo.st/#cinco-de-michael&quot;&gt;almost finished&lt;/a&gt; rising!
 And we’d like all of you to be there to see it.
@@ -31,7 +31,7 @@ Be there. at midnight. (and before) when Michael becomes a man.&lt;/p&gt;
 Drunk dial your ex! Tell that special someone how you really feel!
 But most of all, have a good time.&lt;/p&gt;
 
-&lt;h2 id=&quot;notable-testimonials&quot;&gt;Notable Testimonials:&lt;/h2&gt;
+&lt;h2 id=&quot;notable-quotables&quot;&gt;Notable Quotables:&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;“Why is my invite Titanic-themed”&lt;/li&gt;
   &lt;li&gt;“When I first met Michael he said ‘finish my Venmo payment already’ and
@@ -74,7 +74,14 @@ on that raft&lt;/li&gt;
   &lt;li&gt;(spoiler alert: he’s gonna andrew dai)&lt;/li&gt;
   &lt;li&gt;((because u didn’t wanna sherry))&lt;/li&gt;
   &lt;li&gt;(((jerk.)))&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Janie</name></author><summary type="html">Michael’s Rising Manhood
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;like-this-hot-garbage&quot;&gt;Like this hot garbage?&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;/wakemeupwhenseptemberends-party/&quot;&gt;End of September&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/2016/04/01/april-fools-party/&quot;&gt;April Fool’s 2016&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/2016/09/02/williams-party/&quot;&gt;William’s 21st&lt;/a&gt;&lt;/p&gt;</content><author><name>Party Squad</name></author><summary type="html">Michael’s Rising Manhood
 Michael’s manhood has almost finished rising!
 And we’d like all of you to be there to see it.
 (Please note - do not ask about his rise or his manhood as his
@@ -522,165 +529,95 @@ This makes it easy to clone servers since you only need to copy your data drives
  &lt;b&gt;who&lt;/b&gt; This is a +n invite.
 &lt;/div&gt;
 
-&lt;p&gt;RSVP now. Before. September. Ends.&lt;/p&gt;</content><author><name>North Ave. North 528</name></author><summary type="html">Why do we cook bacon but bake cookies?</summary></entry><entry><title type="html">L33t H4ck3r Login</title><link href="http://icanteden.com/2016/01/31/hackerz/" rel="alternate" type="text/html" title="L33t H4ck3r Login" /><published>2016-01-31T00:00:00+00:00</published><updated>2016-01-31T00:00:00+00:00</updated><id>http://icanteden.com/2016/01/31/hackerz</id><content type="html" xml:base="http://icanteden.com/2016/01/31/hackerz/">&lt;p&gt;Everyone wants to be a hacker these days,
-but to be truly l33t, you gotta have a cool retro setup from
-boot time to shut down.
-So during finals I decided to make a login theme that accurately
-captures what it would be like if &lt;a href=&quot;https://en.wikipedia.org/wiki/Johnny_Mnemonic_(film)&quot;&gt;Johnny Mnemonic&lt;/a&gt; owned my laptop.&lt;/p&gt;
+&lt;p&gt;RSVP now. Before. September. Ends.&lt;/p&gt;</content><author><name>North Ave. North 528</name></author><summary type="html">Why do we cook bacon but bake cookies?</summary></entry><entry><title type="html">You’ve Been Cordially Invited</title><link href="http://icanteden.com/2016/09/02/williams-party/" rel="alternate" type="text/html" title="You’ve Been Cordially Invited" /><published>2016-09-02T00:00:00+00:00</published><updated>2016-09-02T00:00:00+00:00</updated><id>http://icanteden.com/2016/09/02/williams-party</id><content type="html" xml:base="http://icanteden.com/2016/09/02/williams-party/">&lt;p&gt;TO START THE SCHOOL YEAR OFF RIGHT BY GETTING FFGUDRUNK&lt;/p&gt;
 
-&lt;p&gt;I use &lt;code class=&quot;highlighter-rouge&quot;&gt;lightdm&lt;/code&gt;, and since &lt;a href=&quot;https://www.youtube.com/watch?v=FQM5fU7V-MM&quot;&gt;old habits die hard&lt;/a&gt; I decided to poke
-around and see how to make a login theme for it.
-Since it was &lt;em&gt;finals week&lt;/em&gt; I didn’t want to waste time learning GTK or SDL,
-and luckily I found &lt;code class=&quot;highlighter-rouge&quot;&gt;lightdm-webkit2-greeter&lt;/code&gt; on the &lt;a href=&quot;https://aur.archlinux.org/packages/lightdm-webkit2-greeter/&quot;&gt;AUR&lt;/a&gt;.
-After a little bit of being locked out of my desktop, I finally got it:&lt;/p&gt;
+&lt;p&gt;WITH US AT THE 5 2 8 STILL REPPING THAT NORTH SIDE, STILL ON THIS SIDE OF THE MARTA, STILL HAVE DRINKS, MUSIC, BASS WHAT MORE DO YOU WANT??&lt;/p&gt;
 
-&lt;div class=&quot;article-img&quot;&gt;
-    &lt;div class=&quot;center&quot;&gt;
-    &lt;a href=&quot;/media/2016-01-31-hackerz/hackerz-demo.gif&quot; target=&quot;_blank&quot;&gt;
-        &lt;img src=&quot;/media/2016-01-31-hackerz/hackerz-demo.gif&quot; alt=&quot;My new computer login screen!&quot; /&gt;
-    &lt;/a&gt;
-    &lt;/div&gt;
-    
-    &lt;blockquote style=&quot;border-left: 10px solid #D5D5D5;&quot;&gt;My new computer login screen!&lt;/blockquote&gt;
-    
-&lt;/div&gt;
+&lt;p&gt;OH RIGHT&lt;/p&gt;
 
-&lt;p&gt;All the code is available on its &lt;a href=&quot;https://github.com/illegalprime/hackerz&quot;&gt;github repo&lt;/a&gt;. To set this up
-all you need to do is install this greeter, edit &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/lightdm/lightdm.conf&lt;/code&gt;
-to contain:&lt;/p&gt;
+&lt;p&gt;A REASON TO LIVE&lt;/p&gt;
 
-&lt;div class=&quot;language-ini highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;[Seat:*]&lt;/span&gt;
-&lt;span class=&quot;py&quot;&gt;greeter-session&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;lightdm-webkit2-greeter&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;p&gt;OUR REASON IS WILLIAM GREENLEAF&lt;/p&gt;
 
-&lt;p&gt;Place the theme in the themes folder for this greeter,&lt;/p&gt;
+&lt;p&gt;GRAB LIFE BY THE TESTICLES AND COME ON DOWN TO CELEBRATE WILLIAM’S 21st [ 2 + 1 = 3 : WILLUMINATI CONFIRMED ] BIRTHDAY!!!&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone &lt;span class=&quot;s1&quot;&gt;'https://github.com/illegalprime/hackerz.git'&lt;/span&gt; /usr/share/lightdm-webkit/themes/hackerz
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;p&gt;BUT WHAT ELSE IS CONFIRMED?&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;2 + 1 = $300 DOLLARS OF DRINKS&lt;/li&gt;
+  &lt;li&gt;celebrating 21 years of william&lt;/li&gt;
+  &lt;li&gt;a 21 hour playlist of will.i.am&lt;/li&gt;
+  &lt;li&gt;a william hour playlist of 21 Pilots&lt;/li&gt;
+  &lt;li&gt;2 + 1 = 3 Days Grace&lt;/li&gt;
+  &lt;li&gt;having  your birthday cake and drinking it too&lt;/li&gt;
+  &lt;li&gt;becoming a man&lt;/li&gt;
+  &lt;li&gt;political memes&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;and finally edit &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/lightdm/lightdm-webkit2-greeter.conf&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;“pls come” - Jeb Bush&lt;/p&gt;</content><author><name>north ave. north 528</name></author><summary type="html">TO START THE SCHOOL YEAR OFF RIGHT BY GETTING FFGUDRUNK</summary></entry><entry><title type="html">April Fools 2016</title><link href="http://icanteden.com/2016/04/01/april-fools-party/" rel="alternate" type="text/html" title="April Fools 2016" /><published>2016-04-01T00:00:00+00:00</published><updated>2016-04-01T00:00:00+00:00</updated><id>http://icanteden.com/2016/04/01/april-fools-party</id><content type="html" xml:base="http://icanteden.com/2016/04/01/april-fools-party/">&lt;p&gt;To whom it may concern,&lt;/p&gt;
 
-&lt;div class=&quot;language-ini highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;[greeter]&lt;/span&gt;
-&lt;span class=&quot;py&quot;&gt;webkit-theme&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;hackerz&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;p&gt;I am sorry to inform you that our much anticipated “end of the week / middle
+of the term” party has been cancelled.
+An unfortunate incident involving our late and dear friend Andrew Dai caused
+his early departure from this world.
+This cucumber &amp;amp; lubricant related incident was a shock to the entire NaN 0528 community.
+At the time of writing we are contacting his family members and loved ones with
+detailed descriptions and video of the incident.
+Rest assured in knowing we will be putting pressure on Georgia Tech to educate
+its students on putting pressure on their internals.
+We will also advocate that the word “shafted” should no longer be used in an facetious
+manner, as some students could take it to the extreme.&lt;/p&gt;
 
-&lt;p&gt;If you want to make your own cool theme, there’s not much docs out there,
-but you can take a look at &lt;a href=&quot;https://github.com/illegalprime/hackerz&quot;&gt;my code&lt;/a&gt; for some guidance, if the
-API is still the same when you’re reading this.&lt;/p&gt;</content><category term="code" /><category term="funny" /><summary type="html">Everyone wants to be a hacker these days,
-but to be truly l33t, you gotta have a cool retro setup from
-boot time to shut down.
-So during finals I decided to make a login theme that accurately
-captures what it would be like if Johnny Mnemonic owned my laptop.</summary></entry><entry><title type="html">Home Alone</title><link href="http://icanteden.com/2014/10/31/home-alone/" rel="alternate" type="text/html" title="Home Alone" /><published>2014-10-31T00:00:00+00:00</published><updated>2014-10-31T00:00:00+00:00</updated><id>http://icanteden.com/2014/10/31/home-alone</id><content type="html" xml:base="http://icanteden.com/2014/10/31/home-alone/">&lt;h1 id=&quot;chapter-1-the-house&quot;&gt;Chapter 1: The House&lt;/h1&gt;
+&lt;p&gt;We apologize for any inconvenience this may haved caused you.&lt;/p&gt;
 
-&lt;p&gt;It was a dark and sunny night, families have since gone to bed, one couple was
-still at it pretty hard and you could hear it from the roof of one lonely house,
-that house wasn’t getting any tonight.
-It wasn’t getting anything but a &lt;em&gt;VISITOR&lt;/em&gt;… of the Jewish kind.
-On the roof of that lonely house was a lonely man, a man who since his sweetheart’s
-leaving to a place down under had resorted to using his own hand to comfort himself,
-he patted himself on the back “It’s going to be OK” he said.&lt;/p&gt;
+&lt;p&gt;We only wish that Andrew could have partied one more night.&lt;/p&gt;
 
-&lt;p&gt;That man’s name was Michael Eden and he was surrounded by two average looking women
-and one and a half pies of pizza, one with peppers, onions, hot dogs and olives,
-and the other with just the onions and the dogs.
-More to the point three polka-dotted table clothes lay on the roof, two side by side,
-and the other on its side squaring out a rectangle, alone…
-Two bean-bags sat on these table clothes, with one being slightly off the cloth,
-this grated on Michael Eden’s sensibilities.&lt;/p&gt;
+&lt;p&gt;Yours always,
+ — Michael&lt;/p&gt;
 
-&lt;p&gt;“I mean why did we get this stupid table cloth anyway if we’re just going to
-ignore it and put the bean bags on the dirty floors in the first place?”
-Michael Eden was also perturbed by the fact that he was the odd man out in
-a strange bean bag Mexican stand off, and it wasn’t just Mexican for the bean bags.
-Fully occupying the only two bean bags on this roof were one Kathleen Mudd,
-a (spoilers) lover of the VISITOR OF THE JEWISH KIND, and one Ilyana Ilieva,
-best described as a person with no critical bearing on the story.&lt;/p&gt;
+&lt;h2 id=&quot;aaaaaapril-fools&quot;&gt;AAAAAAPRIL FOOLS!!!!!!!!!!!!!!!!!!!!!!&lt;/h2&gt;
 
-&lt;p&gt;…&lt;/p&gt;
+&lt;p&gt;Some said it would be impossible: extending our spring break a week into the term!
+But together we can make that dream a reality, together we can nurture our
+collective denial
+of our academic responsibilities, together we can make our week great again!&lt;/p&gt;
 
-&lt;p&gt;No one spoke.
-The sound of chewing Pizza finally overwhelmed Kathleen Mudd, which indicated
-that it might rain tonight to which Michael Eden promptly responded
-with a pizza-muffled “Hmm”.&lt;/p&gt;
+&lt;p&gt;Comming to you from the 5 2 8 repping the North Side bringing you the
+dopest party on this side
+of the MARTA, feat. amazing drinks, music, games, and dank memes is the:&lt;/p&gt;
 
-&lt;h1 id=&quot;chapter-2-a-big-bass-car&quot;&gt;Chapter 2: A Big Bass Car&lt;/h1&gt;
+&lt;h2 id=&quot;end-of-the-week--middle-of-the-term-rager-back-to-school-edition&quot;&gt;END OF THE WEEK / MIDDLE OF THE TERM RAGER! (BACK TO SCHOOL EDITION)&lt;/h2&gt;
 
-&lt;p&gt;Suddenly everyone turned toward the entrance of the house, a Big Beautiful White
-Saturn car crept its way through the suburban streets, waking up everyone in its
-path, but on a lighter note drowning out the sound of the couple mentioned earlier.
-Its sound was a bass-ful of bass and the driver was being a complete bass turning
-up his bass so loud that his other fish were turning deaf.&lt;/p&gt;
+&lt;p&gt;Featuring:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Pepe the frog&lt;/li&gt;
+  &lt;li&gt;An inevitable vomit-filled elevator&lt;/li&gt;
+  &lt;li&gt;A relaxed global perspectived requirement&lt;/li&gt;
+  &lt;li&gt;Dean Zvi in a Banana Hammock Mankini&lt;/li&gt;
+  &lt;li&gt;Michael not getting laid&lt;/li&gt;
+  &lt;li&gt;A windowsill of empty bottles and dreams&lt;/li&gt;
+  &lt;li&gt;White dance moves&lt;/li&gt;
+  &lt;li&gt;A beatiful view of the cocola building&lt;/li&gt;
+  &lt;li&gt;Air Conditioning&lt;/li&gt;
+  &lt;li&gt;WiFi&lt;/li&gt;
+  &lt;li&gt;do NOT contact me with unsolicited services or offers&lt;/li&gt;
+  &lt;li&gt;Bass&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;There was a sudden ring, then another ring, then the doorbell rang again,
-then it rang a third time, then the sudden ring that was on Kathleen Mudd’s
-finger turned blue, for it was a mood ring.
-And blue either means she was afraid or hungry… and all of them had just ate!&lt;/p&gt;
+&lt;p&gt;ALSO including: a full menu and a professional bartender offering you:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Milkshakes&lt;/li&gt;
+  &lt;li&gt;Spirits&lt;/li&gt;
+  &lt;li&gt;Cocktails&lt;/li&gt;
+  &lt;li&gt;Flaming Shots&lt;/li&gt;
+  &lt;li&gt;Irish Coffee&lt;/li&gt;
+  &lt;li&gt;Hot Chocolate&lt;/li&gt;
+  &lt;li&gt;… much, much more!&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Kathleen Mudd and Ilyana Ilieva look at Michael Eden for he is the sole protector
-of the house for that night, i.e. he is charged with the quest of answering the door.
-“Maybe Jonah’s here.” Kathleen Mudd said to comfort Michael Eden, but even this comfort
-was no match for the fear pounding at his heart, and that couple totally still
-pounding it in the kitchen.&lt;/p&gt;
+&lt;p&gt;Don’t miss out on the easiest way to get wasted since the 2008 recession!&lt;/p&gt;
 
-&lt;p&gt;“I’m ranked Sergeant on COD!” Michael Eden exclaimed after he had swung the door open.
-It was quiet on the other side. Nothing. There was no one. The couple had stopped. Quiet.&lt;/p&gt;
+&lt;p&gt;end of the week / middle of the term rager:&lt;/p&gt;
 
-&lt;p&gt;He turned right, nothing, he turned left, and he saw Jonah Aberle trying to hide behind one
-of the pillars of the house! He did not have the pillar figure so it was just awkward. What a bass.
-It was in only a few short trips to his car that we would transport his projector, projection screen,
-and laptop to the house, finally getting everything on the roof.&lt;/p&gt;
+&lt;p&gt;NaN 0528. April 1 2016. 10PM.&lt;/p&gt;
 
-&lt;p&gt;There was a few exchanging of peasantries as Jonah Aberle, still in his uniform from his
-afternoon sales job slowly nuzzled his way back into Kathleen Mudd’s heart, and onto her bean-bag.
-There were definitely doubts of good intentions over Jonah Aberle’s nuzzling.
-Awkward silence took its rightful reign over its company. Speaking of the weather!&lt;/p&gt;
-
-&lt;p&gt;“I think its about to rain, the local weather-woman said it will likely rain tonight”
-Kathleen Mudd ejaculated.&lt;/p&gt;
-
-&lt;h1 id=&quot;chapter-3-more-dialogue-from-kathleen-mudd&quot;&gt;Chapter 3: More dialogue from Kathleen Mudd&lt;/h1&gt;
-
-&lt;p&gt;“Ooo! I just felt a drop!”  said Kathleen Mudd who will from now on be known
-as ‘the Falcon’ to save space.
-One fish. Two fish. Red fish. Blue fish. Except the fish were rain drops.&lt;/p&gt;
-
-&lt;p&gt;Then &lt;em&gt;BAM&lt;/em&gt;!&lt;/p&gt;
-
-&lt;p&gt;As if God had finally managed to aim his urine into the stall, rain started to pour
-all over the neighborhood.&lt;/p&gt;
-
-&lt;p&gt;“Damnit my sun roof! My Carl be flooded!” Jonah Aberle, who will
-now be know as ‘the Slayer’, noted in passing.
-No one knew who Carl was, but quiet murmurs between the Falcon and Michael Eden
-began to question the Slayer’s sanity.
-After scrambling the bags and people through the such a small opening that
-was the house window, everyone felt as if they had been birthed, and reborn.
-And shortly after reconsidering their life decisions they naturally gathered
-in the living room, wet, cold, and surrounded by a line of windows which
-exposed the bleak outlook of the storm outside.&lt;/p&gt;
-
-&lt;p&gt;There was rain, thunder, and lightning.
-They felt stranded in a house with no exit, only a view of what was to come,
-a never-ending spiral of horror.&lt;/p&gt;
-
-&lt;h1 id=&quot;chapter-4-home-alone&quot;&gt;Chapter 4: Home Alone&lt;/h1&gt;
-
-&lt;p&gt;Michael Eden who, will from now on be known as ‘the Creamer’, began to talk.
-He could see that his company was beginning to lose interest so he talked faster:&lt;/p&gt;
-
-&lt;p&gt;“Welcome to the game I like to call: Home Alone”&lt;/p&gt;
-
-&lt;p&gt;“It is a game that I had just dreamed up of a minute ago,
-but it must be played at night, this is why I only bring it up now,
-that and continuity.”&lt;/p&gt;
-
-&lt;p&gt;“The prize shall be Ghirardelli Cookies &amp;amp; Cream Chocolate Squares”
-The slayers mouth fell open.
-The creamer had control of it now.&lt;/p&gt;
-
-&lt;p&gt;“The rules are as follows:”&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;to be continued…&lt;/em&gt;&lt;/p&gt;</content><category term="prose" /><category term="funny" /><summary type="html">Chapter 1: The House</summary></entry></feed>
+&lt;p&gt;See you there.&lt;/p&gt;</content><author><name>Michael</name></author><summary type="html">To whom it may concern,</summary></entry></feed>
