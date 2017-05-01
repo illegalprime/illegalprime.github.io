@@ -60,7 +60,7 @@ http://www.wikihow.com/Fusion-Dance-in-Dragonball-Z-(Video-Game))!
 [Join the event here!](https://www.facebook.com/events/277465422699118/)
 Bringing drinks is appreciated, but not required.
 
-**When**: May 4<sup>th</sup>
+**When**: May 4<sup>th</sup>, 9:30 PM
 
 **Where**: 18+ in the UHouse Penthouse, then 21+ will leave for bars, etc. at midnight.
 
