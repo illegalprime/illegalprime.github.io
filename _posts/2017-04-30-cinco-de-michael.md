@@ -1,7 +1,7 @@
 ---
 title: Cinco de Michael
 layout: post
-author: Janie
+author: Party Squad
 permalink: /cinco-de-lit-o/
 ---
 
@@ -37,7 +37,7 @@ This is your chance to do that thing you've wanted to this entire semester.
 Drunk dial your ex! Tell that special someone how you really feel!
 But most of all, have a good time.
 
-## Notable Testimonials:
+## Notable Quotables:
  - “Why is my invite Titanic-themed”
  - "When I first met Michael he said 'finish my Venmo payment already' and
    he still asks me that to this day!"
@@ -78,4 +78,13 @@ Bringing drinks is appreciated, but not required.
  - (spoiler alert: he’s gonna andrew dai)
  - ((because u didn’t wanna sherry))
  - (((jerk.)))
+ 
+ 
+### Like this hot garbage?
+[End of September](/wakemeupwhenseptemberends-party/)
+
+[April Fool's 2016](/2016/04/01/april-fools-party/)
+
+[William's 21st](/2016/09/02/williams-party/)
+
 
