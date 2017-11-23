@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://icanteden.com/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="http://icanteden.com/feed.xml" rel="self" type="application/atom+xml" /><link href="http://icanteden.com/" rel="alternate" type="text/html" /><updated>2017-11-23T18:18:52+00:00</updated><id>http://icanteden.com//</id><title type="html">Michael’s Weird Blog</title><subtitle>Author Michael Eden (engineer) experiments with the idea of having a creative outlet. Watch him fall back on his crutch by writing about cool tech and read his strange writing, the only guarantee is that the content is wholly his own.
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://icanteden.com/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="http://icanteden.com/feed.xml" rel="self" type="application/atom+xml" /><link href="http://icanteden.com/" rel="alternate" type="text/html" /><updated>2017-11-23T18:18:33+00:00</updated><id>http://icanteden.com//</id><title type="html">Michael’s Weird Blog</title><subtitle>Author Michael Eden (engineer) experiments with the idea of having a creative outlet. Watch him fall back on his crutch by writing about cool tech and read his strange writing, the only guarantee is that the content is wholly his own.
 </subtitle><entry><title type="html">Which 2016-2017 HackGT Exec Member Are You?</title><link href="http://icanteden.com/2017/11/23/exec-quiz/" rel="alternate" type="text/html" title="Which 2016-2017 HackGT Exec Member Are You?" /><published>2017-11-23T00:00:00+00:00</published><updated>2017-11-23T00:00:00+00:00</updated><id>http://icanteden.com/2017/11/23/exec-quiz</id><content type="html" xml:base="http://icanteden.com/2017/11/23/exec-quiz/">&lt;p&gt;Have you ever wondered which HackGT Exec member you were?
 Well, I’ve been asked this &lt;em&gt;a lot&lt;/em&gt;, and finally I have a definitive
 guide.&lt;/p&gt;
@@ -17,150 +17,7 @@ have to put up with that.)&lt;/p&gt;
   to there.
 &lt;/iframe&gt;</content><category term="code" /><category term="funny" /><summary type="html">Have you ever wondered which HackGT Exec member you were?
 Well, I’ve been asked this a lot, and finally I have a definitive
-guide.</summary></entry><entry><title type="html">Assorted Party Invites</title><link href="http://icanteden.com/2017/11/01/assorted-invited/" rel="alternate" type="text/html" title="Assorted Party Invites" /><published>2017-11-01T00:00:00+00:00</published><updated>2017-11-01T00:00:00+00:00</updated><id>http://icanteden.com/2017/11/01/assorted-invited</id><content type="html" xml:base="http://icanteden.com/2017/11/01/assorted-invited/">&lt;p&gt;Some invitations I’ve written with my roommates for parties:&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h1 id=&quot;spooktacular&quot;&gt;Spooktacular&lt;/h1&gt;
-
-&lt;p&gt;Wait-listed for a class… that isn’t offered?&lt;/p&gt;
-
-&lt;p&gt;Friends mysteriously missing from your friends list??&lt;/p&gt;
-
-&lt;p&gt;Thought you saw a black cat… but you don’t see color??? (thanks obama)&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;there can only &lt;img width=&quot;25px&quot; height=&quot;auto&quot; src=&quot;/media/2017-01-11-jan14-spooktacular/bee.png&quot; /&gt; 1 explanation:&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;were-holding-a-saturadday-the-14th-countem-four-teenth-spooktacularrrrrr&quot;&gt;WE”RE HOLDING A SATURADDAY THE 14th (countem) FOUR TEENTH!!! SPOOKTACULARRRRRR!!!!!&lt;/h2&gt;
-
-&lt;h3 id=&quot;kick-off-your-very-best-semester-yet-new-year-new-u&quot;&gt;kick off your very best semester yet, new year, new u!&lt;/h3&gt;
-
-&lt;p&gt;Feat. ur favorite faces n friends and:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;better walk-in times than your advisers&lt;/li&gt;
-  &lt;li&gt;the only non-dry house on campus&lt;/li&gt;
-  &lt;li&gt;a turned cheek from “Bud” Peterson&lt;/li&gt;
-  &lt;li&gt;a turnt cheek from “Bud (lite) Peterson”&lt;/li&gt;
-  &lt;li&gt;pwp Buzz x Barry (from Bee Movie) fanfiction&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;message&quot;&gt;
- &lt;b&gt;where&lt;/b&gt; North Avenue North Room 528
- &lt;br /&gt;
- &lt;b&gt;when&lt;/b&gt; Saturday 14&lt;sup&gt;th&lt;/sup&gt; @ 10 pm, January 2017
- &lt;br /&gt;
- &lt;b&gt;who&lt;/b&gt; you + an arbitrary depth of friends of friends
-&lt;/div&gt;
-
-&lt;hr /&gt;
-
-&lt;h1 id=&quot;september-ends&quot;&gt;September Ends&lt;/h1&gt;
-
-&lt;p&gt;Why do we cook bacon but bake cookies?&lt;/p&gt;
-
-&lt;p&gt;Think about it.&lt;/p&gt;
-
-&lt;p&gt;That’s right, every interaction we have is being recorded.&lt;/p&gt;
-
-&lt;p&gt;In this case its in invitation form.&lt;/p&gt;
-
-&lt;p&gt;So why isn’t this message encrypted?&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dGVkIGNydXogaXMgem9kaWFjCg==
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Cat got on the keyboard again..&lt;/p&gt;
-
-&lt;p&gt;Did you know cats are subsidized by our government to sedate America?&lt;/p&gt;
-
-&lt;p&gt;Of course not.&lt;/p&gt;
-
-&lt;p&gt;Every time you kiss your cat, pheromones are released in your bloodstream.&lt;/p&gt;
-
-&lt;p&gt;Wait, you won’t understand complex biology.&lt;/p&gt;
-
-&lt;p&gt;Nobody understands.&lt;/p&gt;
-
-&lt;p&gt;What is this about?&lt;/p&gt;
-
-&lt;p&gt;It’s about getting woke!&lt;/p&gt;
-
-&lt;p&gt;It’s about waking up, when September ends.&lt;/p&gt;
-
-&lt;div class=&quot;message&quot;&gt;
- &lt;b&gt;what&lt;/b&gt; wakemeupwhenseptemberends party
- &lt;br /&gt;
- &lt;b&gt;where&lt;/b&gt; NaN 0528, 9 PM
- &lt;br /&gt;
- &lt;b&gt;when&lt;/b&gt; September 30, 2016
- &lt;br /&gt;
- &lt;b&gt;who&lt;/b&gt; This is a +n invite.
-&lt;/div&gt;
-
-&lt;p&gt;RSVP now. Before. September. Ends.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h1 id=&quot;williams-birthday&quot;&gt;William’s Birthday&lt;/h1&gt;
-
-&lt;p&gt;TO START THE SCHOOL YEAR OFF RIGHT BY GETTING FFGUDRUNK&lt;/p&gt;
-
-&lt;p&gt;WITH US AT THE 5 2 8 STILL REPPING THAT NORTH SIDE, STILL ON THIS SIDE OF THE MARTA, STILL HAVE DRINKS, MUSIC, BASS WHAT MORE DO YOU WANT??&lt;/p&gt;
-
-&lt;p&gt;OH RIGHT&lt;/p&gt;
-
-&lt;p&gt;A REASON TO LIVE&lt;/p&gt;
-
-&lt;p&gt;OUR REASON IS WILLIAM GREENLEAF&lt;/p&gt;
-
-&lt;p&gt;GRAB LIFE BY THE TESTICLES AND COME ON DOWN TO CELEBRATE WILLIAM’S 21st [ 2 + 1 = 3 : WILLUMINATI CONFIRMED ] BIRTHDAY!!!&lt;/p&gt;
-
-&lt;p&gt;BUT WHAT ELSE IS CONFIRMED?&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;2 + 1 = $300 DOLLARS OF DRINKS&lt;/li&gt;
-  &lt;li&gt;celebrating 21 years of william&lt;/li&gt;
-  &lt;li&gt;a 21 hour playlist of will.i.am&lt;/li&gt;
-  &lt;li&gt;a william hour playlist of 21 Pilots&lt;/li&gt;
-  &lt;li&gt;2 + 1 = 3 Days Grace&lt;/li&gt;
-  &lt;li&gt;having  your birthday cake and drinking it too&lt;/li&gt;
-  &lt;li&gt;becoming a man&lt;/li&gt;
-  &lt;li&gt;political memes&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;“pls come” - Jeb Bush&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h1 id=&quot;april-fools&quot;&gt;April Fool’s&lt;/h1&gt;
-
-&lt;p&gt;Some said it would be impossible: extending our spring break a week into the term!
-But together we can make that dream a reality, together we can nurture our
-collective denial
-of our academic responsibilities, together we can make our week great again!&lt;/p&gt;
-
-&lt;p&gt;Comming to you from the 5 2 8 repping the North Side bringing you the
-dopest party on this side
-of the MARTA, feat. amazing drinks, music, games, and dank memes is the:&lt;/p&gt;
-
-&lt;h2 id=&quot;end-of-the-week--middle-of-the-term-rager-back-to-school-edition&quot;&gt;END OF THE WEEK / MIDDLE OF THE TERM RAGER! (BACK TO SCHOOL EDITION)&lt;/h2&gt;
-
-&lt;p&gt;Featuring:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Pepe the frog&lt;/li&gt;
-  &lt;li&gt;An inevitable vomit-filled elevator&lt;/li&gt;
-  &lt;li&gt;A relaxed global perspectived requirement&lt;/li&gt;
-  &lt;li&gt;Dean Zvi in a Banana Hammock Mankini&lt;/li&gt;
-  &lt;li&gt;Michael not getting laid&lt;/li&gt;
-  &lt;li&gt;A windowsill of empty bottles and dreams&lt;/li&gt;
-  &lt;li&gt;White dance moves&lt;/li&gt;
-  &lt;li&gt;A beatiful view of the cocola building&lt;/li&gt;
-  &lt;li&gt;Air Conditioning&lt;/li&gt;
-  &lt;li&gt;WiFi&lt;/li&gt;
-  &lt;li&gt;do NOT contact me with unsolicited services or offers&lt;/li&gt;
-  &lt;li&gt;Bass&lt;/li&gt;
-&lt;/ul&gt;</content><category term="funny" /><summary type="html">Some invitations I’ve written with my roommates for parties:</summary></entry><entry><title type="html">Michael’s No. 1 Dating Tips #1</title><link href="http://icanteden.com/2017/06/14/vignette-spark/" rel="alternate" type="text/html" title="Michael's No. 1 Dating Tips #1" /><published>2017-06-14T00:00:00+00:00</published><updated>2017-06-14T00:00:00+00:00</updated><id>http://icanteden.com/2017/06/14/vignette-spark</id><content type="html" xml:base="http://icanteden.com/2017/06/14/vignette-spark/">&lt;p&gt;This is one of my number one best dating tips!
+guide.</summary></entry><entry><title type="html">Michael’s No. 1 Dating Tips #1</title><link href="http://icanteden.com/2017/06/14/vignette-spark/" rel="alternate" type="text/html" title="Michael's No. 1 Dating Tips #1" /><published>2017-06-14T00:00:00+00:00</published><updated>2017-06-14T00:00:00+00:00</updated><id>http://icanteden.com/2017/06/14/vignette-spark</id><content type="html" xml:base="http://icanteden.com/2017/06/14/vignette-spark/">&lt;p&gt;This is one of my number one best dating tips!
 If you’ve been kissing a girl or boy and want to take it to the &lt;strong&gt;next level&lt;/strong&gt;,
 put on some nice woolen socks and start shuffling on a nearby rug. 
 Wait for your special someone to come home and give them a kiss.
@@ -664,4 +521,46 @@ This makes it easy to clone servers since you only need to copy your data drives
 &lt;p&gt;Even with all this cool tech a more serious question remains, if we could
 &lt;em&gt;only&lt;/em&gt; save one terabyte of movies for the future which ones would they be?&lt;/p&gt;
 
-&lt;p&gt;I have my list. Do you?&lt;/p&gt;</content><category term="code" /><category term="linux" /><summary type="html">Movies are really really great.</summary></entry></feed>
+&lt;p&gt;I have my list. Do you?&lt;/p&gt;</content><category term="code" /><category term="linux" /><summary type="html">Movies are really really great.</summary></entry><entry><title type="html">Wakemeupwhenseptemberends Party</title><link href="http://icanteden.com/wakemeupwhenseptemberends-party/" rel="alternate" type="text/html" title="Wakemeupwhenseptemberends Party" /><published>2016-09-30T00:00:00+00:00</published><updated>2016-09-30T00:00:00+00:00</updated><id>http://icanteden.com/september-ends-party</id><content type="html" xml:base="http://icanteden.com/wakemeupwhenseptemberends-party/">&lt;p&gt;Why do we cook bacon but bake cookies?&lt;/p&gt;
+
+&lt;p&gt;Think about it.&lt;/p&gt;
+
+&lt;p&gt;That’s right, every interaction we have is being recorded.&lt;/p&gt;
+
+&lt;p&gt;In this case its in invitation form.&lt;/p&gt;
+
+&lt;p&gt;So why isn’t this message encrypted?&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dGVkIGNydXogaXMgem9kaWFjCg==
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Cat got on the keyboard again..&lt;/p&gt;
+
+&lt;p&gt;Did you know cats are subsidized by our government to sedate America?&lt;/p&gt;
+
+&lt;p&gt;Of course not.&lt;/p&gt;
+
+&lt;p&gt;Every time you kiss your cat, pheromones are released in your bloodstream.&lt;/p&gt;
+
+&lt;p&gt;Wait, you won’t understand complex biology.&lt;/p&gt;
+
+&lt;p&gt;Nobody understands.&lt;/p&gt;
+
+&lt;p&gt;What is this about?&lt;/p&gt;
+
+&lt;p&gt;It’s about getting woke!&lt;/p&gt;
+
+&lt;p&gt;It’s about waking up, when September ends.&lt;/p&gt;
+
+&lt;div class=&quot;message&quot;&gt;
+ &lt;b&gt;what&lt;/b&gt; wakemeupwhenseptemberends party
+ &lt;br /&gt;
+ &lt;b&gt;where&lt;/b&gt; NaN 0528, 9 PM
+ &lt;br /&gt;
+ &lt;b&gt;when&lt;/b&gt; September 30, 2016
+ &lt;br /&gt;
+ &lt;b&gt;who&lt;/b&gt; This is a +n invite.
+&lt;/div&gt;
+
+&lt;p&gt;RSVP now. Before. September. Ends.&lt;/p&gt;</content><author><name>North Ave. North 528</name></author><summary type="html">Why do we cook bacon but bake cookies?</summary></entry></feed>
