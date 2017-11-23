@@ -33,6 +33,11 @@ header a, footer a {
     transition-property: width, height, background-size, margin, opacity;
 }
 
+iframe {
+    width: 100%;
+    border: 0px;
+}
+
 footer {
     width: 100%;
 }
