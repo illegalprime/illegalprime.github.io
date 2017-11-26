@@ -7,10 +7,12 @@ tags:
   - prose
 ---
 
+<div class="message">
 Janie and I often write the invitations for my friends' house parties.
 In order to get in the creative mood, we write some improvised stories
 as an excercise. This is a collection of some of the better stories from
 that excercise.
+</div>
 
 # 1
 

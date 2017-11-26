@@ -246,7 +246,7 @@ div.middle.top-menu {
 
 // Story Mode
 
-.story h1 + p::first-letter {
+.story h1 + p::first-letter, .story .post-title-container + p::first-letter {
     font-size: 75px;
     float: left;
     line-height: 60px;
