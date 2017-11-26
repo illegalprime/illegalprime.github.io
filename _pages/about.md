@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About
-section: about
+section: me
 permalink: /about/
 ---
 

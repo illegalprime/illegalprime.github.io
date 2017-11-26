@@ -1,11 +1,11 @@
- - name: home
+ - name: blog
    url: /
 
- - name: tags
+ - name: archive
    url: /tags
 
- - name: history
-   url: /history
+ - name: projects
+   url: /portfolio
 
- - name: about
+ - name: me 
    url: /about
