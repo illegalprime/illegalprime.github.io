@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://icanteden.com/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="http://icanteden.com/feed.xml" rel="self" type="application/atom+xml" /><link href="http://icanteden.com/" rel="alternate" type="text/html" /><updated>2017-11-24T05:30:15+00:00</updated><id>http://icanteden.com//</id><title type="html">Michael’s Weird Blog</title><subtitle>Author Michael Eden (engineer) experiments with the idea of having a creative outlet. Watch him fall back on his crutch by writing about cool tech and read his strange writing, the only guarantee is that the content is wholly his own.
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://icanteden.com/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="http://icanteden.com/feed.xml" rel="self" type="application/atom+xml" /><link href="http://icanteden.com/" rel="alternate" type="text/html" /><updated>2017-11-26T22:51:51+00:00</updated><id>http://icanteden.com//</id><title type="html">Michael’s Weird Blog</title><subtitle>Author Michael Eden (engineer) experiments with the idea of having a creative outlet. Watch him fall back on his crutch by writing about cool tech and read his strange writing, the only guarantee is that the content is wholly his own.
 </subtitle><entry><title type="html">Which 2016-2017 HackGT Exec Member Are You?</title><link href="http://icanteden.com/2017/11/23/exec-quiz/" rel="alternate" type="text/html" title="Which 2016-2017 HackGT Exec Member Are You?" /><published>2017-11-23T00:00:00+00:00</published><updated>2017-11-23T00:00:00+00:00</updated><id>http://icanteden.com/2017/11/23/exec-quiz</id><content type="html" xml:base="http://icanteden.com/2017/11/23/exec-quiz/">&lt;p&gt;Have you ever wondered which HackGT Exec member you were?
 Well, I’ve been asked this &lt;em&gt;a lot&lt;/em&gt;, and finally I have a definitive
 guide.&lt;/p&gt;
@@ -492,10 +492,12 @@ the boarding pass after check in.&lt;/p&gt;
 &lt;p&gt;Run with &lt;code class=&quot;highlighter-rouge&quot;&gt;phantomjs script.js&lt;/code&gt; and keep this in mind on your next red-eye.&lt;/p&gt;</content><category term="code" /><summary type="html">Like all men I exist for and because of woman.
 You see where this is going? Southwest allows me cheap air fare but at
 the cost of remembering and sometimes waking up explicitly to check in online
-to get an early seat. Why is this important?</summary></entry><entry><title type="html">Improv Stories I</title><link href="http://icanteden.com/2016/11/30/improv-stories-one/" rel="alternate" type="text/html" title="Improv Stories I" /><published>2016-11-30T00:00:00+00:00</published><updated>2016-11-30T00:00:00+00:00</updated><id>http://icanteden.com/2016/11/30/improv-stories-one</id><content type="html" xml:base="http://icanteden.com/2016/11/30/improv-stories-one/">&lt;p&gt;Janie and I often write the invitations for my friends’ house parties.
+to get an early seat. Why is this important?</summary></entry><entry><title type="html">Improv Stories I</title><link href="http://icanteden.com/2016/11/30/improv-stories-one/" rel="alternate" type="text/html" title="Improv Stories I" /><published>2016-11-30T00:00:00+00:00</published><updated>2016-11-30T00:00:00+00:00</updated><id>http://icanteden.com/2016/11/30/improv-stories-one</id><content type="html" xml:base="http://icanteden.com/2016/11/30/improv-stories-one/">&lt;div class=&quot;message&quot;&gt;
+Janie and I often write the invitations for my friends' house parties.
 In order to get in the creative mood, we write some improvised stories
 as an excercise. This is a collection of some of the better stories from
-that excercise.&lt;/p&gt;
+that excercise.
+&lt;/div&gt;
 
 &lt;h1 id=&quot;1&quot;&gt;1&lt;/h1&gt;
 
@@ -604,7 +606,7 @@ infinitude of pawns line diagonally to Michael’s king.&lt;/p&gt;
 king pieces sliding saliva-coated out of his mouth and onto the board.
 He wipes the spit off with a shirt sleeve:&lt;/p&gt;
 
-&lt;p&gt;“U’ve been playing checkers while i’ve been playing chess for years”&lt;/p&gt;</content><category term="funny" /><category term="prose" /><summary type="html">Janie and I often write the invitations for my friends’ house parties.
+&lt;p&gt;“U’ve been playing checkers while i’ve been playing chess for years”&lt;/p&gt;</content><category term="funny" /><category term="prose" /><summary type="html">Janie and I often write the invitations for my friends' house parties.
 In order to get in the creative mood, we write some improvised stories
 as an excercise. This is a collection of some of the better stories from
 that excercise.</summary></entry><entry><title type="html">µflix: Easy Plex Server</title><link href="http://icanteden.com/2016/11/12/uflix/" rel="alternate" type="text/html" title="µflix: Easy Plex Server" /><published>2016-11-12T00:00:00+00:00</published><updated>2016-11-12T00:00:00+00:00</updated><id>http://icanteden.com/2016/11/12/uflix</id><content type="html" xml:base="http://icanteden.com/2016/11/12/uflix/">&lt;p&gt;Movies are really &lt;strong&gt;really&lt;/strong&gt; great.&lt;/p&gt;
