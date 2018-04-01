@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/illegalprime
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://icanteden.com
+  * I am illegalprime (https://keybase.io/illegalprime) on keybase.
+  * I have a public key ASCNXYnT_0GXsoD2McoNOyzIY2Zar2YkQe0IFUysRAd1fQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01208d5d89d3ff4197b280f631ca0d3b2cc863665aaf662441ed08154cac4407757d0a",
+      "host": "keybase.io",
+      "kid": "01208d5d89d3ff4197b280f631ca0d3b2cc863665aaf662441ed08154cac4407757d0a",
+      "uid": "31d5f8598814978f4074aac9b4e54919",
+      "username": "illegalprime"
+    },
+    "merkle_root": {
+      "ctime": 1522604816,
+      "hash": "eeb0476965add26e46a271f7cfc7f796be859bfd42b76cd77197c853e07dfb867e59724074cc556d69a32354822bbf9a99c97cb4d355d53af40e9e3d7f71c055",
+      "hash_meta": "79349a6ed253cb90e000f382e681adc388b7f98df1d9c933f689defc0fc472dd",
+      "seqno": 2319896
+    },
+    "service": {
+      "hostname": "icanteden.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.39"
+  },
+  "ctime": 1522604904,
+  "expire_in": 504576000,
+  "prev": "30e39efcfce995537b00fd206d12003d31a1aba4d5602277ee1c37b31993f00a",
+  "seqno": 7,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgjV2J0/9Bl7KA9jHKDTssyGNmWq9mJEHtCBVMrEQHdX0Kp3BheWxvYWTFA0l7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwOGQ1ZDg5ZDNmZjQxOTdiMjgwZjYzMWNhMGQzYjJjYzg2MzY2NWFhZjY2MjQ0MWVkMDgxNTRjYWM0NDA3NzU3ZDBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwOGQ1ZDg5ZDNmZjQxOTdiMjgwZjYzMWNhMGQzYjJjYzg2MzY2NWFhZjY2MjQ0MWVkMDgxNTRjYWM0NDA3NzU3ZDBhIiwidWlkIjoiMzFkNWY4NTk4ODE0OTc4ZjQwNzRhYWM5YjRlNTQ5MTkiLCJ1c2VybmFtZSI6ImlsbGVnYWxwcmltZSJ9LCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTUyMjYwNDgxNiwiaGFzaCI6ImVlYjA0NzY5NjVhZGQyNmU0NmEyNzFmN2NmYzdmNzk2YmU4NTliZmQ0MmI3NmNkNzcxOTdjODUzZTA3ZGZiODY3ZTU5NzI0MDc0Y2M1NTZkNjlhMzIzNTQ4MjJiYmY5YTk5Yzk3Y2I0ZDM1NWQ1M2FmNDBlOWUzZDdmNzFjMDU1IiwiaGFzaF9tZXRhIjoiNzkzNDlhNmVkMjUzY2I5MGUwMDBmMzgyZTY4MWFkYzM4OGI3Zjk4ZGYxZDljOTMzZjY4OWRlZmMwZmM0NzJkZCIsInNlcW5vIjoyMzE5ODk2fSwic2VydmljZSI6eyJob3N0bmFtZSI6ImljYW50ZWRlbi5jb20iLCJwcm90b2NvbCI6Imh0dHBzOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4zOSJ9LCJjdGltZSI6MTUyMjYwNDkwNCwiZXhwaXJlX2luIjo1MDQ1NzYwMDAsInByZXYiOiIzMGUzOWVmY2ZjZTk5NTUzN2IwMGZkMjA2ZDEyMDAzZDMxYTFhYmE0ZDU2MDIyNzdlZTFjMzdiMzE5OTNmMDBhIiwic2Vxbm8iOjcsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RA/z0evaRlJAKEhaJQUSmLPbhaXGRpYRor61v22hLb0nhdzvp7ErpjfmSSso8gconDch8zoMZklXYzF6yOCY4BDahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIGhNwVqYAdpkeSupXSdh49nyeXDk9cmFBhP7xPYQKW4Ao3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/illegalprime
+
+==================================================================
+
