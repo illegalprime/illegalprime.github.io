@@ -5,34 +5,17 @@ set -euo pipefail
 PWD=$(pwd)
 export REV=$(git rev-parse --short HEAD)
 export REMOTE="https://$GH_TOKEN@github.com/illegalprime/illegalprime.github.io.git"
-export N_PREFIX="$PWD/node_modules/.bin/nodes"
-
-echo "Installing Deps..."
-# update node
-n="$PWD/node_modules/.bin/n"
-npm install n
-$n lts
-node="$N_PREFIX/bin/node"
-npm="$N_PREFIX/bin/npm"
-
-$node $npm install
-cleancss="$PWD/node_modules/.bin/cleancss"
-uncss="$PWD/node_modules/.bin/uncss"
-
-gem install jekyll
-bundle install
 
 echo "Building Website..."
-bundle exec jekyll build
+jekyll build
 
 cd _site
 
-# process css
 echo "Processing CSS..."
 find -type f -name '*.html' | \
     grep -v -f ../exclude | \
-    xargs $node $uncss -H . -s /assets/css/main.css | \
-    $node $cleancss \
+    xargs uncss -H . -s /assets/css/main.css | \
+    cleancss \
     > assets/css/main.min.css
 mv assets/css/main.min.css assets/css/main.css
 

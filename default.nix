@@ -1,9 +1,9 @@
 with import <nixpkgs> {};
 
-stdenv.mkDerivation  {
+(import ./node.nix {}).shell.overrideAttrs (old: {
   name = "oddoreden.com";
 
-  buildInputs = [
+  buildInputs = old.buildInputs ++ [
     # extra gems we need
     (bundlerEnv {
       name = "jekyll-env";
@@ -16,7 +16,4 @@ stdenv.mkDerivation  {
   LANGUAGE = "en_US.UTF-8";
   LANG = "en_US.UTF-8";
   LC_ALL = "C.UTF-8";
-
-  # to run stuff:
-  # $ jekyll serve --watch --livereload --host 0.0.0.0
-}
+})
