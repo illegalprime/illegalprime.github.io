@@ -1,1 +1,0 @@
-initSidebarItems({"struct":[["Handle",""],["Request",""]],"trait":[["ToUrl",""]],"enum":[["Method",""]]});
