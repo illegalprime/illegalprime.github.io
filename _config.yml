@@ -20,10 +20,11 @@ description: > # this means to ignore newlines until "baseurl:"
   Watch him fall back on his crutch by writing about cool tech and read his strange
   writing, the only guarantee is that the content is wholly his own.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://icanteden.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://oddoreden.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: illegalprime
 signature: — Michael
 default_banner: '/assets/images/cover.jpg'
+encoding: utf-8
 
 # Build settings
 gems:
