@@ -12,7 +12,9 @@ with import (builtins.fetchGit {
     (bundlerEnv {
       name = "jekyll-env";
       inherit ruby;
-      gemdir = ./.;
+      gemfile = ./Gemfile;
+      lockfile = ./Gemfile.lock;
+      gemset = ./gemset.nix;
     })
   ];
 

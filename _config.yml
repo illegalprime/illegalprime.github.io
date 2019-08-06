@@ -31,7 +31,7 @@ gems:
   - jekyll-feed
   - jekyll-paginate
 exclude:
-  - tools
+  - ci
   - node_modules
   - package.json
   - vendor

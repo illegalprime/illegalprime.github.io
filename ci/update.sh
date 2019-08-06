@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Author michael <themichaeleden@gmail.com>
 set -euo pipefail
+set -x
 
 PWD=$(pwd)
 export REV=$(git rev-parse --short HEAD)
@@ -13,7 +14,6 @@ cd _site
 
 echo "Processing CSS..."
 find -type f -name '*.html' | \
-    grep -v -f ../exclude | \
     xargs uncss -H . -s /assets/css/main.css | \
     cleancss \
     > assets/css/main.min.css
