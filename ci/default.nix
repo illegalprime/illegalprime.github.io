@@ -16,6 +16,9 @@ with import (builtins.fetchGit {
       lockfile = ./Gemfile.lock;
       gemset = ./gemset.nix;
     })
+    (writeShellScriptBin "jekyll-watch" ''
+      jekyll serve --watch --host 0.0.0.0
+    '')
   ];
 
   # UTF-8 please
