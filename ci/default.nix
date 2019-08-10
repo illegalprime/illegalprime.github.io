@@ -17,7 +17,7 @@ with import (builtins.fetchGit {
       gemset = ./gemset.nix;
     })
     (writeShellScriptBin "jekyll-watch" ''
-      jekyll serve --watch --host 0.0.0.0
+      exec jekyll serve --watch --host 0.0.0.0 "$@"
     '')
   ];
 
