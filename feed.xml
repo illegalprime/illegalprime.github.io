@@ -1,5 +1,175 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="https://oddoreden.com/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="https://oddoreden.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oddoreden.com/" rel="alternate" type="text/html" /><updated>2019-08-07T00:01:50+00:00</updated><id>https://oddoreden.com//</id><title type="html">Michael’s Weird Blog</title><subtitle>Author Michael Eden (engineer) experiments with the idea of having a creative outlet. Watch him fall back on his crutch by writing about cool tech and read his strange writing, the only guarantee is that the content is wholly his own.
-</subtitle><entry><title type="html">To Have Zucked and Lost</title><link href="https://oddoreden.com/2019/08/05/facebook-interns/" rel="alternate" type="text/html" title="To Have Zucked and Lost" /><published>2019-08-05T00:00:00+00:00</published><updated>2019-08-05T00:00:00+00:00</updated><id>https://oddoreden.com/2019/08/05/facebook-interns</id><content type="html" xml:base="https://oddoreden.com/2019/08/05/facebook-interns/">&lt;p&gt;I wake up at 6:45 A.M. in a hotel room and start following some people who look like me.
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="https://oddoreden.com/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="https://oddoreden.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oddoreden.com/" rel="alternate" type="text/html" /><updated>2019-08-10T04:17:21+00:00</updated><id>https://oddoreden.com//</id><title type="html">Michael’s Weird Blog</title><subtitle>Author Michael Eden (engineer) experiments with the idea of having a creative outlet. Watch him fall back on his crutch by writing about cool tech and read his strange writing, the only guarantee is that the content is wholly his own.
+</subtitle><entry><title type="html">Ben Shapiro DESTROYS and OBLITERATES the Coding Interview</title><link href="https://oddoreden.com/2019/08/10/destroying-the-coding-interview/" rel="alternate" type="text/html" title="Ben Shapiro DESTROYS and OBLITERATES the Coding Interview" /><published>2019-08-10T00:00:00+00:00</published><updated>2019-08-10T00:00:00+00:00</updated><id>https://oddoreden.com/2019/08/10/destroying-the-coding-interview</id><content type="html" xml:base="https://oddoreden.com/2019/08/10/destroying-the-coding-interview/">&lt;p&gt;I’ve been interviewing again recently and I wanted to share all the technical
+questions I’ve ever received so that &lt;em&gt;you too&lt;/em&gt; can annihilate and commit genocide
+on technical interview questions.&lt;/p&gt;
+
+&lt;p&gt;First I wanted to share some thoughts on the general process.
+If you’re an interviewer, please:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Don’t&lt;/strong&gt; schedule a call just to reject me, I don’t want an email that just
+says you have “a quick update” but you’d “rather speak on the phone”.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Do&lt;/strong&gt; tell me a did a great job, even if I was mediocre.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Do&lt;/strong&gt; give me problems that I find challenging but that I ultimately solve.
+Make their difficulty just within reach so I feel really good about solving them.
+That psychological calculation also tells me that
+I’m “lucky to work here” because I “barely made it” rather than a super easy
+problem that doesn’t make me feel special.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Don’t&lt;/strong&gt; be offended if I try to squeeze everything from this offer I possibly
+can.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Don’t&lt;/strong&gt; tell me you have my best interests at heart. Your goal as a
+recruiter is to make me sign and give me as little information as you can
+get away with. If I find out I don’t like something &lt;em&gt;after&lt;/em&gt; I’ve started I’m
+more likely to try to live with it.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Don’t&lt;/strong&gt; hire me. Where’s your diversity? I am a child.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;A good interview will scale the level of difficultly and make the candidate feel
+accomplished at every step, like a good video game
+(that is, only if you actually want to hire him/her/them).&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Make me feel special, lure me in, then wring me out.&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Just because they’re listed here doesn’t mean I can solve them.
+I’ll keep adding to this list as I get more questions
+(which will hopefully be very rarely, interviewing is no fun).
+The Questions (in no particular order):&lt;/p&gt;
+
+&lt;h3 id=&quot;multiplication-table&quot;&gt;Multiplication Table&lt;/h3&gt;
+
+&lt;p&gt;Print an &lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt; by &lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt; multiplication table, keep the widths of the columns consistent.&lt;/p&gt;
+
+&lt;h3 id=&quot;calculator&quot;&gt;Calculator&lt;/h3&gt;
+
+&lt;p&gt;Evaluate a mathematical expression like &lt;code class=&quot;highlighter-rouge&quot;&gt;1 + 3 * 2&lt;/code&gt; and respect the traditional
+order of operations. This is sometimes given with / without parenthesis,
+but you generally just do
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Shunting-yard_algorithm&quot;&gt;this&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;pin-check&quot;&gt;PIN Check&lt;/h3&gt;
+
+&lt;p&gt;Write a function that lives on an embedded device that checks if a given pin is
+equal to a stored pin. This might seem easy at first but it was asked from a
+security point-of-view so it needed to be resistant against timing and
+power-glitching attacks (and maybe more that I don’t know about).&lt;/p&gt;
+
+&lt;h3 id=&quot;leader-board&quot;&gt;Leader Board&lt;/h3&gt;
+
+&lt;p&gt;Write a data structure to hold a leader board for a video game.
+You must be able to efficiently insert and update a player’s score
+&lt;em&gt;and&lt;/em&gt; efficiently retrieve the n&lt;sup&gt;th&lt;/sup&gt; best player.&lt;/p&gt;
+
+&lt;h3 id=&quot;string-subset&quot;&gt;String Subset&lt;/h3&gt;
+
+&lt;p&gt;Given a list of (English) words and a set of characters, which word is the
+shortest and uses all the characters in the set?
+What if this wasn’t just English?&lt;/p&gt;
+
+&lt;h3 id=&quot;duplicate-strings&quot;&gt;Duplicate Strings&lt;/h3&gt;
+
+&lt;p&gt;Given a large text find duplicate sections larger than &lt;code class=&quot;highlighter-rouge&quot;&gt;k&lt;/code&gt; characters within it
+(efficiently, of course).
+If &lt;code class=&quot;highlighter-rouge&quot;&gt;k = 3&lt;/code&gt; and the text was “sea shells by the seashore” then &lt;code class=&quot;highlighter-rouge&quot;&gt;sea&lt;/code&gt; is
+a duplicate because its at least &lt;code class=&quot;highlighter-rouge&quot;&gt;k&lt;/code&gt; characters and appears more than once.
+You should be able to do this in linear time.&lt;/p&gt;
+
+&lt;h3 id=&quot;lru-cache&quot;&gt;LRU Cache&lt;/h3&gt;
+
+&lt;p&gt;I got this one twice already!
+This is a cache that has a limited capacity &lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt;, it will cache that many values
+until the limit is reached. If the cache is over capacity it will drop its
+Least Recently Used (LRU) key. A use counts as retrieving or setting the value.
+It’s well-known that both operations of this cache (setting and getting) must
+preform in constant time and there’s many examples online of how to achieve this.&lt;/p&gt;
+
+&lt;h3 id=&quot;median-across-lists&quot;&gt;Median Across Lists&lt;/h3&gt;
+
+&lt;p&gt;Given two &lt;em&gt;sorted&lt;/em&gt; lists return the median you would get if you were to combine
+the two lists. This should be in logarithmic time.&lt;/p&gt;
+
+&lt;h3 id=&quot;leaf-to-leaf&quot;&gt;Leaf to Leaf&lt;/h3&gt;
+
+&lt;p&gt;Find the longest path in a tree from a root to a leaf, then find the longest
+path between leaves (without repeating edges of course).
+This is in linear time and lends itself well to recursion.&lt;/p&gt;
+
+&lt;h3 id=&quot;breaking-the-safe&quot;&gt;Breaking the Safe&lt;/h3&gt;
+
+&lt;p&gt;A safe is guarded by a number pad that accepts a four digit pin.
+There’s no “submit” button though so as soon as you enter the correct
+four digits the safe will unlock. This means entering “12345” will have
+the effect of attempting “1234” and “2345”.
+What’s the shortest string that brute-forces all combinations?&lt;/p&gt;
+
+&lt;p&gt;There is actually some graph theory behind this that I learned a while ago
+but I don’t remember, but under some (all?) conditions it should be
+possible to find the minimum-length string.
+I wasn’t given a time constraint here because of the limited solution space.&lt;/p&gt;
+
+&lt;h3 id=&quot;2-sum-below&quot;&gt;2 Sum Below&lt;/h3&gt;
+
+&lt;p&gt;Given a list of numbers find the two largest numbers whose sum is below &lt;code class=&quot;highlighter-rouge&quot;&gt;k&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;word-reverse&quot;&gt;Word Reverse&lt;/h3&gt;
+
+&lt;p&gt;Reverse the order of words in a sentence, not the characters within the words.
+My favorite solution is in Haskell:&lt;/p&gt;
+
+&lt;div class=&quot;language-haskell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;rev_words&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;unwords&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reverse&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;words&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This is easy so the usual follow-up is how to do it in constant space.&lt;/p&gt;
+
+&lt;h3 id=&quot;find-the-diff&quot;&gt;Find the Diff&lt;/h3&gt;
+
+&lt;p&gt;Given two lists of integers, find the one element that is different in both
+of them.&lt;/p&gt;
+
+&lt;p&gt;This one is really instructive because you go from an &lt;em&gt;n&lt;/em&gt;&lt;sup&gt;2&lt;/sup&gt;-time
+solution all the way down to an &lt;i&gt;n&lt;/i&gt;log&lt;i&gt;n&lt;/i&gt; and even &lt;em&gt;n&lt;/em&gt;.
+You can also do this in &lt;em&gt;n&lt;/em&gt; time and &lt;em&gt;constant&lt;/em&gt; space!&lt;/p&gt;
+
+&lt;h3 id=&quot;coin-change&quot;&gt;Coin Change&lt;/h3&gt;
+
+&lt;p&gt;Given a value &lt;code class=&quot;highlighter-rouge&quot;&gt;v&lt;/code&gt; and a list of coin denominations find all the possible ways
+to represent &lt;code class=&quot;highlighter-rouge&quot;&gt;v&lt;/code&gt; in the given denominations (the number of ways to make
+change for cash).&lt;/p&gt;
+
+&lt;h3 id=&quot;grid-path&quot;&gt;Grid Path&lt;/h3&gt;
+
+&lt;p&gt;If you can only walk up and to the right on a two-dimensional grid, how many
+possible ways are there to get to &lt;code class=&quot;highlighter-rouge&quot;&gt;(x, y)&lt;/code&gt;? Note that there’s a formula
+(close form) for this so technically this can be solved in constant time but
+I’ve never been asked to do that.&lt;/p&gt;
+
+&lt;h3 id=&quot;3-sum&quot;&gt;3 Sum&lt;/h3&gt;
+
+&lt;p&gt;Given a list of numbers, find all triplets that sum to zero.&lt;/p&gt;
+
+&lt;h3 id=&quot;fibonacci&quot;&gt;Fibonacci&lt;/h3&gt;
+
+&lt;p&gt;Calculate the n&lt;sup&gt;th&lt;/sup&gt; Fibonacci number.
+This is often asked in the form of “do a slow recursive one”, then
+“a fast recursive one”, then a “fast non-recursive one”.
+Although if you didn’t know about recursion you’d probably get to the
+answer they want quicker.&lt;/p&gt;</content><category term="code" /><summary type="html">I’ve been interviewing again recently and I wanted to share all the technical
+questions I’ve ever received so that you too can annihilate and commit genocide
+on technical interview questions.</summary></entry><entry><title type="html">To Have Zucked and Lost</title><link href="https://oddoreden.com/2019/08/05/facebook-interns/" rel="alternate" type="text/html" title="To Have Zucked and Lost" /><published>2019-08-05T00:00:00+00:00</published><updated>2019-08-05T00:00:00+00:00</updated><id>https://oddoreden.com/2019/08/05/facebook-interns</id><content type="html" xml:base="https://oddoreden.com/2019/08/05/facebook-interns/">&lt;p&gt;I wake up at 6:45 A.M. in a hotel room and start following some people who look like me.
 Soon a herd of young early-twenty-somethings begins to form and amoebas its way across suburban Palo Alto.
 We’re all funneled by exceptionally loud organizers into a bus and driven to
 1 Hacker Way, a.k.a. Zuck-town (or Zuckerberg, I guess).
@@ -680,32 +850,4 @@ I manically keep moisturizing my eyelids in the hopes it’ll come off, I’m al
 there.&lt;/p&gt;
 
 &lt;p&gt;I understand now, being a woman is a full-time job.&lt;/p&gt;</content><summary type="html">At this point I know so many makeup words since my girlfriend (the titular
-Janie) is really into it. Some of the words I recognize include:</summary></entry><entry><title type="html">Saturday the 14th Spooktacular</title><link href="https://oddoreden.com/saturday-14-spooktacular/" rel="alternate" type="text/html" title="Saturday the 14th Spooktacular" /><published>2017-01-11T00:00:00+00:00</published><updated>2017-01-11T00:00:00+00:00</updated><id>https://oddoreden.com/jan14-spooktacular</id><content type="html" xml:base="https://oddoreden.com/saturday-14-spooktacular/">&lt;p&gt;Wait-listed for a class… that isn’t offered?&lt;/p&gt;
-
-&lt;p&gt;Friends mysteriously missing from your friends list??&lt;/p&gt;
-
-&lt;p&gt;Thought you saw a black cat… but you don’t see color??? (thanks obama)&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;there can only &lt;img width=&quot;25px&quot; height=&quot;auto&quot; src=&quot;/media/2017-01-11-jan14-spooktacular/bee.png&quot; /&gt; 1 explanation:&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;were-holding-a-saturadday-the-14th-countem-four-teenth-spooktacularrrrrr&quot;&gt;WE”RE HOLDING A SATURADDAY THE 14th (countem) FOUR TEENTH!!! SPOOKTACULARRRRRR!!!!!&lt;/h2&gt;
-
-&lt;h3 id=&quot;kick-off-your-very-best-semester-yet-new-year-new-u&quot;&gt;kick off your very best semester yet, new year, new u!&lt;/h3&gt;
-
-&lt;p&gt;Feat. ur favorite faces n friends and:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;better walk-in times than your advisers&lt;/li&gt;
-  &lt;li&gt;the only non-dry house on campus&lt;/li&gt;
-  &lt;li&gt;a turned cheek from “Bud” Peterson&lt;/li&gt;
-  &lt;li&gt;a turnt cheek from “Bud (lite) Peterson”&lt;/li&gt;
-  &lt;li&gt;pwp Buzz x Barry (from Bee Movie) fanfiction&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;message&quot;&gt;
- &lt;b&gt;where&lt;/b&gt; North Avenue North Room 528
- &lt;br /&gt;
- &lt;b&gt;when&lt;/b&gt; Saturday 14&lt;sup&gt;th&lt;/sup&gt; @ 10 pm, January 2017
- &lt;br /&gt;
- &lt;b&gt;who&lt;/b&gt; you + an arbitrary depth of friends of friends
-&lt;/div&gt;</content><author><name>North Ave. North 528</name></author><summary type="html">Wait-listed for a class… that isn’t offered?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://oddoreden.com/media/2017-01-11-jan14-spooktacular/cover.jpg" /></entry></feed>
+Janie) is really into it. Some of the words I recognize include:</summary></entry></feed>
