@@ -1,5 +1,67 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="https://oddoreden.com/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="https://oddoreden.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oddoreden.com/" rel="alternate" type="text/html" /><updated>2019-08-12T14:55:31+00:00</updated><id>https://oddoreden.com//</id><title type="html">Michael’s Weird Blog</title><subtitle>Author Michael Eden (engineer) experiments with the idea of having a creative outlet. Watch him fall back on his crutch by writing about cool tech and read his strange writing, the only guarantee is that the content is wholly his own.
-</subtitle><entry><title type="html">Ben Shapiro DESTROYS and OBLITERATES the Coding Interview</title><link href="https://oddoreden.com/2019/08/10/destroying-the-coding-interview/" rel="alternate" type="text/html" title="Ben Shapiro DESTROYS and OBLITERATES the Coding Interview" /><published>2019-08-10T00:00:00+00:00</published><updated>2019-08-10T00:00:00+00:00</updated><id>https://oddoreden.com/2019/08/10/destroying-the-coding-interview</id><content type="html" xml:base="https://oddoreden.com/2019/08/10/destroying-the-coding-interview/">&lt;p&gt;I’ve been interviewing again recently and I wanted to share all the technical
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="https://oddoreden.com/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="https://oddoreden.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oddoreden.com/" rel="alternate" type="text/html" /><updated>2019-08-19T01:33:18+00:00</updated><id>https://oddoreden.com//</id><title type="html">Michael’s Weird Blog</title><subtitle>Author Michael Eden (engineer) experiments with the idea of having a creative outlet. Watch him fall back on his crutch by writing about cool tech and read his strange writing, the only guarantee is that the content is wholly his own.
+</subtitle><entry><title type="html">Maze Game 3</title><link href="https://oddoreden.com/2019/08/18/maze-game-3/" rel="alternate" type="text/html" title="Maze Game 3" /><published>2019-08-18T00:00:00+00:00</published><updated>2019-08-18T00:00:00+00:00</updated><id>https://oddoreden.com/2019/08/18/maze-game-3</id><content type="html" xml:base="https://oddoreden.com/2019/08/18/maze-game-3/">&lt;p&gt;2006 was the pinnacle of gaming.&lt;/p&gt;
+
+&lt;p&gt;Kids were downloading Game Maker and using its GUI programming
+to make the snake game THEY DESERVED.
+I, was above it all, for I didn’t make a snake game, I made a&lt;/p&gt;
+
+&lt;div style=&quot;font-family:monospace&quot; class=&quot;middle&quot;&gt;
+  &lt;h1 style=&quot;font-size:4rem&quot;&gt;M a z e&amp;nbsp;&amp;nbsp;G a m e&lt;/h1&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;I enlisted the most talented gamer I knew,
+who quickly grasped its elegant controls:&lt;/p&gt;
+
+&lt;div class=&quot;article-img&quot;&gt;
+    &lt;div class=&quot;center&quot;&gt;
+    &lt;a href=&quot;/media/2019-08-18-maze-game-3/discord.png&quot; target=&quot;_blank&quot;&gt;
+        &lt;img src=&quot;/media/2019-08-18-maze-game-3/discord.png&quot; alt=&quot;&quot; /&gt;
+    &lt;/a&gt;
+    &lt;/div&gt;
+    
+&lt;/div&gt;
+
+&lt;div class=&quot;article-img&quot;&gt;
+    &lt;div class=&quot;center&quot;&gt;
+    &lt;a href=&quot;/media/2019-08-18-maze-game-3/instructions.png&quot; target=&quot;_blank&quot;&gt;
+        &lt;img src=&quot;/media/2019-08-18-maze-game-3/instructions.png&quot; alt=&quot;(photo of the instructions he was reading)&quot; /&gt;
+    &lt;/a&gt;
+    &lt;/div&gt;
+    
+    &lt;blockquote style=&quot;border-left: 10px solid #D5D5D5;&quot;&gt;(photo of the instructions he was reading)&lt;/blockquote&gt;
+    
+&lt;/div&gt;
+
+&lt;p&gt;One instruction is so clear is beings with “Ok try to remember this”.
+Another reminds you that lasers kill you
+“as in the character you not the viewer or reader of this”.
+This was also the time I started to experiment with pixel art:&lt;/p&gt;
+
+&lt;div class=&quot;article-img&quot;&gt;
+    &lt;div class=&quot;center&quot;&gt;
+    &lt;a href=&quot;/media/2019-08-18-maze-game-3/avatar.png&quot; target=&quot;_blank&quot;&gt;
+        &lt;img src=&quot;/media/2019-08-18-maze-game-3/avatar.png&quot; alt=&quot;&quot; /&gt;
+    &lt;/a&gt;
+    &lt;/div&gt;
+    
+&lt;/div&gt;
+
+&lt;p&gt;I don’t think I need to sell this game any more to you,
+please play it now. Only one person has beaten the whole thing
+and most people don’t have the patience to get through &lt;strong&gt;all 40 levels&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Consider yourself lucky! This game was almost lost forever after I forgot to
+save a copy from my Windows XP machine (the family computer). I had uploaded
+a copy to YoYo Games’ servers but then they got sold and deleted everyone’s
+games! Thankfully the Archive Team did a (mostly complete) backup of everyone’s
+games! Checkout all these other
+&lt;a href=&quot;https://www.archiveteam.org/index.php?title=GameMaker_Sandbox&quot;&gt;lower-tier games&lt;/a&gt;
+after playing mine!&lt;/p&gt;
+
+&lt;h2&gt;&lt;a href=&quot;/media/2019-08-18-maze-game-3/maze_game_3.exe&quot;&gt;Download Now!&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;(this was when I was still on Windows, so its an .exe, but it works with Wine)&lt;/p&gt;</content><category term="games" /><summary type="html">2006 was the pinnacle of gaming.</summary></entry><entry><title type="html">Ben Shapiro DESTROYS and OBLITERATES the Coding Interview</title><link href="https://oddoreden.com/2019/08/10/destroying-the-coding-interview/" rel="alternate" type="text/html" title="Ben Shapiro DESTROYS and OBLITERATES the Coding Interview" /><published>2019-08-10T00:00:00+00:00</published><updated>2019-08-10T00:00:00+00:00</updated><id>https://oddoreden.com/2019/08/10/destroying-the-coding-interview</id><content type="html" xml:base="https://oddoreden.com/2019/08/10/destroying-the-coding-interview/">&lt;p&gt;I’ve been interviewing again recently and I wanted to share all the technical
 questions I’ve ever received so that &lt;em&gt;you too&lt;/em&gt; can annihilate and commit genocide
 on technical interview questions.&lt;/p&gt;
 
@@ -813,41 +875,4 @@ And we’d like all of you to be there to see it.</summary></entry><entry><title
       It&amp;rsquo;ll be a knockout.
       *wink wink*---
       Saturday, April 1st
-      9pm til the cows come home</summary></entry><entry><title type="html">Janie Does My Makeup</title><link href="https://oddoreden.com/2017/02/05/makeup-challenge/" rel="alternate" type="text/html" title="Janie Does My Makeup" /><published>2017-02-05T00:00:00+00:00</published><updated>2017-02-05T00:00:00+00:00</updated><id>https://oddoreden.com/2017/02/05/makeup-challenge</id><content type="html" xml:base="https://oddoreden.com/2017/02/05/makeup-challenge/">&lt;p&gt;At this point I know so many makeup words since my girlfriend (the titular
-Janie) is really into it. Some of the words I recognize include:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;BB Cream&lt;/li&gt;
-  &lt;li&gt;Sponge&lt;/li&gt;
-  &lt;li&gt;Falsies&lt;/li&gt;
-  &lt;li&gt;Eye Shadow&lt;/li&gt;
-  &lt;li&gt;Blush&lt;/li&gt;
-  &lt;li&gt;Contour&lt;/li&gt;
-  &lt;li&gt;Blending&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;If you’re thinking “Wow Michael that’s a lot!”, then you’d be right, it’s hard
-to stay in &lt;em&gt;the know&lt;/em&gt;. Something else I know, “My Boyfriend Does My Makeup” is
-a popular trend (7 years ago) on the Internet.&lt;/p&gt;
-
-&lt;p&gt;So today, after a lot of convincing, I decided it’s time for &lt;em&gt;me&lt;/em&gt; to be trendy.&lt;/p&gt;
-
-&lt;div class=&quot;article-img&quot;&gt;
-    &lt;div class=&quot;center&quot;&gt;
-    &lt;a href=&quot;/media/2017-02-05-makeup-challenge/makeup-michael.jpg&quot; target=&quot;_blank&quot;&gt;
-        &lt;img src=&quot;/media/2017-02-05-makeup-challenge/makeup-michael.jpg&quot; alt=&quot;My chin looks less fat here.&quot; /&gt;
-    &lt;/a&gt;
-    &lt;/div&gt;
-    
-    &lt;blockquote style=&quot;border-left: 10px solid #D5D5D5;&quot;&gt;My chin looks less fat here.&lt;/blockquote&gt;
-    
-&lt;/div&gt;
-
-&lt;h2 id=&quot;lessons-learned&quot;&gt;Lessons Learned&lt;/h2&gt;
-
-&lt;p&gt;Two days later all my eye stuff (“shadow”) is not completely gone.
-I manically keep moisturizing my eyelids in the hopes it’ll come off, I’m almost
-there.&lt;/p&gt;
-
-&lt;p&gt;I understand now, being a woman is a full-time job.&lt;/p&gt;</content><summary type="html">At this point I know so many makeup words since my girlfriend (the titular
-Janie) is really into it. Some of the words I recognize include:</summary></entry></feed>
+      9pm til the cows come home</summary></entry></feed>
