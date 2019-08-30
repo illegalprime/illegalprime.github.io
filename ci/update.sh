@@ -5,7 +5,7 @@ set -x
 
 PWD=$(pwd)
 export REV=$(git rev-parse --short HEAD)
-export REMOTE="https://$GH_TOKEN@github.com/illegalprime/illegalprime.github.io.git"
+export REMOTE="${REMOTE:-https://$GH_TOKEN@github.com/illegalprime/illegalprime.github.io.git}"
 
 echo "Building Website..."
 jekyll build
@@ -21,11 +21,13 @@ mv assets/css/main.min.css assets/css/main.css
 
 echo "Pushing to Git..."
 git init
+git lfs install
 git config user.name 'Michael Eden'
 git config user.email 'themichaeleden@gmail.com'
 git remote add upstream "$REMOTE"
 git fetch upstream
 git reset upstream/master
+git lfs track "media/2019-08-30-michaels-toys-esd/ESD Gun - Michael's Toys.webm"
 git status
 git add -A .
 git commit -m "Automatic deploy of website for commit $REV"

@@ -19,6 +19,7 @@ with import (builtins.fetchGit {
     (writeShellScriptBin "jekyll-watch" ''
       exec jekyll serve --watch --host 0.0.0.0 "$@"
     '')
+    git-lfs
   ];
 
   # UTF-8 please
