@@ -12,10 +12,10 @@ They make solid products and they let me make this video.
 
 <video controls>
   <source
-    src="https://media.githubusercontent.com/media/illegalprime/illegalprime.github.io/redeux/media/2019-08-30-michaels-toys-esd/ESD%20Gun%20-%20Michael's%20Toys.webm"
+    src="https://www.dropbox.com/s/dckghlrwaoq0zeu/ESD%20Gun%20-%20Michael%27s%20Toys.webm?dl=1"
     type="video/webm">
   If you can't view this video download it
   <a
-    href="https://media.githubusercontent.com/media/illegalprime/illegalprime.github.io/redeux/media/2019-08-30-michaels-toys-esd/ESD%20Gun%20-%20Michael's%20Toys.webm">
-    here</a>.
+    href="https://www.dropbox.com/s/dckghlrwaoq0zeu/ESD%20Gun%20-%20Michael%27s%20Toys.webm?dl=1"
+    > here</a>.
 </video> 
