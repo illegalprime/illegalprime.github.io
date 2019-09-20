@@ -1,0 +1,67 @@
+==================================================================
+https://keybase.io/illegalprime
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://oddoreden.com
+  * I am illegalprime (https://keybase.io/illegalprime) on keybase.
+  * I have a public key with fingerprint 2647 AF47 67CA D90F F03F  9945 BB40 B561 F881 D984
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01208d5d89d3ff4197b280f631ca0d3b2cc863665aaf662441ed08154cac4407757d0a",
+      "fingerprint": "2647af4767cad90ff03f9945bb40b561f881d984",
+      "host": "keybase.io",
+      "key_id": "bb40b561f881d984",
+      "kid": "0101c086a01e0e6abf6a7af9aa3b372cbd396a803a8dbfe012af3f814fa0c213e9b20a",
+      "uid": "31d5f8598814978f4074aac9b4e54919",
+      "username": "illegalprime"
+    },
+    "service": {
+      "hostname": "oddoreden.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1568992570,
+  "expire_in": 157680000,
+  "prev": "3f9cacf3a949081a92c46af562092e09bd03f9daa235733e51abd0673baca804",
+  "seqno": 36,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owFtUltsVUUUvYUagVYxiraJQMKJQSMNzpx5nJkbYwVi8AEx2BStj17neTlwe871
+nHsvrUUsscEHWiFgyBUDNqJ+lLSKKE3QEII/UOOPgaSJIeALiVr4Ef2rcxr65/xM
+Zu+1115r79l9y9zcvIYTD38p/t0xOdgwcUXmXhj8q9DvyVj3efl+b4uZuUxJm7RS
+2BJqL+8B6AOmiWZcI2sx5IH0GbAUQSWARtJXilFEKRHCUupjDI0GDBKshMIYBAEJ
+NBBem2fDqGiSchJGFUfrUxwIiwMaKKE5sBYgyzkmUmIgCYWWMag5w65wU5xmFU6c
+FKlZGcYu5h6FGXn/g5/VDaACjAoADTBUSEuF68iFQBIFvpIacSoYQIJpaY2zKSyy
+DGIrgPIhMlz6M7qrM3QIamIZ4a4N5gGzzhkWQnGJDcEc8gyYmiQSPcahw1LJFEXJ
+mXXPV9o8l6mFymTDzdzcQMVax4nRJlqp4h5HUE7iSqzikkttqlTKaT4rrfSVM+xW
+Iws3WAoyjLQbpquomSQN48jLQ4dUlaxbHhLKOPdJANo801sOE1MIMwQJKAPuZH1M
+LbNku7lbkkWCY+5WJrivMBWWUB9w3wAudbYULYSPSICQIVC4EA2QFMpNLpt1al6K
+Yi+PqBMqio40DYuRqFQTZ3vBmw2oMdcwL7fkrmWNy9eOrS2enVx4rb3+yOwPvGlO
+9v1yC+bfNhs5tujm6Wdbo4GB3XvHxYqR+sLGgc8vxcOLWpZ1oZPVvR+MdJyIvjt3
+MHn8p/NfbU+mS+seXfJk65H7X/3ojv6h6dOLd7322NBUd91/6nD766drl58+tlNd
+2998O3jicH/8wNELU33XWy7OfU/0DI+ExeMfFp6ZnH/l6rfXt40Tcqi5d/X4+tYL
+Q5uf/6XrVjN2uWPN1TO15ada3tn4YOf4kdaOn6vtn2zc/9kb/2z+fvSek/vmfN25
+vulT0PT7qhSe2vrr20Gvf+CLFwdB97q7612rqxMr9oyebftmdPjHXOe9i4/+veqH
+pRseavJ2/nHnrur2ifdNne14jr717p/Hz3QV5cfbxu57+bcpuaa5u2Vgz9L/AA==
+=Uz/b
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/illegalprime
+
+==================================================================
