@@ -3,9 +3,6 @@ branches:
   only:
   - redeux
 script: nix-shell ci --run ci/update.sh
-cache:
-  directories:
-  - "/nix/store"
 env:
   global:
   - secure: l+uiy08AI2sg3DMEgqzZsJb/AiAo53xZBLPxZAfbsE70Q7MihZjGereUP+AyHYkGDgSrwG/EHBIUzwCcLy0mv+fQLZEeWVrj8gk40JJ+olAuM+84ynYNIHZQfx7nwC0zMzymZaSO5Ra3Ph7lg5TMrhxVMSbJR9auwNj+fThRaWntwGixlXvcvkKC6od8u5yccs5qW4Ac62PSF+wnTC20N3CYQvJ9gakxBAU54mwPIbqZPFogXOck9wObUfsK9zFGszdF7QaZGtSKGhaDCNOptrRpeXAxRTywUhVA5e4YzO1mudN0sh2tH4jlrvZQH4vWc8hDFqBhtv9LvEHNm79QhMOLKoZMk86Nb29diqNTYAgXipDuluh4k0rP1ZUs7bSilRFonPGMwvkX5XCICsniutYgvXIy2fyRY40PiApL10VIzsdI5hr/JfTPuzyzdXnzmW/+JdyTemsgjNBMwhknyXwl0FltycNJmuf6O4I880CYmLBWXQuFprZgMIuxQZi5UH/E+6zG++Vzm04160dWGv7GyQbmD662ZFJEHt1ByKfFxWX5fwx2OUJBZmF2ReTjwIOIgkOquzYm+1xcVDtgvGFLhRTNIzePz9mQ/jSEng2rWKauouiafDxHuvYu1Nz45QnyVP/gMhzaDSGv+0COPK5Oz4xdDE85tdI4Fl6CV7M=
