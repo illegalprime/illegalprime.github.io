@@ -1,0 +1,26 @@
+---
+layout: post
+title: Black Socialists Resource Guide
+permalink: /bsrg/
+author: Black Socialists in America
+---
+
+<div class="message"><b>
+    This page is copied verbatim from the
+    <a href="https://blacksocialists.us/resource-guide">BSA Resource Guide</a>
+    and is here only to render better on e-readers and other
+    low resource browsers.
+</b></div>
+
+{% for section in site.data.bsrg %}
+<h1>{{ section.header }}</h1>
+{{ section.info }}
+
+<ol>
+    {% for link in section.links %}
+    <li style="padding-bottom:0.7em; "><a href="{{link.url}}">
+        {{link.title | escape}} &mdash; <i>{{link.author | escape}}</i>
+    </a></li>
+    {% endfor %}
+</ol>
+{% endfor %}
