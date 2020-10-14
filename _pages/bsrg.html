@@ -14,13 +14,24 @@ author: Black Socialists in America
 
 {% for section in site.data.bsrg %}
 <h1>{{ section.header }}</h1>
-{{ section.info }}
+{{ section.info | markdownify }}
 
 <ol>
     {% for link in section.links %}
-    <li style="padding-bottom:0.7em; "><a href="{{link.url}}">
-        {{link.title | escape}} &mdash; <i>{{link.author | escape}}</i>
-    </a></li>
+    {% if link.header %}
+    <h3>{{link.header | escape}}</h3>
+    {% else %}
+    <li style="padding-bottom:0.7em; ">
+        <a target="_blank"
+           rel="noopener noreferrer"
+           href="{{link.url}}">
+        {{link.title | escape}}
+        {% if link.author %}
+        &mdash; <i>{{link.author | escape}}</i>
+        {% endif %}
+        </a>
+    </li>
+    {% endif %}
     {% endfor %}
 </ol>
 {% endfor %}
