@@ -144,7 +144,7 @@ permalink: /games/
 
      const results = matching.map(([game, data]) => {
          const html = template.content.cloneNode(true);
-         $(html).find('.card-title').html(game);
+         $(html).find('.card-title').html(data['title'] || game);
          $(html).find('a').attr('href', data['link']);
          $(html).find('img').attr('alt', game);
          $(html).find('.card-image').css({

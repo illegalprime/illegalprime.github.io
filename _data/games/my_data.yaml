@@ -1,4 +1,5 @@
 6 nimmt! 25 Jahre:
+  title: 6 nimmt!
   players: [5, 4, 6, 3, 7, 8]
   tags:
   - length/short
@@ -21,6 +22,7 @@ A Fake Artist Goes to New York:
   - social
 
 'Adventure Games: Monochrome Inc.':
+  title: Monochrome Inc.
   players: [2, 3, 4, 1]
   tags:
   - length/medium
@@ -37,6 +39,7 @@ Adventure Mart:
   - strategic
 
 'Android: Netrunner':
+  title: Netrunner
   players: [2]
   tags:
   - length/medium
@@ -58,7 +61,8 @@ Arboretum:
   - strategic
 
 'Arkham Horror: The Card Game':
-  players: [2, 3, 1, 4]
+  title: Arkham Horror LCG
+  players: [2, 1, 3, 4]
   tags:
   - length/long
   - cooperative
@@ -89,6 +93,7 @@ Betrayal at House on the Hill:
   - strategic
 
 Bohnanza:
+  title: Bean Game
   players: [5, 6, 7, 4, 3, 2]
   tags:
   - length/medium
@@ -126,6 +131,7 @@ Chaos in the Old World:
   - strategic
 
 'Choose Your Own Adventure: House of Danger':
+  title: House of Danger
   players: [1, 2, 3]
   tags:
   - length/medium
@@ -144,7 +150,12 @@ Codenames:
   - creative
 
 Combo Fighter:
-  tags: ~
+  players: [2, 4, 3, 1]
+  tags:
+  - length/short
+  - competitive/teams
+  - competitive/direct
+  - strategic
 
 Cosmic Encounter:
   players: [5, 6, 4, 3]
@@ -155,6 +166,7 @@ Cosmic Encounter:
   - strategic
 
 'Cult: Choose Your God Wisely':
+  title: Cult
   players: [4, 5, 3, 2]
   tags:
   - length/medium
@@ -199,6 +211,7 @@ High Society:
   - strategic
 
 Hive Pocket:
+  title: Hive
   players: [2]
   tags:
   - length/short
@@ -206,7 +219,11 @@ Hive Pocket:
   - strategic
 
 Innovation:
-  tags: ~
+  players: [2, 3, 4]
+  tags:
+  - length/medium
+  - competitive/direct
+  - strategic
 
 Insider:
   players: [6, 5, 7, 4, 8]
@@ -217,6 +234,7 @@ Insider:
   - social
 
 Kakerlakenpoker Royal:
+  title: Cockroach Poker
   players: [5, 4, 6, 3]
   tags:
   - length/short
@@ -233,7 +251,13 @@ Legacy of Dragonholt:
   - creative
 
 Mage Knight Board Game:
-  tags: ~
+  title: Mage Knight
+  players: [1, 2, 3, 4]
+  tags:
+  - length/long
+  - cooperative
+  - competitive/indirect
+  - strategic
 
 Mandala:
   players: [2]
@@ -258,6 +282,7 @@ Mysterium:
   - creative
 
 'Pandemic Legacy: Season 1':
+  title: 'Pandemic Legacy S1'
   players: [4, 3, 2]
   tags:
   - length/medium
@@ -331,9 +356,16 @@ Startups:
   - strategic
 
 The 7th Continent:
-  tags: ~
+  players: [1, 2, 3]
+  tags:
+  - length/long
+  - cooperative
+  - story
+  - campaign
+  - strategic
 
 'The Crew: The Quest for Planet Nine':
+  title: The Crew
   players: [4, 5, 3, 2]
   tags:
   - length/short
