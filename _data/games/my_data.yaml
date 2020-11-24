@@ -1,0 +1,369 @@
+6 nimmt! 25 Jahre:
+  players: [5, 4, 6, 3, 7, 8]
+  tags:
+  - length/short
+  - competitive/direct
+  - strategic
+
+7 Wonders Duel:
+  players: [2]
+  tags:
+  - length/short
+  - competitive/direct
+  - strategic
+
+A Fake Artist Goes to New York:
+  players: [6, 7, 5, 8, 9, 10]
+  tags:
+  - length/short
+  - competitive/one-versus-many
+  - competitive/direct
+  - social
+
+'Adventure Games: Monochrome Inc.':
+  players: [2, 3, 4, 1]
+  tags:
+  - length/medium
+  - cooperative
+  - story
+  - campaign
+  - creative
+
+Adventure Mart:
+  players: [3, 4, 2, 1]
+  tags:
+  - length/medium
+  - competitive/direct
+  - strategic
+
+'Android: Netrunner':
+  players: [2]
+  tags:
+  - length/medium
+  - competitive/direct
+  - strategic
+
+Anomia:
+  players: [5, 6, 4, 3]
+  tags:
+  - length/short
+  - competitive/direct
+  - creative
+
+Arboretum:
+  players: [2, 3, 4]
+  tags:
+  - length/short
+  - competitive/indirect
+  - strategic
+
+'Arkham Horror: The Card Game':
+  players: [2, 3, 1, 4]
+  tags:
+  - length/long
+  - cooperative
+  - story
+  - campaign
+  - strategic
+
+Azul:
+  players: [2, 3, 4]
+  tags:
+  - length/short
+  - competitive/indirect
+  - strategic
+
+Bargain Quest:
+  players: [4, 5, 3, 2, 6, 1]
+  tags:
+  - length/medium
+  - competitive/indirect
+  - strategic
+
+Betrayal at House on the Hill:
+  players: [5, 6, 4, 3]
+  tags:
+  - length/medium
+  - competitive/one-versus-many
+  - competitive/direct
+  - strategic
+
+Bohnanza:
+  players: [5, 6, 7, 4, 3, 2]
+  tags:
+  - length/medium
+  - competitive/indirect
+  - strategic
+  - social
+
+'Brass: Birmingham':
+  players: [3, 4, 2]
+  tags:
+  - length/long
+  - competitive/indirect
+  - strategic
+
+Calico:
+  players: [3, 2, 4, 1]
+  tags:
+  - length/medium
+  - competitive/indirect
+  - strategic
+
+Captain Sonar:
+  players: [8, 6, 4]
+  tags:
+  - length/medium
+  - competitive/teams
+  - competitive/direct
+  - strategic
+
+Chaos in the Old World:
+  players: [4, 3, 2]
+  tags:
+  - length/long
+  - competitive/direct
+  - strategic
+
+'Choose Your Own Adventure: House of Danger':
+  players: [1, 2, 3]
+  tags:
+  - length/medium
+  - cooperative
+  - story
+  - campaign
+  - creative
+
+Codenames:
+  players: [6, 8, 4, 2]
+  tags:
+  - length/short
+  - competitive/teams
+  - competitive/direct
+  - strategic
+  - creative
+
+Combo Fighter:
+  tags: ~
+
+Cosmic Encounter:
+  players: [5, 6, 4, 3]
+  tags:
+  - length/medium
+  - competitive/direct
+  - social
+  - strategic
+
+'Cult: Choose Your God Wisely':
+  players: [4, 5, 3, 2]
+  tags:
+  - length/medium
+  - competitive/direct
+  - strategic
+
+'Dead of Winter: A Crossroads Game':
+  tags: ~
+
+Decrypto:
+  players: [4, 6, 8, 3]
+  tags:
+  - length/short
+  - competitive/teams
+  - competitive/direct
+  - strategic
+  - creative
+
+Exploding Kittens:
+  players: [4, 5, 3, 2]
+  tags:
+  - length/short
+  - competitive/direct
+  - strategic
+
+Fog of Love:
+  tags: ~
+
+'Gloomhaven: Jaws of the Lion':
+  players: [3, 2, 4, 1]
+  tags:
+  - length/long
+  - cooperative
+  - campaign
+  - strategic
+
+High Society:
+  players: [5, 4, 3]
+  tags:
+  - length/short
+  - competitive/direct
+  - strategic
+
+Hive Pocket:
+  players: [2]
+  tags:
+  - length/short
+  - competitive/direct
+  - strategic
+
+Innovation:
+  tags: ~
+
+Insider:
+  players: [6, 5, 7, 4, 8]
+  tags:
+  - length/short
+  - competitive/one-versus-many
+  - competitive/direct
+  - social
+
+Kakerlakenpoker Royal:
+  players: [5, 4, 6, 3]
+  tags:
+  - length/short
+  - competitive/direct
+  - social
+
+Legacy of Dragonholt:
+  players: [3, 2, 1, 4, 5]
+  tags:
+  - length/long
+  - cooperative
+  - story
+  - campaign
+  - creative
+
+Mage Knight Board Game:
+  tags: ~
+
+Mandala:
+  players: [2]
+  tags:
+  - length/short
+  - competitive/direct
+  - strategic
+
+'Mansions of Madness: Second Edition':
+  players: [4, 3, 5, 2, 1]
+  tags:
+  - length/long
+  - cooperative
+  - story
+  - strategic
+
+Mysterium:
+  players: [5, 6, 4, 7, 3]
+  tags:
+  - length/medium
+  - cooperative
+  - creative
+
+'Pandemic Legacy: Season 1':
+  players: [4, 3, 2]
+  tags:
+  - length/medium
+  - cooperative
+  - campaign
+  - strategic
+
+Race for the Galaxy:
+  players: [2, 3, 4]
+  tags:
+  - length/medium
+  - competitive/indirect
+  - strategic
+
+Rap Godz:
+  players: [3, 4, 2]
+  tags: ~
+  # - length/medium
+  # - competitive/direct
+  # - strategic
+
+Santa Monica:
+  players: [3, 2, 4]
+  tags:
+  - length/medium
+  - competitive/indirect
+  - strategic
+
+Scythe:
+  players: [5, 4, 3, 2, 1]
+  tags:
+  - length/long
+  - competitive/direct
+  - strategic
+
+Secret Hitler:
+  players: [8, 10, 9, 7, 6, 5]
+  tags:
+  - length/short
+  - competitive/one-versus-many
+  - competitive/direct
+  - social
+
+'Sherlock Holmes Consulting Detective: The Thames Murders & Other Cases':
+  players: [2, 3, 1, 4]
+  tags:
+  - length/long
+  - cooperative
+  - story
+  - creative
+
+Splendor:
+  players: [3, 2, 4]
+  tags:
+  - length/short
+  - competitive/direct
+  - strategic
+
+Star Realms:
+  players: [2]
+  tags:
+  - length/short
+  - competitive/direct
+  - strategic
+
+Startups:
+  players: [4, 5, 3, 6]
+  tags:
+  - length/short
+  - competitive/direct
+  - strategic
+
+The 7th Continent:
+  tags: ~
+
+'The Crew: The Quest for Planet Nine':
+  players: [4, 5, 3, 2]
+  tags:
+  - length/short
+  - cooperative
+  - strategic
+
+The Estates:
+  players: [4, 5, 3, 2]
+  tags:
+  - length/medium
+  - competitive/direct
+  - strategic
+
+Truffle Shuffle:
+  players: [3, 4, 2]
+  tags:
+  - length/short
+  - competitive/indirect
+  - strategic
+
+Tussie Mussie:
+  players: [2, 3, 4, 1]
+  tags:
+  - length/short
+  - competitive/direct
+  - strategic
+
+Wingspan:
+  players: [3, 2, 4, 5, 1]
+  tags:
+  - length/medium
+  - competitive/indirect
+  - strategic

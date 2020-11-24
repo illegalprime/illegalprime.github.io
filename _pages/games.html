@@ -32,7 +32,7 @@ permalink: /games/
     </div>
     <hr/>
 
-    {% for question in site.data.game_questions.questions %}
+    {% for question in site.data.games.questions.questions %}
     <p> {{ question[1].title }} </p>
 
     <div class="question">
@@ -50,6 +50,7 @@ permalink: /games/
     {% endfor %}
 
     <div class="row results"></div>
+    <div class="gc-protect truncate"></div>
 </div>
 
 <template id="result-template">
@@ -72,7 +73,11 @@ permalink: /games/
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script>
- const GAME_DATA = {{ site.data.game_data | jsonify }};
+ const MY_GAME_DATA  = {{ site.data.games.my_data | jsonify }};
+ const BGG_GAME_DATA = {{ site.data.games.bgg_data | jsonify }};
+ // 1-deep merge the above two
+ const GAME_DATA = Object.fromEntries(Object.entries(BGG_GAME_DATA)
+    .map(([key, vals]) => [key, {...vals, ...MY_GAME_DATA[key]}]));
 
  function refresh() {
      const questions = $('.question').toArray().map(q => {
@@ -87,11 +92,13 @@ permalink: /games/
      const template =  document.getElementById("result-template");
 
      const matching = Object.entries(GAME_DATA).filter(([game, info]) => {
+         // check that tags are matching
          const tag_check = info['tags'] && tags.every(tag_set => {
              return tag_set.filter(x => info['tags'].includes(x)).length;
          });
-         const player_check = players.every(p => info['players'].includes(p));
-         return tag_check && player_check;
+         if (!tag_check) return false;
+         // check that player count is supported
+         return players.every(p => info['players'].includes(p));
      });
 
      const player_score = p_info => {

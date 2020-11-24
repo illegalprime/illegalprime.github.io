@@ -9,11 +9,11 @@ questions:
   competition:
     title: 'How competitive are you?'
     options:
-      competitive/direct: "Cut-throat and feelin' it!"
-      competitive/indirect: 'A win means good honest work.'
-      competitive/teams: "I'm a team player."
-      competitive/one-versus-many: "It's me against the world."
       cooperative: 'One for all and all for one!'
+      competitive/teams: "I'm a team player."
+      competitive/indirect: 'A win means good honest work.'
+      competitive/one-versus-many: "It's me against the world."
+      competitive/direct: "Cut-throat and feelin' it!"
 
   skills:
     title: 'What skills do you want to flex?'
