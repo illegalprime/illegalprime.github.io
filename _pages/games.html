@@ -1,0 +1,151 @@
+---
+layout: toplevel
+title: Please Play a Board Game With Me
+permalink: /games/
+---
+
+<div class="article">
+    <h1>Play a Board Game with Michael (thank u &lt;3)</h1>
+    <p>
+        You don't have to fill in every section,
+        and selecting multiple player counts means the game
+        supports <i>all</i> those player counts.
+    </p>
+    <hr/>
+
+    <div class="row">
+        <div class="col s6">
+            <p>How many players are you playing with?</p>
+        </div>
+        <div class="col s6" style="display:flex;justify-content:center;">
+            <ul class="pagination" style="margin-top:10px;">
+                <li class="waves-effect"><a href="#!">1</a></li>
+                <li class="waves-effect"><a href="#!">2</a></li>
+                <li class="waves-effect"><a href="#!">3</a></li>
+                <li class="waves-effect"><a href="#!">4</a></li>
+                <li class="waves-effect"><a href="#!">5</a></li>
+                <li class="waves-effect"><a href="#!">6</a></li>
+                <li class="waves-effect"><a href="#!">7</a></li>
+                <li class="waves-effect"><a href="#!">8</a></li>
+            </ul>
+        </div>
+    </div>
+    <hr/>
+
+    {% for question in site.data.game_questions.questions %}
+    <p> {{ question[1].title }} </p>
+
+    <div class="question">
+    {% for option in question[1].options %}
+    <div class="switch">
+        <label>
+            <input class="answer" type="checkbox" data-tag="{{ option[0] }}">
+            <span class="lever"></span>
+            {{ option[1] }}
+        </label>
+    </div>
+    {% endfor %}
+    </div>
+    <hr/>
+    {% endfor %}
+
+    <div class="row results"></div>
+</div>
+
+<template id="result-template">
+    <div class="col s6 m4">
+        <a class="game-link" target="_blank" href="">
+            <div class="card waves-effect waves-block waves-light">
+                <div class="card-image">
+                    <img src="/assets/images/square.png">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4 truncate"
+                          style="font-size:inherit;line-height:inherit;text-justify:none;">
+                    </span>
+                </div>
+            </div>
+        </a>
+    </div>
+</template>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+ const GAME_DATA = {{ site.data.game_data | jsonify }};
+
+ function refresh() {
+     const questions = $('.question').toArray().map(q => {
+         return $(q).find('input[type="checkbox"]:checked').toArray().map(a => {
+             return a.getAttribute('data-tag');
+         });
+     });
+     const tags = questions.filter(a => a.length);
+     const players = $('ul.pagination li.active a').toArray().map(p => {
+         return parseInt(p.innerHTML);
+     });
+     const template =  document.getElementById("result-template");
+
+     const matching = Object.entries(GAME_DATA).filter(([game, info]) => {
+         const tag_check = info['tags'] && tags.every(tag_set => {
+             return tag_set.filter(x => info['tags'].includes(x)).length;
+         });
+         const player_check = players.every(p => info['players'].includes(p));
+         return tag_check && player_check;
+     });
+
+     const player_score = p_info => {
+         return Math.min(...players.map(p => p_info.indexOf(p)));
+     };
+
+     matching.sort(([a_title, a_info], [b_title, b_info]) => {
+         // first sort by best matching player count
+         ap_score = player_score(a_info['players']);
+         bp_score = player_score(b_info['players']);
+         if (ap_score !== bp_score) {
+             return ap_score - bp_score;
+         }
+         a_rate = a_info['ratings']['personal']
+         b_rate = b_info['ratings']['personal']
+         if (b_rate && !a_rate) return 1;
+         if (a_rate && !b_rate) return -1;
+         if (a_rate && b_rate && a_rate !== b_rate) {
+             return b_rate - a_rate;
+         }
+         a_geek = a_info['ratings']['bayesaverage']
+         b_geek = b_info['ratings']['bayesaverage']
+         return b_geek - a_geek;
+     });
+
+     const results = matching.map(([game, data]) => {
+         const html = template.content.cloneNode(true);
+         $(html).find('.card-title').html(game);
+         $(html).find('a').attr('href', data['link']);
+         $(html).find('img').attr('alt', game);
+         $(html).find('.card-image').css({
+             'background': 'url(' + data['image'] + ')',
+             'background-size': 'cover',
+             'background-position-x': 'center',
+         });
+         return html;
+     });
+
+     if (!results.length) {
+         results.push('Sorry, no results found!');
+     }
+
+     $('div.results').empty();
+     $('div.results').append(results);
+ }
+
+ $('ul.pagination li a').click(function(event) {
+     $(event.target).parent().toggleClass('active');
+     refresh();
+ });
+
+ $('.article').change(function() {
+     refresh();
+ });
+
+ refresh();
+</script>
