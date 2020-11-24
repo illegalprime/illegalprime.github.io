@@ -17,8 +17,8 @@ permalink: /games/
         <div class="col s6">
             <p>How many players are you playing with?</p>
         </div>
-        <div class="col s6" style="display:flex;justify-content:center;">
-            <ul class="pagination" style="margin-top:10px;">
+        <div class="col s6 player-count">
+            <ul class="pagination">
                 <li class="waves-effect"><a href="#!">1</a></li>
                 <li class="waves-effect"><a href="#!">2</a></li>
                 <li class="waves-effect"><a href="#!">3</a></li>
@@ -53,6 +53,25 @@ permalink: /games/
     <div class="gc-protect truncate"></div>
 </div>
 
+<style>
+ div.player-count {
+     display: flex;
+     justify-content: center;
+ }
+ div.player-count .pagination {
+     margin-top: 10px;
+ }
+ a.game-link .card .card-content span.card-title {
+     font-size: inherit;
+     line-height: inherit;
+     text-justify: none;
+ }
+ div.switch label {
+     display: block;
+     width: 100%;
+ }
+</style>
+
 <template id="result-template">
     <div class="col s6 m4">
         <a class="game-link" target="_blank" href="">
@@ -61,8 +80,7 @@ permalink: /games/
                     <img src="/assets/images/square.png">
                 </div>
                 <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4 truncate"
-                          style="font-size:inherit;line-height:inherit;text-justify:none;">
+                    <span class="card-title activator grey-text text-darken-4 truncate">
                     </span>
                 </div>
             </div>
