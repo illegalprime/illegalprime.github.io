@@ -6,7 +6,7 @@
 
     <title>
     
-        Please Play a Board Game With Me &middot; Michael's Weird Blog
+        Please Play a Board Game With Me &middot; Michael's Normcore Blog
     
     </title>
 
@@ -317,6 +317,7 @@
          const html = template.content.cloneNode(true);
          $(html).find('.card-title').html(data['title'] || game);
          $(html).find('a').attr('href', data['link']);
+         $(html).find('a').attr('title', game);
          $(html).find('img').attr('alt', game);
          $(html).find('.card-image').css({
              'background': 'url(' + data['image'] + ')',
