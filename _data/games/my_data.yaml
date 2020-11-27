@@ -7,7 +7,8 @@
   - strategic
 
 7 Wonders Duel:
-  players: [2, 1] # with solo print-n-play
+  # with solo print-n-play
+  players: [2, 1]
   tags:
   - length/short
   - competitive/direct
@@ -124,7 +125,8 @@ Captain Sonar:
   - strategic
 
 Chaos in the Old World:
-  players: [4, 5] # 3rd player not recommended
+  # 3rd player not recommended
+  players: [4, 5]
   tags:
   - length/long
   - competitive/direct
@@ -194,6 +196,16 @@ Exploding Kittens:
 
 Fog of Love:
   tags: ~
+
+Forgotten Waters:
+  players: [5, 4, 6, 7, 3, 2, 1]
+  tags:
+  - length/long
+  - cooperative
+  - story
+  - campaign
+  - strategic
+  # is it creative?
 
 'Gloomhaven: Jaws of the Lion':
   players: [3, 2, 4, 1]
@@ -300,12 +312,20 @@ Race for the Galaxy:
 Rap Godz:
   players: [3, 4, 2]
   tags: ~
-  # - length/medium
-  # - competitive/direct
-  # - strategic
+  #- length/medium
+  #- competitive/direct
+  #- strategic
+
+Root:
+  players: [3, 4]
+  tags:
+  - length/long
+  - competitive/direct
+  - strategic
 
 Santa Monica:
-  players: [3, 2, 4, 1] # beta solo rules
+  # beta solo rules
+  players: [3, 2, 4, 1]
   tags:
   - length/medium
   - competitive/indirect
@@ -317,7 +337,8 @@ Scythe:
   - length/long
   - competitive/indirect
   - strategic
-  - campaign # cause I have The Rise of Fenris Expansion
+  # cause I have The Rise of Fenris Expansion
+  - campaign
 
 Secret Hitler:
   players: [8, 10, 9, 7, 6, 5]
