@@ -7,7 +7,7 @@
   - strategic
 
 7 Wonders Duel:
-  players: [2]
+  players: [2, 1] # with solo print-n-play
   tags:
   - length/short
   - competitive/direct
@@ -97,7 +97,7 @@ Bohnanza:
   players: [5, 6, 7, 4, 3, 2]
   tags:
   - length/medium
-  - competitive/indirect
+  - competitive/direct
   - strategic
   - social
 
@@ -124,7 +124,7 @@ Captain Sonar:
   - strategic
 
 Chaos in the Old World:
-  players: [4, 3, 2]
+  players: [4, 5] # 3rd player not recommended
   tags:
   - length/long
   - competitive/direct
@@ -283,7 +283,7 @@ Mysterium:
 
 'Pandemic Legacy: Season 1':
   title: 'Pandemic Legacy S1'
-  players: [4, 3, 2]
+  players: [4, 3, 2, 1]
   tags:
   - length/medium
   - cooperative
@@ -305,7 +305,7 @@ Rap Godz:
   # - strategic
 
 Santa Monica:
-  players: [3, 2, 4]
+  players: [3, 2, 4, 1] # beta solo rules
   tags:
   - length/medium
   - competitive/indirect
@@ -315,8 +315,9 @@ Scythe:
   players: [5, 4, 3, 2, 1]
   tags:
   - length/long
-  - competitive/direct
+  - competitive/indirect
   - strategic
+  - campaign # cause I have The Rise of Fenris Expansion
 
 Secret Hitler:
   players: [8, 10, 9, 7, 6, 5]
@@ -338,7 +339,7 @@ Splendor:
   players: [3, 2, 4]
   tags:
   - length/short
-  - competitive/direct
+  - competitive/indirect
   - strategic
 
 Star Realms:
@@ -373,7 +374,7 @@ The 7th Continent:
   - strategic
 
 The Estates:
-  players: [4, 5, 3, 2]
+  players: [4, 3, 5, 2]
   tags:
   - length/medium
   - competitive/direct
@@ -390,7 +391,7 @@ Tussie Mussie:
   players: [2, 3, 4, 1]
   tags:
   - length/short
-  - competitive/direct
+  - competitive/indirect
   - strategic
 
 Wingspan:
