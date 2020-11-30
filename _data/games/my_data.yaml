@@ -176,7 +176,15 @@ Cosmic Encounter:
   - strategic
 
 'Dead of Winter: A Crossroads Game':
-  tags: ~
+  title: Dead of Winter
+  players: [4, 3, 5]
+  tags:
+  - length/medium
+  - length/long
+  - competitive/one-versus-many
+  - cooperative
+  - social
+  - story
 
 Decrypto:
   players: [4, 6, 8, 3]
@@ -416,6 +424,7 @@ Tussie Mussie:
   - strategic
 
 Wingspan:
+  title: Bird Game
   players: [3, 2, 4, 5, 1]
   tags:
   - length/medium
