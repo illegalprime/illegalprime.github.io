@@ -205,6 +205,13 @@ Exploding Kittens:
 Fog of Love:
   tags: ~
 
+Food Chain Magnate:
+  players: [3, 4, 2, 5]
+  tags:
+  - length/long
+  - competitive/direct
+  - strategic
+
 Forgotten Waters:
   players: [5, 4, 6, 7, 3, 2, 1]
   tags:
