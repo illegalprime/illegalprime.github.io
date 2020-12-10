@@ -332,7 +332,7 @@ Rap Godz:
   #- strategic
 
 Root:
-  players: [3, 4]
+  players: [3, 4, 2, 5, 6, 1]
   tags:
   - length/long
   - competitive/direct
