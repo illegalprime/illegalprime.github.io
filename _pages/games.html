@@ -116,11 +116,17 @@ permalink: /games/
          });
          if (!tag_check) return false;
          // check that player count is supported
-         return players.every(p => info['players'].includes(p));
+         const all_counts = [].concat(...Object.values(info.players));
+         return players.every(p => all_counts.includes(p));
      });
 
      const player_score = p_info => {
-         return Math.min(...players.map(p => p_info.indexOf(p)));
+         return Math.max(...players.map(p => {
+             if ((p_info.best || []).includes(p)) return 0;
+             if ((p_info.good || []).includes(p)) return 1;
+             if ((p_info.bad  || []).includes(p)) return 2;
+             return 3;
+         }));
      };
 
      matching.sort(([a_title, a_info], [b_title, b_info]) => {

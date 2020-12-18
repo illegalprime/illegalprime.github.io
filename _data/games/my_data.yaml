@@ -1,6 +1,9 @@
 6 nimmt! 25 Jahre:
   title: 6 nimmt!
-  players: [5, 4, 6, 3, 7, 8]
+  players:
+    best: [4, 5, 6]
+    good: [3, 7, 8]
+    bad:  [2, 9, 10]
   tags:
   - length/short
   - competitive/direct
@@ -8,14 +11,18 @@
 
 7 Wonders Duel:
   # with solo print-n-play
-  players: [2, 1]
+  players:
+    best: [2]
+    bad:  [1]
   tags:
   - length/short
   - competitive/direct
   - strategic
 
 A Fake Artist Goes to New York:
-  players: [6, 7, 5, 8, 9, 10]
+  players:
+    best: [6, 7]
+    good: [5, 8, 9, 10]
   tags:
   - length/short
   - competitive/one-versus-many
@@ -24,7 +31,10 @@ A Fake Artist Goes to New York:
 
 'Adventure Games: Monochrome Inc.':
   title: Monochrome Inc.
-  players: [2, 3, 4, 1]
+  players:
+    best: [2]
+    good: [3, 4]
+    bad:  [1]
   tags:
   - length/medium
   - cooperative
@@ -33,7 +43,9 @@ A Fake Artist Goes to New York:
   - creative
 
 Adventure Mart:
-  players: [3, 4, 2, 1]
+  players:
+    best: [3, 4]
+    good: [1, 2]
   tags:
   - length/medium
   - competitive/direct
@@ -41,21 +53,26 @@ Adventure Mart:
 
 'Android: Netrunner':
   title: Netrunner
-  players: [2]
+  players:
+    best: [2]
   tags:
   - length/medium
   - competitive/direct
   - strategic
 
 Anomia:
-  players: [5, 6, 4, 3]
+  players:
+    best: [5]
+    good: [3, 4, 6]
   tags:
   - length/short
   - competitive/direct
   - creative
 
 Arboretum:
-  players: [2, 3, 4]
+  players:
+    best: [2]
+    good: [3, 4]
   tags:
   - length/short
   - competitive/indirect
@@ -63,7 +80,9 @@ Arboretum:
 
 'Arkham Horror: The Card Game':
   title: Arkham Horror LCG
-  players: [2, 1, 3, 4]
+  players:
+    best: [2, 1, 3]
+    good: [4]
   tags:
   - length/long
   - cooperative
@@ -72,21 +91,28 @@ Arboretum:
   - strategic
 
 Azul:
-  players: [2, 3, 4]
+  players:
+    best: [2]
+    good: [3, 4]
   tags:
   - length/short
   - competitive/indirect
   - strategic
 
 Bargain Quest:
-  players: [4, 5, 3, 2, 6, 1]
+  players:
+    best: [4]
+    good: [2, 3, 5, 6]
+    bad:  [1, 7, 8]
   tags:
   - length/medium
   - competitive/indirect
   - strategic
 
 Betrayal at House on the Hill:
-  players: [5, 6, 4, 3]
+  players:
+    best: [5, 6]
+    good: [3, 4]
   tags:
   - length/medium
   - competitive/one-versus-many
@@ -95,7 +121,10 @@ Betrayal at House on the Hill:
 
 Bohnanza:
   title: Bean Game
-  players: [5, 6, 7, 4, 3, 2]
+  players:
+    best: [4, 5]
+    good: [3, 6, 7]
+    bad:  [2]
   tags:
   - length/medium
   - competitive/direct
@@ -103,21 +132,26 @@ Bohnanza:
   - social
 
 'Brass: Birmingham':
-  players: [3, 4, 2]
+  players:
+    best: [3, 4]
+    good: [2]
   tags:
   - length/long
   - competitive/indirect
   - strategic
 
 Calico:
-  players: [3, 2, 4, 1]
+  players:
+    best: [1, 2, 3, 4]
   tags:
   - length/medium
   - competitive/indirect
   - strategic
 
 Captain Sonar:
-  players: [8, 6, 4]
+  players:
+    best: [8]
+    good: [6, 4]
   tags:
   - length/medium
   - competitive/teams
@@ -126,7 +160,9 @@ Captain Sonar:
 
 Chaos in the Old World:
   # 3rd player not recommended
-  players: [4, 5]
+  players:
+    best: [4, 5]
+    bad:  [3]
   tags:
   - length/long
   - competitive/direct
@@ -134,7 +170,9 @@ Chaos in the Old World:
 
 'Choose Your Own Adventure: House of Danger':
   title: House of Danger
-  players: [1, 2, 3]
+  players:
+    good: [2, 3]
+    bad:  [1]
   tags:
   - length/medium
   - cooperative
@@ -143,7 +181,9 @@ Chaos in the Old World:
   - creative
 
 Codenames:
-  players: [6, 8, 4, 2]
+  players:
+    best: [8, 6]
+    good: [4, 2]
   tags:
   - length/short
   - competitive/teams
@@ -152,7 +192,9 @@ Codenames:
   - creative
 
 Combo Fighter:
-  players: [2, 4, 3, 1]
+  players:
+    best: [2]
+    good: [1, 3, 4]
   tags:
   - length/short
   - competitive/teams
@@ -160,7 +202,10 @@ Combo Fighter:
   - strategic
 
 Cosmic Encounter:
-  players: [5, 6, 4, 3]
+  players:
+    best: [5]
+    good: [4, 6]
+    bad:  [3]
   tags:
   - length/medium
   - competitive/direct
@@ -169,7 +214,10 @@ Cosmic Encounter:
 
 'Cult: Choose Your God Wisely':
   title: Cult
-  players: [4, 5, 3, 2]
+  players:
+    best: [4, 5]
+    good: [3]
+    bad:  [2]
   tags:
   - length/medium
   - competitive/direct
@@ -177,7 +225,10 @@ Cosmic Encounter:
 
 'Dead of Winter: A Crossroads Game':
   title: Dead of Winter
-  players: [4, 3, 5]
+  players:
+    best: [4]
+    good: [3, 5]
+    bad:  [2]
   tags:
   - length/medium
   - length/long
@@ -187,7 +238,9 @@ Cosmic Encounter:
   - story
 
 Decrypto:
-  players: [4, 6, 8, 3]
+  players:
+    best: [4, 6]
+    good: [3, 5, 7, 8]
   tags:
   - length/short
   - competitive/teams
@@ -196,7 +249,10 @@ Decrypto:
   - creative
 
 Exploding Kittens:
-  players: [4, 5, 3, 2]
+  players:
+    best: [4, 5]
+    good: [3]
+    bad:  [2]
   tags:
   - length/short
   - competitive/direct
@@ -206,14 +262,18 @@ Fog of Love:
   tags: ~
 
 Food Chain Magnate:
-  players: [3, 4, 2, 5]
+  players:
+    best: [3, 4]
+    good: [2, 5]
   tags:
   - length/long
   - competitive/direct
   - strategic
 
 Forgotten Waters:
-  players: [5, 4, 6, 7, 3, 2, 1]
+  players:
+    best: [5, 6, 7]
+    good: [4, 3, 2, 1]
   tags:
   - length/long
   - cooperative
@@ -223,7 +283,10 @@ Forgotten Waters:
   # is it creative?
 
 'Gloomhaven: Jaws of the Lion':
-  players: [3, 2, 4, 1]
+  players:
+    best: [3]
+    good: [2, 4]
+    bad:  [1]
   tags:
   - length/long
   - cooperative
@@ -231,7 +294,9 @@ Forgotten Waters:
   - strategic
 
 High Society:
-  players: [5, 4, 3]
+  players:
+    best: [4, 5]
+    good: [3]
   tags:
   - length/short
   - competitive/direct
@@ -239,21 +304,27 @@ High Society:
 
 Hive Pocket:
   title: Hive
-  players: [2]
+  players:
+    best: [2]
   tags:
   - length/short
   - competitive/direct
   - strategic
 
 Innovation:
-  players: [2, 3, 4]
+  players:
+    best: [2]
+    good: [3]
+    bad:  [4]
   tags:
   - length/medium
   - competitive/direct
   - strategic
 
 Insider:
-  players: [6, 5, 7, 4, 8]
+  players:
+    best: [5, 6]
+    good: [4, 7, 8]
   tags:
   - length/short
   - competitive/one-versus-many
@@ -262,14 +333,20 @@ Insider:
 
 Kakerlakenpoker Royal:
   title: Cockroach Poker
-  players: [5, 4, 6, 3]
+  players:
+    best: [4, 5]
+    good: [3, 6]
+    bad:  [2]
   tags:
   - length/short
   - competitive/direct
   - social
 
 Legacy of Dragonholt:
-  players: [3, 2, 1, 4, 5]
+  players:
+    best: [1]
+    good: [2, 3]
+    bad:  [4, 5, 6]
   tags:
   - length/long
   - cooperative
@@ -279,7 +356,10 @@ Legacy of Dragonholt:
 
 Mage Knight Board Game:
   title: Mage Knight
-  players: [1, 2, 3, 4]
+  players:
+    best: [1, 2]
+    good: [3]
+    bad:  [4]
   tags:
   - length/long
   - cooperative
@@ -287,14 +367,17 @@ Mage Knight Board Game:
   - strategic
 
 Mandala:
-  players: [2]
+  players:
+    best: [2]
   tags:
   - length/short
   - competitive/direct
   - strategic
 
 'Mansions of Madness: Second Edition':
-  players: [4, 3, 5, 2, 1]
+  players:
+    best: [3, 4]
+    good: [1, 2, 5]
   tags:
   - length/long
   - cooperative
@@ -302,7 +385,10 @@ Mandala:
   - strategic
 
 Mysterium:
-  players: [5, 6, 4, 7, 3]
+  players:
+    best: [5, 6]
+    good: [3, 4, 7]
+    bad:  [2]
   tags:
   - length/medium
   - cooperative
@@ -310,7 +396,10 @@ Mysterium:
 
 'Pandemic Legacy: Season 1':
   title: 'Pandemic Legacy S1'
-  players: [4, 3, 2, 1]
+  players:
+    best: [4]
+    good: [3, 2]
+    bad:  [1]
   tags:
   - length/medium
   - cooperative
@@ -318,7 +407,9 @@ Mysterium:
   - strategic
 
 Race for the Galaxy:
-  players: [2, 3, 4]
+  players:
+    best: [2]
+    good: [3, 4]
   tags:
   - length/medium
   - competitive/indirect
@@ -332,7 +423,10 @@ Rap Godz:
   #- strategic
 
 Root:
-  players: [3, 4, 2, 5, 6, 1]
+  players:
+    best: [4]
+    good: [1, 3, 2, 5]
+    bad:  [6]
   tags:
   - length/long
   - competitive/direct
@@ -340,14 +434,18 @@ Root:
 
 Santa Monica:
   # beta solo rules
-  players: [3, 2, 4, 1]
+  players:
+    best: [2, 3, 4]
+    good: [1]
   tags:
   - length/medium
   - competitive/indirect
   - strategic
 
 Scythe:
-  players: [5, 4, 3, 2, 1]
+  players:
+    best: [4, 5]
+    good: [1, 2, 3]
   tags:
   - length/long
   - competitive/indirect
@@ -356,7 +454,10 @@ Scythe:
   - campaign
 
 Secret Hitler:
-  players: [8, 10, 9, 7, 6, 5]
+  players:
+    best: [8, 10]
+    good: [9, 7, 6]
+    bad:  [5]
   tags:
   - length/short
   - competitive/one-versus-many
@@ -364,7 +465,9 @@ Secret Hitler:
   - social
 
 'Sherlock Holmes Consulting Detective: The Thames Murders & Other Cases':
-  players: [2, 3, 1, 4]
+  players:
+    best: [2]
+    good: [1, 3, 4]
   tags:
   - length/long
   - cooperative
@@ -372,28 +475,36 @@ Secret Hitler:
   - creative
 
 Splendor:
-  players: [3, 2, 4]
+  players:
+    best: [3]
+    good: [2, 4]
   tags:
   - length/short
   - competitive/indirect
   - strategic
 
 Star Realms:
-  players: [2]
+  players:
+    best: [2]
   tags:
   - length/short
   - competitive/direct
   - strategic
 
 Startups:
-  players: [4, 5, 3, 6]
+  players:
+    best: [4, 5]
+    good: [3]
+    bad:  [6, 7]
   tags:
   - length/short
   - competitive/direct
   - strategic
 
 The 7th Continent:
-  players: [1, 2, 3]
+  players:
+    best: [1]
+    good: [2, 3]
   tags:
   - length/long
   - cooperative
@@ -403,28 +514,39 @@ The 7th Continent:
 
 'The Crew: The Quest for Planet Nine':
   title: The Crew
-  players: [4, 5, 3, 2]
+  players:
+    best: [4]
+    good: [3, 5]
+    bad:  [2]
   tags:
   - length/short
   - cooperative
   - strategic
 
 The Estates:
-  players: [4, 3, 5, 2]
+  players:
+    best: [4]
+    good: [3, 5]
+    bad:  [2]
   tags:
   - length/medium
   - competitive/direct
   - strategic
 
 Truffle Shuffle:
-  players: [3, 4, 2]
+  players:
+    best: [3]
+    good: [2, 4]
   tags:
   - length/short
   - competitive/indirect
   - strategic
 
 Tussie Mussie:
-  players: [2, 3, 4, 1]
+  players:
+    best: [2]
+    good: [3, 4]
+    bad:  [1]
   tags:
   - length/short
   - competitive/indirect
@@ -432,7 +554,9 @@ Tussie Mussie:
 
 Wingspan:
   title: Bird Game
-  players: [3, 2, 4, 5, 1]
+  players:
+    best: [1, 2, 3]
+    good: [4, 5]
   tags:
   - length/medium
   - competitive/indirect
