@@ -32,8 +32,7 @@ A Fake Artist Goes to New York:
 'Adventure Games: Monochrome Inc.':
   title: Monochrome Inc.
   players:
-    best: [2]
-    good: [3, 4]
+    good: [2, 3, 4]
     bad:  [1]
   tags:
   - length/medium
