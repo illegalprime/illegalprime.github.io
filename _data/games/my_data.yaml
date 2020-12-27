@@ -29,17 +29,17 @@ A Fake Artist Goes to New York:
   - competitive/direct
   - social
 
-'Adventure Games: Monochrome Inc.':
-  title: Monochrome Inc.
-  players:
-    good: [2, 3, 4]
-    bad:  [1]
-  tags:
-  - length/medium
-  - cooperative
-  - story
-  - campaign
-  - creative
+# 'Adventure Games: Monochrome Inc.':
+#   title: Monochrome Inc.
+#   players:
+#     good: [2, 3, 4]
+#     bad:  [1]
+#   tags:
+#   - length/medium
+#   - cooperative
+#   - story
+#   - campaign
+#   - creative
 
 Adventure Mart:
   players:
@@ -108,15 +108,15 @@ Bargain Quest:
   - competitive/indirect
   - strategic
 
-Betrayal at House on the Hill:
-  players:
-    best: [5, 6]
-    good: [3, 4]
-  tags:
-  - length/medium
-  - competitive/one-versus-many
-  - competitive/direct
-  - strategic
+# Betrayal at House on the Hill:
+#   players:
+#     best: [5, 6]
+#     good: [3, 4]
+#   tags:
+#   - length/medium
+#   - competitive/one-versus-many
+#   - competitive/direct
+#   - strategic
 
 Bohnanza:
   title: Bean Game
@@ -247,6 +247,15 @@ Decrypto:
   - strategic
   - creative
 
+'Dune: Imperium':
+  players:
+    best: [3, 4]
+    good: [1, 2]
+  tags:
+  - length/medium
+  - competitive/direct
+  - strategic
+
 Exploding Kittens:
   players:
     best: [4, 5]
@@ -257,8 +266,8 @@ Exploding Kittens:
   - competitive/direct
   - strategic
 
-Fog of Love:
-  tags: ~
+# Fog of Love:
+#   tags: ~
 
 Food Chain Magnate:
   players:
@@ -393,17 +402,17 @@ Mysterium:
   - cooperative
   - creative
 
-'Pandemic Legacy: Season 1':
-  title: 'Pandemic Legacy S1'
-  players:
-    best: [4]
-    good: [3, 2]
-    bad:  [1]
-  tags:
-  - length/medium
-  - cooperative
-  - campaign
-  - strategic
+# 'Pandemic Legacy: Season 1':
+#   title: 'Pandemic Legacy S1'
+#   players:
+#     best: [4]
+#     good: [3, 2]
+#     bad:  [1]
+#   tags:
+#   - length/medium
+#   - cooperative
+#   - campaign
+#   - strategic
 
 Race for the Galaxy:
   players:
@@ -532,14 +541,14 @@ The Estates:
   - competitive/direct
   - strategic
 
-Truffle Shuffle:
-  players:
-    best: [3]
-    good: [2, 4]
-  tags:
-  - length/short
-  - competitive/indirect
-  - strategic
+# Truffle Shuffle:
+#   players:
+#     best: [3]
+#     good: [2, 4]
+#   tags:
+#   - length/short
+#   - competitive/indirect
+#   - strategic
 
 Tussie Mussie:
   players:
