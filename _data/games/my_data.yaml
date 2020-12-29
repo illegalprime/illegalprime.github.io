@@ -247,6 +247,15 @@ Decrypto:
   - strategic
   - creative
 
+Everdell:
+  players:
+    best: [3]
+    good: [1, 2, 4]
+  tags:
+  - length/medium
+  - competitive/indirect
+  - strategic
+
 'Dune: Imperium':
   players:
     best: [3, 4]
@@ -339,7 +348,7 @@ Insider:
   - competitive/direct
   - social
 
-Kakerlakenpoker Royal:
+Cockroach Poker Royal:
   title: Cockroach Poker
   players:
     best: [4, 5]
@@ -539,6 +548,15 @@ The Estates:
   tags:
   - length/medium
   - competitive/direct
+  - strategic
+
+The Isle of Cats:
+  players:
+    best: [3]
+    good: [1, 2, 4]
+  tags:
+  - length/medium
+  - competitive/indirect
   - strategic
 
 # Truffle Shuffle:
