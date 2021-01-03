@@ -2,24 +2,25 @@ questions:
   length:
     title: 'How much time do you have?'
     options:
-      length/short: 'A little while. (~30 minutes)'
-      length/medium: 'A good chunk. (~75 minutes)'
-      length/long: 'Tons of time! (~2-3 hours)'
+      length/short: '~30 minutes'
+      length/medium: '~75 minutes'
+      length/long: '~2-3 hours'
 
   competition:
-    title: 'How competitive are you?'
+    title: 'What kind of competition do you like?'
     options:
-      cooperative: 'One for all and all for one!'
-      competitive/teams: "I'm a team player."
-      competitive/indirect: 'A win means good honest work.'
-      competitive/one-versus-many: "It's me against the world."
-      competitive/direct: "Cut-throat and feelin' it!"
+      competitive/teams: Team
+      competitive/one-versus-many: One vs. Many
+      cooperative: Cooperative
+      cooperative/semi: Semi-Cooperative/Competitive
+      competitive/indirect: Competitive but not Mean
+      competitive/direct: Competitive and Mean
 
   skills:
     title: 'What skills do you want to flex?'
     options:
-      strategic: 'Tactics and Strategy'
-      social: 'Bluffing and Social Skills'
+      strategic: 'Tactics & Strategy'
+      social: 'Bluffing & Social Skills'
       creative: 'Creativity'
 
   misc:

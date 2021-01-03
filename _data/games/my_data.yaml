@@ -50,6 +50,15 @@ Adventure Mart:
   - competitive/direct
   - strategic
 
+Anachrony:
+  players:
+    best: [3]
+    good: [1, 2, 4]
+  tags:
+  - length/long
+  - competitive/indirect
+  - strategic
+
 'Android: Netrunner':
   title: Netrunner
   players:
