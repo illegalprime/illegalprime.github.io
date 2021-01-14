@@ -22,9 +22,12 @@ questions:
       strategic: 'Tactics & Strategy'
       social: 'Bluffing & Social Skills'
       creative: 'Creativity'
+      # TODO: negotiation ?
+      # TODO: deduction ?
 
   misc:
     title: 'Anything else you want from your game?'
     options:
       story: 'A gripping story!'
       campaign: 'A multi-session campaign!'
+      # TODO: thematic?

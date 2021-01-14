@@ -5,7 +5,7 @@ permalink: /games/
 ---
 
 <div class="article">
-    <h1>Play a Board Game with Michael (thank u &lt;3)</h1>
+    <h1>Michael's Game Chooser 3000</h1>
     <p>
         You don't have to fill in every section,
         and selecting multiple player counts means the game
@@ -155,7 +155,7 @@ permalink: /games/
          $(html).find('a').attr('title', game);
          $(html).find('img').attr('alt', game);
          $(html).find('.card-image').css({
-             'background': 'url(' + data['image'] + ')',
+             'background': 'url("' + data['image'] + '")',
              'background-size': 'cover',
              'background-position-x': 'center',
          });

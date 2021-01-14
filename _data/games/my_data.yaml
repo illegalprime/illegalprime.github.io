@@ -148,6 +148,16 @@ Bohnanza:
   - competitive/indirect
   - strategic
 
+"CO\u2082: Second Chance":
+  players:
+    best: [3, 4]
+    good: [1, 2]
+  tags:
+  - length/long
+  - cooperative
+  - cooperative/semi
+  - strategic
+
 Calico:
   players:
     best: [1, 2, 3, 4]
@@ -242,6 +252,7 @@ Cosmic Encounter:
   - length/long
   - competitive/one-versus-many
   - cooperative
+  - cooperative/semi
   - social
   - story
 
@@ -254,6 +265,18 @@ Decrypto:
   - competitive/teams
   - competitive/direct
   - strategic
+  - creative
+
+"Detective: A Modern Crime Board Game \u2013 Season One":
+  title: Detective S1
+  players:
+    best: [2]
+    good: [1, 3]
+    bad:  [4]
+  tags:
+  - length/medium
+  - cooperative
+  - story
   - creative
 
 Everdell:
@@ -306,7 +329,7 @@ Forgotten Waters:
   - story
   - campaign
   - strategic
-  # is it creative?
+  - creative
 
 'Gloomhaven: Jaws of the Lion':
   players:
@@ -335,6 +358,15 @@ Hive Pocket:
   tags:
   - length/short
   - competitive/direct
+  - strategic
+
+Honey Buzz:
+  players:
+    best: [3]
+    good: [1, 2, 4]
+  tags:
+  - length/medium
+  - competitive/indirect
   - strategic
 
 Innovation:
@@ -442,11 +474,22 @@ Race for the Galaxy:
   - strategic
 
 Rap Godz:
-  players: [3, 4, 2]
-  tags: ~
-  #- length/medium
-  #- competitive/direct
-  #- strategic
+  players:
+    good: [2, 3, 4]
+  tags:
+  - length/medium
+  - competitive/direct
+  - strategic
+
+'Robinson Crusoe: Adventures on the Cursed Island':
+  title: Robinson Crusoe
+  players:
+    best: [1, 2, 3, 4]
+  tags:
+  - length/long
+  - cooperative
+  - strategic
+  - story
 
 Root:
   players:
@@ -499,6 +542,15 @@ Secret Hitler:
   - cooperative
   - story
   - creative
+
+Spirit Island:
+  players:
+    best: [2]
+    good: [1, 3, 4]
+  tags:
+  - length/long
+  - cooperative
+  - strategic
 
 Splendor:
   players:
@@ -586,6 +638,17 @@ Tussie Mussie:
   - length/short
   - competitive/indirect
   - strategic
+
+'Unlock!: Mystery Adventures':
+  title: 'Unlock!'
+  players:
+    best: [2]
+    good: [1, 3, 4]
+  tags:
+  - length/medium
+  - cooperative
+  - story
+  - creative
 
 Wingspan:
   title: Bird Game
