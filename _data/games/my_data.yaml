@@ -107,15 +107,15 @@ Azul:
   - competitive/indirect
   - strategic
 
-Bargain Quest:
-  players:
-    best: [4]
-    good: [2, 3, 5, 6]
-    bad:  [1, 7, 8]
-  tags:
-  - length/medium
-  - competitive/indirect
-  - strategic
+# Bargain Quest:
+#   players:
+#     best: [4]
+#     good: [2, 3, 5, 6]
+#     bad:  [1, 7, 8]
+#   tags:
+#   - length/medium
+#   - competitive/indirect
+#   - strategic
 
 # Betrayal at House on the Hill:
 #   players:
@@ -212,7 +212,8 @@ Codenames:
 Combo Fighter:
   players:
     best: [2]
-    good: [1, 3, 4]
+    good: [3, 4]
+    bad:  [1]
   tags:
   - length/short
   - competitive/teams
@@ -297,15 +298,15 @@ Everdell:
   - competitive/direct
   - strategic
 
-Exploding Kittens:
-  players:
-    best: [4, 5]
-    good: [3]
-    bad:  [2]
-  tags:
-  - length/short
-  - competitive/direct
-  - strategic
+# Exploding Kittens:
+#   players:
+#     best: [4, 5]
+#     good: [3]
+#     bad:  [2]
+#   tags:
+#   - length/short
+#   - competitive/direct
+#   - strategic
 
 # Fog of Love:
 #   tags: ~
@@ -331,16 +332,16 @@ Forgotten Waters:
   - strategic
   - creative
 
-'Gloomhaven: Jaws of the Lion':
-  players:
-    best: [3]
-    good: [2, 4]
-    bad:  [1]
-  tags:
-  - length/long
-  - cooperative
-  - campaign
-  - strategic
+# 'Gloomhaven: Jaws of the Lion':
+#   players:
+#     best: [3]
+#     good: [2, 4]
+#     bad:  [1]
+#   tags:
+#   - length/long
+#   - cooperative
+#   - campaign
+#   - strategic
 
 High Society:
   players:
@@ -367,6 +368,17 @@ Honey Buzz:
   tags:
   - length/medium
   - competitive/indirect
+  - strategic
+
+'Imperial Settlers: Empires of the North':
+  title: Empires of the North
+  players:
+    best: [2]
+    good: [1, 3]
+    bad:  [4]
+  tags:
+  - length/medium
+  - competitive/direct
   - strategic
 
 Innovation:
@@ -442,15 +454,24 @@ Mandala:
   - story
   - strategic
 
-Mysterium:
+# Mysterium:
+#   players:
+#     best: [5, 6]
+#     good: [3, 4, 7]
+#     bad:  [2]
+#   tags:
+#   - length/medium
+#   - cooperative
+#   - creative
+
+Raccoon Tycoon:
   players:
-    best: [5, 6]
-    good: [3, 4, 7]
-    bad:  [2]
+    best: [4]
+    good: [2, 3, 5]
   tags:
   - length/medium
-  - cooperative
-  - creative
+  - competitive/direct
+  - strategic
 
 # 'Pandemic Legacy: Season 1':
 #   title: 'Pandemic Legacy S1'
@@ -470,6 +491,16 @@ Race for the Galaxy:
     good: [3, 4]
   tags:
   - length/medium
+  - competitive/indirect
+  - strategic
+
+'Railroad Ink: Blazing Red Edition':
+  title: Railroad Ink
+  players:
+    good: [1, 2, 3, 4, 5, 6]
+  tags:
+  - roll-n-write
+  - length/short
   - competitive/indirect
   - strategic
 
@@ -522,16 +553,16 @@ Scythe:
   # cause I have The Rise of Fenris Expansion
   - campaign
 
-Secret Hitler:
-  players:
-    best: [8, 10]
-    good: [9, 7, 6]
-    bad:  [5]
-  tags:
-  - length/short
-  - competitive/one-versus-many
-  - competitive/direct
-  - social
+# Secret Hitler:
+#   players:
+#     best: [8, 10]
+#     good: [9, 7, 6]
+#     bad:  [5]
+#   tags:
+#   - length/short
+#   - competitive/one-versus-many
+#   - competitive/direct
+#   - social
 
 'Sherlock Holmes Consulting Detective: The Thames Murders & Other Cases':
   players:
@@ -542,6 +573,17 @@ Secret Hitler:
   - cooperative
   - story
   - creative
+
+'Sidereal Confluence: Remastered Edition':
+  title: Sidereal Confluence
+  players:
+    best: [5, 6]
+    good: [4, 7, 8, 9]
+  tags:
+  - length/long
+  - competitive/direct
+  - negotiation
+  - strategic
 
 Spirit Island:
   players:
@@ -619,6 +661,16 @@ The Isle of Cats:
   - length/medium
   - competitive/indirect
   - strategic
+
+Treasure Island:
+  players:
+    best: [4]
+    good: [3, 5]
+    bad:  [2]
+  tags:
+  - length/medium
+  - competitive/one-versus-many
+  - creative
 
 # Truffle Shuffle:
 #   players:
