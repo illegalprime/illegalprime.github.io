@@ -22,8 +22,8 @@ questions:
       strategic: 'Tactics & Strategy'
       social: 'Bluffing & Social Skills'
       creative: 'Creativity'
-      # TODO: negotiation ?
-      # TODO: deduction ?
+      deduction: 'Deduction'
+      negotiation: 'Negotiation'
 
   misc:
     title: 'Anything else you want from your game?'

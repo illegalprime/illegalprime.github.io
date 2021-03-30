@@ -138,6 +138,7 @@ Bohnanza:
   - competitive/direct
   - strategic
   - social
+  - negotiation
 
 'Brass: Birmingham':
   players:
@@ -175,6 +176,7 @@ Captain Sonar:
   - competitive/teams
   - competitive/direct
   - strategic
+  - deduction
 
 Chaos in the Old World:
   # 3rd player not recommended
@@ -198,6 +200,17 @@ Chaos in the Old World:
   - campaign
   - creative
 
+'Clank!: A Deck-Building Adventure':
+  title: 'Clonk.'
+  players:
+    best: [3]
+    good: [2, 4]
+    bad: [1]
+  tags:
+  - length/medium
+  - competitive/direct
+  - strategic
+
 Codenames:
   players:
     best: [8, 6]
@@ -208,6 +221,7 @@ Codenames:
   - competitive/direct
   - strategic
   - creative
+  - deduction
 
 Combo Fighter:
   players:
@@ -230,6 +244,7 @@ Cosmic Encounter:
   - competitive/direct
   - social
   - strategic
+  - negotiation
 
 'Cult: Choose Your God Wisely':
   title: Cult
@@ -267,6 +282,7 @@ Decrypto:
   - competitive/direct
   - strategic
   - creative
+  - deduction
 
 "Detective: A Modern Crime Board Game \u2013 Season One":
   title: Detective S1
@@ -437,6 +453,23 @@ Mage Knight Board Game:
   - strategic
 
 Mandala:
+  players:
+    best: [2]
+  tags:
+  - length/short
+  - competitive/direct
+  - strategic
+
+Oceans:
+  players:
+    best: [3]
+    good: [2, 4]
+  tags:
+  - length/medium
+  - competitive/direct
+  - strategic
+
+"Paris: La Cit\xE9 de la Lumi\xE8re":
   players:
     best: [2]
   tags:
@@ -662,6 +695,16 @@ The Isle of Cats:
   - competitive/indirect
   - strategic
 
+The Search for Planet X:
+  players:
+    best: [2]
+    good: [1, 3, 4]
+  tags:
+  - length/medium
+  - competitive/indirect
+  - strategic
+  - deduction
+
 Treasure Island:
   players:
     best: [4]
@@ -671,6 +714,7 @@ Treasure Island:
   - length/medium
   - competitive/one-versus-many
   - creative
+  - deduction
 
 # Truffle Shuffle:
 #   players:
