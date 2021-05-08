@@ -29,6 +29,15 @@ A Fake Artist Goes to New York:
   - competitive/direct
   - social
 
+A Feast for Odin:
+  players:
+    best: [1, 3]
+    good: [2, 4]
+  tags:
+  - length/long
+  - competitive/indirect
+  - strategic
+
 # 'Adventure Games: Monochrome Inc.':
 #   title: Monochrome Inc.
 #   players:
@@ -50,10 +59,19 @@ Adventure Mart:
   - competitive/direct
   - strategic
 
+Aeon's End:
+  players:
+    best: [1, 2]
+    good: [3, 4]
+  tags:
+  - length/medium
+  - strategic
+  - cooperative
+
 Anachrony:
   players:
-    best: [3]
-    good: [1, 2, 4]
+    best: [1, 2, 3]
+    good: [2, 4]
   tags:
   - length/long
   - competitive/indirect
@@ -161,7 +179,7 @@ Bohnanza:
 
 Calico:
   players:
-    best: [1, 2, 3, 4]
+    good: [1, 2, 3, 4]
   tags:
   - length/medium
   - competitive/indirect
@@ -203,8 +221,8 @@ Chaos in the Old World:
 'Clank!: A Deck-Building Adventure':
   title: 'Clonk.'
   players:
-    best: [3]
-    good: [2, 4]
+    best: [2, 3]
+    good: [4, 5, 6]
     bad: [1]
   tags:
   - length/medium
@@ -287,8 +305,7 @@ Decrypto:
 "Detective: A Modern Crime Board Game \u2013 Season One":
   title: Detective S1
   players:
-    best: [2]
-    good: [1, 3]
+    good: [1, 2, 3]
     bad:  [4]
   tags:
   - length/medium
@@ -417,6 +434,14 @@ Insider:
   - competitive/direct
   - social
 
+Lawyer Up:
+  players:
+    best: [2]
+  tags:
+  - length/medium
+  - competitive/direct
+  - strategic
+
 Cockroach Poker Royal:
   title: Cockroach Poker
   players:
@@ -430,8 +455,7 @@ Cockroach Poker Royal:
 
 Legacy of Dragonholt:
   players:
-    best: [1]
-    good: [2, 3]
+    good: [1, 2, 3]
     bad:  [4, 5, 6]
   tags:
   - length/long
@@ -440,11 +464,22 @@ Legacy of Dragonholt:
   - campaign
   - creative
 
+Letter Jam:
+  players:
+    best: [6]
+    good: [3, 4, 5]
+    bad:  [2]
+  tags:
+  - cooperative
+  - length/short
+  - deduction
+  - creative
+
 Mage Knight Board Game:
   title: Mage Knight
   players:
-    best: [1, 2]
-    good: [3]
+    best: [1]
+    good: [2, 3]
     bad:  [4]
   tags:
   - length/long
@@ -520,8 +555,7 @@ Raccoon Tycoon:
 
 Race for the Galaxy:
   players:
-    best: [2]
-    good: [3, 4]
+    good: [1, 2, 3, 4]
   tags:
   - length/medium
   - competitive/indirect
@@ -543,6 +577,16 @@ Rap Godz:
   tags:
   - length/medium
   - competitive/direct
+  - strategic
+
+Red Rising:
+  players:
+    best: [3]
+    good: [1, 2, 4, 5]
+    bad:  [6]
+  tags:
+  - length/medium
+  - competitive/indirect
   - strategic
 
 'Robinson Crusoe: Adventures on the Cursed Island':
@@ -568,8 +612,7 @@ Root:
 Santa Monica:
   # beta solo rules
   players:
-    best: [2, 3, 4]
-    good: [1]
+    good: [1, 2, 3, 4]
   tags:
   - length/medium
   - competitive/indirect
@@ -577,8 +620,8 @@ Santa Monica:
 
 Scythe:
   players:
-    best: [4, 5]
-    good: [1, 2, 3]
+    best: [2, 3, 4]
+    good: [1, 5, 6, 7]
   tags:
   - length/long
   - competitive/indirect
@@ -620,8 +663,8 @@ Scythe:
 
 Spirit Island:
   players:
-    best: [2]
-    good: [1, 3, 4]
+    best: [1, 2]
+    good: [3, 4]
   tags:
   - length/long
   - cooperative
@@ -638,7 +681,7 @@ Splendor:
 
 Star Realms:
   players:
-    best: [2]
+    good: [2]
   tags:
   - length/short
   - competitive/direct
@@ -705,6 +748,24 @@ The Search for Planet X:
   - strategic
   - deduction
 
+Throw Throw Burrito:
+  players:
+    best: [4, 5, 6]
+    good: [3]
+  tags:
+  - length/short
+  - competitive/direct
+  - dexterity
+
+Too Many Bones:
+  players:
+    best: [1, 3]
+    good: [2, 4]
+  tags:
+  - length/long
+  - cooperative
+  - strategic
+
 Treasure Island:
   players:
     best: [4]
@@ -727,8 +788,7 @@ Treasure Island:
 
 Tussie Mussie:
   players:
-    best: [2]
-    good: [3, 4]
+    good: [2, 3, 4]
     bad:  [1]
   tags:
   - length/short
@@ -738,8 +798,7 @@ Tussie Mussie:
 'Unlock!: Mystery Adventures':
   title: 'Unlock!'
   players:
-    best: [2]
-    good: [1, 3, 4]
+    good: [1, 2, 3, 4]
   tags:
   - length/medium
   - cooperative

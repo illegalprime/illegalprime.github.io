@@ -24,6 +24,7 @@ questions:
       creative: 'Creativity'
       deduction: 'Deduction'
       negotiation: 'Negotiation'
+      dexterity: Dexterity
 
   misc:
     title: 'Anything else you want from your game?'
