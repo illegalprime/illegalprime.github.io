@@ -9,6 +9,16 @@
   - competitive/direct
   - strategic
 
+7 Wonders (Second Edition):
+  title: 7 Wonders
+  players:
+    best: [4, 5]
+    good: [3, 6, 7]
+  tags:
+  - length/medium
+  - competitive/indirect
+  - strategic
+
 7 Wonders Duel:
   # with solo print-n-play
   players:
@@ -177,13 +187,13 @@ Bohnanza:
   - cooperative/semi
   - strategic
 
-Calico:
-  players:
-    good: [1, 2, 3, 4]
-  tags:
-  - length/medium
-  - competitive/indirect
-  - strategic
+# Calico:
+#   players:
+#     good: [1, 2, 3, 4]
+#   tags:
+#   - length/medium
+#   - competitive/indirect
+#   - strategic
 
 Captain Sonar:
   players:
@@ -434,6 +444,14 @@ Insider:
   - competitive/direct
   - social
 
+Jaipur:
+  players:
+    best: [2]
+  tags:
+  - length/short
+  - competitive/direct
+  - strategic
+
 Lawyer Up:
   players:
     best: [2]
@@ -492,6 +510,26 @@ Mandala:
     best: [2]
   tags:
   - length/short
+  - competitive/direct
+  - strategic
+
+Nemesis:
+  players:
+    best: [4]
+    good: [1, 2, 3, 5]
+  tags:
+  - length/long
+  - cooperative
+  - cooperative/semi
+  - social
+  - strategic
+
+Nidavellir:
+  players:
+    best: [3]
+    good: [2, 4, 5]
+  tags:
+  - length/medium
   - competitive/direct
   - strategic
 
@@ -650,8 +688,7 @@ Scythe:
   - story
   - creative
 
-'Sidereal Confluence: Remastered Edition':
-  title: Sidereal Confluence
+Sidereal Confluence:
   players:
     best: [5, 6]
     good: [4, 7, 8, 9]
@@ -659,6 +696,15 @@ Scythe:
   - length/long
   - competitive/direct
   - negotiation
+  - strategic
+
+Small World of Warcraft:
+  players:
+    best: [4]
+    good: [2, 3, 5]
+  tags:
+  - length/medium
+  - competitive/direct
   - strategic
 
 Spirit Island:
@@ -695,6 +741,25 @@ Startups:
   tags:
   - length/short
   - competitive/direct
+  - strategic
+
+Tapestry:
+  players:
+    best: [3]
+    good: [1, 2, 4]
+    bad:  [5]
+  tags:
+  - length/long
+  - competitive/indirect
+  - strategic
+
+'Terraforming Mars: Ares Expedition':
+  players:
+    best: [2, 3]
+    good: [1, 4]
+  tags:
+  - length/medium
+  - competitive/indirect
   - strategic
 
 The 7th Continent:
@@ -736,6 +801,15 @@ The Isle of Cats:
   tags:
   - length/medium
   - competitive/indirect
+  - strategic
+
+The Quest for El Dorado:
+  players:
+    best: [2, 4]
+    good: [3]
+  tags:
+  - length/medium
+  - competitive/direct
   - strategic
 
 The Search for Planet X:
@@ -804,6 +878,14 @@ Tussie Mussie:
   - cooperative
   - story
   - creative
+
+Watergate:
+  players:
+    best: [2]
+  tags:
+  - length/short
+  - competitive/direct
+  - strategic
 
 Wingspan:
   title: Bird Game
