@@ -126,6 +126,16 @@ Arboretum:
   - campaign
   - strategic
 
+Atlantis Rising (Second Edition):
+  title: Atlantis Rising
+  players:
+    best: [4]
+    good: [1, 2, 3, 5, 6, 7]
+  tags:
+  - length/medium
+  - cooperative
+  - strategic
+
 Azul:
   players:
     best: [2]
