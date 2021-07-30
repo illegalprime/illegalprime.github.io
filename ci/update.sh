@@ -8,6 +8,7 @@ export REV=$(git rev-parse --short HEAD)
 export REMOTE="${REMOTE:-https://$GH_TOKEN@github.com/illegalprime/illegalprime.github.io.git}"
 
 echo "Building Website..."
+rm -rf _site
 jekyll build
 
 cd _site
