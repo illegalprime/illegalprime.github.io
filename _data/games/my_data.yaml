@@ -28,6 +28,9 @@
   - length/short
   - competitive/direct
   - strategic
+  - janie
+  - michael
+  - michael-best
 
 A Fake Artist Goes to New York:
   players:
@@ -47,6 +50,8 @@ A Feast for Odin:
   - length/long
   - competitive/indirect
   - strategic
+  - michael
+  - michael-best
 
 # 'Adventure Games: Monochrome Inc.':
 #   title: Monochrome Inc.
@@ -68,6 +73,7 @@ Adventure Mart:
   - length/medium
   - competitive/direct
   - strategic
+  - janie
 
 Aeon's End:
   players:
@@ -77,6 +83,10 @@ Aeon's End:
   - length/medium
   - strategic
   - cooperative
+  - janie
+  - janie-best
+  - michael
+  - michael-best
 
 Anachrony:
   players:
@@ -86,6 +96,9 @@ Anachrony:
   - length/long
   - competitive/indirect
   - strategic
+  - janie
+  - michael
+  - michael-best
 
 'Android: Netrunner':
   title: Netrunner
@@ -95,6 +108,8 @@ Anachrony:
   - length/medium
   - competitive/direct
   - strategic
+  - michael
+  - michael-best
 
 Anomia:
   players:
@@ -104,6 +119,7 @@ Anomia:
   - length/short
   - competitive/direct
   - creative
+  - michael
 
 Arboretum:
   players:
@@ -125,6 +141,8 @@ Arboretum:
   - story
   - campaign
   - strategic
+  - michael
+  - michael-best
 
 Atlantis Rising (Second Edition):
   title: Atlantis Rising
@@ -144,6 +162,8 @@ Azul:
   - length/short
   - competitive/indirect
   - strategic
+  - michael
+  - janie
 
 # Bargain Quest:
 #   players:
@@ -165,6 +185,16 @@ Azul:
 #   - competitive/direct
 #   - strategic
 
+Blood Rage:
+  players:
+    best: [4]
+    good: [3, 5]
+    bad:  [2]
+  tags:
+  - length/medium
+  - competitive/direct
+  - strategic
+
 Bohnanza:
   title: Bean Game
   players:
@@ -177,6 +207,8 @@ Bohnanza:
   - strategic
   - social
   - negotiation
+  - janie
+  - michael
 
 'Brass: Birmingham':
   players:
@@ -186,6 +218,7 @@ Bohnanza:
   - length/long
   - competitive/indirect
   - strategic
+  - michael
 
 "CO\u2082: Second Chance":
   players:
@@ -215,6 +248,7 @@ Captain Sonar:
   - competitive/direct
   - strategic
   - deduction
+  - michael
 
 Chaos in the Old World:
   # 3rd player not recommended
@@ -225,6 +259,9 @@ Chaos in the Old World:
   - length/long
   - competitive/direct
   - strategic
+  - janie
+  - michael
+  - michael-best
 
 'Choose Your Own Adventure: House of Danger':
   title: House of Danger
@@ -248,6 +285,10 @@ Chaos in the Old World:
   - length/medium
   - competitive/direct
   - strategic
+  - janie
+  - janie-best
+  - michael
+  - michael-best
 
 Codenames:
   players:
@@ -284,6 +325,16 @@ Cosmic Encounter:
   - strategic
   - negotiation
 
+'Cthulhu: Death May Die':
+  players:
+    best: [3]
+    good: [1, 2, 4]
+    bad:  [5]
+  tags:
+  - length/medium
+  - cooperative
+  - strategic
+
 'Cult: Choose Your God Wisely':
   title: Cult
   players:
@@ -294,6 +345,9 @@ Cosmic Encounter:
   - length/medium
   - competitive/direct
   - strategic
+  - janie
+  - janie-best
+  - michael
 
 'Dead of Winter: A Crossroads Game':
   title: Dead of Winter
@@ -321,6 +375,7 @@ Decrypto:
   - strategic
   - creative
   - deduction
+  - michael
 
 "Detective: A Modern Crime Board Game \u2013 Season One":
   title: Detective S1
@@ -333,15 +388,6 @@ Decrypto:
   - story
   - creative
 
-Everdell:
-  players:
-    best: [3]
-    good: [1, 2, 4]
-  tags:
-  - length/medium
-  - competitive/indirect
-  - strategic
-
 'Dune: Imperium':
   players:
     best: [3, 4]
@@ -350,6 +396,19 @@ Everdell:
   - length/medium
   - competitive/direct
   - strategic
+  - michael
+
+Everdell:
+  players:
+    best: [3]
+    good: [1, 2, 4]
+  tags:
+  - length/medium
+  - competitive/indirect
+  - strategic
+  - janie
+  - janie-best
+  - michael
 
 # Exploding Kittens:
 #   players:
@@ -384,6 +443,8 @@ Forgotten Waters:
   - campaign
   - strategic
   - creative
+  - janie
+  - michael
 
 # 'Gloomhaven: Jaws of the Lion':
 #   players:
@@ -404,6 +465,7 @@ High Society:
   - length/short
   - competitive/direct
   - strategic
+  - michael
 
 Hive Pocket:
   title: Hive
@@ -413,6 +475,7 @@ Hive Pocket:
   - length/short
   - competitive/direct
   - strategic
+  - michael
 
 Honey Buzz:
   players:
@@ -461,6 +524,8 @@ Jaipur:
   - length/short
   - competitive/direct
   - strategic
+  - michael
+  - janie
 
 Lawyer Up:
   players:
@@ -522,6 +587,7 @@ Mandala:
   - length/short
   - competitive/direct
   - strategic
+  - michael
 
 Nemesis:
   players:
@@ -559,6 +625,7 @@ Oceans:
   - length/short
   - competitive/direct
   - strategic
+  - michael
 
 'Mansions of Madness: Second Edition':
   players:
@@ -569,6 +636,8 @@ Oceans:
   - cooperative
   - story
   - strategic
+  - michael
+  - michael-best
 
 # Mysterium:
 #   players:
@@ -618,6 +687,7 @@ Race for the Galaxy:
   - length/short
   - competitive/indirect
   - strategic
+  - michael
 
 Rap Godz:
   players:
@@ -646,6 +716,8 @@ Red Rising:
   - cooperative
   - strategic
   - story
+  - michael
+  - michael-best
 
 Root:
   players:
@@ -656,6 +728,8 @@ Root:
   - length/long
   - competitive/direct
   - strategic
+  - janie
+  - michael
 
 Santa Monica:
   # beta solo rules
@@ -676,6 +750,10 @@ Scythe:
   - strategic
   # cause I have The Rise of Fenris Expansion
   - campaign
+  - janie
+  - janie-best
+  - michael
+  - michael-best
 
 # Secret Hitler:
 #   players:
@@ -697,6 +775,7 @@ Scythe:
   - cooperative
   - story
   - creative
+  - michael
 
 Sidereal Confluence:
   players:
@@ -725,6 +804,10 @@ Spirit Island:
   - length/long
   - cooperative
   - strategic
+  - janie
+  - janie-best
+  - michael
+  - michael-best
 
 Splendor:
   players:
@@ -734,6 +817,9 @@ Splendor:
   - length/short
   - competitive/indirect
   - strategic
+  - janie
+  - janie-best
+  - michael
 
 Star Realms:
   players:
@@ -762,6 +848,7 @@ Tapestry:
   - length/long
   - competitive/indirect
   - strategic
+  - michael
 
 'Terraforming Mars: Ares Expedition':
   players:
@@ -771,6 +858,7 @@ Tapestry:
   - length/medium
   - competitive/indirect
   - strategic
+  - michael
 
 The 7th Continent:
   players:
@@ -793,6 +881,7 @@ The 7th Continent:
   - length/short
   - cooperative
   - strategic
+  - michael
 
 The Estates:
   players:
@@ -812,6 +901,7 @@ The Isle of Cats:
   - length/medium
   - competitive/indirect
   - strategic
+  - michael
 
 The Quest for El Dorado:
   players:
@@ -821,6 +911,7 @@ The Quest for El Dorado:
   - length/medium
   - competitive/direct
   - strategic
+  - michael
 
 The Search for Planet X:
   players:
@@ -849,6 +940,8 @@ Too Many Bones:
   - length/long
   - cooperative
   - strategic
+  - michael
+  - michael-best
 
 Treasure Island:
   players:
@@ -906,3 +999,6 @@ Wingspan:
   - length/medium
   - competitive/indirect
   - strategic
+  - michael
+  - janie
+  - janie-best

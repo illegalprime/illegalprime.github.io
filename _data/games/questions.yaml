@@ -31,4 +31,16 @@ questions:
     options:
       story: 'A gripping story!'
       campaign: 'A multi-session campaign!'
+
+  janie:
+    title: "Opinion Zone: Janie"
+    options:
+      janie: 'Janie Approved'
+      janie-best: "Janie's All Time Faves"
+
+  michael:
+    title: "Opinion Zone: Michael"
+    options:
+      michael: 'Michael Approved'
+      michael-best: "Michael's All Time Faves"
       # TODO: thematic?
