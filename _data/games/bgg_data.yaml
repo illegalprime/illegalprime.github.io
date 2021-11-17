@@ -7,8 +7,8 @@
   minplaytime: 45
   playingtime: 45
   ratings:
-    average: 7.47675
-    bayesaverage: 6.18612
+    average: 7.45475
+    bayesaverage: 6.21573
   year: 2019
 7 Wonders (Second Edition):
   image: https://cf.geekdo-images.com/fwzG7OfzA35y7b3S7dHn9Q__original/img/HGwgC5DOPmEksHYUKNiF38dKUog=/0x0/filters:format(jpeg)/pic5652537.jpg
@@ -19,8 +19,9 @@
   minplaytime: 30
   playingtime: 30
   ratings:
-    average: 8.1756
-    bayesaverage: 6.53377
+    average: 8.1054
+    bayesaverage: 6.70137
+    personal: 7.7
   year: 2020
 7 Wonders Duel:
   image: https://cf.geekdo-images.com/WzNs1mA_o22ZWTR8fkLP2g__original/img/q_TrwF4VnXgW1dFQgtMJexSXOEA=/0x0/filters:format(jpeg)/pic3376065.jpg
@@ -31,23 +32,10 @@
   minplaytime: 30
   playingtime: 30
   ratings:
-    average: 8.11027
-    bayesaverage: 7.9824
+    average: 8.10798
+    bayesaverage: 7.98203
     personal: 9.0
   year: 2015
-A Fake Artist Goes to New York:
-  image: https://cf.geekdo-images.com/5Q5YHxJeVp6PAhfv5Ct0-g__original/img/yRNioltDOtjrTRXa0HHoTTCWNf8=/0x0/filters:format(png)/pic3678404.png
-  link: https://boardgamegeek.com/boardgame/135779
-  maxplayers: 10
-  maxplaytime: 20
-  minplayers: 5
-  minplaytime: 20
-  playingtime: 20
-  ratings:
-    average: 7.16692
-    bayesaverage: 6.75453
-    personal: 7.0
-  year: 2012
 A Feast for Odin:
   image: https://cf.geekdo-images.com/s9oGMCo1fcfV4Dk3EnqLZw__original/img/N1X-0JB1GapFVhl98nP4tNFXMcM=/0x0/filters:format(png)/pic3146943.png
   link: https://boardgamegeek.com/boardgame/177736
@@ -57,9 +45,9 @@ A Feast for Odin:
   minplaytime: 30
   playingtime: 120
   ratings:
-    average: 8.19609
-    bayesaverage: 7.93681
-    personal: 9.0
+    average: 8.20159
+    bayesaverage: 7.94397
+    personal: 9.5
   year: 2016
 Adventure Mart:
   image: https://cf.geekdo-images.com/UcltEHmsrlWqOYWqgc6BWA__original/img/fbP2U7yDd74EysMqJdZsNHYJR6U=/0x0/filters:format(jpeg)/pic5285998.jpg
@@ -70,8 +58,8 @@ Adventure Mart:
   minplaytime: 45
   playingtime: 60
   ratings:
-    average: 6.94832
-    bayesaverage: 5.61236
+    average: 6.94588
+    bayesaverage: 5.63141
     personal: 7.5
   year: 2020
 Aeon's End:
@@ -83,10 +71,35 @@ Aeon's End:
   minplaytime: 60
   playingtime: 60
   ratings:
-    average: 8.0302
-    bayesaverage: 7.66366
+    average: 8.02263
+    bayesaverage: 7.67234
     personal: 9.0
   year: 2016
+'Aeon''s End: Legacy':
+  image: https://cf.geekdo-images.com/quoCefZvHWeaf31_8HvFSA__original/img/y8GWcMFHQSNI754bZlDORXpjLuw=/0x0/filters:format(jpeg)/pic3979852.jpg
+  link: https://boardgamegeek.com/boardgame/241451
+  maxplayers: 4
+  maxplaytime: 90
+  minplayers: 1
+  minplaytime: 45
+  playingtime: 90
+  ratings:
+    average: 8.17798
+    bayesaverage: 7.23567
+  year: 2019
+Air, Land & Sea:
+  image: https://cf.geekdo-images.com/3wpYeNwO7k_yjpIN7IQwaw__original/img/_qQC98hufgmPn_fwMrP4I0sYKO8=/0x0/filters:format(jpeg)/pic4387681.jpg
+  link: https://boardgamegeek.com/boardgame/247367
+  maxplayers: 2
+  maxplaytime: 30
+  minplayers: 2
+  minplaytime: 15
+  playingtime: 30
+  ratings:
+    average: 7.54716
+    bayesaverage: 6.81278
+    personal: 7.8
+  year: 2018
 Anachrony:
   image: https://cf.geekdo-images.com/31quLNzteInnevVRAABoow__original/img/3KfMPSj7jjhG0g5lQBsO-bn67D0=/0x0/filters:format(jpeg)/pic3499707.jpg
   link: https://boardgamegeek.com/boardgame/185343
@@ -96,8 +109,8 @@ Anachrony:
   minplaytime: 30
   playingtime: 120
   ratings:
-    average: 8.10676
-    bayesaverage: 7.744
+    average: 8.11181
+    bayesaverage: 7.75165
     personal: 9.5
   year: 2017
 'Android: Netrunner':
@@ -109,8 +122,8 @@ Anachrony:
   minplaytime: 45
   playingtime: 45
   ratings:
-    average: 7.87594
-    bayesaverage: 7.67391
+    average: 7.87685
+    bayesaverage: 7.6702
     personal: 10.0
   year: 2012
 Anomia:
@@ -122,8 +135,8 @@ Anomia:
   minplaytime: 30
   playingtime: 30
   ratings:
-    average: 6.64233
-    bayesaverage: 6.21468
+    average: 6.65741
+    bayesaverage: 6.23253
     personal: 7.5
   year: 2010
 Arboretum:
@@ -135,8 +148,8 @@ Arboretum:
   minplaytime: 30
   playingtime: 30
   ratings:
-    average: 7.37756
-    bayesaverage: 7.15903
+    average: 7.36901
+    bayesaverage: 7.15519
     personal: 8.3
   year: 2015
 'Arkham Horror: The Card Game':
@@ -148,8 +161,8 @@ Arboretum:
   minplaytime: 60
   playingtime: 120
   ratings:
-    average: 8.17001
-    bayesaverage: 7.92661
+    average: 8.16725
+    bayesaverage: 7.92895
     personal: 10.0
   year: 2016
 "Arkham Noir: Case #2 \u2013 Called Forth By Thunder":
@@ -161,8 +174,8 @@ Arboretum:
   minplaytime: 30
   playingtime: 30
   ratings:
-    average: 7.17292
-    bayesaverage: 5.74986
+    average: 7.15862
+    bayesaverage: 5.76792
     personal: 7.5
   year: 2018
 Atlantis Rising (Second Edition):
@@ -174,8 +187,8 @@ Atlantis Rising (Second Edition):
   minplaytime: 60
   playingtime: 120
   ratings:
-    average: 7.78826
-    bayesaverage: 6.67519
+    average: 7.78625
+    bayesaverage: 6.76922
   year: 2019
 Azul:
   image: https://cf.geekdo-images.com/tz19PfklMdAdjxV9WArraA__original/img/eFRt3o7W6YltnrkqpiSOKr2rKCw=/0x0/filters:format(jpeg)/pic3718275.jpg
@@ -186,8 +199,8 @@ Azul:
   minplaytime: 30
   playingtime: 45
   ratings:
-    average: 7.81456
-    bayesaverage: 7.69784
+    average: 7.80529
+    bayesaverage: 7.68934
     personal: 8.3
   year: 2017
 Blood Rage:
@@ -199,11 +212,23 @@ Blood Rage:
   minplaytime: 60
   playingtime: 90
   ratings:
-    average: 7.9974
-    bayesaverage: 7.81977
+    average: 7.99543
+    bayesaverage: 7.81895
   year: 2015
+Blue Lagoon:
+  image: https://cf.geekdo-images.com/wFggDB9IbU47-drR4GUQBw__original/img/L4ZGFJOUs0huPAZWNYa8Ol_ra_A=/0x0/filters:format(png)/pic4122624.png
+  link: https://boardgamegeek.com/boardgame/244331
+  maxplayers: 4
+  maxplaytime: 45
+  minplayers: 2
+  minplaytime: 30
+  playingtime: 45
+  ratings:
+    average: 7.18485
+    bayesaverage: 6.62564
+  year: 2018
 Bohnanza:
-  image: https://cf.geekdo-images.com/hTK_hi_S0RvDRuZKyNEgvQ__original/img/t0_TtOwUs0DfQzI2tN7gEVAQ9wc=/0x0/filters:format(jpeg)/pic69366.jpg
+  image: https://cf.geekdo-images.com/8SADtu_4zBH_UJrCo935Iw__original/img/RNuAr2CDbxE3XzeJVkxj4Df3eVM=/0x0/filters:format(jpeg)/pic6348964.jpg
   link: https://boardgamegeek.com/boardgame/11
   maxplayers: 7
   maxplaytime: 45
@@ -211,8 +236,8 @@ Bohnanza:
   minplaytime: 45
   playingtime: 45
   ratings:
-    average: 7.03805
-    bayesaverage: 6.93225
+    average: 7.0396
+    bayesaverage: 6.93423
     personal: 7.0
   year: 1997
 'Brass: Birmingham':
@@ -224,21 +249,9 @@ Bohnanza:
   minplaytime: 60
   playingtime: 120
   ratings:
-    average: 8.66815
-    bayesaverage: 8.40041
-    personal: 8.5
-  year: 2018
-"CO\u2082: Second Chance":
-  image: https://cf.geekdo-images.com/giSEjstTofNSRnu1A2kPeA__original/img/TK2VWdLEh-tmqVuWMCYcmEHgiM0=/0x0/filters:format(jpeg)/pic4543193.jpg
-  link: https://boardgamegeek.com/boardgame/214887
-  maxplayers: 4
-  maxplaytime: 120
-  minplayers: 1
-  minplaytime: 60
-  playingtime: 120
-  ratings:
-    average: 7.63649
-    bayesaverage: 6.72532
+    average: 8.66783
+    bayesaverage: 8.41336
+    personal: 8.6
   year: 2018
 Captain Sonar:
   image: https://cf.geekdo-images.com/eVy9IyAVtzzKv2VvPHFPbA__original/img/vSfK0lGYI45DIcyrOkTPYzI412M=/0x0/filters:format(png)/pic3013621.png
@@ -249,10 +262,22 @@ Captain Sonar:
   minplaytime: 45
   playingtime: 60
   ratings:
-    average: 7.55806
-    bayesaverage: 7.34587
+    average: 7.55486
+    bayesaverage: 7.34219
     personal: 7.7
   year: 2016
+Cartographers:
+  image: https://cf.geekdo-images.com/GifbnAmsA4lfEcDkeaC9VA__original/img/YzJORdIDNza8kmrY6KEU_h2p2Wo=/0x0/filters:format(png)/pic4397932.png
+  link: https://boardgamegeek.com/boardgame/263918
+  maxplayers: 100
+  maxplaytime: 45
+  minplayers: 1
+  minplaytime: 30
+  playingtime: 45
+  ratings:
+    average: 7.7201
+    bayesaverage: 7.46713
+  year: 2019
 Chaos in the Old World:
   image: https://cf.geekdo-images.com/yTe9522sHL-3nhfAMH2cTg__original/img/zN6-x2bWP6lsDAC2FNsvU6ivQIc=/0x0/filters:format(jpeg)/pic1318481.jpg
   link: https://boardgamegeek.com/boardgame/43111
@@ -262,22 +287,10 @@ Chaos in the Old World:
   minplaytime: 60
   playingtime: 120
   ratings:
-    average: 7.6717
-    bayesaverage: 7.41075
+    average: 7.67377
+    bayesaverage: 7.4076
     personal: 9.0
   year: 2009
-'Choose Your Own Adventure: House of Danger':
-  image: https://cf.geekdo-images.com/AJiG7qFyGopupytns6Tm0A__original/img/IAdAthtSBAHpY1deZ_6wpypj3wg=/0x0/filters:format(jpeg)/pic4092537.jpg
-  link: https://boardgamegeek.com/boardgame/251420
-  maxplayers: 99
-  maxplaytime: 60
-  minplayers: 1
-  minplaytime: 60
-  playingtime: 60
-  ratings:
-    average: 6.4261
-    bayesaverage: 6.00325
-  year: 2018
 'Clank!: A Deck-Building Adventure':
   image: https://cf.geekdo-images.com/DPjV1iI0ygo5Bl3XLNRiIg__original/img/cXqOdM3BLyIeRt0GP3M3V--gF1M=/0x0/filters:format(jpeg)/pic4449526.jpg
   link: https://boardgamegeek.com/boardgame/201808
@@ -287,10 +300,22 @@ Chaos in the Old World:
   minplaytime: 30
   playingtime: 60
   ratings:
-    average: 7.81497
-    bayesaverage: 7.64371
+    average: 7.81678
+    bayesaverage: 7.64744
     personal: 9.0
   year: 2016
+"Clank!: Legacy \u2013 Acquisitions Incorporated":
+  image: https://cf.geekdo-images.com/hc2NDafu5c24iLJh_IZmyg__original/img/1Fpyz7j7rTvMPRiDdPjn0Vf0m2k=/0x0/filters:format(png)/pic4885780.png
+  link: https://boardgamegeek.com/boardgame/266507
+  maxplayers: 4
+  maxplaytime: 120
+  minplayers: 2
+  minplaytime: 90
+  playingtime: 120
+  ratings:
+    average: 8.70018
+    bayesaverage: 7.80123
+  year: 2019
 Cockroach Poker Royal:
   image: https://cf.geekdo-images.com/loNpxkO1sWM_Xs4Pk2AMgA__original/img/jM2Vk0_umdKL9hrsBK_ePnzqptk=/0x0/filters:format(jpeg)/pic4129570.jpg
   link: https://boardgamegeek.com/boardgame/129736
@@ -300,8 +325,8 @@ Cockroach Poker Royal:
   minplaytime: 15
   playingtime: 25
   ratings:
-    average: 7.05127
-    bayesaverage: 6.43469
+    average: 7.05255
+    bayesaverage: 6.45017
     personal: 7.0
   year: 2012
 Codenames:
@@ -313,22 +338,22 @@ Codenames:
   minplaytime: 15
   playingtime: 15
   ratings:
-    average: 7.60849
-    bayesaverage: 7.51836
+    average: 7.60291
+    bayesaverage: 7.51337
     personal: 8.0
   year: 2015
-Combo Fighter:
-  image: https://cf.geekdo-images.com/6trsRHOH8iY1UWdsmMwZRA__original/img/JZcL24VhwcpJacdAuLTdl0EnUZo=/0x0/filters:format(png)/pic4293830.png
-  link: https://boardgamegeek.com/boardgame/236305
-  maxplayers: 4
-  maxplaytime: 15
-  minplayers: 1
-  minplaytime: 5
-  playingtime: 15
+Concordia Venus:
+  image: https://cf.geekdo-images.com/36WIe0ZHkp5OvHOlB-8vog__original/img/4oIeldEZrg5Fi2YAlc5SzldywaA=/0x0/filters:format(jpeg)/pic4356580.jpg
+  link: https://boardgamegeek.com/boardgame/256916
+  maxplayers: 6
+  maxplaytime: 120
+  minplayers: 2
+  minplaytime: 60
+  playingtime: 120
   ratings:
-    average: 7.17601
-    bayesaverage: 5.8129
-  year: 2019
+    average: 8.36094
+    bayesaverage: 7.33284
+  year: 2018
 Cosmic Encounter:
   image: https://cf.geekdo-images.com/S8cE-Ld7XP5sVz-upKJ-Bg__original/img/c4ZrfOtpp6tDHLyMsKecc2ne370=/0x0/filters:format(jpeg)/pic1521633.jpg
   link: https://boardgamegeek.com/boardgame/39463
@@ -338,8 +363,8 @@ Cosmic Encounter:
   minplaytime: 60
   playingtime: 120
   ratings:
-    average: 7.53817
-    bayesaverage: 7.37125
+    average: 7.53935
+    bayesaverage: 7.36987
     personal: 7.5
   year: 2008
 'Cthulhu: Death May Die':
@@ -351,8 +376,8 @@ Cosmic Encounter:
   minplaytime: 90
   playingtime: 120
   ratings:
-    average: 8.16557
-    bayesaverage: 7.38138
+    average: 8.14824
+    bayesaverage: 7.42214
   year: 2019
 'Cult: Choose Your God Wisely':
   image: https://cf.geekdo-images.com/xZp_zEktKB0xj7j60LZLKA__original/img/edqzK92hltK0JRhrwA-WbR6kGq4=/0x0/filters:format(jpeg)/pic4025219.jpg
@@ -363,9 +388,9 @@ Cosmic Encounter:
   minplaytime: 45
   playingtime: 90
   ratings:
-    average: 7.20342
-    bayesaverage: 5.68552
-    personal: 9.0
+    average: 7.2098
+    bayesaverage: 5.69136
+    personal: 7.5
   year: 2018
 'Dead of Winter: A Crossroads Game':
   image: https://cf.geekdo-images.com/g4mV4BH-ZrhMUVgil-yV1A__original/img/NjrnSg1aeia8I4eETDU3I1Br7a8=/0x0/filters:format(jpeg)/pic3016500.jpg
@@ -376,8 +401,8 @@ Cosmic Encounter:
   minplaytime: 60
   playingtime: 120
   ratings:
-    average: 7.56108
-    bayesaverage: 7.41255
+    average: 7.55002
+    bayesaverage: 7.40159
   year: 2014
 Decrypto:
   image: https://cf.geekdo-images.com/hHZWXnUTMYDd_KTAM6Jwlw__original/img/lL6QJ69UmZT7CeljUcjyA47b-e0=/0x0/filters:format(jpeg)/pic3759421.jpg
@@ -388,34 +413,33 @@ Decrypto:
   minplaytime: 15
   playingtime: 45
   ratings:
-    average: 7.79537
-    bayesaverage: 7.5029
+    average: 7.79574
+    bayesaverage: 7.5112
     personal: 8.5
   year: 2018
-"Detective: A Modern Crime Board Game \u2013 Season One":
-  image: https://cf.geekdo-images.com/0lGDbQ_NmJO3nCSbm4bD-A__original/img/aYPH3uix-o4a26ZoRivzw4ZpikY=/0x0/filters:format(jpeg)/pic5671000.jpg
-  link: https://boardgamegeek.com/boardgame/293531
-  maxplayers: 5
-  maxplaytime: 120
-  minplayers: 1
-  minplaytime: 90
-  playingtime: 120
-  ratings:
-    average: 7.20727
-    bayesaverage: 5.91471
-    personal: 7.5
-  year: 2020
-'Don''t Get Got!: Shut Up & Sit Down Special Edition':
-  image: https://cf.geekdo-images.com/m_F9BoQZdftRZUmTV1Ov-w__original/img/3tzA5fx2FopI177IV5J5sjon8S8=/0x0/filters:format(jpeg)/pic5739543.jpg
-  link: https://boardgamegeek.com/boardgame/322543
+Don't Get Got!:
+  image: https://cf.geekdo-images.com/03kajQYeuaJQP8VydWnOng__original/img/IM710JXByN4Al4tLrD-m3mHTmLA=/0x0/filters:format(jpeg)/pic4346773.jpg
+  link: https://boardgamegeek.com/boardgame/262547
   maxplayers: 10
   maxplaytime: 1440
   minplayers: 2
   minplaytime: 30
   playingtime: 1440
   ratings:
-    average: 7.82941
-    bayesaverage: 5.56661
+    average: 7.15156
+    bayesaverage: 6.01483
+  year: 2018
+Dream Crush:
+  image: https://cf.geekdo-images.com/VwqF7PpTC-7pvu9aPJRU6Q__original/img/XWLcFKbXJp9Xu8k5oU7IsHEAPdI=/0x0/filters:format(jpeg)/pic5550917.jpg
+  link: https://boardgamegeek.com/boardgame/315059
+  maxplayers: 6
+  maxplaytime: 30
+  minplayers: 2
+  minplaytime: 30
+  playingtime: 30
+  ratings:
+    average: 7.12702
+    bayesaverage: 5.61301
   year: 2021
 'Dune: Imperium':
   image: https://cf.geekdo-images.com/PhjygpWSo-0labGrPBMyyg__original/img/mZzaBAEEJpMlHWWmC0R6Su0OibQ=/0x0/filters:format(jpeg)/pic5666597.jpg
@@ -426,9 +450,9 @@ Decrypto:
   minplaytime: 60
   playingtime: 120
   ratings:
-    average: 8.35277
-    bayesaverage: 7.77402
-    personal: 8.8
+    average: 8.30665
+    bayesaverage: 7.89807
+    personal: 8.6
   year: 2020
 Everdell:
   image: https://cf.geekdo-images.com/fjE7V5LNq31yVEW_yuqI-Q__original/img/HQ1ti16wT9lqja5_h3gUfHUIcVI=/0x0/filters:format(png)/pic3918905.png
@@ -439,10 +463,22 @@ Everdell:
   minplaytime: 40
   playingtime: 80
   ratings:
-    average: 8.10316
-    bayesaverage: 7.85663
-    personal: 8.8
+    average: 8.09401
+    bayesaverage: 7.86359
+    personal: 8.5
   year: 2018
+Fog of Love:
+  image: https://cf.geekdo-images.com/FDOlU-KIv3iRKqHzC57-Qg__original/img/8QVHmUJv4t1bq_4mEiOQ6RHIXNM=/0x0/filters:format(jpeg)/pic6353234.jpg
+  link: https://boardgamegeek.com/boardgame/175324
+  maxplayers: 2
+  maxplaytime: 120
+  minplayers: 2
+  minplaytime: 60
+  playingtime: 120
+  ratings:
+    average: 6.87287
+    bayesaverage: 6.53625
+  year: 2017
 Food Chain Magnate:
   image: https://cf.geekdo-images.com/Wtxml94LAXsIWQCxGPS63Q__original/img/9c-MJB6x54vN5eB-1hT4XQaHtP8=/0x0/filters:format(png)/pic2649434.png
   link: https://boardgamegeek.com/boardgame/175914
@@ -452,8 +488,8 @@ Food Chain Magnate:
   minplaytime: 120
   playingtime: 240
   ratings:
-    average: 8.12325
-    bayesaverage: 7.83637
+    average: 8.11646
+    bayesaverage: 7.831
   year: 2015
 Forgotten Waters:
   image: https://cf.geekdo-images.com/gLnzfyJio2MYbG9J-uQSiQ__original/img/WIqdfw845duHlpr9d5QvzPuHpGI=/0x0/filters:format(jpeg)/pic5253984.jpg
@@ -464,10 +500,46 @@ Forgotten Waters:
   minplaytime: 120
   playingtime: 240
   ratings:
-    average: 8.14402
-    bayesaverage: 7.04275
-    personal: 9.0
+    average: 8.08366
+    bayesaverage: 7.10577
+    personal: 8.3
   year: 2020
+Galaxy Trucker:
+  image: https://cf.geekdo-images.com/1gQABuftAVgk1qshkMyDEw__original/img/7GY1ZXeZkWkWki5QLAbfdX-EGp0=/0x0/filters:format(jpeg)/pic6125184.jpg
+  link: https://boardgamegeek.com/boardgame/336794
+  maxplayers: 4
+  maxplaytime: 30
+  minplayers: 2
+  minplaytime: 20
+  playingtime: 30
+  ratings:
+    average: 7.87616
+    bayesaverage: 5.83942
+  year: 2021
+Great Western Trail (Second Edition):
+  image: https://cf.geekdo-images.com/gDn7AhrDlmfCLSz9ZqoNFQ__original/img/yecB1xO32nnjBAyskVOTq9LBuLo=/0x0/filters:format(jpeg)/pic5988511.jpg
+  link: https://boardgamegeek.com/boardgame/341169
+  maxplayers: 4
+  maxplaytime: 150
+  minplayers: 1
+  minplaytime: 75
+  playingtime: 150
+  ratings:
+    average: 8.25891
+    bayesaverage: 5.87367
+  year: 2021
+Hero Realms:
+  image: https://cf.geekdo-images.com/6xc4TuJynN5o_ZF0fHOdAA__original/img/H5xSdHoOk1x5nR16LebPVRh88ZI=/0x0/filters:format(png)/pic6162556.png
+  link: https://boardgamegeek.com/boardgame/198994
+  maxplayers: 4
+  maxplaytime: 30
+  minplayers: 2
+  minplaytime: 20
+  playingtime: 30
+  ratings:
+    average: 7.57944
+    bayesaverage: 7.26173
+  year: 2016
 High Society:
   image: https://cf.geekdo-images.com/_3wm5Ikl8NtF6oTQ5KT-1g__original/img/Dv5M1RcWQ6UEZyd2eAey-OfSsrU=/0x0/filters:format(jpeg)/pic3894197.jpg
   link: https://boardgamegeek.com/boardgame/220
@@ -477,8 +549,8 @@ High Society:
   minplaytime: 15
   playingtime: 30
   ratings:
-    average: 7.07135
-    bayesaverage: 6.83277
+    average: 7.09051
+    bayesaverage: 6.8518
     personal: 7.5
   year: 1995
 Hive Pocket:
@@ -490,36 +562,34 @@ Hive Pocket:
   minplaytime: 20
   playingtime: 20
   ratings:
-    average: 7.69823
-    bayesaverage: 7.32133
+    average: 7.70009
+    bayesaverage: 7.32936
     personal: 9.0
   year: 2010
-Honey Buzz:
-  image: https://cf.geekdo-images.com/q3KbDdmiSkvKucANAdOU1g__original/img/2mJguceZAdOqSem23FEHobaZ0a4=/0x0/filters:format(jpeg)/pic5608344.jpg
-  link: https://boardgamegeek.com/boardgame/284742
-  maxplayers: 4
-  maxplaytime: 90
-  minplayers: 1
-  minplaytime: 45
-  playingtime: 90
+Inhuman Conditions:
+  image: https://cf.geekdo-images.com/FJwAzIB7Xibo_CnMx6fxHw__original/img/XN7cE2HYRMy-DeSijllEatImwZI=/0x0/filters:format(jpeg)/pic5495452.jpg
+  link: https://boardgamegeek.com/boardgame/261403
+  maxplayers: 2
+  maxplaytime: 5
+  minplayers: 2
+  minplaytime: 5
+  playingtime: 5
   ratings:
-    average: 7.90854
-    bayesaverage: 6.59672
-    personal: 7.8
+    average: 7.33602
+    bayesaverage: 5.83078
   year: 2020
-'Imperial Settlers: Empires of the North':
-  image: https://cf.geekdo-images.com/w6HMeWkxsTJM6zC8oxwUfQ__original/img/HTrXseY1Z66BC8QkdFgL2XUnA4A=/0x0/filters:format(jpeg)/pic4543694.jpg
-  link: https://boardgamegeek.com/boardgame/270844
+Inis:
+  image: https://cf.geekdo-images.com/6QE8mnPFmauoj2THsyUYPA__original/img/6bZdn1SNbpIqU7n5pwtncvdNE_U=/0x0/filters:format(jpeg)/pic4739757.jpg
+  link: https://boardgamegeek.com/boardgame/155821
   maxplayers: 4
   maxplaytime: 90
-  minplayers: 1
-  minplaytime: 45
+  minplayers: 2
+  minplaytime: 60
   playingtime: 90
   ratings:
-    average: 7.5969
-    bayesaverage: 7.00671
-    personal: 8.0
-  year: 2019
+    average: 7.8153
+    bayesaverage: 7.50183
+  year: 2016
 Innovation:
   image: https://cf.geekdo-images.com/YBE-vyyYRANWO2NXSQQghg__original/img/-Ec777H5hg1pmx6kQ0PI2A9Iroc=/0x0/filters:format(png)/pic2966859.png
   link: https://boardgamegeek.com/boardgame/63888
@@ -529,21 +599,9 @@ Innovation:
   minplaytime: 45
   playingtime: 60
   ratings:
-    average: 7.25807
-    bayesaverage: 7.07034
+    average: 7.26598
+    bayesaverage: 7.07504
   year: 2010
-Insider:
-  image: https://cf.geekdo-images.com/VW7K2SmGbr-Eim9nNhxfJw__original/img/UY2k4aU_0kF24cYks1b0awwE3gU=/0x0/filters:format(jpeg)/pic3325362.jpg
-  link: https://boardgamegeek.com/boardgame/206051
-  maxplayers: 8
-  maxplaytime: 15
-  minplayers: 4
-  minplaytime: 15
-  playingtime: 15
-  ratings:
-    average: 7.09848
-    bayesaverage: 6.51081
-  year: 2016
 Jaipur:
   image: https://cf.geekdo-images.com/_LTujSe_o16nvjDC-J0seA__original/img/zUnAdsgt4dCxvtoRDc_9DHbic0M=/0x0/filters:format(jpeg)/pic5100947.jpg
   link: https://boardgamegeek.com/boardgame/54043
@@ -553,23 +611,10 @@ Jaipur:
   minplaytime: 30
   playingtime: 30
   ratings:
-    average: 7.50745
-    bayesaverage: 7.39477
+    average: 7.50424
+    bayesaverage: 7.39162
     personal: 8.0
   year: 2009
-Lawyer Up:
-  image: https://cf.geekdo-images.com/Lr4bMrGPY2pAY1CoZDg8tQ__original/img/Tn8gk761selP14fxTOiQGOXLWOg=/0x0/filters:format(png)/pic5196611.png
-  link: https://boardgamegeek.com/boardgame/267401
-  maxplayers: 2
-  maxplaytime: 75
-  minplayers: 1
-  minplaytime: 60
-  playingtime: 75
-  ratings:
-    average: 7.34063
-    bayesaverage: 5.8893
-    personal: 7.5
-  year: 2021
 Legacy of Dragonholt:
   image: https://cf.geekdo-images.com/RAdppZ1_dduI7vnJi3mtZQ__original/img/evc4kIOTJl3PEC1opktfjRNZtzI=/0x0/filters:format(jpeg)/pic3754388.jpg
   link: https://boardgamegeek.com/boardgame/234669
@@ -579,8 +624,8 @@ Legacy of Dragonholt:
   minplaytime: 60
   playingtime: 999
   ratings:
-    average: 7.27243
-    bayesaverage: 6.53339
+    average: 7.26407
+    bayesaverage: 6.52824
   year: 2017
 Letter Jam:
   image: https://cf.geekdo-images.com/kBZGJlIqir1I_EVCr2nDbg__original/img/lJRGF7RDvRfo3azopO3tryB6IcI=/0x0/filters:format(jpeg)/pic4853794.jpg
@@ -591,9 +636,21 @@ Letter Jam:
   minplaytime: 45
   playingtime: 45
   ratings:
-    average: 7.28954
-    bayesaverage: 6.61329
+    average: 7.288
+    bayesaverage: 6.64057
   year: 2019
+Lost Cities:
+  image: https://cf.geekdo-images.com/AL5D-dXabY-Lk3PqIFk_0g__original/img/PdGBQ7xc0GA9ndKnnInx_sQwvl4=/0x0/filters:format(jpeg)/pic4597095.jpg
+  link: https://boardgamegeek.com/boardgame/50
+  maxplayers: 2
+  maxplaytime: 30
+  minplayers: 2
+  minplaytime: 30
+  playingtime: 30
+  ratings:
+    average: 7.1858
+    bayesaverage: 7.08825
+  year: 1999
 Mage Knight Board Game:
   image: https://cf.geekdo-images.com/DUO2hz9AlLOH8p9ED-lCWg__original/img/PDDH38Vf9NEB_4ODURxcJKNBfVQ=/0x0/filters:format(jpeg)/pic1083380.jpg
   link: https://boardgamegeek.com/boardgame/96848
@@ -603,8 +660,8 @@ Mage Knight Board Game:
   minplaytime: 60
   playingtime: 240
   ratings:
-    average: 8.10033
-    bayesaverage: 7.88241
+    average: 8.09979
+    bayesaverage: 7.88012
     personal: 7.7
   year: 2011
 Mandala:
@@ -616,8 +673,8 @@ Mandala:
   minplaytime: 20
   playingtime: 20
   ratings:
-    average: 7.6736
-    bayesaverage: 6.87556
+    average: 7.66432
+    bayesaverage: 6.92894
     personal: 8.0
   year: 2019
 'Mansions of Madness: Second Edition':
@@ -629,10 +686,34 @@ Mandala:
   minplaytime: 120
   playingtime: 180
   ratings:
-    average: 8.05095
-    bayesaverage: 7.80655
-    personal: 9.5
+    average: 8.03173
+    bayesaverage: 7.79137
+    personal: 9.0
   year: 2016
+Men at Work:
+  image: https://cf.geekdo-images.com/nVogtdDzfxKdH82J-bh5_w__original/img/XvNejQdluEbWDie9tiKoNeoK99Y=/0x0/filters:format(jpeg)/pic4318462.jpg
+  link: https://boardgamegeek.com/boardgame/261114
+  maxplayers: 5
+  maxplaytime: 45
+  minplayers: 2
+  minplaytime: 30
+  playingtime: 45
+  ratings:
+    average: 7.31917
+    bayesaverage: 6.51802
+  year: 2019
+Modern Art:
+  image: https://cf.geekdo-images.com/wLto-xaabHwKQe_Bc4iD1Q__original/img/s3Gai8XBTVfWFFlYpL4XF3kIlWU=/0x0/filters:format(png)/pic3458036.png
+  link: https://boardgamegeek.com/boardgame/118
+  maxplayers: 5
+  maxplaytime: 45
+  minplayers: 3
+  minplaytime: 45
+  playingtime: 45
+  ratings:
+    average: 7.43137
+    bayesaverage: 7.24685
+  year: 1992
 Nemesis:
   image: https://cf.geekdo-images.com/tAqLpWxQ0Oo3GaPP3MER1g__original/img/sA6r1p6BO_Tgyc3-xgIESC9Y-vg=/0x0/filters:format(jpeg)/pic5073276.jpg
   link: https://boardgamegeek.com/boardgame/167355
@@ -642,22 +723,9 @@ Nemesis:
   minplaytime: 90
   playingtime: 180
   ratings:
-    average: 8.39715
-    bayesaverage: 7.93683
+    average: 8.39172
+    bayesaverage: 7.96915
   year: 2018
-Nidavellir:
-  image: https://cf.geekdo-images.com/PX7t5xXDLI2XqxoTShLayg__original/img/KYzd3fBTCxrRxEvNvzabNbll7Wg=/0x0/filters:format(jpeg)/pic5039625.jpg
-  link: https://boardgamegeek.com/boardgame/293014
-  maxplayers: 5
-  maxplaytime: 60
-  minplayers: 2
-  minplaytime: 30
-  playingtime: 60
-  ratings:
-    average: 7.76328
-    bayesaverage: 7.05205
-    personal: 8.0
-  year: 2020
 Oceans:
   image: https://cf.geekdo-images.com/1J7_qmdohyypZNyvu8B45A__original/img/N4cHTwdthImTVqNrJUN9jQDskRc=/0x0/filters:format(jpeg)/pic4382323.jpg
   link: https://boardgamegeek.com/boardgame/232414
@@ -667,9 +735,34 @@ Oceans:
   minplaytime: 60
   playingtime: 90
   ratings:
-    average: 7.65392
-    bayesaverage: 6.90332
+    average: 7.63731
+    bayesaverage: 6.93498
   year: 2020
+One Deck Dungeon:
+  image: https://cf.geekdo-images.com/quvyGpE7kwbd2Mt1H5iLwQ__original/img/pjwQVzsCHiXg8qFTZpVoJYx6SOE=/0x0/filters:format(jpeg)/pic3019101.jpg
+  link: https://boardgamegeek.com/boardgame/179275
+  maxplayers: 2
+  maxplaytime: 45
+  minplayers: 1
+  minplaytime: 30
+  playingtime: 45
+  ratings:
+    average: 7.03225
+    bayesaverage: 6.73038
+  year: 2016
+'Pandemic Legacy: Season 1':
+  image: https://cf.geekdo-images.com/-Qer2BBPG7qGGDu6KcVDIw__original/img/PlzAH7swN1nsFxOXbfUvE3TkE5w=/0x0/filters:format(png)/pic2452831.png
+  link: https://boardgamegeek.com/boardgame/161936
+  maxplayers: 4
+  maxplaytime: 60
+  minplayers: 2
+  minplaytime: 60
+  playingtime: 60
+  ratings:
+    average: 8.59931
+    bayesaverage: 8.44797
+    personal: 9.0
+  year: 2015
 "Paris: La Cit\xE9 de la Lumi\xE8re":
   image: https://cf.geekdo-images.com/6mIsd0NbfluAAZxwS-3P8Q__original/img/NB6DNhFOUVEcrF-FcjSBBTLcU6Y=/0x0/filters:format(jpeg)/pic4664437.jpg
   link: https://boardgamegeek.com/boardgame/276498
@@ -679,22 +772,10 @@ Oceans:
   minplaytime: 30
   playingtime: 30
   ratings:
-    average: 7.48027
-    bayesaverage: 6.5109
-    personal: 7.9
+    average: 7.43382
+    bayesaverage: 6.55199
+    personal: 7.5
   year: 2019
-Raccoon Tycoon:
-  image: https://cf.geekdo-images.com/W9HX05eyz2zQbwWdrjKUzQ__original/img/ScCURHDoqBbVK4_DjMuAywANBwE=/0x0/filters:format(jpeg)/pic4161982.jpg
-  link: https://boardgamegeek.com/boardgame/254386
-  maxplayers: 5
-  maxplaytime: 90
-  minplayers: 2
-  minplaytime: 60
-  playingtime: 90
-  ratings:
-    average: 7.38423
-    bayesaverage: 6.57791
-  year: 2018
 Race for the Galaxy:
   image: https://cf.geekdo-images.com/-DOqixs8uwKUvvWPKI4f9w__original/img/Vh-DCkTPa8OU45LaJdUywwhiYqE=/0x0/filters:format(jpeg)/pic5261714.jpg
   link: https://boardgamegeek.com/boardgame/28143
@@ -704,35 +785,10 @@ Race for the Galaxy:
   minplaytime: 30
   playingtime: 60
   ratings:
-    average: 7.76053
-    bayesaverage: 7.65508
+    average: 7.75827
+    bayesaverage: 7.65347
     personal: 7.5
   year: 2007
-'Railroad Ink: Blazing Red Edition':
-  image: https://cf.geekdo-images.com/eNgD_0WGHeO9fPCpgTOBrQ__original/img/oHGao7oKpWzQA6-j842d6WoPM1I=/0x0/filters:format(png)/pic4118864.png
-  link: https://boardgamegeek.com/boardgame/251678
-  maxplayers: 6
-  maxplaytime: 30
-  minplayers: 1
-  minplaytime: 20
-  playingtime: 30
-  ratings:
-    average: 7.19058
-    bayesaverage: 6.71001
-    personal: 7.9
-  year: 2018
-Rap Godz:
-  image: https://cf.geekdo-images.com/OqYwtyzCpwX1E6XJ9O9CKg__original/img/PzWugKO6hn1ituBbEYVOdofL8ic=/0x0/filters:format(png)/pic5174632.png
-  link: https://boardgamegeek.com/boardgame/258561
-  maxplayers: 4
-  maxplaytime: 60
-  minplayers: 2
-  minplaytime: 30
-  playingtime: 60
-  ratings:
-    average: 7.41776
-    bayesaverage: 5.60234
-  year: 2020
 Red Rising:
   image: https://cf.geekdo-images.com/V6QEXXgRgz3urOrRVZ_1zA__original/img/Gp9hIVv-zRxlkrO5Pmg3aXb4P1M=/0x0/filters:format(jpeg)/pic5960554.jpg
   link: https://boardgamegeek.com/boardgame/329465
@@ -742,10 +798,22 @@ Red Rising:
   minplaytime: 45
   playingtime: 60
   ratings:
-    average: 7.35363
-    bayesaverage: 6.50296
+    average: 7.25866
+    bayesaverage: 6.59937
     personal: 8.3
   year: 2021
+Res Arcana:
+  image: https://cf.geekdo-images.com/gcALy45JfcjyKUn6T3mBIQ__original/img/YLSAurBSWEGi3PHsuQWi8St_0Yg=/0x0/filters:format(jpeg)/pic4422847.jpg
+  link: https://boardgamegeek.com/boardgame/262712
+  maxplayers: 4
+  maxplaytime: 60
+  minplayers: 2
+  minplaytime: 20
+  playingtime: 60
+  ratings:
+    average: 7.74255
+    bayesaverage: 7.44876
+  year: 2019
 'Robinson Crusoe: Adventures on the Cursed Island':
   image: https://cf.geekdo-images.com/FbFnaTx3aT5dM18K_bR_Pg__original/img/TB2dGHOnuUr54jQYIJZDIMilOJE=/0x0/filters:format(jpeg)/pic3165731.jpg
   link: https://boardgamegeek.com/boardgame/121921
@@ -755,8 +823,8 @@ Red Rising:
   minplaytime: 60
   playingtime: 120
   ratings:
-    average: 7.83209
-    bayesaverage: 7.66285
+    average: 7.82402
+    bayesaverage: 7.65356
     personal: 9.5
   year: 2012
 Root:
@@ -768,9 +836,9 @@ Root:
   minplaytime: 60
   playingtime: 90
   ratings:
-    average: 8.10708
-    bayesaverage: 7.88224
-    personal: 9.0
+    average: 8.10118
+    bayesaverage: 7.88402
+    personal: 9.1
   year: 2018
 Santa Monica:
   image: https://cf.geekdo-images.com/6Jp00SquFOCnQSlP8RGHXw__original/img/A-Qi_hv3f8WifN6qKjYze4N9Gww=/0x0/filters:format(jpeg)/pic5177758.jpg
@@ -781,8 +849,8 @@ Santa Monica:
   minplaytime: 35
   playingtime: 40
   ratings:
-    average: 7.48087
-    bayesaverage: 6.50486
+    average: 7.41574
+    bayesaverage: 6.5716
     personal: 7.5
   year: 2020
 Scythe:
@@ -794,10 +862,22 @@ Scythe:
   minplaytime: 90
   playingtime: 115
   ratings:
-    average: 8.22995
-    bayesaverage: 8.07545
+    average: 8.22092
+    bayesaverage: 8.06542
     personal: 9.5
   year: 2016
+'Shadowrun Crossfire: Prime Runner Edition':
+  image: https://cf.geekdo-images.com/ljji4AnXEFcL3j7DmiaVtA__original/img/k6ZnDbvDp4NVG9dWgcFc3F4Lhvs=/0x0/filters:format(jpeg)/pic4177682.jpg
+  link: https://boardgamegeek.com/boardgame/254123
+  maxplayers: 4
+  maxplaytime: 60
+  minplayers: 1
+  minplaytime: 30
+  playingtime: 60
+  ratings:
+    average: 7.75791
+    bayesaverage: 6.02278
+  year: 2018
 'Sherlock Holmes Consulting Detective: The Thames Murders & Other Cases':
   image: https://cf.geekdo-images.com/ptDZ2tJ6dSNiONAx3HH8Tw__original/img/iu21NR45DwHyFY-UPW0m7hwY_vw=/0x0/filters:format(jpeg)/pic3514298.jpg
   link: https://boardgamegeek.com/boardgame/2511
@@ -807,9 +887,9 @@ Scythe:
   minplaytime: 60
   playingtime: 120
   ratings:
-    average: 7.71625
-    bayesaverage: 7.50007
-    personal: 9.0
+    average: 7.70747
+    bayesaverage: 7.48799
+    personal: 8.0
   year: 1982
 Sidereal Confluence:
   image: https://cf.geekdo-images.com/3V1Nmee3P4qSpVmWO9uGgw__original/img/1D98HsjtX5IzcwUMvd-67z1xzKo=/0x0/filters:format(jpeg)/pic4981297.jpg
@@ -820,8 +900,8 @@ Sidereal Confluence:
   minplaytime: 120
   playingtime: 180
   ratings:
-    average: 7.83158
-    bayesaverage: 6.91047
+    average: 7.82981
+    bayesaverage: 6.94357
   year: 2017
 Small World of Warcraft:
   image: https://cf.geekdo-images.com/KVLeGFlhzRVDHILRABi-Vg__original/img/bxdc4acrih9phJ951CswF5-aCHg=/0x0/filters:format(png)/pic5643225.png
@@ -832,8 +912,8 @@ Small World of Warcraft:
   minplaytime: 40
   playingtime: 80
   ratings:
-    average: 7.58968
-    bayesaverage: 6.28164
+    average: 7.53653
+    bayesaverage: 6.35591
   year: 2020
 Spirit Island:
   image: https://cf.geekdo-images.com/a13ieMPP2s0KEaKNYmtH5w__original/img/nuQlvKPSBG3jsVzaTgZTpNSjlTw=/0x0/filters:format(png)/pic3615739.png
@@ -844,8 +924,8 @@ Spirit Island:
   minplaytime: 90
   playingtime: 120
   ratings:
-    average: 8.36131
-    bayesaverage: 8.12287
+    average: 8.35707
+    bayesaverage: 8.127
     personal: 9.5
   year: 2017
 Splendor:
@@ -857,10 +937,22 @@ Splendor:
   minplaytime: 30
   playingtime: 30
   ratings:
-    average: 7.44466
-    bayesaverage: 7.32919
+    average: 7.44043
+    bayesaverage: 7.32455
     personal: 8.3
   year: 2014
+Sprawlopolis:
+  image: https://cf.geekdo-images.com/aZ3I9B_aEywK4O_qP_Hz9w__original/img/70LwdlP8ezNxe00B48mSmzFfStU=/0x0/filters:format(png)/pic4654146.png
+  link: https://boardgamegeek.com/boardgame/251658
+  maxplayers: 4
+  maxplaytime: 20
+  minplayers: 1
+  minplaytime: 15
+  playingtime: 20
+  ratings:
+    average: 7.46148
+    bayesaverage: 7.00754
+  year: 2018
 Star Realms:
   image: https://cf.geekdo-images.com/EsJqPL5CB_TMt0MYL-lnVg__original/img/QXgamCDRuBoRJyU1PQjeh58Pvr8=/0x0/filters:format(jpeg)/pic1903816.jpg
   link: https://boardgamegeek.com/boardgame/147020
@@ -870,8 +962,8 @@ Star Realms:
   minplaytime: 20
   playingtime: 20
   ratings:
-    average: 7.58172
-    bayesaverage: 7.44454
+    average: 7.58132
+    bayesaverage: 7.44402
     personal: 7.5
   year: 2014
 Startups:
@@ -883,8 +975,8 @@ Startups:
   minplaytime: 20
   playingtime: 20
   ratings:
-    average: 7.12747
-    bayesaverage: 6.35688
+    average: 7.13047
+    bayesaverage: 6.38489
   year: 2017
 Tapestry:
   image: https://cf.geekdo-images.com/7kqDmkUMGxXHr1wNPA7Gvg__original/img/e6rS0PyrVlPpJjCsWPmCaGg9PXc=/0x0/filters:format(jpeg)/pic4884996.jpg
@@ -895,9 +987,9 @@ Tapestry:
   minplaytime: 90
   playingtime: 120
   ratings:
-    average: 7.47633
-    bayesaverage: 7.20714
-    personal: 8.3
+    average: 7.46473
+    bayesaverage: 7.20007
+    personal: 8.5
   year: 2019
 'Terraforming Mars: Ares Expedition':
   image: https://cf.geekdo-images.com/eT_Atcy_vRJvuUMgYakNrQ__original/img/upZwrb6k8zZMNTwB8VfpI372yuo=/0x0/filters:format(jpeg)/pic6260098.jpg
@@ -908,23 +1000,10 @@ Tapestry:
   minplaytime: 45
   playingtime: 60
   ratings:
-    average: 7.38235
-    bayesaverage: 6.279
-    personal: 8.8
+    average: 7.65684
+    bayesaverage: 6.86754
+    personal: 8.4
   year: 2021
-The 7th Continent:
-  image: https://cf.geekdo-images.com/OYne8uBCHv5oEgRfpOrV0A__original/img/jcTlhpYG2496xQtuQ277bFTIldY=/0x0/filters:format(jpeg)/pic2648303.jpg
-  link: https://boardgamegeek.com/boardgame/180263
-  maxplayers: 4
-  maxplaytime: 1000
-  minplayers: 1
-  minplaytime: 5
-  playingtime: 1000
-  ratings:
-    average: 8.10406
-    bayesaverage: 7.77897
-    personal: 7.7
-  year: 2017
 'The Crew: The Quest for Planet Nine':
   image: https://cf.geekdo-images.com/98LnQShydr11OBKS46xY-Q__original/img/Q-ZkgnuBu9OTBr7J3qnqPjqamAE=/0x0/filters:format(jpeg)/pic5687013.jpg
   link: https://boardgamegeek.com/boardgame/284083
@@ -934,9 +1013,9 @@ The 7th Continent:
   minplaytime: 20
   playingtime: 20
   ratings:
-    average: 7.99037
-    bayesaverage: 7.76811
-    personal: 9.0
+    average: 7.97652
+    bayesaverage: 7.77619
+    personal: 9.1
   year: 2019
 The Estates:
   image: https://cf.geekdo-images.com/AvC3AzHo8JlcvgKtQ3PDWA__original/img/bLkTdJ11F1JN8zUU4dPjR0J3_2k=/0x0/filters:format(jpeg)/pic4071903.jpg
@@ -947,8 +1026,9 @@ The Estates:
   minplaytime: 40
   playingtime: 60
   ratings:
-    average: 7.49576
-    bayesaverage: 6.75875
+    average: 7.48493
+    bayesaverage: 6.76043
+    personal: 7.5
   year: 2018
 The Isle of Cats:
   image: https://cf.geekdo-images.com/AuAheDzhkLufiZFE9JaRNA__original/img/pKq-l1Ms78olHwMbZYMa_x6m-fM=/0x0/filters:format(jpeg)/pic4781085.jpg
@@ -959,9 +1039,9 @@ The Isle of Cats:
   minplaytime: 60
   playingtime: 90
   ratings:
-    average: 7.99558
-    bayesaverage: 7.52327
-    personal: 8.8
+    average: 7.94898
+    bayesaverage: 7.52746
+    personal: 8.5
   year: 2019
 The Quest for El Dorado:
   image: https://cf.geekdo-images.com/IGH076JpcXRnqkO4bpcXrg__original/img/bJAYfGBY5T3UpptuOvTwhA6WJs0=/0x0/filters:format(jpeg)/pic3617168.jpg
@@ -972,9 +1052,9 @@ The Quest for El Dorado:
   minplaytime: 30
   playingtime: 60
   ratings:
-    average: 7.61883
-    bayesaverage: 7.3684
-    personal: 8.5
+    average: 7.62358
+    bayesaverage: 7.38282
+    personal: 8.4
   year: 2017
 The Search for Planet X:
   image: https://cf.geekdo-images.com/NItjtztEUAKOpaTWZddu9A__original/img/fr-JmerGdiEj6r9UM7F6laogGF0=/0x0/filters:format(jpeg)/pic5744928.jpg
@@ -985,8 +1065,8 @@ The Search for Planet X:
   minplaytime: 60
   playingtime: 60
   ratings:
-    average: 8.18262
-    bayesaverage: 6.91489
+    average: 8.16263
+    bayesaverage: 7.14745
     personal: 8.0
   year: 2020
 Throw Throw Burrito:
@@ -998,8 +1078,8 @@ Throw Throw Burrito:
   minplaytime: 15
   playingtime: 15
   ratings:
-    average: 6.68085
-    bayesaverage: 5.98717
+    average: 6.60289
+    bayesaverage: 5.97908
     personal: 7.5
   year: 2019
 Too Many Bones:
@@ -1011,22 +1091,10 @@ Too Many Bones:
   minplaytime: 60
   playingtime: 120
   ratings:
-    average: 8.44857
-    bayesaverage: 7.75928
+    average: 8.4429
+    bayesaverage: 7.79029
     personal: 9.5
   year: 2017
-'Too Many Bones: Undertow':
-  image: https://cf.geekdo-images.com/AGN1PRSFmhdUyoTjd-qw8A__original/img/Pl7doTXv2kAvdYGqkmvUYomkpJI=/0x0/filters:format(jpeg)/pic3752850.jpg
-  link: https://boardgamegeek.com/boardgame/235802
-  maxplayers: 2
-  maxplaytime: 180
-  minplayers: 1
-  minplaytime: 60
-  playingtime: 180
-  ratings:
-    average: 8.76414
-    bayesaverage: 7.13105
-  year: 2018
 Treasure Island:
   image: https://cf.geekdo-images.com/_jRH6vLRmKoVDtTJoUtZaA__original/img/yzu_wy2ukpTrSLZ7RbyexQV5Ukk=/0x0/filters:format(jpeg)/pic3895468.jpg
   link: https://boardgamegeek.com/boardgame/242639
@@ -1036,11 +1104,11 @@ Treasure Island:
   minplaytime: 45
   playingtime: 45
   ratings:
-    average: 7.30256
-    bayesaverage: 6.76231
+    average: 7.30056
+    bayesaverage: 6.77389
   year: 2018
 Tussie Mussie:
-  image: https://cf.geekdo-images.com/ihx8pPntnypBQ9XgmA9tpA__original/img/m-736RpgpiAxjipPvkIj5GUu43g=/0x0/filters:format(png)/pic4751990.png
+  image: https://cf.geekdo-images.com/bOTxzLrmwptfbAre3JnS3w__original/img/jLs695KU9eJ9iZHiILRMty52Upk=/0x0/filters:format(png)/pic5456717.png
   link: https://boardgamegeek.com/boardgame/257614
   maxplayers: 4
   maxplaytime: 30
@@ -1048,23 +1116,10 @@ Tussie Mussie:
   minplaytime: 20
   playingtime: 30
   ratings:
-    average: 6.99456
-    bayesaverage: 6.31523
+    average: 6.96934
+    bayesaverage: 6.33888
     personal: 7.5
   year: 2019
-'Unlock!: Mystery Adventures':
-  image: https://cf.geekdo-images.com/GeFlXKbZORHBWca3Sl8tSQ__original/img/2cinzeClI1xwX9eyc4j7Kr_V88U=/0x0/filters:format(jpeg)/pic3588255.jpg
-  link: https://boardgamegeek.com/boardgame/228867
-  maxplayers: 6
-  maxplaytime: 75
-  minplayers: 1
-  minplaytime: 45
-  playingtime: 75
-  ratings:
-    average: 7.41994
-    bayesaverage: 6.68415
-    personal: 7.0
-  year: 2017
 Watergate:
   image: https://cf.geekdo-images.com/iTBogxNFa3Ymh-6ST3srsw__original/img/ECgm53fEsB3eDVjZjgeejiZ__Qk=/0x0/filters:format(jpeg)/pic4768766.jpg
   link: https://boardgamegeek.com/boardgame/274364
@@ -1074,8 +1129,9 @@ Watergate:
   minplaytime: 30
   playingtime: 60
   ratings:
-    average: 7.96286
-    bayesaverage: 7.39597
+    average: 7.93856
+    bayesaverage: 7.42157
+    personal: 8.0
   year: 2019
 Wingspan:
   image: https://cf.geekdo-images.com/yLZJCVLlIx4c7eJEWUNJ7w__original/img/cI782Zis9cT66j2MjSHKJGnFPNw=/0x0/filters:format(jpeg)/pic4458123.jpg
@@ -1086,7 +1142,20 @@ Wingspan:
   minplaytime: 40
   playingtime: 70
   ratings:
-    average: 8.11076
-    bayesaverage: 7.94608
+    average: 8.10149
+    bayesaverage: 7.94213
     personal: 8.8
   year: 2019
+Yellow & Yangtze:
+  image: https://cf.geekdo-images.com/BxHQLD5nnVltDWXt4OKsgQ__original/img/py1wiNlyhiBknLyhNDd5zsu2zFg=/0x0/filters:format(jpeg)/pic3938502.jpg
+  link: https://boardgamegeek.com/boardgame/244114
+  maxplayers: 4
+  maxplaytime: 90
+  minplayers: 2
+  minplaytime: 90
+  playingtime: 90
+  ratings:
+    average: 7.88139
+    bayesaverage: 6.66495
+    personal: 8.8
+  year: 2018
