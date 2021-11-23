@@ -1,8 +1,5 @@
-with import (builtins.fetchGit {
-  name = "nixos-unstable-2018-09-12";
-  url = https://github.com/nixos/nixpkgs/;
-  rev = "b58ada326aa612ea1e2fb9a53d550999e94f1985";
-}) {};
+{ pkgs ? import <nixpkgs> {} }:
+with pkgs;
 
 (import ./node.nix { inherit pkgs; }).shell.overrideAttrs (old: {
   name = "oddoreden.com";

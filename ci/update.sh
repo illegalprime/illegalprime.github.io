@@ -3,6 +3,8 @@
 set -euo pipefail
 set -x
 
+[[ ! -f ci/secrets/env ]] || source ci/secrets/env
+
 PWD=$(pwd)
 export REV=$(git rev-parse --short HEAD)
 export REMOTE="${REMOTE:-https://$GH_TOKEN@github.com/illegalprime/illegalprime.github.io.git}"
