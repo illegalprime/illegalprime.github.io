@@ -65,16 +65,16 @@ A Feast for Odin:
 #   - campaign
 #   - creative
 
-Adventure Mart:
-  players:
-    best: [3, 4]
-    good: [2]
-    bad:  [1]
-  tags:
-  - length/medium
-  - competitive/direct
-  - strategic
-  - janie
+# Adventure Mart:
+#   players:
+#     best: [3, 4]
+#     good: [2]
+#     bad:  [1]
+#   tags:
+#   - length/medium
+#   - competitive/direct
+#   - strategic
+#   - janie
 
 Aeon's End:
   players:
@@ -139,14 +139,14 @@ Anomia:
   - creative
   - michael
 
-Arboretum:
-  players:
-    best: [2]
-    good: [3, 4]
-  tags:
-  - length/short
-  - competitive/indirect
-  - strategic
+# Arboretum:
+#   players:
+#     best: [2]
+#     good: [3, 4]
+#   tags:
+#   - length/short
+#   - competitive/indirect
+#   - strategic
 
 'Arkham Horror: The Card Game':
   title: Arkham Horror LCG
@@ -165,26 +165,26 @@ Arboretum:
 "Arkham Noir: Case #2 \u2013 Called Forth By Thunder":
   tags: ~
 
-Atlantis Rising (Second Edition):
-  title: Atlantis Rising
-  players:
-    best: [4]
-    good: [1, 2, 3, 5, 6, 7]
-  tags:
-  - length/medium
-  - cooperative
-  - strategic
+# Atlantis Rising (Second Edition):
+#   title: Atlantis Rising
+#   players:
+#     best: [4]
+#     good: [1, 2, 3, 5, 6, 7]
+#   tags:
+#   - length/medium
+#   - cooperative
+#   - strategic
 
-Azul:
-  players:
-    best: [2]
-    good: [3, 4]
-  tags:
-  - length/short
-  - competitive/indirect
-  - strategic
-  - michael
-  - janie
+# Azul:
+#   players:
+#     best: [2]
+#     good: [3, 4]
+#   tags:
+#   - length/short
+#   - competitive/indirect
+#   - strategic
+#   - michael
+#   - janie
 
 # Bargain Quest:
 #   players:
@@ -250,15 +250,15 @@ Bohnanza:
   - strategic
   - michael
 
-# "CO\u2082: Second Chance":
-#   players:
-#     best: [3, 4]
-#     good: [1, 2]
-#   tags:
-#   - length/long
-#   - cooperative
-#   - cooperative/semi
-#   - strategic
+"CO\u2082: Second Chance":
+  players:
+    best: [3, 4]
+    good: [1, 2]
+  tags:
+  - length/long
+  - cooperative
+  - cooperative/semi
+  - strategic
 
 # Calico:
 #   players:
@@ -268,17 +268,17 @@ Bohnanza:
 #   - competitive/indirect
 #   - strategic
 
-Captain Sonar:
-  players:
-    best: [8]
-    good: [6, 4]
-  tags:
-  - length/medium
-  - competitive/teams
-  - competitive/direct
-  - strategic
-  - deduction
-  - michael
+# Captain Sonar:
+#   players:
+#     best: [8]
+#     good: [6, 4]
+#   tags:
+#   - length/medium
+#   - competitive/teams
+#   - competitive/direct
+#   - strategic
+#   - deduction
+#   - michael
 
 Cartographers:
   players:
@@ -373,17 +373,17 @@ Concordia Venus:
   - competitive/direct
   - strategic
 
-Cosmic Encounter:
-  players:
-    best: [5]
-    good: [4, 6]
-    bad:  [3]
-  tags:
-  - length/medium
-  - competitive/direct
-  - social
-  - strategic
-  - negotiation
+# Cosmic Encounter:
+#   players:
+#     best: [5]
+#     good: [4, 6]
+#     bad:  [3]
+#   tags:
+#   - length/medium
+#   - competitive/direct
+#   - social
+#   - strategic
+#   - negotiation
 
 'Cthulhu: Death May Die':
   players:
@@ -395,34 +395,34 @@ Cosmic Encounter:
   - cooperative
   - strategic
 
-'Cult: Choose Your God Wisely':
-  title: Cult
-  players:
-    best: [4, 5]
-    good: [3]
-    bad:  [2]
-  tags:
-  - length/medium
-  - competitive/direct
-  - strategic
-  - janie
-  - janie-best
-  - michael
+# 'Cult: Choose Your God Wisely':
+#   title: Cult
+#   players:
+#     best: [4, 5]
+#     good: [3]
+#     bad:  [2]
+#   tags:
+#   - length/medium
+#   - competitive/direct
+#   - strategic
+#   - janie
+#   - janie-best
+#   - michael
 
-'Dead of Winter: A Crossroads Game':
-  title: Dead of Winter
-  players:
-    best: [4]
-    good: [3, 5]
-    bad:  [2]
-  tags:
-  - length/medium
-  - length/long
-  - competitive/one-versus-many
-  - cooperative
-  - cooperative/semi
-  - social
-  - story
+# 'Dead of Winter: A Crossroads Game':
+#   title: Dead of Winter
+#   players:
+#     best: [4]
+#     good: [3, 5]
+#     bad:  [2]
+#   tags:
+#   - length/medium
+#   - length/long
+#   - competitive/one-versus-many
+#   - cooperative
+#   - cooperative/semi
+#   - social
+#   - story
 
 Decrypto:
   players:
@@ -503,14 +503,14 @@ Everdell:
 #   - competitive/direct
 #   - strategic
 
-Fog of Love:
-  players:
-    best: [2]
-  tags:
-    - length/medium
-    - cooperative/semi
-    - role-play
-    - creative
+# Fog of Love:
+#   players:
+#     best: [2]
+#   tags:
+#     - length/medium
+#     - cooperative/semi
+#     - role-play
+#     - creative
 
 Food Chain Magnate:
   players:
@@ -568,6 +568,16 @@ Great Western Trail (Second Edition):
     - competitive/indirect
     - strategic
 
+'Hansa Teutonica: Big Box':
+  title: Hansa Teutonica
+  players:
+    best: [5]
+    good: [3, 4]
+  tags:
+    - length/medium
+    - competitive/indirect
+    - strategic
+
 Hero Realms:
   players:
     best: [2]
@@ -596,6 +606,15 @@ Hive Pocket:
   - competitive/direct
   - strategic
   - michael
+
+Horrified:
+  players:
+    best: [3]
+    good: [1, 2, 4, 5]
+  tags:
+  - length/medium
+  - cooperative
+  - strategic
 
 # Honey Buzz:
 #   players:
@@ -673,38 +692,38 @@ Jaipur:
 #   - competitive/direct
 #   - strategic
 
-Cockroach Poker Royal:
-  title: Cockroach Poker
-  players:
-    best: [4, 5]
-    good: [3, 6]
-    bad:  [2]
-  tags:
-  - length/short
-  - competitive/direct
-  - social
+# Cockroach Poker Royal:
+#   title: Cockroach Poker
+#   players:
+#     best: [4, 5]
+#     good: [3, 6]
+#     bad:  [2]
+#   tags:
+#   - length/short
+#   - competitive/direct
+#   - social
 
-Legacy of Dragonholt:
-  players:
-    good: [2, 3]
-    bad:  [1, 4, 5, 6]
-  tags:
-  - length/long
-  - cooperative
-  - story
-  - campaign
-  - creative
+# Legacy of Dragonholt:
+#   players:
+#     good: [2, 3]
+#     bad:  [1, 4, 5, 6]
+#   tags:
+#   - length/long
+#   - cooperative
+#   - story
+#   - campaign
+#   - creative
 
-Letter Jam:
-  players:
-    best: [6]
-    good: [3, 4, 5]
-    bad:  [2]
-  tags:
-  - cooperative
-  - length/short
-  - deduction
-  - creative
+# Letter Jam:
+#   players:
+#     best: [6]
+#     good: [3, 4, 5]
+#     bad:  [2]
+#   tags:
+#   - cooperative
+#   - length/short
+#   - deduction
+#   - creative
 
 Lost Cities:
   players:
@@ -714,15 +733,15 @@ Lost Cities:
     - competitive/direct
     - strategic
 
-Mage Knight Board Game:
-  title: Mage Knight
-  players:
-    bad:  [1, 2, 3, 4]
-  tags:
-  - length/long
-  - cooperative
-  - competitive/indirect
-  - strategic
+# Mage Knight Board Game:
+#   title: Mage Knight
+#   players:
+#     bad:  [1, 2, 3, 4]
+#   tags:
+#   - length/long
+#   - cooperative
+#   - competitive/indirect
+#   - strategic
 
 Mandala:
   players:
@@ -772,22 +791,22 @@ Nemesis:
 #   - competitive/direct
 #   - strategic
 
-One Deck Dungeon:
-  players:
-    good: [1, 2]
-  tags:
-    - length/short
-    - cooperative
-    - strategic
+# One Deck Dungeon:
+#   players:
+#     good: [1, 2]
+#   tags:
+#     - length/short
+#     - cooperative
+#     - strategic
 
-Oceans:
-  players:
-    best: [3]
-    good: [2, 4]
-  tags:
-  - length/medium
-  - competitive/direct
-  - strategic
+# Oceans:
+#   players:
+#     best: [3]
+#     good: [2, 4]
+#   tags:
+#   - length/medium
+#   - competitive/direct
+#   - strategic
 
 "Paris: La Cit\xE9 de la Lumi\xE8re":
   players:
@@ -830,26 +849,35 @@ Oceans:
 #   - competitive/direct
 #   - strategic
 
-'Pandemic Legacy: Season 1':
-  title: 'Pandemic Legacy S1'
-  players:
-    best: [4]
-    good: [3, 2]
-    bad:  [1]
-  tags:
-  - length/medium
-  - cooperative
-  - campaign
-  - strategic
+# 'Pandemic Legacy: Season 1':
+#   title: 'Pandemic Legacy S1'
+#   players:
+#     best: [4]
+#     good: [3, 2]
+#     bad:  [1]
+#   tags:
+#   - length/medium
+#   - cooperative
+#   - campaign
+#   - strategic
 
-Race for the Galaxy:
+# Race for the Galaxy:
+#   players:
+#     good: [2, 3, 4]
+#     bad:  [1]
+#   tags:
+#   - length/medium
+#   - competitive/indirect
+#   - strategic
+
+Radlands:
   players:
-    good: [2, 3, 4]
-    bad:  [1]
+    best: [2]
   tags:
-  - length/medium
-  - competitive/indirect
+  - length/short
+  - competitive/direct
   - strategic
+  - michael
 
 # 'Railroad Ink: Blazing Red Edition':
 #   title: Railroad Ink
@@ -870,13 +898,13 @@ Race for the Galaxy:
 #   - competitive/direct
 #   - strategic
 
-Red Rising:
-  players:
-    bad:  [1, 2, 3, 4, 5, 6]
-  tags:
-  - length/medium
-  - competitive/indirect
-  - strategic
+# Red Rising:
+#   players:
+#     bad:  [1, 2, 3, 4, 5, 6]
+#   tags:
+#   - length/medium
+#   - competitive/indirect
+#   - strategic
 
 Res Arcana:
   players:
@@ -911,15 +939,25 @@ Root:
   - janie
   - michael
 
-Santa Monica:
-  # beta solo rules
+# Santa Monica:
+#   # beta solo rules
+#   players:
+#     good: [2, 3, 4]
+#     bad:  [1]
+#   tags:
+#   - length/medium
+#   - competitive/indirect
+#   - strategic
+
+Santorini:
   players:
-    good: [2, 3, 4]
-    bad:  [1]
+    best: [2]
+    good: [3]
+    bad:  [4]
   tags:
-  - length/medium
-  - competitive/indirect
-  - strategic
+    - length/short
+    - competitive/direct
+    - strategic
 
 Scythe:
   players:
@@ -948,15 +986,15 @@ Scythe:
 #   - competitive/direct
 #   - social
 
-'Shadowrun Crossfire: Prime Runner Edition':
-  title: 'Shadowrun Crossfire'
-  players:
-    best: [1, 4]
-    good: [2, 3]
-  tags:
-    - cooperative
-    - length/medium
-    - strategic
+# 'Shadowrun Crossfire: Prime Runner Edition':
+#   title: 'Shadowrun Crossfire'
+#   players:
+#     best: [1, 4]
+#     good: [2, 3]
+#   tags:
+#     - cooperative
+#     - length/medium
+#     - strategic
 
 'Sherlock Holmes Consulting Detective: The Thames Murders & Other Cases':
   players:
@@ -979,6 +1017,18 @@ Sidereal Confluence:
   - competitive/direct
   - negotiation
   - strategic
+
+Sleeping Gods:
+  players:
+    best: [2]
+    good: [1, 3]
+    bad:  [4]
+  tags:
+    - length/long
+    - cooperative
+    - story
+    - campaign
+    - strategic
 
 Small World of Warcraft:
   players:
@@ -1024,13 +1074,13 @@ Sprawlopolis:
     - length/short
     - strategic
 
-Star Realms:
-  players:
-    good: [2]
-  tags:
-  - length/short
-  - competitive/direct
-  - strategic
+# Star Realms:
+#   players:
+#     good: [2]
+#   tags:
+#   - length/short
+#   - competitive/direct
+#   - strategic
 
 Startups:
   players:
@@ -1052,6 +1102,14 @@ Tapestry:
   - competitive/indirect
   - strategic
   - michael
+
+Targi:
+  players:
+    best: [2]
+  tags:
+  - length/medium
+  - competitive/direct
+  - strategic
 
 'Terraforming Mars: Ares Expedition':
   players:
@@ -1106,25 +1164,47 @@ The Isle of Cats:
   - strategic
   - michael
 
-The Quest for El Dorado:
-  players:
-    best: [2, 4]
-    good: [3]
-  tags:
-  - length/medium
-  - competitive/direct
-  - strategic
-  - michael
+# The Quest for El Dorado:
+#   players:
+#     best: [2, 4]
+#     good: [3]
+#   tags:
+#   - length/medium
+#   - competitive/direct
+#   - strategic
+#   - michael
 
-The Search for Planet X:
+The King's Dilemma:
   players:
-    best: [2]
-    good: [1, 3, 4]
+    best: [5]
+    good: [4]
+    bad:  [3]
   tags:
-  - length/medium
-  - competitive/indirect
-  - strategic
-  - deduction
+    - length/long
+    - competitive/indirect
+    - cooperative/semi
+    - story
+    - campaign
+    - strategic
+
+# The Search for Planet X:
+#   players:
+#     best: [2]
+#     good: [1, 3, 4]
+#   tags:
+#   - length/medium
+#   - competitive/indirect
+#   - strategic
+#   - deduction
+
+The Quacks of Quedlinburg:
+  players:
+    best: [4]
+    good: [2, 3, 5]
+  tags:
+    - length/medium
+    - competitive/indirect
+    - strategic
 
 Throw Throw Burrito:
   players:
@@ -1174,6 +1254,17 @@ Tussie Mussie:
   - length/short
   - competitive/indirect
   - strategic
+
+Underwater Cities:
+  players:
+    best: [2]
+    good: [1, 3]
+    bad:  [4]
+  tags:
+    - length/long
+    - competitive/indirect
+    - strategic
+    - michael-best
 
 # 'Unlock!: Mystery Adventures':
 #   title: 'Unlock!'
