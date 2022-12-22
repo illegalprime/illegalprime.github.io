@@ -1,4 +1,4 @@
-$header-size: 33vh;
+$header-size: 66vh;
 $min-header-height: 300px;
 
 .top-level-header {
@@ -30,7 +30,8 @@ $min-header-height: 300px;
 
 .header-image {
     background-size: cover;
-    background-position: center;
+    background-position-x: center;
+    background-position-y: center;
     background-repeat: no-repeat;
     position: fixed;
     top: 0px;

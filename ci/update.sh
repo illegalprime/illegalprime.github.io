@@ -7,7 +7,12 @@ set -x
 
 PWD=$(pwd)
 export REV=$(git rev-parse --short HEAD)
-export REMOTE="${REMOTE:-https://$GH_TOKEN@github.com/illegalprime/illegalprime.github.io.git}"
+
+if [[ "${GH_TOKEN:-}" ]]; then
+    export REMOTE="https://${GH_TOKEN}@github.com/illegalprime/illegalprime.github.io.git"
+else
+    export REMOTE=$(git remote get-url origin)
+fi
 
 echo "Building Website..."
 rm -rf _site
@@ -16,7 +21,7 @@ jekyll build
 cd _site
 
 echo "Processing CSS..."
-find -type f -name '*.html' | \
+find . -type f -name '*.html' | \
     xargs uncss -H . -s /assets/css/main.css | \
     cleancss \
     > assets/css/main.min.css

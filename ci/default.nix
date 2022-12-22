@@ -1,4 +1,10 @@
-{ pkgs ? import <nixpkgs> {} }:
+{ rev ? "1c1f5649bb9c1b0d98637c8c365228f57126f361"
+, pkgs ? import (builtins.fetchGit {
+  name = "nixos-20.09";
+  url = "https://github.com/nixos/nixpkgs";
+  allRefs = true;
+  inherit rev;
+}) {} }:
 with pkgs;
 
 (import ./node.nix { inherit pkgs; }).shell.overrideAttrs (old: {
@@ -16,6 +22,7 @@ with pkgs;
     (writeShellScriptBin "jekyll-watch" ''
       exec jekyll serve --watch --host 0.0.0.0 "$@"
     '')
+    git
     git-lfs
   ];
 
