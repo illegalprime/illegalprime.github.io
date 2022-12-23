@@ -6,12 +6,12 @@ set -x
 [[ ! -f ci/secrets/env ]] || source ci/secrets/env
 
 PWD=$(pwd)
-export REV=$(git rev-parse --short HEAD)
+REV=$(git rev-parse --short HEAD)
 
 if [[ "${GH_TOKEN:-}" ]]; then
-    export REMOTE="https://${GH_TOKEN}@github.com/illegalprime/illegalprime.github.io.git"
+    REMOTE="https://${GH_TOKEN}@github.com/illegalprime/illegalprime.github.io.git"
 else
-    export REMOTE=$(git remote get-url origin)
+    REMOTE=$(git remote get-url origin)
 fi
 
 echo "Building Website..."
@@ -39,9 +39,15 @@ git add -A .
 git commit -m "Automatic deploy of website for commit $REV"
 git push -q upstream HEAD:master
 
-echo "Purging Cloudflare Cache..."
-curl -X DELETE "https://api.cloudflare.com/client/v4/zones/$CF_ZONE/purge_cache" \
-     -H "X-Auth-Email: $CF_EMAIL" \
-     -H "X-Auth-Key: $CF_KEY" \
-     -H "Content-Type: application/json" \
-     --data '{"purge_everything":true}' &>/dev/null
+if [[ -z "${CF_KEY:-}" ]]; then
+    echo "Remember to purge Cloudflare's cache."
+else
+    echo "Purging Cloudflare Cache..."
+    curl -X DELETE "https://api.cloudflare.com/client/v4/zones/$CF_ZONE/purge_cache" \
+         -H "X-Auth-Email: $CF_EMAIL" \
+         -H "X-Auth-Key: $CF_KEY" \
+         -H "Content-Type: application/json" \
+         --data '{"purge_everything":true}' &>/dev/null
+fi
+
+echo 'Done!'

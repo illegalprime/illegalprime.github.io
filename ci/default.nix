@@ -22,6 +22,11 @@ with pkgs;
     (writeShellScriptBin "jekyll-watch" ''
       exec jekyll serve --watch --host 0.0.0.0 "$@"
     '')
+    (writeShellScriptBin "jekyll-publish" ''
+      set -x
+      cd ${toString ./..}
+      nix-shell --pure --keep SSH_AUTH_SOCK ci --run ci/update.sh
+    '')
     git
     git-lfs
   ];
