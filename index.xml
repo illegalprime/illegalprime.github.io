@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>oddoreden.com</title>
+    <link>https://oddoreden.com/</link>
+    <description>Recent content on oddoreden.com</description>
+    <generator>Hugo -- 0.155.2</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 10 Feb 2026 11:02:20 -0500</lastBuildDate>
+    <atom:link href="https://oddoreden.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Godot Tips</title>
+      <link>https://oddoreden.com/posts/godot-tips/</link>
+      <pubDate>Tue, 10 Feb 2026 11:02:20 -0500</pubDate>
+      <guid>https://oddoreden.com/posts/godot-tips/</guid>
+      <description>&lt;p&gt;After doing a little bit of game development I’m convinced good game dev means not programming yourself into a corner. A game is very time consuming to test and its software design changes more rapidly and more completely than any other software project. Therefore, successful game development means being able to try out ideas without turning your project into a mess.&lt;/p&gt;
+&lt;p&gt;In regular software development this is called finding the correct &lt;em&gt;abstraction&lt;/em&gt;. Your ability to do this is limited by the tools you use (engine, language). Think to yourself: if I have to go back and change this part, how annoying will that be? If you have to make mechanical edits in more than two places, you’re doing something wrong.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

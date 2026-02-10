@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>My Godot Tips | oddoreden.com</title>
+<meta name="keywords" content="">
+<meta name="description" content="After doing a little bit of game development I’m convinced good game dev means not programming yourself into a corner. A game is very time consuming to test and its software design changes more rapidly and more completely than any other software project. Therefore, successful game development means being able to try out ideas without turning your project into a mess.
+In regular software development this is called finding the correct abstraction. Your ability to do this is limited by the tools you use (engine, language). Think to yourself: if I have to go back and change this part, how annoying will that be? If you have to make mechanical edits in more than two places, you’re doing something wrong.">
+<meta name="author" content="">
+<link rel="canonical" href="https://oddoreden.com/posts/godot-tips/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css" integrity="sha256-2jIR5e&#43;Ge/K3X9WmUVz&#43;1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://oddoreden.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://oddoreden.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://oddoreden.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://oddoreden.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://oddoreden.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://oddoreden.com/posts/godot-tips/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://oddoreden.com/posts/godot-tips/">
+  <meta property="og:site_name" content="oddoreden.com">
+  <meta property="og:title" content="My Godot Tips">
+  <meta property="og:description" content="After doing a little bit of game development I’m convinced good game dev means not programming yourself into a corner. A game is very time consuming to test and its software design changes more rapidly and more completely than any other software project. Therefore, successful game development means being able to try out ideas without turning your project into a mess.
+In regular software development this is called finding the correct abstraction. Your ability to do this is limited by the tools you use (engine, language). Think to yourself: if I have to go back and change this part, how annoying will that be? If you have to make mechanical edits in more than two places, you’re doing something wrong.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-02-10T11:02:20-05:00">
+    <meta property="article:modified_time" content="2026-02-10T11:02:20-05:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="My Godot Tips">
+<meta name="twitter:description" content="After doing a little bit of game development I’m convinced good game dev means not programming yourself into a corner. A game is very time consuming to test and its software design changes more rapidly and more completely than any other software project. Therefore, successful game development means being able to try out ideas without turning your project into a mess.
+In regular software development this is called finding the correct abstraction. Your ability to do this is limited by the tools you use (engine, language). Think to yourself: if I have to go back and change this part, how annoying will that be? If you have to make mechanical edits in more than two places, you’re doing something wrong.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://oddoreden.com/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "My Godot Tips",
+      "item": "https://oddoreden.com/posts/godot-tips/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "My Godot Tips",
+  "name": "My Godot Tips",
+  "description": "After doing a little bit of game development I’m convinced good game dev means not programming yourself into a corner. A game is very time consuming to test and its software design changes more rapidly and more completely than any other software project. Therefore, successful game development means being able to try out ideas without turning your project into a mess.\nIn regular software development this is called finding the correct abstraction. Your ability to do this is limited by the tools you use (engine, language). Think to yourself: if I have to go back and change this part, how annoying will that be? If you have to make mechanical edits in more than two places, you’re doing something wrong.\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "After doing a little bit of game development I’m convinced good game dev means not programming yourself into a corner. A game is very time consuming to test and its software design changes more rapidly and more completely than any other software project. Therefore, successful game development means being able to try out ideas without turning your project into a mess.\nIn regular software development this is called finding the correct abstraction. Your ability to do this is limited by the tools you use (engine, language). Think to yourself: if I have to go back and change this part, how annoying will that be? If you have to make mechanical edits in more than two places, you’re doing something wrong.\nGodot, while nice, has some limitations that make working with it difficult. Below is a list of conventions I’ve used to try and stay sane.\nReference Nodes via Export Godot has three ways to reference other nodes within scripts.\n@export var mySprite: Sprite2D func do_something(): $Path/To/Sprite2D.modulate = Color.AQUA # 1 %Sprite2D.modulate = Color.AQUA # 2 mySprite.modulate = Color.AQUA # 3 The first two are effectively hard-coded string keys, introducing a hidden dependency between your scripts and your scene structure. Avoid them. Instead @export them and set the correct node manually in the editor. It’s more work, but if you move any nodes around Godot will update the reference for you.\nSeparate Data from Visuals Never have something like this in the same file:\nvar potion_strength = 5; # ... func animate_hover() -\u003e void: # ... Always have a class called (for example) PotionInfo that stores all the stats and effects and have a separate class called Potion that is the visual representation of your game element (here, potions).\nThere are uncountably many reasons to do this. Creating a save file for your game is easier. Duplicating items is more reliable (in Godot it’s especially funky to copy a node). Items that look different (and require different nodes) in various scenarios (potion in hand, potion in inventory, potion as an active status) have a common data backing. Game logic is kept clean while often unruly visual programming is moved elsewhere (and is a generally less impactful place to have bugs). And of course, it’s quicker to test non-interactive code. Do this!\nDon’t Create Scenes Too Eagerly When you’re starting out just keep everything in one scene.\nCreate a world and a player node and an enemy node all in the same scene. Try and program their relationship. When those are solid and you want multiple copies of something (e.g. multiple enemies), only then right-click and ‘Save Branch as Scene’.\nAfter a while making a card game I ended up with this. Only elements that require multiple instances of themselves are saved as scenes and only when I get to that stage of the project.\nName Your Scripts/Classes Classes are the only way to have composite data types in GDScript.\nYou should be naming everything that gets used by something else.\nextends Node2D class_name Card When you do this you also improve your experience finding these nodes with export:\nclass_name Entity extends Node2D @export var played_card: Card Use Typed Arrays, Dictionaries, Functions Godot 4.4 (released March 2025) introduced typed dictionaries. You can now do:\nvar TILE_TO_EFFECT: Dictionary[Vector2i, Effect] = { Vector2i.ZERO: Fire.new(5), } Use type annotations like this for everything.\nYour time is too valuable to be chasing down type-level bugs.\nUnderstand GDScript Lacks Type Parameters For instance, collections in Godot are pretty rudimentary, so this will not work:\n@export var enemies: Array[Enemy] # extends Entity @export var player: Player # extends Entity var entities: Array[Entity] # a list of the above func get_turn_order(start: int) -\u003e Array[Entity]: return range(entities.size()).map(func(i): return entities[(start + i) % entities.size()] ) Error: Trying to return an array of type “Array” where expected return type is “Array[Entity]\"\nThis sucks pretty hard and the solution is rather annoying:\n@export var enemies: Array[Enemy] # extends Entity @export var player: Player # extends Entity var entities: Array[Entity] # a list of the above func get_turn_order(start: int) -\u003e Array[Entity]: var out: Array[Entity] = [] var items = range(entities.size()).map(func(i): return entities[(start + i) % entities.size()] ) out.assign(items) return out Avoid Nested Dictionaries/Arrays Godot also does not support collection typing that’s more than one level deep, such as a dictionary whose keys are also dictionaries of a certain type. When you find yourself wanting to do this just don’t and make the top-level dictionary terminate at a class instance (that might then contain a dictionary). You’ll also retain your auto-complete in this case.\nUse Abstract Classes Godot 4.5 (released September 2025) introduces abstract classes. Use these to provide a common interface that unites different game elements.\n@abstract class_name Entity extends Node2D @abstract func play_turn(round: int) -\u003e Array[Action] Notice that Godot will now yell at me when I have a class that extends Entity but doesn’t implement play_turn. Amazing! Imagine adding a method to a non-abstract base class and having to remember every inheritor you have to update.\nConsider Ditching GDScript GDScript is improving with every Godot release, but to me the array typing issues alone are enough to warrant a switch. It not only bloats your code with unnecessary lines and memory copies, but it prevents you from making strongly typed and easy-to-use interfaces.\nC# is the second-best-supported language Godot has and it’s a bit of a jump in complexity. More expressive types exist in C# (for list processing, etc.), but the language also relies on nulls and exceptions, which makes the gains fairly marginal. Imagine having a null pointer exception in 2026!\nA lot of good work is being done in Godot-Rust, and this is a variant I hope becomes mainstream. The downside being extra setup for everyone working on your game (installing the Rust compiler, which outputs platform-specific binaries) and learning a new programming language. Personally I don’t think the language part is a big deal, but it is a shame that there are now extra dependencies other than just ‘Godot’ for your project. That being said, Rust has an exceptional package manager.\nDon’t Be Afraid to Throw Everything Away Sometimes you’ve written yourself into a corner. That’s fine. Instead of chasing down refactoring bugs it might be faster to just start again.\n",
+  "wordCount" : "1041",
+  "inLanguage": "en",
+  "datePublished": "2026-02-10T11:02:20-05:00",
+  "dateModified": "2026-02-10T11:02:20-05:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://oddoreden.com/posts/godot-tips/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "oddoreden.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://oddoreden.com/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://oddoreden.com/" accesskey="h" title="oddoreden.com (Alt + H)">oddoreden.com</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      My Godot Tips
+    </h1>
+    <div class="post-meta"><span title='2026-02-10 11:02:20 -0500 EST'>February 10, 2026</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p>After doing a little bit of game development I’m convinced good game dev means not programming yourself into a corner. A game is very time consuming to test and its software design changes more rapidly and more completely than any other software project. Therefore, successful game development means being able to try out ideas without turning your project into a mess.</p>
+<p>In regular software development this is called finding the correct <em>abstraction</em>. Your ability to do this is limited by the tools you use (engine, language). Think to yourself: if I have to go back and change this part, how annoying will that be? If you have to make mechanical edits in more than two places, you’re doing something wrong.</p>
+<p>Godot, while nice, has some limitations that make working with it difficult. Below is a list of conventions I’ve used to try and stay sane.</p>
+<h2 id="reference-nodes-via-export">Reference Nodes via Export<a hidden class="anchor" aria-hidden="true" href="#reference-nodes-via-export">#</a></h2>
+<p>Godot has three ways to reference other nodes within scripts.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#a6e22e">@export</span> <span style="color:#66d9ef">var</span> mySprite: <span style="color:#a6e22e">Sprite2D</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">do_something</span>():
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">$Path/To/Sprite2D</span><span style="color:#f92672">.</span>modulate <span style="color:#f92672">=</span> <span style="color:#a6e22e">Color</span><span style="color:#f92672">.</span>AQUA  <span style="color:#75715e"># 1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">%Sprite2D</span><span style="color:#f92672">.</span>modulate <span style="color:#f92672">=</span> <span style="color:#a6e22e">Color</span><span style="color:#f92672">.</span>AQUA          <span style="color:#75715e"># 2</span>
+</span></span><span style="display:flex;"><span>    mySprite<span style="color:#f92672">.</span>modulate <span style="color:#f92672">=</span> <span style="color:#a6e22e">Color</span><span style="color:#f92672">.</span>AQUA           <span style="color:#75715e"># 3</span>
+</span></span></code></pre></div><p>The first two are effectively hard-coded string keys, introducing a hidden dependency between your scripts and your scene structure. Avoid them. Instead <code>@export</code> them and set the correct node manually in the editor. It’s more work, but if you move any nodes around Godot will update the reference for you.</p>
+<h2 id="separate-data-from-visuals">Separate Data from Visuals<a hidden class="anchor" aria-hidden="true" href="#separate-data-from-visuals">#</a></h2>
+<p>Never have something like this in the same file:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> potion_strength <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># ...</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">animate_hover</span>() <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">void</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># ...</span>
+</span></span></code></pre></div><p>Always have a class called (for example) <code>PotionInfo</code> that stores all the stats and effects and have a separate class called <code>Potion</code> that is the visual representation of your game element (here, potions).</p>
+<p>There are uncountably many reasons to do this. Creating a save file for your game is easier. Duplicating items is more reliable (in Godot it&rsquo;s especially funky to copy a node). Items that look different (and require different nodes) in various scenarios (potion in hand, potion in inventory, potion as an active status) have a common data backing. Game logic is kept clean while often unruly visual programming is moved elsewhere (and is a <em>generally</em> less impactful place to have bugs). And of course, it’s quicker to test non-interactive code. Do this!</p>
+<h2 id="dont-create-scenes-too-eagerly">Don&rsquo;t Create Scenes Too Eagerly<a hidden class="anchor" aria-hidden="true" href="#dont-create-scenes-too-eagerly">#</a></h2>
+<p>When you’re starting out just keep everything in one scene.<br>
+Create a world and a player node and an enemy node all in the same scene. Try and program their relationship. When those are solid and you want multiple copies of something (e.g. multiple enemies), <em>only then</em> right-click and ‘Save Branch as Scene’.</p>
+<p>After a while making a card game I ended up with this. Only elements that require multiple instances of themselves are saved as scenes and only when I get to that stage of the project.</p>
+<p align="center">
+<img src="/imgs/godot-tips/node-layout.png" width="50%">
+</p>
+<h2 id="name-your-scriptsclasses">Name Your Scripts/Classes<a hidden class="anchor" aria-hidden="true" href="#name-your-scriptsclasses">#</a></h2>
+<p>Classes are the only way to have composite data types in GDScript.<br>
+You should be naming everything that gets used by something else.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Node2D</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class_name</span> <span style="color:#a6e22e">Card</span>
+</span></span></code></pre></div><p>When you do this you also improve your experience finding these nodes with export:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">class_name</span> <span style="color:#a6e22e">Entity</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Node2D</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@export</span> <span style="color:#66d9ef">var</span> played_card: Card
+</span></span></code></pre></div><p><img alt="refined-exports" loading="lazy" src="/imgs/godot-tips/refined-export.png"></p>
+<h2 id="use-typed-arrays-dictionaries-functions">Use Typed Arrays, Dictionaries, Functions<a hidden class="anchor" aria-hidden="true" href="#use-typed-arrays-dictionaries-functions">#</a></h2>
+<p>Godot 4.4 (released March 2025) introduced typed dictionaries. You can now do:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> TILE_TO_EFFECT: <span style="color:#a6e22e">Dictionary</span>[<span style="color:#a6e22e">Vector2i</span>, Effect] <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">Vector2i</span><span style="color:#f92672">.</span>ZERO: Fire<span style="color:#f92672">.</span><span style="color:#a6e22e">new</span>(<span style="color:#ae81ff">5</span>),
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Use type annotations like this for everything.<br>
+Your time is too valuable to be chasing down type-level bugs.</p>
+<h2 id="understand-gdscript-lacks-type-parameters">Understand GDScript Lacks Type Parameters<a hidden class="anchor" aria-hidden="true" href="#understand-gdscript-lacks-type-parameters">#</a></h2>
+<p>For instance, collections in Godot are pretty rudimentary, so this will not work:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#a6e22e">@export</span> <span style="color:#66d9ef">var</span> enemies: <span style="color:#a6e22e">Array</span>[Enemy] <span style="color:#75715e"># extends Entity</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@export</span> <span style="color:#66d9ef">var</span> player: Player        <span style="color:#75715e"># extends Entity</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> entities: <span style="color:#a6e22e">Array</span>[Entity]       <span style="color:#75715e"># a list of the above</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">get_turn_order</span>(start: <span style="color:#66d9ef">int</span>) <span style="color:#f92672">-&gt;</span> <span style="color:#a6e22e">Array</span>[Entity]:
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> range(entities<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span>())<span style="color:#f92672">.</span><span style="color:#a6e22e">map</span>(<span style="color:#a6e22e">func</span>(i):
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> entities[(start <span style="color:#f92672">+</span> i) <span style="color:#f92672">%</span> entities<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span>()]
+</span></span><span style="display:flex;"><span>	)
+</span></span></code></pre></div><blockquote>
+<p><code style="color:red">Error: Trying to return an array of type &ldquo;Array&rdquo; where expected return type is &ldquo;Array[Entity]&quot;</code></p>
+</blockquote>
+<p>This sucks pretty hard and the solution is rather annoying:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#a6e22e">@export</span> <span style="color:#66d9ef">var</span> enemies: <span style="color:#a6e22e">Array</span>[Enemy] <span style="color:#75715e"># extends Entity</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@export</span> <span style="color:#66d9ef">var</span> player: Player        <span style="color:#75715e"># extends Entity</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> entities: <span style="color:#a6e22e">Array</span>[Entity]       <span style="color:#75715e"># a list of the above</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">get_turn_order</span>(start: <span style="color:#66d9ef">int</span>) <span style="color:#f92672">-&gt;</span> <span style="color:#a6e22e">Array</span>[Entity]:
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">var</span> out: <span style="color:#a6e22e">Array</span>[Entity] <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">var</span> items <span style="color:#f92672">=</span> range(entities<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span>())<span style="color:#f92672">.</span><span style="color:#a6e22e">map</span>(<span style="color:#a6e22e">func</span>(i):
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> entities[(start <span style="color:#f92672">+</span> i) <span style="color:#f92672">%</span> entities<span style="color:#f92672">.</span><span style="color:#a6e22e">size</span>()]
+</span></span><span style="display:flex;"><span>	)
+</span></span><span style="display:flex;"><span>	out<span style="color:#f92672">.</span><span style="color:#a6e22e">assign</span>(items)
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> out
+</span></span></code></pre></div><h2 id="avoid-nested-dictionariesarrays">Avoid Nested Dictionaries/Arrays<a hidden class="anchor" aria-hidden="true" href="#avoid-nested-dictionariesarrays">#</a></h2>
+<p>Godot also does not support collection typing that’s more than one level deep, such as a dictionary whose keys are also dictionaries of a certain type. When you find yourself wanting to do this just don’t and make the top-level dictionary terminate at a class instance (that might then contain a dictionary). You’ll also retain your auto-complete in this case.</p>
+<h2 id="use-abstract-classes">Use Abstract Classes<a hidden class="anchor" aria-hidden="true" href="#use-abstract-classes">#</a></h2>
+<p>Godot 4.5 (released September 2025) introduces abstract classes. Use these to provide a common interface that unites different game elements.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">@</span>abstract
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class_name</span> <span style="color:#a6e22e">Entity</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Node2D</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">@</span>abstract <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">play_turn</span>(round: <span style="color:#66d9ef">int</span>) <span style="color:#f92672">-&gt;</span> <span style="color:#a6e22e">Array</span>[Action]
+</span></span></code></pre></div><p>Notice that Godot will now yell at me when I have a class that extends <code>Entity</code> but doesn’t implement <code>play_turn</code>. Amazing! Imagine adding a method to a non-abstract base class and having to remember every inheritor you have to update.</p>
+<h2 id="consider-ditching-gdscript">Consider Ditching GDScript<a hidden class="anchor" aria-hidden="true" href="#consider-ditching-gdscript">#</a></h2>
+<p>GDScript is improving with every Godot release, but to me the array typing issues alone are enough to warrant a switch. It not only bloats your code with unnecessary lines and memory copies, but it prevents you from making strongly typed and easy-to-use interfaces.</p>
+<p>C# is the second-best-supported language Godot has and it’s a bit of a jump in complexity. More expressive types exist in C# (for list processing, etc.), but the language also relies on nulls and exceptions, which makes the gains fairly marginal. Imagine having a null pointer exception in 2026!</p>
+<p>A lot of good work is being done in <a href="https://godot-rust.github.io/">Godot-Rust</a>, and this is a variant I hope becomes mainstream. The downside being extra setup for everyone working on your game (installing the Rust compiler, which outputs platform-specific binaries) and learning a new programming language. Personally I don’t think the language part is a big deal, but it is a shame that there are now extra dependencies other than just ‘Godot’ for your project. That being said, Rust has an exceptional package manager.</p>
+<h2 id="dont-be-afraid-to-throw-everything-away">Don&rsquo;t Be Afraid to Throw Everything Away<a hidden class="anchor" aria-hidden="true" href="#dont-be-afraid-to-throw-everything-away">#</a></h2>
+<p>Sometimes you&rsquo;ve written yourself into a corner. That&rsquo;s fine. Instead of chasing down refactoring bugs it might be faster to just start again.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://oddoreden.com/">oddoreden.com</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
